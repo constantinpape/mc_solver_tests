@@ -87,7 +87,7 @@ def run_ilp_opengm(n_var, uv_ids, costs,
     res_node = inf.arg()
     e_glob = gm.evaluate(res_node)
 
-    return res_node, e_glob
+    return res_node, e_glob, t_inf
 
 
 def run_fusion_moves_nifty(n_var, uv_ids, costs,
@@ -99,7 +99,7 @@ def run_fusion_moves_nifty(n_var, uv_ids, costs,
     g = nifty.graph.UndirectedGraph(n_var)
     g.insertEdges(uv_ids)
     assert g.numberOfEdges == uv_ids.shape[0], "%i, %i" % (g.numberOfEdges, uv_ids.shape[0])
-    assert g.numberOfEdges == costs.shape[0], "%i , %i" % (g.numberOfEdges, costs.shape[0])
+    assert g.numberOfEdges == costs.shape[0],  "%i, %i" % (g.numberOfEdges, costs.shape[0])
 
     obj = nifty.graph.multicut.multicutObjective(g, costs)
 
