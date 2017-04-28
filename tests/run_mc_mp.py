@@ -14,11 +14,7 @@ def run_mc_mp(sample):
     _, e_mcmp, t_mcmp = run_mc_mp_pybindings(n_var, uv_ids, costs)
     # TODO run commandline mcmp for sanity check
 
-    print
-    print "Summary for %s:" % sample
-    print "Message-Passing Multicut:"
-    print "primal: %f, t-inf: %f" % (e_mcmp, t_mcmp)
-    #print "Opengm: primal: %f, t-inf: %f" % (e_fm_opengm, t_fm_opengm)
+    return e_mcp, t_mcmp
 
 
 def check_python_vs_cmdln(sample):
@@ -27,5 +23,13 @@ def check_python_vs_cmdln(sample):
 
 
 if __name__ == '__main__':
+    res_dict = {}
     for sample in ('sampleA', 'sampleB', 'sampleC'):
-        compare_opengm_nifty(sample)
+        res_dict[sample] = run_mc_mp(sample)
+
+    for sample in ('sampleA', 'sampleB', 'sampleC'):
+        e_mcp, t_mcmp = res_dict[sample]
+        print
+        print "Summary for %s:" % sample
+        print "Message-Passing Multicut:"
+        print "primal: %f, t-inf: %f" % (e_mcmp, t_mcmp)
