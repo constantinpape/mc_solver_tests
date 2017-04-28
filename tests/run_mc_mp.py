@@ -16,13 +16,13 @@ def run_mc_mp(sample):
 
     print
     print "Summary for %s:" % sample
-    print "Fusionmoves:"
-    print "Nifty: primal: %f, t-inf: %f" % (e_fm_nifty, t_fm_nifty)
-    print "Opengm: primal: %f, t-inf: %f" % (e_fm_opengm, t_fm_opengm)
-    print "Ilp:"
-    print "Nifty: primal: %f, t-inf: %f"  % (e_ilp_nifty,  t_ilp_nifty)
-    print "Opengm: primal: %f, t-inf: %f" % (e_ilp_opengm, t_ilp_opengm)
-    print
+    print "Message-Passing Multicut:"
+    print "primal: %f, t-inf: %f" % (e_mcmp, t_mcmp)
+    #print "Opengm: primal: %f, t-inf: %f" % (e_fm_opengm, t_fm_opengm)
+
+
+def check_python_vs_cmdln(sample):
+    pass
 
 
 
