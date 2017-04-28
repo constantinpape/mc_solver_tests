@@ -17,7 +17,7 @@ def read_from_mcluigi(model_path):
 
     n_var = graph.numberOfNodes
     uv_ids = graph.uvIds()
-    assert n_var == uv_ids.max() + 1
+    #assert n_var == uv_ids.max() + 1, "%i, %i" % (n_var, uv_ids.max() + 1)
     assert len(costs) == len(uv_ids)
     return n_var, uv_ids, costs
 

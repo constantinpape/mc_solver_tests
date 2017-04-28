@@ -14,7 +14,7 @@ def run_mc_mp(sample):
     _, e_mcmp, t_mcmp = run_mc_mp_pybindings(n_var, uv_ids, costs)
     # TODO run commandline mcmp for sanity check
 
-    return e_mcp, t_mcmp
+    return e_mcmp, t_mcmp
 
 
 def check_python_vs_cmdln(sample):
@@ -28,7 +28,7 @@ if __name__ == '__main__':
         res_dict[sample] = run_mc_mp(sample)
 
     for sample in ('sampleA', 'sampleB', 'sampleC'):
-        e_mcp, t_mcmp = res_dict[sample]
+        e_mcmp, t_mcmp = res_dict[sample]
         print
         print "Summary for %s:" % sample
         print "Message-Passing Multicut:"
