@@ -8,10 +8,6 @@ import opengm
 import nifty
 ilp_bkend = 'cplex'
 
-# dirty hack for lp_mp pybindings
-import sys
-sys.path.append('/home/constantin/Work/software/bld/LP_MP/python')
-import lp_mp
 
 def run_fusion_moves_opengm(n_var, uv_ids, costs,
         n_threads = 20,
@@ -211,6 +207,11 @@ def run_mc_mp_cmdline(n_var, uv_ids, costs,
 
 def run_mc_mp_pybindings(n_var, uv_ids, costs,
         max_iter = 2500):
+
+    # dirty hack for lp_mp pybindings
+    import sys
+    sys.path.append('/home/constantin/Work/software/bld/LP_MP/python')
+    import lp_mp
 
     # nifty graph and objective for node labels and energy
     g = nifty.graph.UndirectedGraph(int(n_var))
