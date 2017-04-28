@@ -9,7 +9,7 @@ def convert_to_opengm(sample):
     assert os.path.exists(cost_path), cost_path
 
     n_var, uvs, costs = read_from_mcppl(uv_path, cost_path)
-    write_to_opengm(n_var, uvs, costs, './models/sample%s_opengm.gm')
+    write_to_opengm(n_var, uvs, costs, './models/sample%s_opengm.gm' % sample)
 
 
 if __name__ == '__main__':
