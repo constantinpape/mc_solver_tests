@@ -3,10 +3,24 @@ import numpy as np
 import vigra
 
 def read_from_opengm(model_path):
-    pass
+    state_vector = vigra.readHDF5(model_path, 'gm/numbers-of-states')
+    n_states = state_vector[0]
+    assert (state_vector == n_state).all()
+    factors = vigra.readHDF5(model_path, 'gm/factors')
+    return n_states, factors
 
 def read_from_mcluigi(model_path):
-    pass
+    graph_data = vigra.readHDF5(model_path, 'graph')
+    costs = vigra.readHDF5(model_path, 'costs')
+    graph = nifty.graph.UndirectedGraph()
+    graph.deserialize(graph_data)
+
+    n_var = graph.numberOfNodes
+    uv_ids = graph.uvIds()
+    assert n_var == uv_ids.max() + 1
+    assert len(costs) == len(uv_ids)
+    return n_var, uv_ids, costs
+
 
 def read_from_mcppl(uv_path, costs_path):
     uv_ids = vigra.readHDF5(uv_path, 'data')

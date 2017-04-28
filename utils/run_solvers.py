@@ -54,6 +54,7 @@ def run_fusion_moves_opengm(n_var, uv_ids, costs,
     return res_node, e_glob, t_inf
 
 
+# TODO get lower bound
 def run_ilp_opengm(n_var, uv_ids, costs,
         verbose = False):
     # set up the opengm model
@@ -180,12 +181,14 @@ def write_to_opengm(n_var, uv_ids, costs, out_file):
     opengm.saveGm(gm_global, out_file)
 
 
-def run_mc_mp_cmdline(n_var, uv_ids, costs):
+def run_mc_mp_cmdline(n_var, uv_ids, costs,
+        max_iter = 2500):
     write_to_opengm('./tmp.gm')
     t_inf = time.time()
 
     binary = '/home/constantin/Work/software/bld/LP_MP/solvers/multicut/multicut_opengm_srmp_cycle'
-    subprocess.call([
+    #subprocess.call([
+    output = subprocess.check_output([
         binary,
         '-i', './tmp.gm',
         '--tighten',
@@ -196,7 +199,7 @@ def run_mc_mp_cmdline(n_var, uv_ids, costs):
         '--tightenSlope', '0.02',
         '--tightenConstraintsPercentage', '0.1',
         '--primalComputationInterval', '100',
-        '--maxIter', '5000'
+        '--maxIter', str(max_iter)
         ],
         shell = True
     )
