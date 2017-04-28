@@ -3,7 +3,7 @@ from functools import partial
 import sys
 sys.path.append('..')
 from utils import *
-from model_paths import model_paths_new, models_paths_mcluigi
+from model_paths import model_paths_new, model_paths_mcluigi
 
 def compare_opengm_nifty(sample):
 
@@ -37,7 +37,7 @@ def sampleD_problems():
 
     def _run(size, solver):
         n_var, uv_ids, costs = read_from_mcluigi(
-                models_paths_mcluigi['sampleD_%s' % size])
+                model_paths_mcluigi['sampleD_%s' % size])
         _, energy, runtime = solver(n_var, uv_ids, costs)
         return energy, runtime
 

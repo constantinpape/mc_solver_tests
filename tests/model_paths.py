@@ -10,7 +10,7 @@ model_paths_new_opengm = {
     'sampleC' : '../models/sampleC_opengm.gm',
 }
 
-models_paths_mcluigi = {
+model_paths_mcluigi = {
     'sampleD_medium'   : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD_subsample2/ReducedProblem_50_512_512_modifed.h5',
     'sampleD_large'    : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD_subsample2/MulticutProblem_modifed.h5',
     'sampleD_huge'     : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD/ReducedProblem_400_4096_4096_modifed.h5',
