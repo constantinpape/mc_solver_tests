@@ -5,6 +5,9 @@ import vigra
 def read_from_opengm(model_path):
     pass
 
+def read_from_mcluigi(model_path):
+    pass
+
 def read_from_mcppl(uv_path, costs_path):
     uv_ids = vigra.readHDF5(uv_path, 'data')
     # assert uvs are consecutive and start at 0
