@@ -18,7 +18,7 @@ def parse_and_save_out_niftyfm(out, save_path):
             if line.startswith('end inference'):
                 break
             else:
-                raise RuntimeError("Invalid line: %s" % line)
+                continue
         values = line.split()
         energies.append(float(values[1]))
         run_times.append(int(values[3]))
@@ -41,7 +41,7 @@ def parse_and_save_out_niftyilp(out, save_path):
             if line.startswith('end inference'):
                 break
             else:
-                raise RuntimeError("Invalid line: %s" % line)
+                continue
         values = line.split()
         energies.append(float(values[1]))
         run_times.append(int(values[3]))
@@ -105,7 +105,9 @@ def anytime_data():
         os.mkdir(save_folder)
 
     for sample in ('sampleA', 'sampleB', 'sampleC'):
-        for solver in ('fm', 'mcmp_py', 'mcmp_cmd', 'ilp'):
+        print sample
+        for solver in ('ilp', 'fm', 'mcmp_py', 'mcmp_cmd'):
+            print solver
             out = _run(sample, solver)
             if solver == 'fm':
                 parse_and_save_out_niftyfm(out, save_folder + '/%s_%s.h5' % (sample, solver))
