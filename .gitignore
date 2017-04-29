@@ -1,3 +1,4 @@
 *.pyc
 *.pkl
+*.h5
 models/*
