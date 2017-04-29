@@ -50,7 +50,6 @@ def run_fusion_moves_opengm(n_var, uv_ids, costs,
     return res_node, e_glob, t_inf
 
 
-# TODO get lower bound
 def run_ilp_opengm(n_var, uv_ids, costs,
         verbose = False):
     # set up the opengm model
@@ -90,7 +89,8 @@ def run_ilp_opengm(n_var, uv_ids, costs,
 def run_fusion_moves_nifty(n_var, uv_ids, costs,
         n_threads = 20,
         seed_fraction = 0.001,
-        verbose = False
+        verbose = False,
+        timeout = 0
         ):
 
     g = nifty.graph.UndirectedGraph(n_var)
@@ -123,8 +123,16 @@ def run_fusion_moves_nifty(n_var, uv_ids, costs,
 
     solver = factory.create(obj)
 
-    if verbose:
-        visitor = obj.multicutVerboseVisitor(1)
+    if verbose or timeout > 0:
+        with_visitor = True
+        if verbose and timeout > 0:
+            visitor = obj.multicutVerboseVisitor(1, timeout)
+        elif not verbose:
+            visitor = obj.multicutVerboseVisitor(1000000, timeout)
+        else:
+            visitor = obj.multicutVerboseVisitor(1)
+
+    if with_visitor:
         ret = solver.optimize(nodeLabels=ret,visitor=visitor)
     else:
         ret = solver.optimize(nodeLabels=ret)
@@ -134,7 +142,8 @@ def run_fusion_moves_nifty(n_var, uv_ids, costs,
 
 
 def run_ilp_nifty(n_var, uv_ids, costs,
-        verbose = False):
+        verbose = False,
+        timeout = 0):
 
     g = nifty.graph.UndirectedGraph(int(n_var))
     g.insertEdges(uv_ids)
@@ -149,8 +158,16 @@ def run_ilp_nifty(n_var, uv_ids, costs,
         addOnlyViolatedThreeCyclesConstraints=True
     ).create(obj)
 
-    if verbose:
-        visitor = obj.multicutVerboseVisitor(1)
+    if verbose or timeout > 0:
+        with_visitor = True
+        if verbose and timeout > 0:
+            visitor = obj.multicutVerboseVisitor(1, timeout)
+        elif not verbose:
+            visitor = obj.multicutVerboseVisitor(1000000, timeout)
+        else:
+            visitor = obj.multicutVerboseVisitor(1)
+
+    if with_visitor:
         ret = solver.optimize(visitor=visitor)
     else:
         ret = solver.optimize()
@@ -200,17 +217,17 @@ def run_mc_mp_cmdline(n_var, uv_ids, costs,
         shell = True
     )
     t_inf = time.time() - t_inf
-    # TODO parse commandline out put to get the primal and lower bound
     os.remove('./tmp.gm')
     return _, _, t_inf
 
 
 def run_mc_mp_pybindings(n_var, uv_ids, costs,
-        max_iter = 2500):
+        max_iter = 2500,
+        timeout  = 0):
 
     # dirty hack for lp_mp pybindings
     import sys
-    sys.path.append('/home/consti/Work/software/bld/LP_MP/python')
+    sys.path.append('/home/constantin/Work/software/bld/LP_MP/python')
     import lp_mp
 
     # nifty graph and objective for node labels and energy
@@ -220,7 +237,9 @@ def run_mc_mp_pybindings(n_var, uv_ids, costs,
     assert g.numberOfEdges == uv_ids.shape[0], "%i, %i" % (g.numberOfEdges, uv_ids.shape[0])
     obj = nifty.graph.multicut.multicutObjective(g, costs)
 
-    multicut_opts = lp_mp.solvers.MulticutOptions(maxIter = max_iter)
+    multicut_opts = lp_mp.solvers.MulticutOptions(
+            maxIter = max_iter,
+            timeout = timeout)
     t_inf = time.time()
     # FIXME make this compatible with numpy arrays for uv_ids too
     mc_edges = lp_mp.solvers.multicut(
