@@ -17,13 +17,14 @@ def parse_args():
 
     n_var, uv_ids, costs = read_from_mcluigi(args.model_path)
     solver_type = args.solver_type
+    timeout     = args.timeout
     assert solver_type in ('fm', 'mcmp_py', 'ilp')
     if solver_type == 'fm':
-        solver = partial(run_fusion_moves_nifty, verbose = True, timeout = timeout)
+        solver = partial(run_fusion_moves_nifty, verbose = True, timeout = timeout, seed_fraction = 1e-5)
     elif solver_type == 'ilp':
         solver = partial(run_ilp_nifty, verbose = True, timeout = timeout)
     elif solver_type == 'mcmp_py':
-        solver = partial(run_mc_mp_pybindings, timeout = timeout)
+        solver = partial(run_mc_mp_pybindings, timeout = timeout, max_iter = long(1e8))
 
     return n_var, uv_ids, costs, solver
 

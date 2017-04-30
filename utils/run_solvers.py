@@ -32,7 +32,7 @@ def run_fusion_moves_opengm(n_var, uv_ids, costs,
     pparam = opengm.InfParam(seedFraction = seed_fraction)
     parameter = opengm.InfParam(generator='randomizedWatershed',
                                 proposalParam=pparam,
-                                numStopIt = 3000,
+                                numStopIt = 5000,
                                 numIt = 20)
 
     inf = opengm.inference.IntersectionBased(gm, parameter=parameter)

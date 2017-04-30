@@ -4,7 +4,7 @@ import os
 import re
 import cPickle as pickle
 import numpy as np
-from model_paths import model_paths_new
+from model_paths import model_paths_new, model_paths_mcluigi
 
 def parse_and_save_out_niftyfm(out, save_path):
     out = out.split('\n')
@@ -91,7 +91,7 @@ def parse_and_save_out_mcmp(out, save_path):
     vigra.writeHDF5(dual, save_path, 'dual')
 
 
-def anytime_data():
+def anytime_data_small_samples():
 
     def _run(sample, solver_type):
         assert solver_type in ('fm', 'mcmp_py', 'mcmp_cmd', 'ilp')
@@ -117,5 +117,34 @@ def anytime_data():
                 parse_and_save_out_mcmp(out, save_folder + '/%s_%s.h5' % (sample, solver))
 
 
+def anytime_data_sampleD():
+
+    # 4 hours default timeout
+    def _run(sample, solver_type, timeout = 4 * 3600):
+        assert solver_type in ('fm', 'mcmp_py', 'mcmp_cmd', 'ilp')
+        model_path = model_paths_mcluigi[sample]
+        out = subprocess.check_output(
+                ['python', 'single_solver_sampleD.py', model_path, solver_type, str(timeout)])
+        return out
+
+    save_folder = './anytime_data'
+    if not os.path.exists(save_folder):
+        os.mkdir(save_folder)
+
+    for sample in ('sampleD_medium', 'sampleD_large'):
+        print sample
+        for solver in ('fm', 'mcmp_py'):
+            print solver
+            if solver == 'fm' and sample == 'sampleD_medium':
+                continue
+            out = _run(sample, solver)
+            if solver == 'fm':
+                parse_and_save_out_niftyfm(out, save_folder + '/%s_%s.h5' % (sample, solver))
+            elif solver == 'ilp':
+                parse_and_save_out_niftyilp(out, save_folder + '/%s_%s.h5' % (sample, solver))
+            else:
+                parse_and_save_out_mcmp(out, save_folder + '/%s_%s.h5' % (sample, solver))
+
+
 if __name__ == '__main__':
-    anytime_data()
+    anytime_data_sampleD()
