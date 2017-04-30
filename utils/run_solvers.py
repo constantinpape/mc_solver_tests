@@ -227,7 +227,8 @@ def run_mc_mp_pybindings(n_var, uv_ids, costs,
 
     # dirty hack for lp_mp pybindings
     import sys
-    sys.path.append('/home/constantin/Work/software/bld/LP_MP/python')
+    #sys.path.append('/home/constantin/Work/software/bld/LP_MP/python')
+    sys.path.append('/home/consti/Work/software/bld/LP_MP/python')
     import lp_mp
 
     # nifty graph and objective for node labels and energy

@@ -52,17 +52,28 @@ def parse_and_save_out_niftyilp(out, save_path):
     vigra.writeHDF5(n_violated ,save_path, 'n_violated')
 
 
-def parse_and_save_out_mcmp(out, save_path):
+def parse_and_save_out_mcmp(out, save_path, save_out = False):
+
+    if save_out:
+        with open(save_path[:-3] + '.pkl', 'w') as f:
+            pickle.dump(out, f)
+
     out = out.split('\n')
 
-    # TODO also scrape the dual gaps etc
     primal    = []
     dual      = []
     rt_primal = []
     rt_dual   = []
+    dual_improvements = []
+
     for line in out:
+        if line.startswith('best triplet'):
+            line = line.split()
+            dual_improvements.append(line[-1])
+
         if not line.startswith('iteration'):
             continue
+
         line = line.split()
         iter_num    = int(''.join(c for c in line[2] if c.isdigit()))
         lower_bound = float(''.join(c for c in line[6] if c.isdigit() or c == '-'))
@@ -89,6 +100,7 @@ def parse_and_save_out_mcmp(out, save_path):
     vigra.writeHDF5(primal, save_path, 'primal')
     vigra.writeHDF5(rt_dual, save_path, 'rt_dual')
     vigra.writeHDF5(dual, save_path, 'dual')
+    vigra.writeHDF5(dual_improvements, save_path, 'dual_improvements')
 
 
 def anytime_data_small_samples():
@@ -106,7 +118,8 @@ def anytime_data_small_samples():
 
     for sample in ('sampleA', 'sampleB', 'sampleC'):
         print sample
-        for solver in ('ilp', 'fm', 'mcmp_py', 'mcmp_cmd'):
+        for solver in ('ilp', 'fm', 'mcmp_py'):
+        #for solver in ('mcmp_py',):
             print solver
             out = _run(sample, solver)
             if solver == 'fm':
@@ -114,7 +127,7 @@ def anytime_data_small_samples():
             elif solver == 'ilp':
                 parse_and_save_out_niftyilp(out, save_folder + '/%s_%s.h5' % (sample, solver))
             else:
-                parse_and_save_out_mcmp(out, save_folder + '/%s_%s.h5' % (sample, solver))
+                parse_and_save_out_mcmp(out, save_folder + '/%s_%s__.h5' % (sample, solver), True)
 
 
 def anytime_data_sampleD():
@@ -147,4 +160,4 @@ def anytime_data_sampleD():
 
 
 if __name__ == '__main__':
-    anytime_data_sampleD()
+    anytime_data_small_samples()
