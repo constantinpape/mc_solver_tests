@@ -231,12 +231,15 @@ def write_to_opengm(n_var, uv_ids, costs, out_file):
 
 def run_mc_mp_cmdline(n_var, uv_ids, costs,
         max_iter = 1000):
-    write_to_opengm('./tmp.gm')
-    t_inf = time.time()
+    write_to_opengm(n_var, uv_ids, costs, './tmp.gm')
 
-    binary = '/home/constantin/Work/software/bld/LP_MP/solvers/multicut/multicut_opengm_srmp_cycle'
-    #subprocess.call([
-    output = subprocess.check_output([
+    # TODO with or without odd_wheel ?
+    #binary = '/home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel'
+
+    binary = '/home/consti/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel'
+
+    t_inf = time.time()
+    out = subprocess.check_output([
         binary,
         '-i', './tmp.gm',
         '--tighten',
@@ -248,12 +251,17 @@ def run_mc_mp_cmdline(n_var, uv_ids, costs,
         '--tightenConstraintsPercentage', '0.1',
         '--primalComputationInterval', '100',
         '--maxIter', str(max_iter)
-        ],
-        shell = True
+        ]
+        #,shell = True
     )
     t_inf = time.time() - t_inf
+
+    out = out.split('\n')
+    l_energy = out[-7].split()
+    energy = float(l_energy[-1])
+
     os.remove('./tmp.gm')
-    return _, _, t_inf
+    return np.zeros(n_var), energy, t_inf
 
 
 def run_mc_mp_pybindings(n_var, uv_ids, costs,
@@ -276,8 +284,9 @@ def run_mc_mp_pybindings(n_var, uv_ids, costs,
     multicut_opts = lp_mp.solvers.MulticutOptions(
             maxIter = max_iter,
             timeout = timeout)
-    t_inf = time.time()
+
     # FIXME make this compatible with numpy arrays for uv_ids too
+    t_inf = time.time()
     mc_edges = lp_mp.solvers.multicut(
             [(uv[0],uv[1]) for uv in uv_ids],
             costs,

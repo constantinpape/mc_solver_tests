@@ -5,6 +5,7 @@ sys.path.append('..')
 from utils import *
 from model_paths import model_paths_new, model_paths_mcluigi
 
+
 def compare_opengm_nifty(sample):
 
     paths = model_paths_new[sample]
@@ -31,6 +32,47 @@ def compare_opengm_nifty(sample):
     print "Nifty: primal: %f, t-inf: %f"  % (e_ilp_nifty,  t_ilp_nifty)
     print "Opengm: primal: %f, t-inf: %f" % (e_ilp_opengm, t_ilp_opengm)
     print
+
+
+# compare the main algorithms in nifty on the small samples
+def compare_nifty_algos(sample):
+
+    def _run(sample):
+
+        # FIXME this is not working multi-threaded yet, maybe due to the async call in LP_MP ?!
+        print "Run nifty fm-mp"
+        _, e_fmmp, t_fmmp = run_fusion_moves_nifty(n_var, uv_ids, costs, backend = 'mp', n_threads = 1)
+
+        print "Run nifty fm-ilp"
+        _, e_fmilp, t_fmilp = run_fusion_moves_nifty(n_var, uv_ids, costs, backend = 'ilp', n_threads = 20)
+
+        print "Run nifty ilp"
+        _, e_ilp, t_ilp = run_fusion_moves_nifty(n_var, uv_ids, costs, backend = 'ilp', n_threads = 20)
+
+        print "Run nifty mp"
+        _, e_mp, t_mp = run_mp_nifty(n_var, uv_ids, costs)
+
+        return e_fmmp, t_fmmp, e_fmilp, t_fmilp, e_ilp, t_ilp, e_mp, t_mp
+
+
+    samples = ('sampleA', 'sampleB', 'sampleC')
+
+    res_dict = {}
+    for sample in samples:
+        res_dict[sample] = _run(sample)
+
+    for sample in ('sampleA', 'sampleB', 'sampleC'):
+        e_fmmp, t_fmmp, e_fmilp, t_fmilp, e_ilp, t_ilp, e_mp, t_mp = res_dict[sample]
+        print
+        print "Summary for %s:" % sample
+        print "FM MP : primal: %f, t-inf: %f" % (e_fmmp, t_fmmp)
+        print "FM IlP: primal: %f, t-inf: %f" % (e_fmilp, t_fmilp)
+        print "Ilp   : primal: %f, t-inf: %f" % (e_ilp, t_ilp)
+        print "Mp    : primal: %f, t-inf: %f" % (e_mp, t_mp)
+        print
+
+
+
 
 
 def sampleD_problems():
@@ -62,31 +104,7 @@ def sampleD_problems():
             print "Runtime: %f" % t
 
 
-
-def nifty_mp_tests(sample):
-
-    paths = model_paths_new[sample]
-    n_var, uv_ids, costs = read_from_mcppl(paths[0], paths[1])
-
-    # FIXME this is not working multi-threaded yet, maybe due to the async call in LP_MP ?!
-    print "Run nifty fm-mp"
-    _, e_fm_nifty, t_fm_nifty = run_fusion_moves_nifty(n_var, uv_ids, costs, backend = 'mp', n_threads = 1)
-    print "Run nifty mp"
-    _, e_mp_nifty, t_mp_nifty = run_mp_nifty(n_var, uv_ids, costs)
-    print "Run LP_MP mp"
-    _, e_mp_lpmp, t_mp_lpmp = run_mc_mp_pybindings(n_var, uv_ids, costs)
-
-    print
-    print "Summary for %s:" % sample
-    print "Message passing multicut:"
-    print "Nifty-fm mp: primal: %f, t-inf: %f" % (e_fm_nifty, t_fm_nifty)
-    print "Nifty: primal: %f, t-inf: %f" % (e_mp_nifty, t_mp_nifty)
-    print "LP_MP: primal: %f, t-inf: %f" % (e_mp_lpmp, t_mp_lpmp)
-    print
-
-
 if __name__ == '__main__':
-    nifty_mp_tests('sampleA')
-    #sampleD_problems()
-    #for sample in ('sampleA', 'sampleB', 'sampleC'):
-    #    compare_opengm_nifty(sample)
+    sampleD_problems()
+    for sample in ('sampleA', 'sampleB', 'sampleC'):
+        compare_opengm_nifty(sample)
