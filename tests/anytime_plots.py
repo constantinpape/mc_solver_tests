@@ -69,5 +69,33 @@ def nifty_vs_mcmp(with_dual = False, with_ilp = False):
                 sample)
 
 
+def sampleD_plots(with_dual = False):
+    for sample in ('sampleD_medium', 'sampleD_large'):
+        times = [
+                #vigra.readHDF5(   './anytime_data/%s_fm.h5' % sample,  'run_times'),
+                vigra.readHDF5(   './anytime_data/%s_mcmp_py.h5'% sample, 'rt_primal')
+        ]
+        energies = [
+                #vigra.readHDF5('./anytime_data/%s_fm.h5'% sample,   'energies'),
+                vigra.readHDF5('./anytime_data/%s_mcmp_py.h5'% sample, 'primal')
+        ]
+        labels = [
+                #'fm',
+                'mcmp-primal'
+                ]
+
+        if with_dual:
+            times.append( vigra.readHDF5(   './anytime_data/%s_mcmp_py.h5'% sample, 'rt_dual') )
+            energies.append( vigra.readHDF5('./anytime_data/%s_mcmp_py.h5'% sample, 'dual'))
+            labels.append('mcmp-dual')
+
+        plot_energies_sample(
+                times,
+                energies,
+                labels,
+                sample)
+
+
 if __name__ == '__main__':
-    nifty_vs_mcmp(with_dual = True)
+    #nifty_vs_mcmp(with_dual = True)
+    sampleD_plots()

@@ -22,7 +22,7 @@ def parse_args():
     elif solver_type == 'mcmp_py':
         solver = run_mc_mp_pybindings
     elif solver_type == 'mcmp_cmd':
-        solver = run_mc_mp_pybindings
+        solver = run_mc_mp_cmdline
 
     return n_var, uv_ids, costs, solver
 

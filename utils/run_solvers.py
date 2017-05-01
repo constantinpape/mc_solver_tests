@@ -8,6 +8,9 @@ import opengm
 import nifty
 ilp_bkend = 'cplex'
 
+################################################
+#### OpenGM Solver
+################################################
 
 def run_fusion_moves_opengm(n_var, uv_ids, costs,
         n_threads = 20,
@@ -86,33 +89,43 @@ def run_ilp_opengm(n_var, uv_ids, costs,
     return res_node, e_glob, t_inf
 
 
-def run_fusion_moves_nifty(n_var, uv_ids, costs,
-        n_threads = 20,
-        seed_fraction = 0.001,
-        verbose = False,
-        timeout = 0
-        ):
+################################################
+#### Nifty Solver
+################################################
 
+
+def nifty_mc_objective(n_var, uv_ids, costs):
     g = nifty.graph.UndirectedGraph(n_var)
     g.insertEdges(uv_ids)
     assert g.numberOfEdges == uv_ids.shape[0], "%i, %i" % (g.numberOfEdges, uv_ids.shape[0])
     assert g.numberOfEdges == costs.shape[0],  "%i, %i" % (g.numberOfEdges, costs.shape[0])
+    return nifty.graph.multicut.multicutObjective(g, costs)
 
-    obj = nifty.graph.multicut.multicutObjective(g, costs)
+
+def run_fusion_moves_nifty(n_var, uv_ids, costs,
+        n_threads = 20,
+        seed_fraction = 0.001,
+        verbose = False,
+        timeout = 0,
+        backend = 'ilp'
+        ):
+    obj = nifty_mc_objective(n_var, uv_ids, costs)
 
     greedy = obj.greedyAdditiveFactory().create(obj)
-    ret    = greedy.optimize()
 
-    t_inf = time.time()
-
-    ilpFac = obj.multicutIlpFactory(ilpSolver=ilp_bkend,verbose=0,
-        addThreeCyclesConstraints=True,
-        addOnlyViolatedThreeCyclesConstraints=True
-    )
+    if backend == 'ilp':
+        backend_factory = obj.multicutIlpFactory(ilpSolver=ilp_bkend,verbose=0,
+            addThreeCyclesConstraints=True,
+            addOnlyViolatedThreeCyclesConstraints=True
+        )
+    else:
+        assert backend == 'mp'
+        # TODO need to add meaningful stoping criteria
+        backend_factory = obj.multicutMpFactory(numberOfIterations = 500)
 
     factory = obj.fusionMoveBasedFactory(
         verbose=1,
-        fusionMove=obj.fusionMoveSettings(mcFactory=ilpFac),
+        fusionMove=obj.fusionMoveSettings(mcFactory=backend_factory),
         proposalGen=obj.watershedProposals(sigma=10, seedFraction=seed_fraction),
         numberOfIterations = 3000,
         numberOfParallelProposals = 2*n_threads,
@@ -123,6 +136,7 @@ def run_fusion_moves_nifty(n_var, uv_ids, costs,
 
     solver = factory.create(obj)
 
+    with_visitor = False
     if verbose or timeout > 0:
         with_visitor = True
         if verbose and timeout > 0:
@@ -132,6 +146,8 @@ def run_fusion_moves_nifty(n_var, uv_ids, costs,
         else:
             visitor = obj.multicutVerboseVisitor(1)
 
+    t_inf = time.time()
+    ret    = greedy.optimize()
     if with_visitor:
         ret = solver.optimize(nodeLabels=ret,visitor=visitor)
     else:
@@ -144,20 +160,14 @@ def run_fusion_moves_nifty(n_var, uv_ids, costs,
 def run_ilp_nifty(n_var, uv_ids, costs,
         verbose = False,
         timeout = 0):
-
-    g = nifty.graph.UndirectedGraph(int(n_var))
-    g.insertEdges(uv_ids)
-    assert g.numberOfEdges == costs.shape[0], "%i , %i" % (g.numberOfEdges, costs.shape[0])
-    assert g.numberOfEdges == uv_ids.shape[0], "%i, %i" % (g.numberOfEdges, uv_ids.shape[0])
-    obj = nifty.graph.multicut.multicutObjective(g, costs)
-
-    t_inf = time.time()
+    obj = nifty_mc_objective(n_var, uv_ids, costs)
 
     solver = obj.multicutIlpFactory(ilpSolver=ilp_bkend,verbose=0,
         addThreeCyclesConstraints=True,
         addOnlyViolatedThreeCyclesConstraints=True
     ).create(obj)
 
+    with_visitor = False
     if verbose or timeout > 0:
         with_visitor = True
         if verbose and timeout > 0:
@@ -167,15 +177,40 @@ def run_ilp_nifty(n_var, uv_ids, costs,
         else:
             visitor = obj.multicutVerboseVisitor(1)
 
+    t_inf = time.time()
     if with_visitor:
         ret = solver.optimize(visitor=visitor)
     else:
         ret = solver.optimize()
-
     t_inf = time.time() - t_inf
 
     mc_energy = obj.evalNodeLabels(ret)
     return ret, mc_energy, t_inf
+
+
+def run_mp_nifty(n_var, uv_ids, costs,
+        max_iter = 1000,
+        timeout = 0
+        ):
+    obj = nifty_mc_objective(n_var, uv_ids, costs)
+
+    solver = obj.multicutMpFactory(
+            timeout = timeout,
+            numberOfIterations = max_iter
+    ).create(obj)
+
+    t_inf = time.time()
+    ret = solver.optimize()
+    t_inf = time.time() - t_inf
+
+    mc_energy = obj.evalNodeLabels(ret)
+    return ret, mc_energy, t_inf
+
+
+
+################################################
+#### LP_MP Solver
+################################################
 
 
 def write_to_opengm(n_var, uv_ids, costs, out_file):
@@ -195,7 +230,7 @@ def write_to_opengm(n_var, uv_ids, costs, out_file):
 
 
 def run_mc_mp_cmdline(n_var, uv_ids, costs,
-        max_iter = 2500):
+        max_iter = 1000):
     write_to_opengm('./tmp.gm')
     t_inf = time.time()
 
@@ -222,7 +257,7 @@ def run_mc_mp_cmdline(n_var, uv_ids, costs,
 
 
 def run_mc_mp_pybindings(n_var, uv_ids, costs,
-        max_iter = 2500,
+        max_iter = 1000,
         timeout  = 0):
 
     # dirty hack for lp_mp pybindings
