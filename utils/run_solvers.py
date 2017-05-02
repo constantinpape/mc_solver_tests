@@ -235,11 +235,14 @@ def run_mc_mp_cmdline(n_var, uv_ids, costs,
 
     # TODO with or without odd_wheel ?
     #binary = '/home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel'
+    #binary = '/home/consti/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel'
 
-    binary = '/home/consti/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel'
+    binary = '/home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel'
 
     t_inf = time.time()
-    out = subprocess.check_output([
+    #out = subprocess.check_output(
+    subprocess.call(
+        [
         binary,
         '-i', './tmp.gm',
         '--tighten',
@@ -250,15 +253,16 @@ def run_mc_mp_cmdline(n_var, uv_ids, costs,
         '--tightenSlope', '0.02',
         '--tightenConstraintsPercentage', '0.1',
         '--primalComputationInterval', '100',
-        '--maxIter', str(max_iter)
+        '--maxIter', '1000' #str(max_iter)
         ]
         #,shell = True
     )
     t_inf = time.time() - t_inf
 
-    out = out.split('\n')
-    l_energy = out[-7].split()
-    energy = float(l_energy[-1])
+    #out = out.split('\n')
+    #l_energy = out[-7].split()
+    #energy = float(l_energy[-1])
+    energy = -100
 
     os.remove('./tmp.gm')
     return np.zeros(n_var), energy, t_inf
@@ -270,8 +274,8 @@ def run_mc_mp_pybindings(n_var, uv_ids, costs,
 
     # dirty hack for lp_mp pybindings
     import sys
-    #sys.path.append('/home/constantin/Work/software/bld/LP_MP/python')
-    sys.path.append('/home/consti/Work/software/bld/LP_MP/python')
+    sys.path.append('/home/constantin/Work/software/bld/LP_MP/python')
+    #sys.path.append('/home/consti/Work/software/bld/LP_MP/python')
     import lp_mp
 
     # nifty graph and objective for node labels and energy
