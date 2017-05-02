@@ -6,13 +6,11 @@ from utils import run_fusion_moves_nifty, run_ilp_nifty, run_mc_mp_cmdline, run_
 from utils import read_from_mcppl
 
 def parse_args():
-    print "Parsing"
     parser = argparse.ArgumentParser()
     parser.add_argument("uv_path", type = str)
     parser.add_argument("cost_path", type = str)
     parser.add_argument("solver_type", type = str)
     args = parser.parse_args()
-    print "Parsing"
 
     n_var, uv_ids, costs = read_from_mcppl(args.uv_path, args.cost_path)
     solver_type = args.solver_type
