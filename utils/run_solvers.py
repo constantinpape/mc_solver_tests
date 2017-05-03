@@ -230,7 +230,8 @@ def write_to_opengm(n_var, uv_ids, costs, out_file):
 
 
 def run_mc_mp_cmdline(n_var, uv_ids, costs,
-        max_iter = 1000):
+        max_iter = 1000,
+        out_file = ''):
     write_to_opengm(n_var, uv_ids, costs, './tmp.gm')
 
     # TODO with or without odd_wheel ?
@@ -239,10 +240,7 @@ def run_mc_mp_cmdline(n_var, uv_ids, costs,
 
     binary = '/home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel'
 
-    t_inf = time.time()
-    #out = subprocess.check_output(
-    subprocess.call(
-        [
+    options =  [
         binary,
         '-i', './tmp.gm',
         '--tighten',
@@ -254,8 +252,16 @@ def run_mc_mp_cmdline(n_var, uv_ids, costs,
         '--tightenConstraintsPercentage', '0.1',
         '--primalComputationInterval', '100',
         '--maxIter', '1000' #str(max_iter)
-        ]
-        #,shell = True
+    ]
+
+    if out_file != '':
+        options.append('-o')
+        options.append(out_file)
+
+    t_inf = time.time()
+    #out = subprocess.check_output(
+    subprocess.call(
+        options
     )
     t_inf = time.time() - t_inf
 

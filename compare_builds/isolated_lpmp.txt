@@ -1,0 +1,31 @@
+Compile-Command
+/usr/bin/c++
+    -DIL_STD -DWITH_SAT -D_BSD_SOURCE -D_FORTIFY_SOURCE=2 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -D_solvers_EXPORTS
+    -O3 -DNDEBUG -march=native -fPIC 
+    -I/home/constantin/Work/software/src/LP_MP/external/meta/include 
+    -I/home/constantin/Work/software/src/LP_MP/external/Catch/include 
+    -I/home/constantin/Work/software/src/LP_MP/external/cpp_sort/include 
+    -I/home/constantin/Work/software/src/LP_MP/external/opengm/include 
+    -I/home/constantin/Work/software/src/LP_MP/external/PEGTL 
+    -I/home/constantin/Work/software/src/LP_MP/external/graph/include 
+    -I/home/constantin/Work/software/src/LP_MP/external/cereal/include 
+    -I/home/constantin/Work/software/src/LP_MP/external/tclap/include 
+    -I/home/constantin/Work/software/bld/LP_MP/lingeling-prefix/src/lingeling 
+    -I/home/constantin/Work/software/src/LP_MP/external/pybind11/include 
+    -I/home/constantin/Work/software/src/LP_MP/include 
+    -I/home/constantin/Work/software/src/LP_MP/lib 
+    -I/usr/include/python2.7    
+    -march=native -std=c++14 -flto -fno-fat-lto-objects -fvisibility=hidden 
+    -o CMakeFiles/_solvers.dir/export_multicut.cxx.o 
+    -c /home/constantin/Work/software/src/LP_MP/src/python/lib/solvers/export_multicut.cxx
+
+Linker-Command
+/usr/bin/cmake -E cmake_link_script CMakeFiles/_solvers.dir/link.txt --verbose=1
+/usr/bin/c++
+    -fPIC -O3 -DNDEBUG -march=native -O3 -DNDEBUG -march=native -shared -Wl,-soname,_solvers.so 
+    -o _solvers.so 
+    CMakeFiles/_solvers.dir/solvers.cxx.o 
+    CMakeFiles/_solvers.dir/export_multicut.cxx.o  
+    -L/home/constantin/Work/software/bld/LP_MP/lingeling-prefix/src/lingeling 
+    -flto -lpython2.7 -lm -lstdc++ -lpthread -lhdf5 -lpthread -lz -ldl -lm -llgl -Wl,-rpath,
+    /home/constantin/Work/software/bld/LP_MP/lingeling-prefix/src/lingeling 

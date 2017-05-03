@@ -1,0 +1,367 @@
+/usr/bin/cmake -H/home/constantin/Work/software/src/nifty -B/home/constantin/Work/software/bld/nifty --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/constantin/Work/software/bld/nifty/CMakeFiles /home/constantin/Work/software/bld/nifty/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make -f CMakeFiles/lingeling.dir/build.make CMakeFiles/lingeling.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/CMakeFiles/lingeling.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f CMakeFiles/lingeling.dir/build.make CMakeFiles/lingeling.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `CMakeFiles/lingeling.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  60 61 62 63 64 65 66 67
+[ 11%] Built target lingeling
+make -f externals/LP_MP/lib/SVM-NEW/CMakeFiles/SVM.dir/build.make externals/LP_MP/lib/SVM-NEW/CMakeFiles/SVM.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/externals/LP_MP/lib/SVM-NEW /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/externals/LP_MP/lib/SVM-NEW /home/constantin/Work/software/bld/nifty/externals/LP_MP/lib/SVM-NEW/CMakeFiles/SVM.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f externals/LP_MP/lib/SVM-NEW/CMakeFiles/SVM.dir/build.make externals/LP_MP/lib/SVM-NEW/CMakeFiles/SVM.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `externals/LP_MP/lib/SVM-NEW/CMakeFiles/SVM.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  1 2
+[ 14%] Built target SVM
+make -f src/python/lib/CMakeFiles/_nifty.dir/build.make src/python/lib/CMakeFiles/_nifty.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/_nifty.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/_nifty.dir/build.make src/python/lib/CMakeFiles/_nifty.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/python/lib/CMakeFiles/_nifty.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  47
+[ 15%] Built target _nifty
+make -f src/python/lib/CMakeFiles/copy_nifty___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_cgp___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_cgp___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_cgp___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_cgp___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_cgp___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/cgp/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/cgp/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_cgp___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_graph___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_graph___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_graph___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_graph___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_graph___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/graph/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/graph/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_graph___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_graph_agglo___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_graph_agglo___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_graph_agglo___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_graph_agglo___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_graph_agglo___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/graph/agglo/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/graph/agglo/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_graph_agglo___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_graph_lifted_multicut___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_graph_lifted_multicut___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_graph_lifted_multicut___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_graph_lifted_multicut___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_graph_lifted_multicut___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/graph/lifted_multicut/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/graph/lifted_multicut/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_graph_lifted_multicut___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_graph_multicut___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_graph_multicut___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_graph_multicut___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_graph_multicut___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_graph_multicut___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/graph/multicut/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/graph/multicut/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_graph_multicut___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_graph_rag___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_graph_rag___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_graph_rag___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_graph_rag___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_graph_rag___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/graph/rag/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/graph/rag/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_graph_rag___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_ground_truth___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_ground_truth___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_ground_truth___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_ground_truth___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_ground_truth___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/ground_truth/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/ground_truth/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_ground_truth___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_hdf5___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_hdf5___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_hdf5___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_hdf5___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_hdf5___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/hdf5/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/hdf5/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_hdf5___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_marray___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_marray___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_marray___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_marray___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_marray___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/marray/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/marray/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_marray___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_pipelines___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_pipelines___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_pipelines___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_pipelines___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_pipelines___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/pipelines/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/pipelines/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_pipelines___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_pipelines_neuro_seg___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_pipelines_neuro_seg___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_pipelines_neuro_seg___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_pipelines_neuro_seg___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_pipelines_neuro_seg___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/pipelines/neuro_seg/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/pipelines/neuro_seg/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_pipelines_neuro_seg___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_pipelines_supervoxel_pipeline.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_pipelines_supervoxel_pipeline.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_pipelines_supervoxel_pipeline.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_pipelines_supervoxel_pipeline.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_pipelines_supervoxel_pipeline.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/pipelines/supervoxel_pipeline.py /home/constantin/Work/software/bld/nifty/python/nifty/pipelines/supervoxel_pipeline.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_pipelines_supervoxel_pipeline.py
+make -f src/python/lib/CMakeFiles/copy_nifty_tools___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_tools___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_tools___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_tools___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_tools___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/tools/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/tools/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_tools___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_ufd___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_ufd___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_ufd___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_ufd___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_ufd___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/ufd/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/ufd/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_ufd___init__.py
+make -f src/python/lib/CMakeFiles/copy_nifty_viewer___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_viewer___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/copy_nifty_viewer___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/copy_nifty_viewer___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_nifty_viewer___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/nifty/src/python/module/nifty/viewer/__init__.py /home/constantin/Work/software/bld/nifty/python/nifty/viewer/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 15%] Built target copy_nifty_viewer___init__.py
+make -f src/python/lib/graph/CMakeFiles/_graph.dir/build.make src/python/lib/graph/CMakeFiles/_graph.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib/graph /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib/graph /home/constantin/Work/software/bld/nifty/src/python/lib/graph/CMakeFiles/_graph.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/graph/CMakeFiles/_graph.dir/build.make src/python/lib/graph/CMakeFiles/_graph.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/python/lib/graph/CMakeFiles/_graph.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  9 10 11 12
+[ 21%] Built target _graph
+make -f src/python/lib/graph/agglo/CMakeFiles/_agglo.dir/build.make src/python/lib/graph/agglo/CMakeFiles/_agglo.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib/graph/agglo /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib/graph/agglo /home/constantin/Work/software/bld/nifty/src/python/lib/graph/agglo/CMakeFiles/_agglo.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/graph/agglo/CMakeFiles/_agglo.dir/build.make src/python/lib/graph/agglo/CMakeFiles/_agglo.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/python/lib/graph/agglo/CMakeFiles/_agglo.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  3 4
+[ 24%] Built target _agglo
+make -f src/python/lib/graph/rag/CMakeFiles/_rag.dir/build.make src/python/lib/graph/rag/CMakeFiles/_rag.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib/graph/rag /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib/graph/rag /home/constantin/Work/software/bld/nifty/src/python/lib/graph/rag/CMakeFiles/_rag.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/graph/rag/CMakeFiles/_rag.dir/build.make src/python/lib/graph/rag/CMakeFiles/_rag.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/python/lib/graph/rag/CMakeFiles/_rag.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  49 50 51 52 53
+[ 31%] Built target _rag
+make -f src/python/lib/graph/multicut/CMakeFiles/_multicut.dir/build.make src/python/lib/graph/multicut/CMakeFiles/_multicut.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib/graph/multicut /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib/graph/multicut /home/constantin/Work/software/bld/nifty/src/python/lib/graph/multicut/CMakeFiles/_multicut.dir/DependInfo.cmake --color=
+Dependee "/home/constantin/Work/software/src/nifty/src/python/lib/graph/multicut/multicut_mp.cxx" is newer than depender "src/python/lib/graph/multicut/CMakeFiles/_multicut.dir/multicut_mp.cxx.o".
+Clearing dependencies in "/home/constantin/Work/software/bld/nifty/src/python/lib/graph/multicut/CMakeFiles/_multicut.dir/depend.make".
+Scanning dependencies of target _multicut
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/graph/multicut/CMakeFiles/_multicut.dir/build.make src/python/lib/graph/multicut/CMakeFiles/_multicut.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 42
+[ 33%] Building CXX object src/python/lib/graph/multicut/CMakeFiles/_multicut.dir/multicut_mp.cxx.o
+cd /home/constantin/Work/software/bld/nifty/src/python/lib/graph/multicut && /usr/bin/c++   -DWITH_CPLEX -DWITH_FASTFILTERS -DWITH_HDF5 -DWITH_LP_MP -DWITH_SAT -D_multicut_EXPORTS -O3 -DNDEBUG -march=native -fPIC -I/home/constantin/Work/software/src/nifty/externals/marray/include -I/home/constantin/Work/software/src/nifty/externals/pybind11/include -I/home/constantin/Work/software/src/nifty/externals/vigra/include -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/graph/include -I/home/constantin/Work/software/inst/cplex/cplex/include -I/home/constantin/Work/software/inst/cplex/concert/include -I/home/constantin/Work/software/src/fastfilters/include -I/home/constantin/Work/software/src/nifty/externals/LP_MP/include -I/home/constantin/Work/software/src/nifty/externals/LP_MP/lib -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/meta/include -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/Catch/include -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/cpp_sort/include -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/opengm/include -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/PEGTL -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/cereal/include -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/tclap/include -I/home/constantin/Work/software/bld/nifty/lingeling-prefix/src/lingeling -I/home/constantin/Work/software/src/nifty/include -I/usr/include/python2.7    -std=c++11 -flto -fno-fat-lto-objects -fvisibility=hidden -std=gnu++14 -o CMakeFiles/_multicut.dir/multicut_mp.cxx.o -c /home/constantin/Work/software/src/nifty/src/python/lib/graph/multicut/multicut_mp.cxx
+Linking CXX shared module _multicut.so
+cd /home/constantin/Work/software/bld/nifty/src/python/lib/graph/multicut && /usr/bin/cmake -E cmake_link_script CMakeFiles/_multicut.dir/link.txt --verbose=1
+/usr/bin/c++  -fPIC -O3 -DNDEBUG -march=native   -shared -Wl,-soname,_multicut.so -o _multicut.so CMakeFiles/_multicut.dir/multicut.cxx.o CMakeFiles/_multicut.dir/multicut_objective.cxx.o CMakeFiles/_multicut.dir/multicut_visitor_base.cxx.o CMakeFiles/_multicut.dir/multicut_base.cxx.o CMakeFiles/_multicut.dir/multicut_factory.cxx.o CMakeFiles/_multicut.dir/multicut_ilp.cxx.o CMakeFiles/_multicut.dir/multicut_mp.cxx.o CMakeFiles/_multicut.dir/multicut_greedy_additive.cxx.o CMakeFiles/_multicut.dir/fusion_move_based.cxx.o CMakeFiles/_multicut.dir/perturb_and_map.cxx.o  -L/home/constantin/Work/software/bld/nifty/lingeling-prefix/src/lingeling  -L/home/constantin/Work/software/inst/cplex/concert/lib/x86-64_linux/static_pic  -L/home/constantin/Work/software/inst/cplex/cplex/lib/x86-64_linux/static_pic -flto -lpython2.7 -lconcert -lilocplex -lcplex -lm -lpthread -lhdf5 -lhdf5_hl -lz -llgl -Wl,-rpath,/home/constantin/Work/software/bld/nifty/lingeling-prefix/src/lingeling:/home/constantin/Work/software/inst/cplex/concert/lib/x86-64_linux/static_pic:/home/constantin/Work/software/inst/cplex/cplex/lib/x86-64_linux/static_pic 
+cd /home/constantin/Work/software/bld/nifty/src/python/lib/graph/multicut && /usr/bin/strip /home/constantin/Work/software/bld/nifty/src/python/lib/graph/multicut/_multicut.so
+Copying target multicut to temporary module directory
+cd /home/constantin/Work/software/bld/nifty/src/python/lib/graph/multicut && /usr/bin/cmake -E copy_if_different /home/constantin/Work/software/bld/nifty/src/python/lib/graph/multicut/_multicut.so /home/constantin/Work/software/bld/nifty/python/nifty/graph/multicut/
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  36 37 38 39 40 41 42 43 44 45
+[ 46%] Built target _multicut
+make -f src/python/lib/graph/lifted_multicut/CMakeFiles/_lifted_multicut.dir/build.make src/python/lib/graph/lifted_multicut/CMakeFiles/_lifted_multicut.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib/graph/lifted_multicut /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib/graph/lifted_multicut /home/constantin/Work/software/bld/nifty/src/python/lib/graph/lifted_multicut/CMakeFiles/_lifted_multicut.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/graph/lifted_multicut/CMakeFiles/_lifted_multicut.dir/build.make src/python/lib/graph/lifted_multicut/CMakeFiles/_lifted_multicut.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/python/lib/graph/lifted_multicut/CMakeFiles/_lifted_multicut.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  24 25 26 27 28 29 30 31 32 33 34 35
+[ 63%] Built target _lifted_multicut
+make -f src/python/lib/hdf5/CMakeFiles/_hdf5.dir/build.make src/python/lib/hdf5/CMakeFiles/_hdf5.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib/hdf5 /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib/hdf5 /home/constantin/Work/software/bld/nifty/src/python/lib/hdf5/CMakeFiles/_hdf5.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/hdf5/CMakeFiles/_hdf5.dir/build.make src/python/lib/hdf5/CMakeFiles/_hdf5.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/python/lib/hdf5/CMakeFiles/_hdf5.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  19 20 21 22 23
+[ 71%] Built target _hdf5
+make -f src/python/lib/ground_truth/CMakeFiles/_ground_truth.dir/build.make src/python/lib/ground_truth/CMakeFiles/_ground_truth.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib/ground_truth /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib/ground_truth /home/constantin/Work/software/bld/nifty/src/python/lib/ground_truth/CMakeFiles/_ground_truth.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/ground_truth/CMakeFiles/_ground_truth.dir/build.make src/python/lib/ground_truth/CMakeFiles/_ground_truth.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/python/lib/ground_truth/CMakeFiles/_ground_truth.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  13 14 15 16 17 18
+[ 79%] Built target _ground_truth
+make -f src/python/lib/pipelines/CMakeFiles/_pipelines.dir/build.make src/python/lib/pipelines/CMakeFiles/_pipelines.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib/pipelines /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib/pipelines /home/constantin/Work/software/bld/nifty/src/python/lib/pipelines/CMakeFiles/_pipelines.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/pipelines/CMakeFiles/_pipelines.dir/build.make src/python/lib/pipelines/CMakeFiles/_pipelines.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/python/lib/pipelines/CMakeFiles/_pipelines.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  48
+[ 81%] Built target _pipelines
+make -f src/python/lib/pipelines/neuro_seg/CMakeFiles/_neuro_seg.dir/build.make src/python/lib/pipelines/neuro_seg/CMakeFiles/_neuro_seg.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib/pipelines/neuro_seg /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib/pipelines/neuro_seg /home/constantin/Work/software/bld/nifty/src/python/lib/pipelines/neuro_seg/CMakeFiles/_neuro_seg.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/pipelines/neuro_seg/CMakeFiles/_neuro_seg.dir/build.make src/python/lib/pipelines/neuro_seg/CMakeFiles/_neuro_seg.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/python/lib/pipelines/neuro_seg/CMakeFiles/_neuro_seg.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  46
+[ 82%] Built target _neuro_seg
+make -f src/python/lib/tools/CMakeFiles/_tools.dir/build.make src/python/lib/tools/CMakeFiles/_tools.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib/tools /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib/tools /home/constantin/Work/software/bld/nifty/src/python/lib/tools/CMakeFiles/_tools.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/tools/CMakeFiles/_tools.dir/build.make src/python/lib/tools/CMakeFiles/_tools.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/python/lib/tools/CMakeFiles/_tools.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  54 55 56 57
+[ 88%] Built target _tools
+make -f src/python/lib/ufd/CMakeFiles/_ufd.dir/build.make src/python/lib/ufd/CMakeFiles/_ufd.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib/ufd /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib/ufd /home/constantin/Work/software/bld/nifty/src/python/lib/ufd/CMakeFiles/_ufd.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/ufd/CMakeFiles/_ufd.dir/build.make src/python/lib/ufd/CMakeFiles/_ufd.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/python/lib/ufd/CMakeFiles/_ufd.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  58 59
+[ 91%] Built target _ufd
+make -f src/python/lib/cgp/CMakeFiles/_cgp.dir/build.make src/python/lib/cgp/CMakeFiles/_cgp.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib/cgp /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib/cgp /home/constantin/Work/software/bld/nifty/src/python/lib/cgp/CMakeFiles/_cgp.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/cgp/CMakeFiles/_cgp.dir/build.make src/python/lib/cgp/CMakeFiles/_cgp.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/python/lib/cgp/CMakeFiles/_cgp.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  5 6 7 8
+[ 97%] Built target _cgp
+make -f src/python/lib/CMakeFiles/python-module.dir/build.make src/python/lib/CMakeFiles/python-module.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/lib /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/lib /home/constantin/Work/software/bld/nifty/src/python/lib/CMakeFiles/python-module.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/lib/CMakeFiles/python-module.dir/build.make src/python/lib/CMakeFiles/python-module.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/python/lib/CMakeFiles/python-module.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 97%] Built target python-module
+make -f src/python/test/CMakeFiles/CopyModuleDirpython-test-core.dir/build.make src/python/test/CMakeFiles/CopyModuleDirpython-test-core.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/python/test /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/python/test /home/constantin/Work/software/bld/nifty/src/python/test/CMakeFiles/CopyModuleDirpython-test-core.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/python/test/CMakeFiles/CopyModuleDirpython-test-core.dir/build.make src/python/test/CMakeFiles/CopyModuleDirpython-test-core.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty/src/python/test && /usr/bin/cmake -E copy_directory /home/constantin/Work/software/bld/nifty/python/ /home/constantin/Work/software/bld/nifty/python_test/python-test-core
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles 
+[ 97%] Built target CopyModuleDirpython-test-core
+make -f src/benchmark/CMakeFiles/marray.dir/build.make src/benchmark/CMakeFiles/marray.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/benchmark /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/benchmark /home/constantin/Work/software/bld/nifty/src/benchmark/CMakeFiles/marray.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/benchmark/CMakeFiles/marray.dir/build.make src/benchmark/CMakeFiles/marray.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/benchmark/CMakeFiles/marray.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  68
+[ 98%] Built target marray
+make -f src/benchmark/CMakeFiles/vs_varray.dir/build.make src/benchmark/CMakeFiles/vs_varray.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+cd /home/constantin/Work/software/bld/nifty && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/nifty /home/constantin/Work/software/src/nifty/src/benchmark /home/constantin/Work/software/bld/nifty /home/constantin/Work/software/bld/nifty/src/benchmark /home/constantin/Work/software/bld/nifty/src/benchmark/CMakeFiles/vs_varray.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+make -f src/benchmark/CMakeFiles/vs_varray.dir/build.make src/benchmark/CMakeFiles/vs_varray.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/nifty'
+make[2]: Nothing to be done for `src/benchmark/CMakeFiles/vs_varray.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/nifty/CMakeFiles  70
+[100%] Built target vs_varray
+make[1]: Leaving directory `/home/constantin/Work/software/bld/nifty'
+/usr/bin/cmake -E cmake_progress_start /home/constantin/Work/software/bld/nifty/CMakeFiles 0

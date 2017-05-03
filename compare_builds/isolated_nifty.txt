@@ -1,0 +1,48 @@
+Compile-Command:
+/usr/bin/c++ 
+    -DWITH_CPLEX -DWITH_FASTFILTERS -DWITH_HDF5 -DWITH_LP_MP -DWITH_SAT -D_multicut_EXPORTS
+    -O3 -DNDEBUG -march=native -fPIC 
+    -I/home/constantin/Work/software/src/nifty/externals/marray/include 
+    -I/home/constantin/Work/software/src/nifty/externals/pybind11/include 
+    -I/home/constantin/Work/software/src/nifty/externals/vigra/include 
+    -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/graph/include 
+    -I/home/constantin/Work/software/inst/cplex/cplex/include 
+    -I/home/constantin/Work/software/inst/cplex/concert/include 
+    -I/home/constantin/Work/software/src/fastfilters/include 
+    -I/home/constantin/Work/software/src/nifty/externals/LP_MP/include 
+    -I/home/constantin/Work/software/src/nifty/externals/LP_MP/lib 
+    -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/meta/include 
+    -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/Catch/include 
+    -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/cpp_sort/include 
+    -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/opengm/include 
+    -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/PEGTL 
+    -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/cereal/include 
+    -I/home/constantin/Work/software/src/nifty/externals/LP_MP/external/tclap/include 
+    -I/home/constantin/Work/software/bld/nifty/lingeling-prefix/src/lingeling 
+    -I/home/constantin/Work/software/src/nifty/include -I/usr/include/python2.7    
+    -std=c++11 -flto -fno-fat-lto-objects -fvisibility=hidden -std=gnu++14 
+    -o CMakeFiles/_multicut.dir/multicut_mp.cxx.o 
+    -c /home/constantin/Work/software/src/nifty/src/python/lib/graph/multicut/multicut_mp.cxx
+
+Linker-Command
+/usr/bin/cmake -E cmake_link_script CMakeFiles/_multicut.dir/link.txt --verbose=1
+/usr/bin/c++ 
+    -fPIC -O3 -DNDEBUG -march=native -shared -Wl,-soname,_multicut.so 
+    -o _multicut.so 
+    CMakeFiles/_multicut.dir/multicut.cxx.o 
+    CMakeFiles/_multicut.dir/multicut_objective.cxx.o 
+    CMakeFiles/_multicut.dir/multicut_visitor_base.cxx.o 
+    CMakeFiles/_multicut.dir/multicut_base.cxx.o 
+    CMakeFiles/_multicut.dir/multicut_factory.cxx.o 
+    CMakeFiles/_multicut.dir/multicut_ilp.cxx.o 
+    CMakeFiles/_multicut.dir/multicut_mp.cxx.o 
+    CMakeFiles/_multicut.dir/multicut_greedy_additive.cxx.o 
+    CMakeFiles/_multicut.dir/fusion_move_based.cxx.o 
+    CMakeFiles/_multicut.dir/perturb_and_map.cxx.o  
+    -L/home/constantin/Work/software/bld/nifty/lingeling-prefix/src/lingeling  
+    -L/home/constantin/Work/software/inst/cplex/concert/lib/x86-64_linux/static_pic  
+    -L/home/constantin/Work/software/inst/cplex/cplex/lib/x86-64_linux/static_pic 
+    -flto -lpython2.7 -lconcert -lilocplex -lcplex -lm -lpthread -lhdf5 -lhdf5_hl -lz -llgl -Wl,-rpath,
+    /home/constantin/Work/software/bld/nifty/lingeling-prefix/src/lingeling:
+    /home/constantin/Work/software/inst/cplex/concert/lib/x86-64_linux/static_pic:
+    /home/constantin/Work/software/inst/cplex/cplex/lib/x86-64_linux/static_pic 

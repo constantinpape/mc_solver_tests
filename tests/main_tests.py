@@ -73,8 +73,6 @@ def compare_nifty_algos(sample):
 
 
 
-
-
 def sampleD_problems():
 
     def _run(size, solver):
@@ -98,7 +96,7 @@ def sampleD_problems():
     for size in ('medium', 'large'):
         print "Problem size: %s" % size
         for key in solver_dict:
-            e,t  = res_dit[(size, key)]
+            e,t  = res_dict[(size, key)]
             print "Solver: %s" % key
             print "Energy: %f" % e
             print "Runtime: %f" % t
@@ -106,5 +104,5 @@ def sampleD_problems():
 
 if __name__ == '__main__':
     sampleD_problems()
-    for sample in ('sampleA', 'sampleB', 'sampleC'):
-        compare_opengm_nifty(sample)
+    #for sample in ('sampleA', 'sampleB', 'sampleC'):
+    #    compare_opengm_nifty(sample)

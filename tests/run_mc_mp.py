@@ -24,17 +24,25 @@ def compare_all_mcmp():
         paths = model_paths_new[sample]
         n_var, uv_ids, costs = read_from_mcppl(paths[0], paths[1])
 
+        # save fm result for comparison
+        #print "Run fusion moves nifty"
+        #nodes_fm, e_fm, t_fm = run_fusion_moves_nifty(n_var, uv_ids, costs)
+        #project(sample, nodes_fm, './segmentations/nifty_fm_%s.h5' % sample)
+
         #print "Run nifty mp"
-        #_, e_mp_nifty, t_mp_nifty = run_mp_nifty(n_var, uv_ids, costs)
+        #nodes_mp_nifty, e_mp_nifty, t_mp_nifty = run_mp_nifty(n_var, uv_ids, costs)
+        #project(sample, nodes_mp_nifty, './segmentations/nifty_mp_%s.h5' % sample)
 
-        print "Run LP_MP mp with pythonbindigns"
-        _, e_mp_lpmp_py, t_mp_lpmp_py = run_mc_mp_pybindings(n_var, uv_ids, costs)
+        #print "Run LP_MP mp with pythonbindigns"
+        #nodes_lpmp_py, e_mp_lpmp_py, t_mp_lpmp_py = run_mc_mp_pybindings(n_var, uv_ids, costs)
+        #project(sample, nodes_lpmp_py, './segmentations/lpmp_py_%s.h5' % sample)
 
-        #print "Run LP_MP mp from commandline"
-        #_, e_mp_lpmp_cmd, t_mp_lpmp_cmd = run_mc_mp_cmdline(n_var, uv_ids, costs)
+        print "Run LP_MP mp from commandline"
+        _, e_mp_lpmp_cmd, t_mp_lpmp_cmd = run_mc_mp_cmdline(n_var, uv_ids, costs, out_file = './tmp.out')
+        quit()
 
         #return e_mp_nifty, t_mp_nifty, e_mp_lpmp_py, t_mp_lpmp_py, e_mp_lpmp_cmd, t_mp_lpmp_cmd
-        return e_mp_nifty, t_mp_nifty, e_mp_lpmp_cmd, t_mp_lpmp_cmd
+        return e_mp_nifty, t_mp_nifty, e_mp_lpmp_py, t_mp_lpmp_py
 
     #samples = ('sampleA', 'sampleB', 'sampleC')
     samples = ('sampleA',)
