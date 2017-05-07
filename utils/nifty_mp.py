@@ -11,14 +11,14 @@ ilp_bkend = 'cplex'
 def mp_factory(obj, mp_primal_rounder,
         max_iter = 1000,
         timeout  = 0,
-        n_threads_fuse = 1)
+        n_threads_fuse = 1):
     assert mp_primal_rounder in ('greedy', 'kl', 'ilp', 'fm-ilp', 'fm-mp'), mp_primal_rounder
 
     if mp_primal_rounder == 'greedy':
         backend_factory = obj.greedyAdditiveFactory()
         greedy_ws = False
     elif mp_primal_rounder == 'kl':
-        backend_factory = obj.kernighanLinFactory()
+        backend_factory = obj.multicutKernighanLinFactory()
         greedy_ws = True
     elif mp_primal_rounder == 'ilp':
         backend_factory = obj.multicutIlpFactory(
@@ -53,8 +53,8 @@ def mp_factory(obj, mp_primal_rounder,
         greedy_ws = True
 
     factory = obj.multicutMpFactory(
-            multicutFactory = backend_factory
-            greedyWarmstart = greedy_ws
+            multicutFactory = backend_factory,
+            greedyWarmstart = greedy_ws,
             timeout = timeout,
             numberOfIterations = max_iter
     )
@@ -62,7 +62,7 @@ def mp_factory(obj, mp_primal_rounder,
 
 
 def run_mp_nifty(n_var, uv_ids, costs,
-        mp_primal_rounder = 'kl'
+        mp_primal_rounder = 'kl',
         max_iter = 1000,
         timeout = 0
         ):

@@ -113,22 +113,21 @@ def anytime_data_small_samples():
     def _run(sample, solver_type):
         assert solver_type in ('fm', 'mcmp_py', 'mcmp_cmd', 'ilp', 'mp_nifty')
         uv_path, cost_path = model_paths_new[sample]
-        print "Who will you call"
-        #out = subprocess.check_output(
-        subprocess.call(
+        #subprocess.call(
+        out = subprocess.check_output(
                 ['python', 'single_solver.py', uv_path, cost_path, solver_type])
-        print "Ghostbusters!"
         return out
 
     save_folder = './anytime_data'
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
 
-    for sample in ('sampleA',): #'sampleB', 'sampleC'):
+    samples = ('sampleA', 'sampleB', 'sampleC')
+
+    for sample in samples:
         print sample
         #for solver in ('ilp', 'fm', 'mcmp_py'):
-        #for solver in ('mcmp_cmd', 'mp_nifty'):
-        for solver in ('mcmp_py',):
+        for solver in ('mcmp_py', 'mp_nifty'):
             print solver
             out = _run(sample, solver)
             save_cmdline_output(out, save_folder + '/%s_%s.txt'% (sample, solver))

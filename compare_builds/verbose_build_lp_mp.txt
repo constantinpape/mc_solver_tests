@@ -1,0 +1,147 @@
+/usr/bin/cmake -H/home/constantin/Work/software/src/LP_MP -B/home/constantin/Work/software/bld/LP_MP --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/constantin/Work/software/bld/LP_MP/CMakeFiles /home/constantin/Work/software/bld/LP_MP/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+make -f CMakeFiles/lingeling.dir/build.make CMakeFiles/lingeling.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP/CMakeFiles/lingeling.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+make -f CMakeFiles/lingeling.dir/build.make CMakeFiles/lingeling.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+make[2]: Nothing to be done for `CMakeFiles/lingeling.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles  9 10 11 12 13 14 15 16
+[ 40%] Built target lingeling
+make -f lib/SVM-NEW/CMakeFiles/SVM.dir/build.make lib/SVM-NEW/CMakeFiles/SVM.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/src/LP_MP/lib/SVM-NEW /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP/lib/SVM-NEW /home/constantin/Work/software/bld/LP_MP/lib/SVM-NEW/CMakeFiles/SVM.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+make -f lib/SVM-NEW/CMakeFiles/SVM.dir/build.make lib/SVM-NEW/CMakeFiles/SVM.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+make[2]: Nothing to be done for `lib/SVM-NEW/CMakeFiles/SVM.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles  1 2
+[ 50%] Built target SVM
+make -f src/solvers/multicut/CMakeFiles/lifted_multicut_h5.dir/build.make src/solvers/multicut/CMakeFiles/lifted_multicut_h5.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/src/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/CMakeFiles/lifted_multicut_h5.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+make -f src/solvers/multicut/CMakeFiles/lifted_multicut_h5.dir/build.make src/solvers/multicut/CMakeFiles/lifted_multicut_h5.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+make[2]: Nothing to be done for `src/solvers/multicut/CMakeFiles/lifted_multicut_h5.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles  6
+[ 55%] Built target lifted_multicut_h5
+make -f src/solvers/multicut/CMakeFiles/lifted_multicut_h5_grid.dir/build.make src/solvers/multicut/CMakeFiles/lifted_multicut_h5_grid.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/src/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/CMakeFiles/lifted_multicut_h5_grid.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+make -f src/solvers/multicut/CMakeFiles/lifted_multicut_h5_grid.dir/build.make src/solvers/multicut/CMakeFiles/lifted_multicut_h5_grid.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+make[2]: Nothing to be done for `src/solvers/multicut/CMakeFiles/lifted_multicut_h5_grid.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles  7
+[ 60%] Built target lifted_multicut_h5_grid
+make -f src/solvers/multicut/CMakeFiles/lifted_multicut_text.dir/build.make src/solvers/multicut/CMakeFiles/lifted_multicut_text.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/src/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/CMakeFiles/lifted_multicut_text.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+make -f src/solvers/multicut/CMakeFiles/lifted_multicut_text.dir/build.make src/solvers/multicut/CMakeFiles/lifted_multicut_text.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+make[2]: Nothing to be done for `src/solvers/multicut/CMakeFiles/lifted_multicut_text.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles  8
+[ 65%] Built target lifted_multicut_text
+make -f src/solvers/multicut/CMakeFiles/multicut_opengm_srmp_cycle.dir/build.make src/solvers/multicut/CMakeFiles/multicut_opengm_srmp_cycle.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/src/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/CMakeFiles/multicut_opengm_srmp_cycle.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+make -f src/solvers/multicut/CMakeFiles/multicut_opengm_srmp_cycle.dir/build.make src/solvers/multicut/CMakeFiles/multicut_opengm_srmp_cycle.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+make[2]: Nothing to be done for `src/solvers/multicut/CMakeFiles/multicut_opengm_srmp_cycle.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles  17
+[ 70%] Built target multicut_opengm_srmp_cycle
+make -f src/solvers/multicut/CMakeFiles/multicut_opengm_srmp_cycle_odd_wheel.dir/build.make src/solvers/multicut/CMakeFiles/multicut_opengm_srmp_cycle_odd_wheel.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/src/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/CMakeFiles/multicut_opengm_srmp_cycle_odd_wheel.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+make -f src/solvers/multicut/CMakeFiles/multicut_opengm_srmp_cycle_odd_wheel.dir/build.make src/solvers/multicut/CMakeFiles/multicut_opengm_srmp_cycle_odd_wheel.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+make[2]: Nothing to be done for `src/solvers/multicut/CMakeFiles/multicut_opengm_srmp_cycle_odd_wheel.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles  18
+[ 75%] Built target multicut_opengm_srmp_cycle_odd_wheel
+make -f src/solvers/multicut/CMakeFiles/multicut_srmp.dir/build.make src/solvers/multicut/CMakeFiles/multicut_srmp.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/src/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/CMakeFiles/multicut_srmp.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+make -f src/solvers/multicut/CMakeFiles/multicut_srmp.dir/build.make src/solvers/multicut/CMakeFiles/multicut_srmp.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+make[2]: Nothing to be done for `src/solvers/multicut/CMakeFiles/multicut_srmp.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles  19
+[ 80%] Built target multicut_srmp
+make -f src/solvers/multicut/CMakeFiles/potts_via_multiway_cut.dir/build.make src/solvers/multicut/CMakeFiles/potts_via_multiway_cut.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/src/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut /home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/CMakeFiles/potts_via_multiway_cut.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+make -f src/solvers/multicut/CMakeFiles/potts_via_multiway_cut.dir/build.make src/solvers/multicut/CMakeFiles/potts_via_multiway_cut.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+make[2]: Nothing to be done for `src/solvers/multicut/CMakeFiles/potts_via_multiway_cut.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles  20
+[ 85%] Built target potts_via_multiway_cut
+make -f src/python/lib/CMakeFiles/_lp_mp.dir/build.make src/python/lib/CMakeFiles/_lp_mp.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/src/LP_MP/src/python/lib /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP/src/python/lib /home/constantin/Work/software/bld/LP_MP/src/python/lib/CMakeFiles/_lp_mp.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+make -f src/python/lib/CMakeFiles/_lp_mp.dir/build.make src/python/lib/CMakeFiles/_lp_mp.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+make[2]: Nothing to be done for `src/python/lib/CMakeFiles/_lp_mp.dir/build'.
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles  3
+[ 90%] Built target _lp_mp
+make -f src/python/lib/CMakeFiles/copy_lp_mp___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_lp_mp___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/src/LP_MP/src/python/lib /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP/src/python/lib /home/constantin/Work/software/bld/LP_MP/src/python/lib/CMakeFiles/copy_lp_mp___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+make -f src/python/lib/CMakeFiles/copy_lp_mp___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_lp_mp___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/LP_MP/src/python/module/lp_mp/__init__.py /home/constantin/Work/software/bld/LP_MP/python/lp_mp/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles 
+[ 90%] Built target copy_lp_mp___init__.py
+make -f src/python/lib/CMakeFiles/copy_lp_mp_solvers___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_lp_mp_solvers___init__.py.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/src/LP_MP/src/python/lib /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP/src/python/lib /home/constantin/Work/software/bld/LP_MP/src/python/lib/CMakeFiles/copy_lp_mp_solvers___init__.py.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+make -f src/python/lib/CMakeFiles/copy_lp_mp_solvers___init__.py.dir/build.make src/python/lib/CMakeFiles/copy_lp_mp_solvers___init__.py.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP/src/python/lib && cmake -E copy_if_different /home/constantin/Work/software/src/LP_MP/src/python/module/lp_mp/solvers/__init__.py /home/constantin/Work/software/bld/LP_MP/python/lp_mp/solvers/__init__.py
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles 
+[ 90%] Built target copy_lp_mp_solvers___init__.py
+make -f src/python/lib/solvers/CMakeFiles/_solvers.dir/build.make src/python/lib/solvers/CMakeFiles/_solvers.dir/depend
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+cd /home/constantin/Work/software/bld/LP_MP && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/constantin/Work/software/src/LP_MP /home/constantin/Work/software/src/LP_MP/src/python/lib/solvers /home/constantin/Work/software/bld/LP_MP /home/constantin/Work/software/bld/LP_MP/src/python/lib/solvers /home/constantin/Work/software/bld/LP_MP/src/python/lib/solvers/CMakeFiles/_solvers.dir/DependInfo.cmake --color=
+Dependee "/home/constantin/Work/software/src/LP_MP/src/python/lib/solvers/export_multicut.cxx" is newer than depender "src/python/lib/solvers/CMakeFiles/_solvers.dir/export_multicut.cxx.o".
+Clearing dependencies in "/home/constantin/Work/software/bld/LP_MP/src/python/lib/solvers/CMakeFiles/_solvers.dir/depend.make".
+Scanning dependencies of target _solvers
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+make -f src/python/lib/solvers/CMakeFiles/_solvers.dir/build.make src/python/lib/solvers/CMakeFiles/_solvers.dir/build
+make[2]: Entering directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles 5
+[ 95%] Building CXX object src/python/lib/solvers/CMakeFiles/_solvers.dir/export_multicut.cxx.o
+cd /home/constantin/Work/software/bld/LP_MP/src/python/lib/solvers && /usr/bin/c++   -DIL_STD -DWITH_SAT -D_BSD_SOURCE -D_FORTIFY_SOURCE=2 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -D_solvers_EXPORTS -O3 -DNDEBUG -march=native -fPIC -I/home/constantin/Work/software/src/LP_MP/external/meta/include -I/home/constantin/Work/software/src/LP_MP/external/Catch/include -I/home/constantin/Work/software/src/LP_MP/external/cpp_sort/include -I/home/constantin/Work/software/src/LP_MP/external/opengm/include -I/home/constantin/Work/software/src/LP_MP/external/PEGTL -I/home/constantin/Work/software/src/LP_MP/external/graph/include -I/home/constantin/Work/software/src/LP_MP/external/cereal/include -I/home/constantin/Work/software/src/LP_MP/external/tclap/include -I/home/constantin/Work/software/bld/LP_MP/lingeling-prefix/src/lingeling -I/home/constantin/Work/software/src/LP_MP/external/pybind11/include -I/home/constantin/Work/software/src/LP_MP/include -I/home/constantin/Work/software/src/LP_MP/lib -I/usr/include/python2.7    -march=native -std=c++14 -flto -fno-fat-lto-objects -fvisibility=hidden -o CMakeFiles/_solvers.dir/export_multicut.cxx.o -c /home/constantin/Work/software/src/LP_MP/src/python/lib/solvers/export_multicut.cxx
+Linking CXX shared module _solvers.so
+cd /home/constantin/Work/software/bld/LP_MP/src/python/lib/solvers && /usr/bin/cmake -E cmake_link_script CMakeFiles/_solvers.dir/link.txt --verbose=1
+/usr/bin/c++  -fPIC -O3 -DNDEBUG -march=native -O3 -DNDEBUG -march=native -shared -Wl,-soname,_solvers.so -o _solvers.so CMakeFiles/_solvers.dir/solvers.cxx.o CMakeFiles/_solvers.dir/export_multicut.cxx.o  -L/home/constantin/Work/software/bld/LP_MP/lingeling-prefix/src/lingeling -flto -lpython2.7 -lm -lstdc++ -lpthread -lhdf5 -lpthread -lz -ldl -lm -llgl -Wl,-rpath,/home/constantin/Work/software/bld/LP_MP/lingeling-prefix/src/lingeling 
+cd /home/constantin/Work/software/bld/LP_MP/src/python/lib/solvers && /usr/bin/strip /home/constantin/Work/software/bld/LP_MP/src/python/lib/solvers/_solvers.so
+Copying target solvers to temporary module directory
+cd /home/constantin/Work/software/bld/LP_MP/src/python/lib/solvers && /usr/bin/cmake -E copy_if_different /home/constantin/Work/software/bld/LP_MP/src/python/lib/solvers/_solvers.so /home/constantin/Work/software/bld/LP_MP/python/lp_mp/solvers/
+make[2]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_report /home/constantin/Work/software/bld/LP_MP/CMakeFiles  4 5
+[100%] Built target _solvers
+make[1]: Leaving directory `/home/constantin/Work/software/bld/LP_MP'
+/usr/bin/cmake -E cmake_progress_start /home/constantin/Work/software/bld/LP_MP/CMakeFiles 0
