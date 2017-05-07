@@ -154,8 +154,8 @@ def run_fusion_moves_nifty(n_var, uv_ids, costs,
 def run_ilp_nifty(n_var, uv_ids, costs,
         verbose = False,
         timeout = 0):
-    obj = nifty_mc_objective(n_var, uv_ids, costs)
 
+    obj = nifty_mc_objective(n_var, uv_ids, costs)
     solver = obj.multicutIlpFactory(ilpSolver=ilp_bkend,verbose=0,
         addThreeCyclesConstraints=True,
         addOnlyViolatedThreeCyclesConstraints=True
@@ -176,6 +176,24 @@ def run_ilp_nifty(n_var, uv_ids, costs,
         ret = solver.optimize(visitor=visitor)
     else:
         ret = solver.optimize()
+    t_inf = time.time() - t_inf
+
+    mc_energy = obj.evalNodeLabels(ret)
+    return ret, mc_energy, t_inf
+
+
+# TODO Test this !!!
+def run_kl_nifty(n_var, uv_ids, costs,
+        verbose = False,
+        timeout = 0):
+
+    obj = nifty_mc_objective(n_var, uv_ids, costs)
+    greedy = obj.greedyAdditiveFactory().create(obj)
+    solver = obj.multicutKernighanLinFactory().create(obj)
+
+    t_inf = time.time()
+    ret = greedy.optimize()
+    ret = solver.optimize(nodeLabels = ret)
     t_inf = time.time() - t_inf
 
     mc_energy = obj.evalNodeLabels(ret)

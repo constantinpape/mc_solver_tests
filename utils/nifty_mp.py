@@ -17,9 +17,11 @@ def mp_factory(obj, mp_primal_rounder,
     if mp_primal_rounder == 'greedy':
         backend_factory = obj.greedyAdditiveFactory()
         greedy_ws = False
+
     elif mp_primal_rounder == 'kl':
         backend_factory = obj.multicutKernighanLinFactory()
         greedy_ws = True
+
     elif mp_primal_rounder == 'ilp':
         backend_factory = obj.multicutIlpFactory(
                 ilpSolver=ilp_bkend,
@@ -28,6 +30,7 @@ def mp_factory(obj, mp_primal_rounder,
                 addOnlyViolatedThreeCyclesConstraints=True
             )
         greedy_ws = False
+
     elif mp_primal_rounder in ('fm-ilp', 'fm-mp'):
 
         if mp_primal_rounder == 'fm-ilp':
