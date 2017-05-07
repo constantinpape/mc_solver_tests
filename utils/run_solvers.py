@@ -106,22 +106,16 @@ def run_fusion_moves_nifty(n_var, uv_ids, costs,
         n_threads = 20,
         seed_fraction = 0.001,
         verbose = False,
-        timeout = 0,
-        backend = 'ilp'
+        timeout = 0
         ):
     obj = nifty_mc_objective(n_var, uv_ids, costs)
 
     greedy = obj.greedyAdditiveFactory().create(obj)
 
-    if backend == 'ilp':
-        backend_factory = obj.multicutIlpFactory(ilpSolver=ilp_bkend,verbose=0,
-            addThreeCyclesConstraints=True,
-            addOnlyViolatedThreeCyclesConstraints=True
-        )
-    else:
-        assert backend == 'mp'
-        # TODO need to add meaningful stoping criteria
-        backend_factory = obj.multicutMpFactory(numberOfIterations = 500)
+    backend_factory = obj.multicutIlpFactory(ilpSolver=ilp_bkend,verbose=0,
+        addThreeCyclesConstraints=True,
+        addOnlyViolatedThreeCyclesConstraints=True
+    )
 
     factory = obj.fusionMoveBasedFactory(
         verbose=1,
@@ -188,26 +182,6 @@ def run_ilp_nifty(n_var, uv_ids, costs,
     return ret, mc_energy, t_inf
 
 
-def run_mp_nifty(n_var, uv_ids, costs,
-        max_iter = 1000,
-        timeout = 0
-        ):
-    obj = nifty_mc_objective(n_var, uv_ids, costs)
-
-    solver = obj.multicutMpFactory(
-            timeout = timeout,
-            numberOfIterations = max_iter
-    ).create(obj)
-
-    t_inf = time.time()
-    ret = solver.optimize()
-    t_inf = time.time() - t_inf
-
-    mc_energy = obj.evalNodeLabels(ret)
-    return ret, mc_energy, t_inf
-
-
-
 ################################################
 #### LP_MP Solver
 ################################################
@@ -234,10 +208,12 @@ def run_mc_mp_cmdline(n_var, uv_ids, costs,
     write_to_opengm(n_var, uv_ids, costs, './tmp.gm')
 
     # TODO with or without odd_wheel ?
-    #binary = '/home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel'
-    #binary = '/home/consti/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel'
 
-    binary = '/home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel'
+    #binary = '/home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle'
+    #binary = '/home/constantin/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel'
+
+    #binary = '/home/consti/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel'
+    binary = '/home/consti/Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle'
 
     t_inf = time.time()
     #out = subprocess.check_output(
@@ -274,8 +250,8 @@ def run_mc_mp_pybindings(n_var, uv_ids, costs,
 
     # dirty hack for lp_mp pybindings
     import sys
-    sys.path.append('/home/constantin/Work/software/bld/LP_MP/python')
-    #sys.path.append('/home/consti/Work/software/bld/LP_MP/python')
+    #sys.path.append('/home/constantin/Work/software/bld/LP_MP/python')
+    sys.path.append('/home/consti/Work/software/bld/LP_MP/python')
     import lp_mp
 
     # nifty graph and objective for node labels and energy

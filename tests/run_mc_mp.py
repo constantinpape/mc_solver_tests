@@ -33,8 +33,8 @@ def compare_all_mcmp():
         #print "Run LP_MP mp from commandline"
         #_, e_mp_lpmp_cmd, t_mp_lpmp_cmd = run_mc_mp_cmdline(n_var, uv_ids, costs)
 
-        #return e_mp_nifty, t_mp_nifty, e_mp_lpmp_py, t_mp_lpmp_py, e_mp_lpmp_cmd, t_mp_lpmp_cmd
-        return e_mp_nifty, t_mp_nifty, e_mp_lpmp_cmd, t_mp_lpmp_cmd
+        return e_mp_lpmp_py, t_mp_lpmp_py, e_mp_lpmp_cmd, t_mp_lpmp_cmd
+        #return e_mp_nifty, t_mp_nifty, e_mp_lpmp_cmd, t_mp_lpmp_cmd
 
     #samples = ('sampleA', 'sampleB', 'sampleC')
     samples = ('sampleA',)
@@ -45,12 +45,12 @@ def compare_all_mcmp():
 
     for sample in samples:
         #e_nifty, t_nifty, e_py, t_py, e_cmd, t_cmd = res_dict[sample]
-        e_nifty, t_nifty, e_cmd, t_cmd = res_dict[sample]
+        e_py, t_py, e_cmd, t_cmd = res_dict[sample]
         print
         print "Summary for %s:" % sample
         print "Message passing multicut:"
-        print "Nifty mp     : primal: %f, t-inf: %f" % (e_nifty, t_nifty)
-        #print "Pybindings mp: primal: %f, t-inf: %f" % (e_py, t_py)
+        #print "Nifty mp     : primal: %f, t-inf: %f" % (e_nifty, t_nifty)
+        print "Pybindings mp: primal: %f, t-inf: %f" % (e_py, t_py)
         print "Commandline  : primal: %f, t-inf: %f" % (e_cmd, t_cmd)
         print
 
