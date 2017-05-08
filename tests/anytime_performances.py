@@ -110,33 +110,36 @@ def save_cmdline_output(out, save_file):
 
 def anytime_data_small_samples():
 
-    def _run(sample, solver_type):
+    def _run(sample, solver_type, n_threads = 1):
         assert solver_type in ('fm', 'mcmp_py', 'mcmp_cmd', 'ilp', 'mp_nifty')
         uv_path, cost_path = model_paths_new[sample]
         #subprocess.call(
         out = subprocess.check_output(
-                ['python', 'single_solver.py', uv_path, cost_path, solver_type])
+                ['python', 'single_solver.py', uv_path, cost_path, solver_type, str(n_threads)])
         return out
 
     save_folder = './anytime_data'
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
 
-    samples = ('sampleA', 'sampleB', 'sampleC')
+    #samples = ('sampleA', 'sampleB', 'sampleC')
+    samples = ('sampleB','sampleC')
 
     for sample in samples:
         print sample
         #for solver in ('ilp', 'fm', 'mcmp_py'):
-        for solver in ('mcmp_py', 'mp_nifty'):
+        for solver in ('mcmp_py', 'mcmp_cmd'):
             print solver
-            out = _run(sample, solver)
-            save_cmdline_output(out, save_folder + '/%s_%s.txt'% (sample, solver))
-            #if solver == 'fm':
-            #    parse_and_save_out_niftyfm(out, save_folder + '/%s_%s.h5' % (sample, solver))
-            #elif solver == 'ilp':
-            #    parse_and_save_out_niftyilp(out, save_folder + '/%s_%s.h5' % (sample, solver))
-            #else:
-            #    parse_and_save_out_mcmp(out, save_folder + '/%s_%s__.h5' % (sample, solver), True)
+            for n_threads in (1,2,4,8,20):
+                print n_threads
+                out = _run(sample, solver, n_threads)
+                save_cmdline_output(out, save_folder + '/%s_%s_%i_threads.txt'% (sample, solver, n_threads))
+                #if solver == 'fm':
+                #    parse_and_save_out_niftyfm(out, save_folder + '/%s_%s.h5' % (sample, solver))
+                #elif solver == 'ilp':
+                #    parse_and_save_out_niftyilp(out, save_folder + '/%s_%s.h5' % (sample, solver))
+                #else:
+                #    parse_and_save_out_mcmp(out, save_folder + '/%s_%s__.h5' % (sample, solver), True)
 
 
 def anytime_data_sampleD():

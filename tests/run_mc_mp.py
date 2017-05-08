@@ -37,8 +37,8 @@ def compare_all_mcmp():
         #nodes_lpmp_py, e_mp_lpmp_py, t_mp_lpmp_py = run_mc_mp_pybindings(n_var, uv_ids, costs)
         #project(sample, nodes_lpmp_py, './segmentations/lpmp_py_%s.h5' % sample)
 
-        #print "Run LP_MP mp from commandline"
-        #_, e_mp_lpmp_cmd, t_mp_lpmp_cmd = run_mc_mp_cmdline(n_var, uv_ids, costs, out_file = './tmp.out')
+        print "Run LP_MP mp from commandline"
+        _, e_mp_lpmp_cmd, t_mp_lpmp_cmd = run_mc_mp_cmdline(n_var, uv_ids, costs)
 
         #return e_mp_nifty, t_mp_nifty, e_mp_lpmp_py, t_mp_lpmp_py, e_mp_lpmp_cmd, t_mp_lpmp_cmd
         return e_mp_nifty, t_mp_nifty, e_mp_lpmp_py, t_mp_lpmp_py

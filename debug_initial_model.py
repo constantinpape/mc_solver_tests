@@ -84,12 +84,12 @@ def check_against_original_model(sample, graph_path, edge_path):
     print "Passed"
 
 if __name__ == '__main__':
-    check_against_original_model(
-            'sampleA',
-            './debug/graph_nifty.h5',
-            './debug/edgevals_nifty.txt')
+    #check_against_original_model(
+    #        'sampleA',
+    #        './debug/graph_nifty.h5',
+    #        './debug/edgevals_nifty.txt')
     compare_models(
             './debug/graph_py.h5',
             './debug/edgevals_py.txt',
-            './debug/graph_nifty.h5',
-            './debug/edgevals_nifty.txt')
+            './debug/graph_tmp.h5',
+            './debug/edgevals_tmp.txt')
