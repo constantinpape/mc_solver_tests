@@ -34,49 +34,26 @@ the solver terminated because it exceeded this max iteration.
 |               | 475.4     | 681.3     | 635.3     |
 
 
-## Message Passing Multicut Checks
+## Message Passing Multicut
 
-Summary for sampleA:
-Message passing multicut:
-Nifty mp     : primal: -562302.902895, t-inf: 151.826847
-Pybindings mp: primal: -562299.604179, t-inf: 142.990735
-Commandline  : primal: -562302.000000, t-inf: 118.498215
+### Test Parallel
 
-Summary for sampleB:
-Message passing multicut:
-Nifty mp     : primal: -343938.566390, t-inf: 195.830928
-Pybindings mp: primal: -343938.234899, t-inf: 184.470509
-Commandline  : primal: -343942.000000, t-inf: 148.182636
+Runtimes:
 
-Summary for sampleC:
-Message passing multicut:
-Nifty mp     : primal: -521561.528984, t-inf: 191.396598
-Pybindings mp: primal: -521567.047119, t-inf: 190.894397
-Commandline  : primal: -521569.000000, t-inf: 148.263712
+| N-Threads  | SampleA | SampleB | SampleC |
+| ---------: | ------: | ------: | ------: |
+| 1          | 249.5   | 273.2   | 332.3   |
+| 2          | 185.2   | 232.8   | 260.6   |
+| 4          | 113.3   | 152.4   | 202.6   |
+| 8          | 83.9    | 94.6    | 136.0   |
+| 20         | 63.1    | 71.6    | 94.6    |
 
--> Commandline faster, possibly due to not using odd-wheel ?
-+ we have some overhead in nifty due to ufd, but this should be negligable
+Primal Energies:
 
--> this is after changing nifty to not using odd-wheel, investigate further!
-
-Summary for sampleA:
-Message passing multicut:
-Nifty mp     : primal: -562302.954578, t-inf: 143.764840
-Pybindings mp: primal: -562299.604179, t-inf: 141.825094
-Commandline  : primal: -562302.000000, t-inf: 109.215390
-
-
-Summary for sampleB:
-Message passing multicut:
-Nifty mp     : primal: -343937.595803, t-inf: 174.558420
-Pybindings mp: primal: -343938.234899, t-inf: 180.051496
-Commandline  : primal: -343942.000000, t-inf: 143.378908
-
-
-Summary for sampleC:
-Message passing multicut:
-Nifty mp     : primal: -521566.089743, t-inf: 197.413129
-Pybindings mp: primal: -521567.047119, t-inf: 179.699172
-Commandline  : primal: -521569.000000, t-inf: 149.069549
-
-TODO make sure that all parameters agree for the three solvers and then rerun exps
+| N-Threads  | SampleA | SampleB | SampleC |
+| ---------: | ------: | ------: | ------: |
+| 1          | -562303 | -343945 | -521572 |
+| 2          | -562303 | -343945 | -521572 |
+| 4          | -562300 | -343944 | -521571 |
+| 8          | -562303 | -343944 | -521569 |
+| 20         | -562303 | -343944 | -521570 |
