@@ -6,6 +6,24 @@ from utils import *
 from model_paths import model_paths_new, model_paths_mcluigi
 
 
+def test_nifty_kl(sample):
+    paths = model_paths_new[sample]
+    n_var, uv_ids, costs = read_from_mcppl(paths[0], paths[1])
+
+    #print "Run nifty fm"
+    #nodes_fm, e_fm_nifty, t_fm_nifty = run_fusion_moves_nifty(n_var, uv_ids, costs)
+    #project(sample, nodes_fm, './segmentations/nifty_fm_%s.h5' % sample)
+
+    #print "Run nifty kl"
+    nodes_kl, e_kl_nifty, t_kl_nifty = run_kl_nifty(n_var, uv_ids, costs)
+    #project(sample, nodes_kl, './segmentations/nifty_kl_%s.h5' % sample)
+
+    print "Summary for %s:" % sample
+    #print "FM: primal: %f, t-inf: %f" % (e_fm_nifty, t_fm_nifty)
+    print "KL: primal: %f, t-inf: %f" % (e_kl_nifty, t_kl_nifty)
+
+
+
 def compare_opengm_nifty(sample):
 
     paths = model_paths_new[sample]
@@ -103,6 +121,7 @@ def sampleD_problems():
 
 
 if __name__ == '__main__':
-    sampleD_problems()
+    test_nifty_kl('sampleA')
+    #sampleD_problems()
     #for sample in ('sampleA', 'sampleB', 'sampleC'):
     #    compare_opengm_nifty(sample)

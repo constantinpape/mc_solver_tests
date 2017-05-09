@@ -39,7 +39,7 @@ if __name__ == '__main__':
         'sampleA',
         [
         './segmentations/nifty_fm_sampleA.h5',
-        './segmentations/nifty_mp_sampleA.h5',
-        './segmentations/lpmp_py_sampleA.h5'
+        './segmentations/nifty_kl_sampleA.h5'
         ],
-        ['nifty-fm', 'nifty-mp', 'lpmp-py'])
+        ['nifty-fm', 'nifty-kl']
+    )

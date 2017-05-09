@@ -223,7 +223,18 @@ def write_to_opengm(n_var, uv_ids, costs, out_file):
 
 def run_mc_mp_cmdline(n_var, uv_ids, costs,
         max_iter = 1000,
-        n_threads = 1):
+        timeout  = 0,
+        n_threads = 1,
+        tighten   = True,
+        standardReparametrization = 'anisotropic',
+        tightenReparametrization  = 'damped_uniform',
+        roundingReparametrization = 'damped_uniform',
+        tightenIteration          = 2,
+        tightenInterval           = 49,
+        tightenSlope              = 0.1,
+        tightenConstraintsPercentage = 0.05,
+        primalComputationInterval = 13
+        ):
     write_to_opengm(n_var, uv_ids, costs, './tmp.gm')
 
     # TODO with or without odd_wheel ?
@@ -234,31 +245,36 @@ def run_mc_mp_cmdline(n_var, uv_ids, costs,
     options =  [
         binary,
         '-i', './tmp.gm',
-        '--tighten',
-        '--standardReparametrization', 'anisotropic',
-        '--tightenReparametrization', 'damped_uniform',
-        '--roundingReparametrization', 'damped_uniform',
-        '--tightenIteration', '2',
-        '--tightenInterval', '49',
-        '--tightenSlope', '0.1',
-        '--tightenConstraintsPercentage', '0.05',
-        '--primalComputationInterval', '13',
-        '--maxIter', str(max_iter),
-        '--numLpThreads', str(n_threads)
+        '--standardReparametrization', standardReparametrization,
+        '--tightenReparametrization',  tightenReparametrization,
+        '--roundingReparametrization', roundingReparametrization,
+        '--tightenIteration', str(tightenIteration),
+        '--tightenInterval', str(tightenInterval),
+        '--tightenSlope', str(tightenSlope),
+        '--tightenConstraintsPercentage', str(tightenConstraintsPercentage),
+        '--primalComputationInterval', str(primalComputationInterval),
+        '--maxIter', str(max_iter)
     ]
-
+    if tighten:
+        options.append('--tighten')
+    if timeout > 0:
+        options.extend(['--timeout', str(timeout)])
+    if n_threads > 1:
+        options.extend(['--numLpThreads', str(n_threads)])
 
     t_inf = time.time()
-    #out = subprocess.check_output(
-    subprocess.call(
+    out = subprocess.check_output(
+    #subprocess.call(
         options
     )
     t_inf = time.time() - t_inf
 
-    #out = out.split('\n')
-    #l_energy = out[-7].split()
-    #energy = float(l_energy[-1])
-    energy = -100
+    out = out.split('\n')
+    l_energy = out[-4].split()
+    energy = float(l_energy[-1])
+
+    #print out[-10:]
+    #energy = -100
 
     os.remove('./tmp.gm')
     return np.zeros(n_var), energy, t_inf
@@ -267,14 +283,23 @@ def run_mc_mp_cmdline(n_var, uv_ids, costs,
 def run_mc_mp_pybindings(n_var, uv_ids, costs,
         max_iter = 1000,
         timeout  = 0,
-        n_threads= 1
+        n_threads= 1,
+        tighten   = True,
+        standardReparametrization = 'anisotropic',
+        tightenReparametrization  = 'damped_uniform',
+        roundingReparametrization = 'damped_uniform',
+        tightenIteration          = 2,
+        tightenInterval           = 49,
+        tightenSlope              = 0.1,
+        tightenConstraintsPercentage = 0.05,
+        primalComputationInterval = 13
     ):
 
 
     # dirty hack for lp_mp pybindings
     home_dir = os.path.expanduser("~")
     import sys
-    sys.path.append( os.path.join(home_dir, 'software/bld/LP_MP/python') )
+    sys.path.append( os.path.join(home_dir, 'Work/software/bld/LP_MP/python') )
     import lp_mp
 
     # nifty graph and objective for node labels and energy
@@ -284,27 +309,23 @@ def run_mc_mp_pybindings(n_var, uv_ids, costs,
     assert g.numberOfEdges == uv_ids.shape[0], "%i, %i" % (g.numberOfEdges, uv_ids.shape[0])
     obj = nifty.graph.multicut.multicutObjective(g, costs)
 
-    multicut_opts = lp_mp.solvers.MulticutOptions(
-            maxIter = max_iter,
-            timeout = timeout,
-            standardReparametrization = 'anisotropic',
-            tightenReparametrization  = 'damped_uniform',
-            roundingReparametrization = 'damped_uniform',
-            tightenIteration          = 2,
-            tightenInterval           = 49,
-            tightenSlope              = 0.1,
-            tightenConstraintsPercentage = 0.05,
-            primalComputationInterval = 13,
-            nThreads                  = n_threads
-            )
-
     # FIXME make this compatible with numpy arrays for uv_ids too
     t_inf = time.time()
-    mc_edges = lp_mp.solvers.multicut(
+    mc_edges = lp_mp.solvers.multicutMp(
             [(uv[0],uv[1]) for uv in uv_ids],
             costs,
-            multicut_opts
-            )
+            maxIter = max_iter,
+            timeout = timeout,
+            standardReparametrization = standardReparametrization,
+            tightenReparametrization  = tightenReparametrization,
+            roundingReparametrization = roundingReparametrization,
+            tightenIteration          = tightenIteration,
+            tightenInterval           = tightenInterval,
+            tightenSlope              = tightenSlope,
+            tightenConstraintsPercentage = tightenConstraintsPercentage,
+            primalComputationInterval = primalComputationInterval,
+            nThreads                  = n_threads
+        )
     t_inf = time.time() - t_inf
 
     # edge labels to node labels
