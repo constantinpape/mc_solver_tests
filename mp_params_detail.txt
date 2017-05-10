@@ -1,0 +1,128 @@
+Summary for sampleA:
+N-threads: 1
+param-nu: 0
+Message passing multicut:
+Nifty mp     : primal: -562302.752301 +- 0.000000, t-inf: 108.165264 +- 0.000000
+param-nu: 1
+Message passing multicut:
+Nifty mp     : primal: -562300.834297 +- 0.000000, t-inf: 97.276318 +- 0.000000
+param-nu: 2
+Message passing multicut:
+Nifty mp     : primal: -562292.247347 +- 0.000000, t-inf: 95.986371 +- 0.000000
+N-threads: 2
+param-nu: 0
+Message passing multicut:
+Nifty mp     : primal: -562299.108271 +- 0.000000, t-inf: 84.731719 +- 0.000000
+param-nu: 1
+Message passing multicut:
+Nifty mp     : primal: -562276.104596 +- 0.000000, t-inf: 67.161593 +- 0.000000
+param-nu: 2
+Message passing multicut:
+Nifty mp     : primal: -562302.482054 +- 0.000000, t-inf: 62.499539 +- 0.000000
+N-threads: 4
+param-nu: 0
+Message passing multicut:
+Nifty mp     : primal: -562297.129489 +- 0.000000, t-inf: 55.381623 +- 0.000000
+param-nu: 1
+Message passing multicut:
+Nifty mp     : primal: -562281.105110 +- 0.000000, t-inf: 50.551780 +- 0.000000
+param-nu: 2
+Message passing multicut:
+Nifty mp     : primal: -562300.864686 +- 0.000000, t-inf: 53.750780 +- 0.000000
+N-threads: 8
+param-nu: 0
+Message passing multicut:
+Nifty mp     : primal: -562292.515774 +- 0.000000, t-inf: 54.139283 +- 0.000000
+param-nu: 1
+Message passing multicut:
+Nifty mp     : primal: -562270.620122 +- 0.000000, t-inf: 44.160387 +- 0.000000
+param-nu: 2
+Message passing multicut:
+Nifty mp     : primal: -562300.776232 +- 0.000000, t-inf: 51.401823 +- 0.000000
+
+
+Summary for sampleB:
+N-threads: 1
+param-nu: 0
+Message passing multicut:
+Nifty mp     : primal: -343943.171665 +- 0.000000, t-inf: 134.072563 +- 0.000000
+param-nu: 1
+Message passing multicut:
+Nifty mp     : primal: -343943.272561 +- 0.000000, t-inf: 106.982837 +- 0.000000
+param-nu: 2
+Message passing multicut:
+Nifty mp     : primal: -343941.602966 +- 0.000000, t-inf: 97.184438 +- 0.000000
+N-threads: 2
+param-nu: 0
+Message passing multicut:
+Nifty mp     : primal: -343944.104185 +- 0.000000, t-inf: 100.110637 +- 0.000000
+param-nu: 1
+Message passing multicut:
+Nifty mp     : primal: -343937.755623 +- 0.000000, t-inf: 72.901494 +- 0.000000
+param-nu: 2
+Message passing multicut:
+Nifty mp     : primal: -343942.231693 +- 0.000000, t-inf: 76.906077 +- 0.000000
+N-threads: 4
+param-nu: 0
+Message passing multicut:
+Nifty mp     : primal: -343940.200024 +- 0.000000, t-inf: 67.044872 +- 0.000000
+param-nu: 1
+Message passing multicut:
+Nifty mp     : primal: -343939.198677 +- 0.000000, t-inf: 52.835183 +- 0.000000
+param-nu: 2
+Message passing multicut:
+Nifty mp     : primal: -343934.474017 +- 0.000000, t-inf: 56.536217 +- 0.000000
+N-threads: 8
+param-nu: 0
+Message passing multicut:
+Nifty mp     : primal: -343939.975830 +- 0.000000, t-inf: 62.671685 +- 0.000000
+param-nu: 1
+Message passing multicut:
+Nifty mp     : primal: -343936.079541 +- 0.000000, t-inf: 46.379873 +- 0.000000
+param-nu: 2
+Message passing multicut:
+Nifty mp     : primal: -343938.477677 +- 0.000000, t-inf: 49.197750 +- 0.000000
+
+
+Summary for sampleC:
+N-threads: 1
+param-nu: 0
+Message passing multicut:
+Nifty mp     : primal: -521568.931852 +- 0.000000, t-inf: 126.092319 +- 0.000000
+param-nu: 1
+Message passing multicut:
+Nifty mp     : primal: -521562.578156 +- 0.000000, t-inf: 102.525055 +- 0.000000
+param-nu: 2
+Message passing multicut:
+Nifty mp     : primal: -521566.982061 +- 0.000000, t-inf: 117.457950 +- 0.000000
+N-threads: 2
+param-nu: 0
+Message passing multicut:
+Nifty mp     : primal: -521568.925774 +- 0.000000, t-inf: 96.514945 +- 0.000000
+param-nu: 1
+Message passing multicut:
+Nifty mp     : primal: -521565.524004 +- 0.000000, t-inf: 87.025888 +- 0.000000
+param-nu: 2
+Message passing multicut:
+Nifty mp     : primal: -521568.511734 +- 0.000000, t-inf: 92.614838 +- 0.000000
+N-threads: 4
+param-nu: 0
+Message passing multicut:
+Nifty mp     : primal: -521567.431977 +- 0.000000, t-inf: 73.070616 +- 0.000000
+param-nu: 1
+Message passing multicut:
+Nifty mp     : primal: -521560.327071 +- 0.000000, t-inf: 54.903852 +- 0.000000
+param-nu: 2
+Message passing multicut:
+Nifty mp     : primal: -521566.000965 +- 0.000000, t-inf: 68.820175 +- 0.000000
+N-threads: 8
+param-nu: 0
+Message passing multicut:
+Nifty mp     : primal: -521565.712239 +- 0.000000, t-inf: 55.456856 +- 0.000000
+param-nu: 1
+Message passing multicut:
+Nifty mp     : primal: -521558.384522 +- 0.000000, t-inf: 50.073858 +- 0.000000
+param-nu: 2
+Message passing multicut:
+Nifty mp     : primal: -521558.677543 +- 0.000000, t-inf: 60.605536 +- 0.000000
+

@@ -24,7 +24,7 @@ def test_nifty_mp_settings():
 # compare all mcmp implementations / instantiations
 def compare_all_mcmp():
 
-    def _run(sample, N = 1):
+    def _run(sample, N = 1, params = default_multiprocessing, n_threads = 1):
         paths = model_paths_new[sample]
         n_var, uv_ids, costs = read_from_mcppl(paths[0], paths[1])
 
@@ -44,15 +44,19 @@ def compare_all_mcmp():
             #project(sample, nodes_fm, './segmentations/nifty_fm_%s.h5' % sample)
 
             print "Run nifty mp"
-            nodes_mp_nifty, e_lpmp_nifty, t_lpmp_nifty = run_mp_nifty(n_var, uv_ids, costs, max_iter = 200)
+            nodes_mp_nifty, e_lpmp_nifty, t_lpmp_nifty = run_mp_nifty(
+                    n_var, uv_ids, costs,
+                    max_iter = 500,
+                    n_threads = n_threads,
+                    **params)
             e_lpmp_nifty_list.append(e_lpmp_nifty)
             t_lpmp_nifty_list.append(t_lpmp_nifty)
             #project(sample, nodes_mp_nifty, './segmentations/nifty_mp_%s.h5' % sample)
 
-            print "Run LP_MP mp with pythonbindigns"
-            nodes_lpmp_py, e_lpmp_py, t_lpmp_py = run_mc_mp_pybindings(n_var, uv_ids, costs, max_iter = 200)
-            e_lpmp_py_list.append(e_lpmp_py)
-            t_lpmp_py_list.append(t_lpmp_py)
+            #print "Run LP_MP mp with pythonbindigns"
+            #nodes_lpmp_py, e_lpmp_py, t_lpmp_py = run_mc_mp_pybindings(n_var, uv_ids, costs, max_iter = 200)
+            #e_lpmp_py_list.append(e_lpmp_py)
+            #t_lpmp_py_list.append(t_lpmp_py)
             #project(sample, nodes_lpmp_py, './segmentations/lpmp_py_%s.h5' % sample)
 
             #print "Run LP_MP mp from commandline"
@@ -68,16 +72,22 @@ def compare_all_mcmp():
     N = 1
     res_dict = {}
     for sample in samples:
-        res_dict[sample] = _run(sample, N)
+        for i, params in enumerate( (default_multiprocessing, default_nifty, default_pybindings) ):
+            for n_threads in (1,2,4,8):
+                res_dict[(sample,i,n_threads)] = _run(sample, params = params, n_threads = n_threads)
 
     for sample in samples:
-        e_py, t_py, e_nifty, t_nifty, e_fm, t_fm = res_dict[sample]
         print
         print "Summary for %s:" % sample
-        print "Message passing multicut:"
-        print "Pybindings mp: primal: %f +- %f, t-inf: %f +- %f" % (np.mean(e_py), np.std(e_py), np.mean(t_py), np.std(t_py))
-        print "Nifty mp     : primal: %f +- %f, t-inf: %f +- %f" % (np.mean(e_nifty), np.std(e_nifty), np.mean(t_nifty), np.std(t_nifty))
-        #print "Nifty fmmp   : primal: %f +- %f, t-inf: %f +- %f" % (np.mean(e_fm), np.std(e_fm), np.mean(t_fm), np.std(t_fm))
+        for n_threads in (1,2,4,8):
+            print "N-threads: %i" % n_threads
+            for param_nu in (0,1,2):
+                print "param-nu: %i" % param_nu
+                e_py, t_py, e_nifty, t_nifty, e_fm, t_fm = res_dict[(sample,param_nu,n_threads)]
+                print "Message passing multicut:"
+                #print "Pybindings mp: primal: %f +- %f, t-inf: %f +- %f" % (np.mean(e_py), np.std(e_py), np.mean(t_py), np.std(t_py))
+                print "Nifty mp     : primal: %f +- %f, t-inf: %f +- %f" % (np.mean(e_nifty), np.std(e_nifty), np.mean(t_nifty), np.std(t_nifty))
+                #print "Nifty fmmp   : primal: %f +- %f, t-inf: %f +- %f" % (np.mean(e_fm), np.std(e_fm), np.mean(t_fm), np.std(t_fm))
         print
 
 

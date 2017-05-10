@@ -5,7 +5,7 @@ sys.path.append('..')
 from utils import *
 
 
-def test_nifty_kl(sample):
+def test_nifty_solver(sample):
     paths = model_paths_new[sample]
     n_var, uv_ids, costs = read_from_mcppl(paths[0], paths[1])
 
@@ -13,13 +13,21 @@ def test_nifty_kl(sample):
     #nodes_fm, e_fm_nifty, t_fm_nifty = run_fusion_moves_nifty(n_var, uv_ids, costs)
     #project(sample, nodes_fm, './segmentations/nifty_fm_%s.h5' % sample)
 
-    #print "Run nifty kl"
+    print "Run nifty kl"
     nodes_kl, e_kl_nifty, t_kl_nifty = run_kl_nifty(n_var, uv_ids, costs)
     #project(sample, nodes_kl, './segmentations/nifty_kl_%s.h5' % sample)
 
+    print "Run nifty cgc"
+    nodes_cgc, e_cgc_nifty, t_cgc_nifty = run_cgc(n_var, uv_ids, costs, False)
+
+    print "Run nifty gaec + cgc"
+    nodes_gacgc, e_gacgc_nifty, t_gacgc_nifty = run_cgc(n_var, uv_ids, costs, True)
+
     print "Summary for %s:" % sample
     #print "FM: primal: %f, t-inf: %f" % (e_fm_nifty, t_fm_nifty)
-    print "KL: primal: %f, t-inf: %f" % (e_kl_nifty, t_kl_nifty)
+    print "KL      : primal: %f, t-inf: %f" % (e_kl_nifty, t_kl_nifty)
+    print "CGC     : primal: %f, t-inf: %f" % (e_cgc_nifty, t_cgc_nifty)
+    print "GAEC+CGC: primal: %f, t-inf: %f" % (e_gacgc_nifty, t_gacgc_nifty)
 
 
 
@@ -120,7 +128,7 @@ def sampleD_problems():
 
 
 if __name__ == '__main__':
-    test_nifty_kl('sampleA')
+    test_nifty_solver('sampleA')
     #sampleD_problems()
     #for sample in ('sampleA', 'sampleB', 'sampleC'):
     #    compare_opengm_nifty(sample)

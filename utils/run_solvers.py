@@ -102,7 +102,9 @@ def nifty_mc_objective(n_var, uv_ids, costs):
     return nifty.graph.optimization.multicut.multicutObjective(g, costs)
 
 
+# TODO greedy warmstart for fusion moves ?!
 def run_fusion_moves_nifty(n_var, uv_ids, costs,
+        backend_str = 'ilp'
         n_threads = 20,
         seed_fraction = 0.001,
         verbose = False,
@@ -112,10 +114,15 @@ def run_fusion_moves_nifty(n_var, uv_ids, costs,
 
     greedy = obj.greedyAdditiveFactory().create(obj)
 
-    backend_factory = obj.multicutIlpFactory(ilpSolver=ilp_bkend,verbose=0,
-        addThreeCyclesConstraints=True,
-        addOnlyViolatedThreeCyclesConstraints=True
-    )
+    if backend_str == 'ilp':
+        backend_factory = obj.multicutIlpFactory(
+            ilpSolver=ilp_bkend,
+            verbose=0,
+            addThreeCyclesConstraints=True,
+            addOnlyViolatedThreeCyclesConstraints=True
+        )
+    elif backend_str == 'cgc':
+        backend_factory = obj.cgcFactory()
 
     factory = obj.fusionMoveBasedFactory(
         verbose=1,
@@ -182,7 +189,26 @@ def run_ilp_nifty(n_var, uv_ids, costs,
     return ret, mc_energy, t_inf
 
 
-# TODO Test this !!!
+def run_cgc(n_var, uv_ids, costs,
+        greedy_ws):
+
+    obj = nifty_mc_objective(n_var, uv_ids, costs)
+    if greedy_ws:
+        greedy = obj.greedyAdditiveFactory().create(obj)
+    solver = obj.cgcFactory().create(obj)
+
+    t_inf = time.time()
+    if greedy_ws:
+        ret = greedy.optimize()
+        ret = solver.optimize(nodeLabels = ret)
+    else:
+        ret = solver.optimize()
+    t_inf = time.time() - t_inf
+
+    mc_energy = obj.evalNodeLabels(ret)
+    return ret, mc_energy, t_inf
+
+
 def run_kl_nifty(n_var, uv_ids, costs,
         verbose = False,
         timeout = 0):

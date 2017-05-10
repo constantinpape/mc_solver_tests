@@ -7,6 +7,7 @@ from run_solvers import nifty_mc_objective
 
 ilp_bkend = 'cplex'
 
+
 # TODO more mp settings
 def mp_factory(obj, mp_primal_rounder,
         max_iter = 1000,
@@ -24,7 +25,7 @@ def mp_factory(obj, mp_primal_rounder,
         n_threads_fuse = 1,
         seed_fraction_fuse = 0.001
         ):
-    assert mp_primal_rounder in ('greedy', 'kl', 'ilp', 'fm-ilp', 'fm-mp'), mp_primal_rounder
+    assert mp_primal_rounder in ('greedy', 'kl', 'ilp', 'fm-ilp', 'fm-mp', 'cgc'), mp_primal_rounder
 
     if mp_primal_rounder == 'greedy':
         backend_factory = obj.greedyAdditiveFactory()
@@ -42,6 +43,10 @@ def mp_factory(obj, mp_primal_rounder,
                 addOnlyViolatedThreeCyclesConstraints=True
             )
         greedy_ws = False
+
+    elif mp_primal_rounder == 'cgc':
+        backend_factory = obj.cgcFactory()
+        greedy_ws = True
 
     elif mp_primal_rounder in ('fm-ilp', 'fm-mp'):
 
