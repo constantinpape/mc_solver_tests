@@ -99,7 +99,7 @@ def nifty_mc_objective(n_var, uv_ids, costs):
     g.insertEdges(uv_ids)
     assert g.numberOfEdges == uv_ids.shape[0], "%i, %i" % (g.numberOfEdges, uv_ids.shape[0])
     assert g.numberOfEdges == costs.shape[0],  "%i, %i" % (g.numberOfEdges, costs.shape[0])
-    return nifty.graph.multicut.multicutObjective(g, costs)
+    return nifty.graph.optimization.multicut.multicutObjective(g, costs)
 
 
 def run_fusion_moves_nifty(n_var, uv_ids, costs,
@@ -303,11 +303,7 @@ def run_mc_mp_pybindings(n_var, uv_ids, costs,
     import lp_mp
 
     # nifty graph and objective for node labels and energy
-    g = nifty.graph.UndirectedGraph(int(n_var))
-    g.insertEdges(uv_ids)
-    assert g.numberOfEdges == costs.shape[0], "%i , %i" % (g.numberOfEdges, costs.shape[0])
-    assert g.numberOfEdges == uv_ids.shape[0], "%i, %i" % (g.numberOfEdges, uv_ids.shape[0])
-    obj = nifty.graph.multicut.multicutObjective(g, costs)
+    obj = nifty_mc_objective(n_var, uv_ids, costs)
 
     # FIXME make this compatible with numpy arrays for uv_ids too
     t_inf = time.time()

@@ -1,0 +1,83 @@
+######################
+Nifty vs Andres Solver
+######################
+
+sampleA
+Results GAEC:
+Energies:
+Andres: -562291.13786
+Nifty:  -562291.108359
+297105 /
+297111
+Results KL:
+Energies:
+Andres: -562151.040685
+Nifty:  -562195.277163
+295708 /
+297111
+Results GAEC + KL:
+Energies:
+Andres: -562293.271477
+Nifty:  -562293.241976
+297105 /
+297111
+sampleB
+Results GAEC:
+Energies:
+Andres: -343928.072068
+Nifty:  -343928.072068
+280507 /
+280510
+Results KL:
+Energies:
+Andres: -343541.927171
+Nifty:  -343667.865634
+274850 /
+280510
+Results GAEC + KL:
+Energies:
+Andres: -343933.598897
+Nifty:  -343933.598897
+280507 /
+280510
+sampleC
+Results GAEC:
+Energies:
+Andres: -521561.478399
+Nifty:  -521561.478399
+355378 /
+355389
+Results KL:
+Energies:
+Andres: -521176.145933
+Nifty:  -521332.811104
+350557 /
+355389
+Results GAEC + KL:
+Energies:
+Andres: -521568.52533
+Nifty:  -521568.52533
+355378 /
+355389
+
+
+##############################
+Mp with nifty / Andres backend
+##############################
+
+Summary for sampleA:
+Message passing multicut:
+Pybindings mp: primal: -562301.736003 +- 0.000000, t-inf: 25.881872 +- 0.000000
+Nifty mp     : primal: -562301.708885 +- 0.000000, t-inf: 25.349646 +- 0.000000
+
+
+Summary for sampleB:
+Message passing multicut:
+Pybindings mp: primal: -343940.131040 +- 0.000000, t-inf: 29.547116 +- 0.000000
+Nifty mp     : primal: -343938.137372 +- 0.000000, t-inf: 28.726585 +- 0.000000
+
+
+Summary for sampleC:
+Message passing multicut:
+Pybindings mp: primal: -521568.454472 +- 0.000000, t-inf: 30.461324 +- 0.000000
+Nifty mp     : primal: -521567.730206 +- 0.000000, t-inf: 30.188649 +- 0.000000

@@ -3,7 +3,6 @@ from functools import partial
 import sys
 sys.path.append('..')
 from utils import *
-from model_paths import model_paths_new, model_paths_mcluigi
 
 
 def test_nifty_kl(sample):

@@ -31,9 +31,8 @@ def mp_factory(obj, mp_primal_rounder,
         greedy_ws = False
 
     elif mp_primal_rounder == 'kl':
-        #backend_factory = obj.multicutKernighanLinFactory()
-        backend_factory = None # we use the default kl factory here
-        greedy_ws = True
+        backend_factory = obj.multicutAndresKernighanLinFactory()
+        greedy_ws = False
 
     elif mp_primal_rounder == 'ilp':
         backend_factory = obj.multicutIlpFactory(

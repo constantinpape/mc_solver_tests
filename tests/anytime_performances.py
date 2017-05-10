@@ -4,7 +4,6 @@ import os
 import re
 import cPickle as pickle
 import numpy as np
-from model_paths import model_paths_new, model_paths_mcluigi
 
 def parse_and_save_out_niftyfm(out, save_path):
     out = out.split('\n')

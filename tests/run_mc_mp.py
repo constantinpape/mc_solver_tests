@@ -3,7 +3,6 @@ import numpy as np
 import sys
 sys.path.append('..')
 from utils import *
-from model_paths import model_paths_new
 
 def run_mc_mp(sample):
 
@@ -38,10 +37,10 @@ def compare_all_mcmp():
         for _ in range(N):
 
             # save fm result for comparison
-            print "Run fusion moves nifty with mp backend"
-            nodes_fm, e_fm, t_fm = run_fusion_moves_mp(n_var, uv_ids, costs, n_threads = 1)
-            e_fmmp_list.append(e_fm)
-            t_fmmp_list.append(t_fm)
+            #print "Run fusion moves nifty with mp backend"
+            #nodes_fm, e_fm, t_fm = run_fusion_moves_mp(n_var, uv_ids, costs, n_threads = 4)
+            #e_fmmp_list.append(e_fm)
+            #t_fmmp_list.append(t_fm)
             #project(sample, nodes_fm, './segmentations/nifty_fm_%s.h5' % sample)
 
             print "Run nifty mp"
@@ -50,10 +49,10 @@ def compare_all_mcmp():
             t_lpmp_nifty_list.append(t_lpmp_nifty)
             #project(sample, nodes_mp_nifty, './segmentations/nifty_mp_%s.h5' % sample)
 
-            #print "Run LP_MP mp with pythonbindigns"
-            #nodes_lpmp_py, e_lpmp_py, t_lpmp_py = run_mc_mp_pybindings(n_var, uv_ids, costs, max_iter = 200)
-            #e_lpmp_py_list.append(e_lpmp_py)
-            #t_lpmp_py_list.append(t_lpmp_py)
+            print "Run LP_MP mp with pythonbindigns"
+            nodes_lpmp_py, e_lpmp_py, t_lpmp_py = run_mc_mp_pybindings(n_var, uv_ids, costs, max_iter = 200)
+            e_lpmp_py_list.append(e_lpmp_py)
+            t_lpmp_py_list.append(t_lpmp_py)
             #project(sample, nodes_lpmp_py, './segmentations/lpmp_py_%s.h5' % sample)
 
             #print "Run LP_MP mp from commandline"
@@ -63,8 +62,8 @@ def compare_all_mcmp():
 
         return e_lpmp_py_list, t_lpmp_py_list, e_lpmp_nifty_list, t_lpmp_nifty_list, e_fmmp_list, t_fmmp_list
 
-    #samples = ('sampleA', 'sampleB', 'sampleC')
-    samples = ('sampleA',)
+    samples = ('sampleA', 'sampleB', 'sampleC')
+    #samples = ('sampleA',)
 
     N = 1
     res_dict = {}
@@ -76,10 +75,9 @@ def compare_all_mcmp():
         print
         print "Summary for %s:" % sample
         print "Message passing multicut:"
-        #print "Nifty mp     : primal: %f, t-inf: %f" % (e_nifty, t_nifty)
-        #print "Pybindings mp: primal: %f +- %f, t-inf: %f +- %f" % (np.mean(e_py), np.std(e_py), np.mean(t_py), np.std(t_py))
+        print "Pybindings mp: primal: %f +- %f, t-inf: %f +- %f" % (np.mean(e_py), np.std(e_py), np.mean(t_py), np.std(t_py))
         print "Nifty mp     : primal: %f +- %f, t-inf: %f +- %f" % (np.mean(e_nifty), np.std(e_nifty), np.mean(t_nifty), np.std(t_nifty))
-        print "Nifty fmmp   : primal: %f +- %f, t-inf: %f +- %f" % (np.mean(e_fm), np.std(e_fm), np.mean(t_fm), np.std(t_fm))
+        #print "Nifty fmmp   : primal: %f +- %f, t-inf: %f +- %f" % (np.mean(e_fm), np.std(e_fm), np.mean(t_fm), np.std(t_fm))
         print
 
 
