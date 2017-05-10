@@ -1,0 +1,44 @@
+# 1st try fmmp
+
+Summary for sampleA:
+Message passing multicut:
+Nifty mp     : primal: -562301.736003 +- 0.000000, t-inf: 25.242472 +- 0.000000
+Nifty fmmp   : primal: -562296.288770 +- 0.000000, t-inf: 407.949094 +- 0.000000
+
+
+# Moar solvers
+
+KL      : primal: -562293.241976, t-inf: 0.735310
+CGC     : primal: -562293.243095, t-inf: 2507.142275
+GAEC+CGC: primal: -562301.665524, t-inf: 152.819040
+
+
+# mp with fusion moves primal solver
+
+# -> fmkl, 4 - 4 threads
+sampleA
+Message passing multicut:
+Nifty mp     : primal: -562299.202982 +- 0.000000, t-inf: 52.729221 +- 0.000000
+Nifty mpfm   : primal: -562299.090191 +- 0.000000, t-inf: 99.751947 +- 0.000000
+
+sampleB
+Message passing multicut:
+Nifty mp     : primal: -343939.926304 +- 0.000000, t-inf: 69.082781 +- 0.000000
+Nifty mpfm   : primal: -343939.475917 +- 0.000000, t-inf: 155.974477 +- 0.000000
+
+sampleC
+Message passing multicut:
+Nifty mp     : primal: -521563.754262 +- 0.000000, t-inf: 82.791514 +- 0.000000
+Nifty mpfm   : primal: -521563.039979 +- 0.000000, t-inf: 148.248784 +- 0.000000
+
+
+-> fmkl, 7 - 1 threads
+Sample A
+Nifty mpfm   : primal: -562302.333752 +- 0.000000, t-inf: 201.872171 +- 0.000000
+
+sampleB
+Nifty mpfm   : primal: -343939.045159 +- 0.000000, t-inf: 217.105536 +- 0.000000
+
+sampleC
+Nifty mpfm   : primal: -521567.577810 +- 0.000000, t-inf: 265.760763 +- 0.000000
+

@@ -22,10 +22,10 @@ def mp_factory(obj, mp_primal_rounder,
         tightenSlope              = 0.1,
         tightenConstraintsPercentage = 0.05,
         primalComputationInterval = 13,
-        n_threads_fuse = 1,
-        seed_fraction_fuse = 0.001
+        n_threads_fuse = 7,
+        seed_fraction_fuse = 0.1
         ):
-    assert mp_primal_rounder in ('greedy', 'kl', 'ilp', 'fm-ilp', 'fm-mp', 'cgc'), mp_primal_rounder
+    assert mp_primal_rounder in ('greedy', 'kl', 'ilp', 'fm-ilp', 'fm-mp', 'cgc', 'fm-cgc', 'fm-kl'), mp_primal_rounder
 
     if mp_primal_rounder == 'greedy':
         backend_factory = obj.greedyAdditiveFactory()
@@ -48,7 +48,7 @@ def mp_factory(obj, mp_primal_rounder,
         backend_factory = obj.cgcFactory()
         greedy_ws = True
 
-    elif mp_primal_rounder in ('fm-ilp', 'fm-mp'):
+    elif mp_primal_rounder in ('fm-ilp', 'fm-mp', 'fm-kl', 'fm-cgc'):
 
         if mp_primal_rounder == 'fm-ilp':
             fm_factory = obj.multicutIlpFactory(
@@ -57,8 +57,12 @@ def mp_factory(obj, mp_primal_rounder,
                     addThreeCyclesConstraints=True,
                     addOnlyViolatedThreeCyclesConstraints=True
                 )
-        else:
+        elif mp_primal_rounder == 'fm-mp':
             fm_factory = mp_factory(obj, 'kl', max_iter = 500)
+        elif mp_primal_rounder == 'fm-kl':
+            fm_factory = obj.multicutAndresKernighanLinFactory()
+        elif mp_primal_rounder == 'fm-cgc':
+            fm_factory = obj.cgcFactory()
 
         backend_factory = obj.fusionMoveBasedFactory(
             verbose=0,

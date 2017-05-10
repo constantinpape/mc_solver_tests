@@ -104,7 +104,7 @@ def nifty_mc_objective(n_var, uv_ids, costs):
 
 # TODO greedy warmstart for fusion moves ?!
 def run_fusion_moves_nifty(n_var, uv_ids, costs,
-        backend_str = 'ilp'
+        backend_str = 'ilp',
         n_threads = 20,
         seed_fraction = 0.001,
         verbose = False,
