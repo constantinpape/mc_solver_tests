@@ -3,3 +3,4 @@ from read_models import read_from_opengm, read_from_mcppl, read_from_mcluigi
 from nifty_mp import run_fusion_moves_mp, run_mp_nifty
 from project_node_results import project
 from model_paths import *
+from mcmp_parameters import *
