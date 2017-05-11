@@ -2,7 +2,7 @@ import argparse
 from functools import partial
 import sys
 sys.path.append('..')
-from utils import run_fusion_moves_nifty, run_ilp_nifty, run_mc_mp_cmdline, run_mc_mp_pybindings
+from utils import run_fusion_moves_nifty, run_ilp_nifty, run_mc_mp_cmdline, run_mp_nifty
 from utils import read_from_mcluigi
 
 # TODO
@@ -13,18 +13,22 @@ def parse_args():
     parser.add_argument("model_path", type = str)
     parser.add_argument("solver_type", type = str)
     parser.add_argument("timeout", type = int)
+    parser.add_argument("n_threads", type = int)
     args = parser.parse_args()
 
     n_var, uv_ids, costs = read_from_mcluigi(args.model_path)
     solver_type = args.solver_type
     timeout     = args.timeout
-    assert solver_type in ('fm', 'mcmp_py', 'ilp')
+    n_threads   = args.n_threads
+    assert solver_type in ('fm', 'mcmp', 'ilp', 'mcmp-fmkl')
     if solver_type == 'fm':
-        solver = partial(run_fusion_moves_nifty, verbose = True, timeout = timeout, seed_fraction = 1e-5)
+        solver = partial(run_fusion_moves_nifty, verbose = True, timeout = timeout, seed_fraction = 1e-5, n_threads = n_threads)
     elif solver_type == 'ilp':
         solver = partial(run_ilp_nifty, verbose = True, timeout = timeout)
-    elif solver_type == 'mcmp_py':
-        solver = partial(run_mc_mp_pybindings, timeout = timeout, max_iter = long(1e8))
+    elif solver_type == 'mcmp':
+        solver = partial(run_mp_nifty, timeout = timeout, max_iter = long(1e8), n_threads = n_threads)
+    elif solver_type == 'mcmp-fmkl':
+        solver = partial(run_mp_nifty, timeout = timeout, max_iter = long(1e8), n_threads = n_threads, n_threads_fuse = 20, mp_primal_rounder = 'fm-kl')
 
     return n_var, uv_ids, costs, solver
 

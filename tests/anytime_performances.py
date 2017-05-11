@@ -5,6 +5,10 @@ import re
 import cPickle as pickle
 import numpy as np
 
+import sys
+sys.path.append('..')
+from utils import model_paths_mcluigi
+
 def parse_and_save_out_niftyfm(out, save_path):
     out = out.split('\n')
 
@@ -133,42 +137,43 @@ def anytime_data_small_samples():
                 print n_threads
                 out = _run(sample, solver, n_threads)
                 save_cmdline_output(out, save_folder + '/%s_%s_%i_threads.txt'% (sample, solver, n_threads))
-                #if solver == 'fm':
-                #    parse_and_save_out_niftyfm(out, save_folder + '/%s_%s.h5' % (sample, solver))
-                #elif solver == 'ilp':
-                #    parse_and_save_out_niftyilp(out, save_folder + '/%s_%s.h5' % (sample, solver))
-                #else:
-                #    parse_and_save_out_mcmp(out, save_folder + '/%s_%s__.h5' % (sample, solver), True)
+                if solver == 'fm':
+                    parse_and_save_out_niftyfm(out, save_folder + '/%s_%s.h5' % (sample, solver))
+                elif solver == 'ilp':
+                    parse_and_save_out_niftyilp(out, save_folder + '/%s_%s.h5' % (sample, solver))
+                else:
+                    parse_and_save_out_mcmp(out, save_folder + '/%s_%s__.h5' % (sample, solver), True)
 
 
 def anytime_data_sampleD():
 
-    # 4 hours default timeout
-    def _run(sample, solver_type, timeout = 4 * 3600):
-        assert solver_type in ('fm', 'mcmp_py', 'mcmp_cmd', 'ilp')
+    # 2 hours default timeout
+    def _run(sample, solver_type, timeout = 3600, n_threads = 20):
+        assert solver_type in ('fm', 'mcmp', 'mcmp_cmd', 'ilp', 'mcmp-fmkl')
         model_path = model_paths_mcluigi[sample]
         out = subprocess.check_output(
-                ['python', 'single_solver_sampleD.py', model_path, solver_type, str(timeout)])
+                ['python', 'single_solver_sampleD.py', model_path, solver_type, str(timeout), str(n_threads)])
         return out
 
-    save_folder = './anytime_data'
+    save_folder = './anytime_data/sampleD'
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
 
-    for sample in ('sampleD_medium', 'sampleD_large'):
+    samples = ('sampleD_medium',)# 'sampleD_large')
+    for sample in samples:
         print sample
-        for solver in ('fm', 'mcmp_py'):
+        for solver in ('mcmp-fmkl', 'fm', 'mcmp'):
             print solver
-            if solver == 'fm' and sample == 'sampleD_medium':
-                continue
             out = _run(sample, solver)
-            if solver == 'fm':
-                parse_and_save_out_niftyfm(out, save_folder + '/%s_%s.h5' % (sample, solver))
-            elif solver == 'ilp':
-                parse_and_save_out_niftyilp(out, save_folder + '/%s_%s.h5' % (sample, solver))
-            else:
-                parse_and_save_out_mcmp(out, save_folder + '/%s_%s.h5' % (sample, solver))
+            save_cmdline_output(out, save_folder + '/%s_%s.txt'% (sample, solver))
+            #if solver == 'fm':
+            #    parse_and_save_out_niftyfm(out, save_folder + '/%s_%s.h5' % (sample, solver))
+            #elif solver == 'ilp':
+            #    parse_and_save_out_niftyilp(out, save_folder + '/%s_%s.h5' % (sample, solver))
+            #else:
+            #    parse_and_save_out_mcmp(out, save_folder + '/%s_%s.h5' % (sample, solver))
 
 
 if __name__ == '__main__':
-    anytime_data_small_samples()
+    anytime_data_sampleD()
+    #anytime_data_small_samples()

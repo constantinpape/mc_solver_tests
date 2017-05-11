@@ -1,12 +1,5 @@
-import os
-import time
-import subprocess
-import numpy as np
-
-# solver libraries
 import opengm
-import nifty
-ilp_bkend = 'cplex'
+from nifty_solver import nifty_mc_objective
 
 ################################################
 #### OpenGM Solver
@@ -90,143 +83,6 @@ def run_ilp_opengm(n_var, uv_ids, costs,
 
 
 ################################################
-#### Nifty Solver
-################################################
-
-
-def nifty_mc_objective(n_var, uv_ids, costs):
-    g = nifty.graph.UndirectedGraph(n_var)
-    g.insertEdges(uv_ids)
-    assert g.numberOfEdges == uv_ids.shape[0], "%i, %i" % (g.numberOfEdges, uv_ids.shape[0])
-    assert g.numberOfEdges == costs.shape[0],  "%i, %i" % (g.numberOfEdges, costs.shape[0])
-    return nifty.graph.optimization.multicut.multicutObjective(g, costs)
-
-
-# TODO greedy warmstart for fusion moves ?!
-def run_fusion_moves_nifty(n_var, uv_ids, costs,
-        backend_str = 'ilp',
-        n_threads = 20,
-        seed_fraction = 0.001,
-        verbose = False,
-        timeout = 0
-        ):
-    obj = nifty_mc_objective(n_var, uv_ids, costs)
-
-    greedy = obj.greedyAdditiveFactory().create(obj)
-
-    if backend_str == 'ilp':
-        backend_factory = obj.multicutIlpFactory(
-            ilpSolver=ilp_bkend,
-            verbose=0,
-            addThreeCyclesConstraints=True,
-            addOnlyViolatedThreeCyclesConstraints=True
-        )
-    elif backend_str == 'cgc':
-        backend_factory = obj.cgcFactory()
-
-    factory = obj.fusionMoveBasedFactory(
-        verbose=1,
-        fusionMove=obj.fusionMoveSettings(mcFactory=backend_factory),
-        proposalGen=obj.watershedProposals(sigma=10, seedFraction=seed_fraction),
-        numberOfIterations = 3000,
-        numberOfParallelProposals = 2*n_threads,
-        numberOfThreads = n_threads,
-        stopIfNoImprovement = 20,
-        fuseN=2,
-    )
-
-    solver = factory.create(obj)
-
-    with_visitor = False
-    if verbose or timeout > 0:
-        with_visitor = True
-        if verbose and timeout > 0:
-            visitor = obj.multicutVerboseVisitor(1, timeout)
-        elif not verbose:
-            visitor = obj.multicutVerboseVisitor(1000000, timeout)
-        else:
-            visitor = obj.multicutVerboseVisitor(1)
-
-    t_inf = time.time()
-    ret    = greedy.optimize()
-    if with_visitor:
-        ret = solver.optimize(nodeLabels=ret,visitor=visitor)
-    else:
-        ret = solver.optimize(nodeLabels=ret)
-    t_inf = time.time() - t_inf
-    mc_energy = obj.evalNodeLabels(ret)
-    return ret, mc_energy, t_inf
-
-
-def run_ilp_nifty(n_var, uv_ids, costs,
-        verbose = False,
-        timeout = 0):
-
-    obj = nifty_mc_objective(n_var, uv_ids, costs)
-    solver = obj.multicutIlpFactory(ilpSolver=ilp_bkend,verbose=0,
-        addThreeCyclesConstraints=True,
-        addOnlyViolatedThreeCyclesConstraints=True
-    ).create(obj)
-
-    with_visitor = False
-    if verbose or timeout > 0:
-        with_visitor = True
-        if verbose and timeout > 0:
-            visitor = obj.multicutVerboseVisitor(1, timeout)
-        elif not verbose:
-            visitor = obj.multicutVerboseVisitor(1000000, timeout)
-        else:
-            visitor = obj.multicutVerboseVisitor(1)
-
-    t_inf = time.time()
-    if with_visitor:
-        ret = solver.optimize(visitor=visitor)
-    else:
-        ret = solver.optimize()
-    t_inf = time.time() - t_inf
-
-    mc_energy = obj.evalNodeLabels(ret)
-    return ret, mc_energy, t_inf
-
-
-def run_cgc(n_var, uv_ids, costs,
-        greedy_ws):
-
-    obj = nifty_mc_objective(n_var, uv_ids, costs)
-    if greedy_ws:
-        greedy = obj.greedyAdditiveFactory().create(obj)
-    solver = obj.cgcFactory().create(obj)
-
-    t_inf = time.time()
-    if greedy_ws:
-        ret = greedy.optimize()
-        ret = solver.optimize(nodeLabels = ret)
-    else:
-        ret = solver.optimize()
-    t_inf = time.time() - t_inf
-
-    mc_energy = obj.evalNodeLabels(ret)
-    return ret, mc_energy, t_inf
-
-
-def run_kl_nifty(n_var, uv_ids, costs,
-        verbose = False,
-        timeout = 0):
-
-    obj = nifty_mc_objective(n_var, uv_ids, costs)
-    greedy = obj.greedyAdditiveFactory().create(obj)
-    solver = obj.multicutKernighanLinFactory().create(obj)
-
-    t_inf = time.time()
-    ret = greedy.optimize()
-    ret = solver.optimize(nodeLabels = ret)
-    t_inf = time.time() - t_inf
-
-    mc_energy = obj.evalNodeLabels(ret)
-    return ret, mc_energy, t_inf
-
-
-################################################
 #### LP_MP Solver
 ################################################
 
@@ -269,7 +125,7 @@ def run_mc_mp_cmdline(n_var, uv_ids, costs,
     binary           = os.path.join(home_dir, 'Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle')
 
     options =  [
-        binary,
+        binary_odd_wheel,
         '-i', './tmp.gm',
         '--standardReparametrization', standardReparametrization,
         '--tightenReparametrization',  tightenReparametrization,

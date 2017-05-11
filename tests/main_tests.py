@@ -4,99 +4,41 @@ import sys
 sys.path.append('..')
 from utils import *
 
-
-def test_nifty_solver(sample):
-    paths = model_paths_new[sample]
-    n_var, uv_ids, costs = read_from_mcppl(paths[0], paths[1])
-
-    #print "Run nifty fm"
-    #nodes_fm, e_fm_nifty, t_fm_nifty = run_fusion_moves_nifty(n_var, uv_ids, costs)
-    #project(sample, nodes_fm, './segmentations/nifty_fm_%s.h5' % sample)
-
-    print "Run nifty kl"
-    nodes_kl, e_kl_nifty, t_kl_nifty = run_kl_nifty(n_var, uv_ids, costs)
-    #project(sample, nodes_kl, './segmentations/nifty_kl_%s.h5' % sample)
-
-    print "Run nifty cgc"
-    nodes_cgc, e_cgc_nifty, t_cgc_nifty = run_cgc(n_var, uv_ids, costs, False)
-
-    print "Run nifty gaec + cgc"
-    nodes_gacgc, e_gacgc_nifty, t_gacgc_nifty = run_cgc(n_var, uv_ids, costs, True)
-
-    print "Summary for %s:" % sample
-    #print "FM: primal: %f, t-inf: %f" % (e_fm_nifty, t_fm_nifty)
-    print "KL      : primal: %f, t-inf: %f" % (e_kl_nifty, t_kl_nifty)
-    print "CGC     : primal: %f, t-inf: %f" % (e_cgc_nifty, t_cgc_nifty)
-    print "GAEC+CGC: primal: %f, t-inf: %f" % (e_gacgc_nifty, t_gacgc_nifty)
-
-
-
-def compare_opengm_nifty(sample):
-
-    paths = model_paths_new[sample]
-    n_var, uv_ids, costs = read_from_mcppl(paths[0], paths[1])
-
-    # run fusionmoves
-    print "Run nifty fm"
-    _, e_fm_nifty, t_fm_nifty = run_fusion_moves_nifty(n_var, uv_ids, costs)
-    print "Run opengm fm"
-    _, e_fm_opengm, t_fm_opengm = run_fusion_moves_opengm(n_var, uv_ids, costs)
-
-    # run ilps
-    print "Run nifty ilp"
-    _, e_ilp_nifty,  t_ilp_nifty  = run_ilp_nifty(n_var, uv_ids, costs)
-    print "Run opengm ilp"
-    _, e_ilp_opengm, t_ilp_opengm = run_ilp_opengm(n_var, uv_ids, costs)
-
-    print
-    print "Summary for %s:" % sample
-    print "Fusionmoves:"
-    print "Nifty: primal: %f, t-inf: %f" % (e_fm_nifty, t_fm_nifty)
-    print "Opengm: primal: %f, t-inf: %f" % (e_fm_opengm, t_fm_opengm)
-    print "Ilp:"
-    print "Nifty: primal: %f, t-inf: %f"  % (e_ilp_nifty,  t_ilp_nifty)
-    print "Opengm: primal: %f, t-inf: %f" % (e_ilp_opengm, t_ilp_opengm)
-    print
-
-
 # compare the main algorithms in nifty on the small samples
-def compare_nifty_algos(sample):
+def small_problems():
 
-    def _run(sample):
+    def run_sample(sample, timeout = None, verbose = False):
+        uv_path, costs_path = model_paths_new[sample]
+        n_var, uv_ids, costs = read_from_mcppl(uv_path, costs_path)
+        obj = nifty_mc_objective(n_var, uv_ids, costs)
 
-        # FIXME this is not working multi-threaded yet, maybe due to the async call in LP_MP ?!
-        print "Run nifty fm-mp"
-        _, e_fmmp, t_fmmp = run_fusion_moves_nifty(n_var, uv_ids, costs, backend = 'mp', n_threads = 1)
+        solver_dict = {
+            'fm-ilp' : nifty_fusion_move_factory(obj,
+                backend_factory = nifty_ilp_factory(obj),
+                seed_fraction = 0.01),
+            'ilp' : nifty_ilp_factory(obj),
+            'cgc' : nifty_cgc_factory(obj),
+            'kl'  : nifty_kl_factory(obj),
+            'mp'  : nifty_mp_factory(obj)
+        }
 
-        print "Run nifty fm-ilp"
-        _, e_fmilp, t_fmilp = run_fusion_moves_nifty(n_var, uv_ids, costs, backend = 'ilp', n_threads = 20)
-
-        print "Run nifty ilp"
-        _, e_ilp, t_ilp = run_fusion_moves_nifty(n_var, uv_ids, costs, backend = 'ilp', n_threads = 20)
-
-        print "Run nifty mp"
-        _, e_mp, t_mp = run_mp_nifty(n_var, uv_ids, costs)
-
-        return e_fmmp, t_fmmp, e_fmilp, t_fmilp, e_ilp, t_ilp, e_mp, t_mp
-
-
-    samples = ('sampleA', 'sampleB', 'sampleC')
+        res_dict = {}
+        for solver in solver_dict:
+            print "Run - nifty solver:", solver
+            res_dict[solver] = run_nifty_solver(obj, solver_dict[solver], time_limit = timeout, verbose = verbose)
+        return res_dict
 
     res_dict = {}
+    #samples = ('sampleA','sampleB','sampleC')
+    samples = ('sampleA',)
     for sample in samples:
-        res_dict[sample] = _run(sample)
+        res_dict[sample] = run_sample(sample)
 
-    for sample in ('sampleA', 'sampleB', 'sampleC'):
-        e_fmmp, t_fmmp, e_fmilp, t_fmilp, e_ilp, t_ilp, e_mp, t_mp = res_dict[sample]
-        print
+    for sample in samples:
+        res = res_dict[sample]
         print "Summary for %s:" % sample
-        print "FM MP : primal: %f, t-inf: %f" % (e_fmmp, t_fmmp)
-        print "FM IlP: primal: %f, t-inf: %f" % (e_fmilp, t_fmilp)
-        print "Ilp   : primal: %f, t-inf: %f" % (e_ilp, t_ilp)
-        print "Mp    : primal: %f, t-inf: %f" % (e_mp, t_mp)
-        print
-
-
+        for solver_name, solver_res in res.iteritems():
+            print "%s : primal: %f, t-inf: %f" % (solver_name, solver_res[1], solver_res[2])
 
 def sampleD_problems():
 
@@ -106,19 +48,23 @@ def sampleD_problems():
         _, energy, runtime = solver(n_var, uv_ids, costs)
         return energy, runtime
 
+    timeout = 1800
     solver_dict = {
-            'fm' : run_fusion_moves_nifty,
-            'mcmp' : partial(run_mc_mp_pybindings, max_iter = 5000)
+            'fm' : partial(run_fusion_moves_nifty, n_threads = 20, verbose = True),
+            'mp' : partial(run_mp_nifty, timeout = 1800, n_threads = 20, max_iter = long(1e5)),
+            'mp-fmkl' : partial(run_mp_nifty, timeout = 1800, n_threads = 20, n_threads_fuse = 20, seed_fraction_fuse = 0.01, mp_primal_rounder = 'fm-kl', max_iter = long(1e5)),
+            'ilp' : partial(run_ilp_nifty, verbose = True, timeout = 1800)
             }
 
     res_dict = {}
-    for size in ('medium', 'large'):
+    samples = ('medium',)#'large')
+    for size in samples:
         for key, solver in solver_dict.iteritems():
             print "Run for size %s  with solver %s" % (size, key)
             res_dict[(size, key)] = _run(size, solver)
 
     print "Sample D problem summary:"
-    for size in ('medium', 'large'):
+    for size in samples:
         print "Problem size: %s" % size
         for key in solver_dict:
             e,t  = res_dict[(size, key)]
@@ -128,7 +74,7 @@ def sampleD_problems():
 
 
 if __name__ == '__main__':
-    test_nifty_solver('sampleA')
+    small_problems()
     #sampleD_problems()
     #for sample in ('sampleA', 'sampleB', 'sampleC'):
     #    compare_opengm_nifty(sample)
