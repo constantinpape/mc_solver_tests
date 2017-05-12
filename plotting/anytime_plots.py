@@ -3,6 +3,90 @@ import matplotlib.pyplot as plt
 import cPickle as pickle
 import vigra
 
+def parse_out_niftyfm(out):
+    out = out.split('\n')
+
+    energies  = []
+    run_times = []
+    iter_without_improvement = []
+
+    for line in out[1:]:
+        if not line.startswith('Energy:'):
+            if line.startswith('end inference'):
+                break
+            else:
+                continue
+        values = line.split()
+        energies.append(float(values[1]))
+        run_times.append(int(values[3]))
+        iter_without_improvement.append( int(float(values[5])) )
+
+    return energies, run_times, iter_without_improvement
+
+
+def parse_out_niftyilp(out):
+    out = out.split('\n')
+
+    energies  = []
+    run_times = []
+    n_violated = []
+
+    for line in out[1:]:
+        if not line.startswith('Energy:'):
+            if line.startswith('end inference'):
+                break
+            else:
+                continue
+        values = line.split()
+        energies.append(float(values[1]))
+        run_times.append(int(values[3]))
+        n_violated.append( int(float(values[5])) )
+
+    return energies, run_times, n_violated
+
+
+def parse_out_mcmp(out):
+    out = out.split('\n')
+
+    primal    = []
+    dual      = []
+    rt_primal = []
+    rt_dual   = []
+    dual_improvements = []
+
+    for line in out:
+        if line.startswith('best triplet'):
+            line = line.split()
+            dual_improvements.append(line[-1])
+
+        if not line.startswith('iteration'):
+            continue
+
+        line = line.split()
+        iter_num    = int(''.join(c for c in line[2] if c.isdigit()))
+        lower_bound = float(''.join(c for c in line[6] if c.isdigit() or c == '-'))
+        run_time   = float(''.join(c for c in line[-1] if c.isdigit() or c == '.'))
+
+        rt_dual.append(run_time)
+        dual.append(lower_bound)
+
+        if line[7] == 'upper':
+            val = line[10] if not line[10] == 'inf,' else '0'
+            primal.append(
+                float(''.join(c for c in val if c.isdigit() or c == '-'))
+            )
+            rt_primal.append(run_time)
+
+    # postprocess the primals for a better plot and drop primals that have 0 value
+    primal = np.array(primal)
+    rt_primal = np.array(rt_primal)
+    mask = primal != 0
+    primal = primal[mask]
+    rt_primal = rt_primal[mask]
+
+    return rt_primal, primal, rt_dual, dual, dual_improvements
+
+
 def plot_energies_sample(times, energies, labels, title):
     assert len(times) == len(energies)
     assert len(times) == len(labels), "%i, %i" % (len(times), len(labels))

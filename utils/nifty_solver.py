@@ -26,7 +26,7 @@ def run_nifty_solver(
     with_visitor = False
     if verbose or time_limit is not None:
         with_visitor = True
-        visit_nth = 1 if verbose else 100000000000
+        visit_nth = 1 if verbose else int(1000000000)
         visitor = obj.multicutVerboseVisitor(visit_nth, time_limit)
 
     t_inf = time.time()
@@ -45,11 +45,12 @@ def nifty_fusion_move_factory(
         n_threads = 20,
         seed_fraction = 0.001,
         greedy_chain  = True,
+        kl_chain      = True,
         number_of_iterations = 2000,
         n_stop = 20
         ):
 
-    factory = obj.fusionMoveBasedFactory(
+    fm_factory = obj.fusionMoveBasedFactory(
         verbose=0,
         fusionMove=obj.fusionMoveSettings(mcFactory=backend_factory),
         proposalGen=obj.watershedProposals(sigma=10, seedFraction=seed_fraction),
@@ -60,11 +61,17 @@ def nifty_fusion_move_factory(
         fuseN=2,
     )
 
-    if greedy_chain:
+    if kl_chain and greedy_chain:
+        kl_factory = nifty_kl_factory(obj, True)
+        return obj.chainedSolversFactory([kl_factory, fm_factory])
+    elif kl_chain and not greedy_chain:
+        kl_factory = nifty_kl_factory(obj, False)
+        return obj.chainedSolversFactory([kl_factory, fm_factory])
+    elif greedy_chain and not kl_chain:
         greedy = obj.greedyAdditiveFactory()
-        return obj.chainedSolversFactory([greedy, factory])
+        return obj.chainedSolversFactory([greedy, fm_factory])
     else:
-        return factory
+        return fm_factory
 
 
 def nifty_ilp_factory(

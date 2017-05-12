@@ -1,0 +1,47 @@
+Summary for sampleA:
+kl      : primal: -562293.271477, t-inf: 1.239667
+mp      : primal: -562302.752301, t-inf: 111.627770
+ilp     : primal: -562304.516629, t-inf: 108.652694
+----Fusion Moves Warmstarted with Greedy ----------
+fm-ilp  : primal: -562303.581673, t-inf: 183.475803
+fm-kl   : primal: -562301.265543, t-inf: 62.402219
+mp-fmkl : primal: -562261.667308, t-inf: 57.418346
+----Fusion Moves Warmstarted with Greedy + KL -----
+fm-ilp  : primal: -562303.581673, t-inf: 156.673878
+fm-kl   : primal: -562301.265543, t-inf: 77.510851
+mp-fmkl : primal: -562301.119088, t-inf: 49.121997
+
+Summary for sampleB:
+kl      : primal: -343933.598897, t-inf: 1.588972
+mp      : primal: -343943.171665, t-inf: 125.737541
+ilp     : primal: -343948.533390, t-inf: 353.269899
+----Fusion Moves Warmstarted with Greedy ----------
+fm-ilp  : primal: -343947.789975, t-inf: 501.678131
+fm-kl   : primal: -343939.293764, t-inf: 49.723623
+mp-fmkl : primal: -343939.735185, t-inf: 72.078798
+----Fusion Moves Warmstarted with Greedy + KL -----
+fm-ilp  : primal: -343947.761243, t-inf: 528.298437
+fm-kl   : primal: -343939.344594, t-inf: 44.556777
+mp-fmkl : primal: -343941.774495, t-inf: 72.806264
+
+Summary for sampleC:
+kl      : primal: -521568.525330, t-inf: 2.463459
+mp      : primal: -521568.931852, t-inf: 139.459992
+ilp     : primal: -521576.483044, t-inf: 315.706058
+----Fusion Moves Warmstarted with Greedy ----------
+fm-ilp  : primal: -521575.249881, t-inf: 451.441826
+fm-kl   : primal: -521572.759697, t-inf: 86.930994
+mp-fmkl : primal: -521571.760785, t-inf: 59.897285
+----Fusion Moves Warmstarted with Greedy + KL -----
+fm-ilp  : primal: -521575.249881, t-inf: 433.297681
+fm-kl   : primal: -521572.759697, t-inf: 93.303072
+mp-fmkl : primal: -521570.044125, t-inf: 122.667751
+
+
+!!!!!!!!!!
+! -> Fusion moves take much longer than before
+! (change / fix in watershed proposals)
+!!!!!!!!!!
+Old FM results:   SampleA     SampleB     SampleC
+| Fusion-Moves  | 87.1      | 299.5     | 107.6     |
+| Fusion-Moves  | -562303.4 | -343945.4 | -521574.0 |
