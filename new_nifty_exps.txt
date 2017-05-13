@@ -48,13 +48,17 @@ Old FM results:   SampleA     SampleB     SampleC
 
 
 SampleD_sub_L1
-kl      : Energy -4229294.738340, Runtime 5.554304
-mp-fmkl : Energy -4229448.033213, Runtime 3635.978028 (<- this is probably still worth, because we can tighten much less....)
-fm-ilp  : Energy -4229449.324829, Runtime 1099.728284 (seed_fraction = 0.001)
-mp-fmkl : Energy -4229473.888609, Runtime 3692.063894 (less aggressive fusionmoves)
-fm-kl   : Energy -4229481.591353, Runtime 735.061629
-mp-kl   : Energy -4229494.109906, Runtime 3603.059056 (seed_fraction = 0.01)
-ilp     : Energy -4229536.135864, Runtime  391.468257
+greedy      : Energy -4229229.168140, Runtime 1.419264
+kl          : Energy -4229294.738340, Runtime 5.554304
+mp-fmkl     : Energy -4229448.033213, Runtime 3635.978028 (<- this is probably still worth, because we can tighten much less....)
+fm-ilp      : Energy -4229449.324829, Runtime 1099.728284 (seed_fraction = 0.001)
+fm-greedy   : Energy -4229462.545856, Runtime 391.630795
+mp-fmkl     : Energy -4229473.888609, Runtime 3692.063894 (less aggressive fusionmoves)
+mp-fmkl     : Energy -4229477.781130, Runtime 3631.55387  (even less aggressive fusionmoves)
+fm-kl       : Energy -4229481.591353, Runtime 735.061629
+mp-fmgreedy : Energy -4229491.443681, Runtime 3628.140066
+mp-kl       : Energy -4229494.109906, Runtime 3603.059056 (seed_fraction = 0.01)
+ilp         : Energy -4229536.135864, Runtime  391.468257
 
 
 
@@ -63,6 +67,7 @@ ilp:     Energy  -722693.936121, Runtime 7094.533311
 kl:      Energy -4233494.998089, Runtime 195.235894
 fm-ilp:  Energy -4233990.726806, Runtime 3626.083104
 mp-fmkl: Energy -4234162.747507, Runtime 9675.986009
+mp-fmkl: Energy -4234259.286614, Runtime 4758.93174 ('less aggressive' fusionmove)
+mp-fmkl: Energy -4233885.968240, Runtime 3671.09200 (even less aggressive fusionmoves)
 mp:      Energy -4234169.651208, Runtime 4078.778356
-mp-fmkl: Energy:-4234259.286614, Runtime: 4758.93174 ('less aggressive' fusionmove)
 fm-kl:   Energy -4234305.069998, Runtime 3667.068048

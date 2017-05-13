@@ -27,6 +27,7 @@ def run_nifty_solver(
     if verbose or time_limit is not None:
         with_visitor = True
         visit_nth = 1 if verbose else int(1000000000)
+        print "visiting every %i with tlim %i" % (visit_nth, time_limit)
         visitor = obj.multicutVerboseVisitor(visit_nth, time_limit)
 
     t_inf = time.time()
@@ -39,13 +40,24 @@ def run_nifty_solver(
     return ret, mc_energy, t_inf
 
 
+def nifty_greedy_factory(
+        obj,
+        use_andres = False
+        ):
+    if use_andres:
+        return obj.greedyAdditiveFactory()
+    else:
+        return obj.multicutAndresGreedyAdditiveFactory()
+    return factory
+
+
 def nifty_fusion_move_factory(
         obj,
         backend_factory,
         n_threads = 20,
         seed_fraction = 0.001,
         greedy_chain  = True,
-        kl_chain      = True,
+        kl_chain      = False,
         number_of_iterations = 2000,
         n_stop = 20
         ):
@@ -62,13 +74,16 @@ def nifty_fusion_move_factory(
     )
 
     if kl_chain and greedy_chain:
+        print "Kl + Greedy Chain"
         kl_factory = nifty_kl_factory(obj, True)
         return obj.chainedSolversFactory([kl_factory, fm_factory])
     elif kl_chain and not greedy_chain:
+        print "Kl Chain"
         kl_factory = nifty_kl_factory(obj, False)
         return obj.chainedSolversFactory([kl_factory, fm_factory])
     elif greedy_chain and not kl_chain:
-        greedy = obj.greedyAdditiveFactory()
+        print "Greedy Chain"
+        greedy = nifty_greedy_factory(obj)#andres = True
         return obj.chainedSolversFactory([greedy, fm_factory])
     else:
         return fm_factory
