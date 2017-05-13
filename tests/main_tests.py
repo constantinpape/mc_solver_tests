@@ -98,10 +98,11 @@ def sampleD_problems():
                 timeout = int(timeout),
                 backend_factory = nifty_fusion_move_factory(
                     obj,
+                    n_threads = 20,
                     backend_factory = nifty_kl_factory(obj),
-                    seed_fraction = 0.05,
-                    number_of_iterations = 500,
-                    n_stop = 8
+                    seed_fraction = 0.005,
+                    number_of_iterations = 20,
+                    n_stop = 4
                 )
             ),
         }
@@ -113,19 +114,20 @@ def sampleD_problems():
         return res_dict
 
     timeout = 3600.
-    samples = ('sampleD_medium', 'sampleD_large')
-    solver_choice = ('kl','fm-ilp','fm-kl','ilp','mp','mp-fmkl')
+    samples = ('sampleD_sub_L1', 'sampleD_sub_full')
+    #solver_choice = ('kl','fm-ilp','fm-kl','ilp','mp','mp-fmkl')
+    solver_choice = ('mp-fmkl',)
 
     res_dict = {}
     for sample in samples:
         print sample
         res_dict[sample] = run_sample(sample, solver_choice, timeout)
         with open('./anytime_data/sampleD/save_%s.pkl' % sample, 'w') as f:
-            pickle.dump(res_dict, f)
+            pickle.dump(res_dict[sample], f)
 
     for sample in samples:
         print "%s summary:" % sample
-        for solver_name, solver_res in res.iteritems():
+        for solver_name, solver_res in res_dict.iteritems():
             print "%s : primal: %f, t-inf: %f" % (solver_name, solver_res[1], solver_res[2])
 
 

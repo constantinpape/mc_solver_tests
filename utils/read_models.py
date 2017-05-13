@@ -9,6 +9,7 @@ def read_from_opengm(model_path):
     factors = vigra.readHDF5(model_path, 'gm/factors')
     return n_states, factors
 
+
 def read_from_mcluigi(model_path):
     graph_data = vigra.readHDF5(model_path, 'graph')
     costs = vigra.readHDF5(model_path, 'costs')
@@ -20,6 +21,10 @@ def read_from_mcluigi(model_path):
     #assert n_var == uv_ids.max() + 1, "%i, %i" % (n_var, uv_ids.max() + 1)
     assert len(costs) == len(uv_ids)
     return n_var, uv_ids, costs
+
+
+def read_nodes(model_path):
+    return vigra.readHDF5(model_path, "new2global")
 
 
 def read_from_mcppl(uv_path, costs_path):

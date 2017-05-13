@@ -11,8 +11,11 @@ model_paths_new_opengm = {
 }
 
 model_paths_mcluigi = {
-    'sampleD_medium'   : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD_subsample2/ReducedProblem_50_512_512_modifed.h5',
-    'sampleD_large'    : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD_subsample2/MulticutProblem_modifed.h5',
-    'sampleD_huge'     : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD/ReducedProblem_400_4096_4096_modifed.h5',
-    'sampleD_gigantic' : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD/MulticutProblem_modifed.h5'
+    'sampleD_sub_L1'   : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD_subsample2/ReducedProblem_50_512_512_modifed.h5',
+    'sampleD_sub_full' : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD_subsample2/MulticutProblem_modifed.h5',
+    'sampleD_L4'       : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD/ReducedProblem_400_4096_4096_modifed.h5',
+    'sampleD_L3'       : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD/ReducedProblem_200_2048_2048_modifed.h5',
+    'sampleD_L2'       : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD/ReducedProblem_100_1024_1024_modifed.h5',
+    'sampleD_L1'       : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD/ReducedProblem_50_512_512_modifed.h5',
+    'sampleD_full'     : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD/MulticutProblem_modifed.h5'
 }
