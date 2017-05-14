@@ -1,0 +1,22 @@
+begin inference
+Energy: -2.374739712894e+06 Runtime: 21 violatedConstraints 1.665500000000e+04 
+Energy: -3.351515454659e+06 Runtime: 39 violatedConstraints 7.144000000000e+03 
+Energy: -3.742034749026e+06 Runtime: 51 violatedConstraints 3.063000000000e+03 
+Energy: -3.974172119990e+06 Runtime: 61 violatedConstraints 1.794000000000e+03 
+Energy: -4.029665037174e+06 Runtime: 74 violatedConstraints 1.039000000000e+03 
+Energy: -4.151172667797e+06 Runtime: 86 violatedConstraints 6.100000000000e+02 
+Energy: -4.184702804820e+06 Runtime: 96 violatedConstraints 3.350000000000e+02 
+Energy: -4.193820489324e+06 Runtime: 111 violatedConstraints 2.560000000000e+02 
+Energy: -4.216683057533e+06 Runtime: 126 violatedConstraints 1.460000000000e+02 
+Energy: -4.217266111188e+06 Runtime: 140 violatedConstraints 1.280000000000e+02 
+Energy: -4.212711374550e+06 Runtime: 156 violatedConstraints 1.990000000000e+02 
+Energy: -4.224232976511e+06 Runtime: 182 violatedConstraints 7.600000000000e+01 
+Energy: -4.226237629221e+06 Runtime: 195 violatedConstraints 7.400000000000e+01 
+Energy: -4.228950118359e+06 Runtime: 215 violatedConstraints 2.200000000000e+01 
+Energy: -4.216271512107e+06 Runtime: 258 violatedConstraints 7.000000000000e+01 
+Energy: -4.229093125649e+06 Runtime: 286 violatedConstraints 3.000000000000e+00 
+Energy: -4.229513199439e+06 Runtime: 306 violatedConstraints 1.000000000000e+00 
+Energy: -4.228839737001e+06 Runtime: 321 violatedConstraints 8.000000000000e+00 
+Energy: -4.229513199439e+06 Runtime: 352 violatedConstraints 1.000000000000e+00 
+Energy: -4.229536135864e+06 Runtime: 393 violatedConstraints 0.000000000000e+00 
+end inference
