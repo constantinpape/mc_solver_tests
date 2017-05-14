@@ -49,7 +49,7 @@ def small_problems():
 
     samples = ('sampleA','sampleB','sampleC')
     #samples = ('sampleA',)
-    solver_choice = ('fm-ilp', 'fm-kl', 'mp-fmkl')
+    solver_choice = ('fm-ilp', 'fm-kl', 'fm-greedy')
 
     res_dict = {}
     for sample in samples:
@@ -72,24 +72,38 @@ def sampleD_problems():
         n_var, uv_ids, costs = read_from_mcluigi(model_path)
         obj = nifty_mc_objective(n_var, uv_ids, costs)
 
+        pgen_type = 'greedy'
+        kl_ws     = True
+
         solver_dict = {
             'greedy' : nifty_greedy_factory(obj),
             'fm-greedy' : nifty_fusion_move_factory(obj,
-                n_threads = 20,
+                n_threads = 1,
                 backend_factory = nifty_greedy_factory(obj),
                 seed_fraction = 0.05,
-                kl_chain = True),
-            'fm-ilp' : nifty_fusion_move_factory(obj,
-                backend_factory = nifty_ilp_factory(obj),
-                seed_fraction = 0.001),
+                pgen_type = pgen_type,
+                kl_chain = kl_ws
+                ),
+            #'fm-ilp' : nifty_fusion_move_factory(obj,
+            #    backend_factory = nifty_ilp_factory(obj),
+            #    pgen_type = pgen_type,
+            #    seed_fraction = 0.001,
+            #    kl_Chain = kl_ws
+                #),
             'fm-kl' : nifty_fusion_move_factory(obj,
                 backend_factory = nifty_kl_factory(obj),
-                seed_fraction = 0.01),
+                pgen_type = pgen_type,
+                seed_fraction = 0.01,
+                kl_chain = kl_ws
+                ),
             'fm-cgc' : nifty_fusion_move_factory(obj,
                 backend_factory = nifty_cgc_factory(obj),
-                seed_fraction = 0.01),
-            'ilp' : nifty_ilp_factory(obj),
-            'cgc' : nifty_cgc_factory(obj),
+                seed_fraction = 0.01,
+                pgen_type = pgen_type,
+                kl_chain = kl_ws
+                ),
+            #'ilp' : nifty_ilp_factory(obj),
+            'cgc' : nifty_cgc_factory(obj, kl_chain = True),
             'kl'  : nifty_kl_factory(obj),
             'mp'  : nifty_mp_factory(
                 obj,
@@ -134,18 +148,18 @@ def sampleD_problems():
             res_dict[solver] = run_nifty_solver(obj, solver_dict[solver], time_limit = timeout, verbose = verbose)
         return res_dict
 
-    timeout = 3600.
-    #samples = ('sampleD_sub_L1',) #'sampleD_sub_full')
-    samples = ('sampleD_sub_full',)
+    timeout = 120.
+    samples = ('sampleD_sub_L1',) #'sampleD_sub_full')
+    #samples = ('sampleD_sub_full',)
     #solver_choice = ('kl','fm-ilp','fm-kl','ilp','mp','mp-fmkl')
-    solver_choice = ('mp-fmgreedy',)
+    solver_choice = ('fm-greedy',)#'fm-cgc','fm-kl')
 
     res_dict = {}
     for sample in samples:
         print sample
         res_dict[sample] = run_sample(sample, solver_choice, timeout)
-        with open('./anytime_data/sampleD/save_%s.pkl' % sample, 'w') as f:
-            pickle.dump(res_dict[sample], f)
+        #with open('./anytime_data/sampleD/save_%s.pkl' % sample, 'w') as f:
+        #    pickle.dump(res_dict[sample], f)
 
     for sample in samples:
         print "%s summary:" % sample

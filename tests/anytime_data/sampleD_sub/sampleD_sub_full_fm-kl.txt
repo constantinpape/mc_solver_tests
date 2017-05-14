@@ -1,0 +1,53 @@
+begin inference
+Energy: -4.233569168324e+06 Runtime: 277 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233618944536e+06 Runtime: 350 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233663175291e+06 Runtime: 423 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233700647909e+06 Runtime: 496 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233746249673e+06 Runtime: 568 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233783316023e+06 Runtime: 637 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233799584619e+06 Runtime: 704 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233828060855e+06 Runtime: 774 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233847496272e+06 Runtime: 853 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233857711352e+06 Runtime: 937 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233863824314e+06 Runtime: 1014 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233869505201e+06 Runtime: 1088 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233882249200e+06 Runtime: 1159 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233896268655e+06 Runtime: 1228 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233904152030e+06 Runtime: 1297 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233917841407e+06 Runtime: 1369 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233936985951e+06 Runtime: 1441 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233957643234e+06 Runtime: 1507 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233962491904e+06 Runtime: 1577 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233970022082e+06 Runtime: 1644 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233979187544e+06 Runtime: 1716 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233983888839e+06 Runtime: 1784 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234002173455e+06 Runtime: 1853 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234019025610e+06 Runtime: 1925 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234030210053e+06 Runtime: 1994 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234043974400e+06 Runtime: 2068 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234056459770e+06 Runtime: 2140 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234061632134e+06 Runtime: 2210 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234067913280e+06 Runtime: 2274 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234080587897e+06 Runtime: 2341 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234084638943e+06 Runtime: 2405 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234089391915e+06 Runtime: 2468 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234092430943e+06 Runtime: 2533 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234102392003e+06 Runtime: 2597 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234118674286e+06 Runtime: 2665 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234121789058e+06 Runtime: 2729 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234129336184e+06 Runtime: 2799 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234139292622e+06 Runtime: 2871 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234141766425e+06 Runtime: 2941 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234146862984e+06 Runtime: 3014 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234149933645e+06 Runtime: 3083 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234156094249e+06 Runtime: 3154 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234163075922e+06 Runtime: 3225 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234168959144e+06 Runtime: 3296 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234173677096e+06 Runtime: 3368 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234174855732e+06 Runtime: 3440 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234179784611e+06 Runtime: 3512 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234184451531e+06 Runtime: 3584 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.234193128884e+06 Runtime: 3654 IterationWithoutImprovement 0.000000000000e+00 
+3654 3600
+Inference has exceeded time limit and is stopped 
+end inference

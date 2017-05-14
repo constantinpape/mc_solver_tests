@@ -47,20 +47,20 @@ def anytime_data_sampleD():
 
     # 2 hours default timeout
     def _run(sample, solver_type, timeout = 3600, n_threads = 20):
-        assert solver_type in ('fm', 'mcmp', 'mcmp_cmd', 'ilp', 'mcmp-fmkl')
         model_path = model_paths_mcluigi[sample]
         out = subprocess.check_output(
                 ['python', 'single_solver_sampleD.py', model_path, solver_type, str(timeout), str(n_threads)])
         return out
 
-    save_folder = './anytime_data/sampleD'
+    save_folder = './anytime_data/sampleD_sub'
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
 
-    samples = ('sampleD_medium',)# 'sampleD_large')
+    #samples = ('sampleD_sub_L1',)# 'sampleD_sub_full')
+    samples = ('sampleD_sub_full',)
     for sample in samples:
         print sample
-        for solver in ('mcmp-fmkl', 'fm', 'mcmp'):
+        for solver in ('fm-kl', 'fm-ilp', 'ilp', 'mp', 'mp-fmgreedy'):
             print solver
             out = _run(sample, solver)
             save_cmdline_output(out, save_folder + '/%s_%s.txt'% (sample, solver))

@@ -1,0 +1,6 @@
+begin inference
+Energy: -3.244681794225e+05 Runtime: 2166 violatedConstraints 3.101900000000e+05 
+Energy: -7.226939361211e+05 Runtime: 6589 violatedConstraints 2.267380000000e+05 
+6589 3600
+Inference has exceeded time limit and is stopped 
+end inference
