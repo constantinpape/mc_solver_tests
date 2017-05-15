@@ -1,0 +1,6 @@
+begin inference
+Energy: -4.233609871928e+06 Runtime: 2480 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -4.233692422857e+06 Runtime: 4387 IterationWithoutImprovement 0.000000000000e+00 
+4387 3600
+Inference has exceeded time limit and is stopped 
+end inference

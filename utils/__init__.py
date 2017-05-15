@@ -6,3 +6,4 @@ from read_models import read_from_opengm, read_from_mcppl, read_from_mcluigi, re
 from project_node_results import project
 from model_paths import *
 from mcmp_parameters import *
+from parse_cmd_output import parse_out_mcmp, parse_out_niftyfm, parse_out_niftyilp

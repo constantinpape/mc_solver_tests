@@ -24,7 +24,8 @@ def run_sample_d(level, model, time_limit, time_offset, seed_fraction, chain_kl 
     factory = nifty_fusion_move_factory(obj,
             backend_factory = nifty_kl_factory(obj),
             kl_chain = chain_kl,
-            seed_fraction = seed_fraction)
+            seed_fraction = seed_fraction,
+            n_threads = 8)
 
     t_inf  = time.time()
     node_res = run_nifty_solver(obj, factory, verbose = True, time_limit = time_limit - time_offset )
@@ -46,7 +47,7 @@ def run_sample_d(level, model, time_limit, time_offset, seed_fraction, chain_kl 
 
 def test_full(time_limit):
     t_off = t_offsets[0]
-    e_full, t_full = run_sample_d(models[0], time_limit, t_off, 1e-6, chain_kl = False)
+    e_full, t_full = run_sample_d(models[0], time_limit, t_off, 1e-7, chain_kl = False)
     print "Results for full model:"
     print "Energy:", e_full
     print "Runtume", t_full

@@ -27,7 +27,7 @@ def run_nifty_solver(
     if verbose or time_limit is not None:
         with_visitor = True
         visit_nth = 1 if verbose else int(1000000000)
-        print "visiting every %i with tlim %i" % (visit_nth, time_limit)
+        #print "visiting every %i with tlim %i" % (visit_nth, time_limit)
         visitor = obj.multicutVerboseVisitor(visit_nth, time_limit)
 
     t_inf = time.time()
@@ -59,30 +59,37 @@ def nifty_fusion_move_factory(
         greedy_chain  = True,
         kl_chain      = False,
         number_of_iterations = 2000,
-        n_stop = 20
+        n_stop = 20,
+        pgen_type = 'ws'
         ):
+
+    assert pgen_type in ('ws', 'greedy')
+    if pgen_type == 'ws':
+        pgen = obj.watershedProposals(sigma=10, seedFraction=seed_fraction)
+    else:
+        pgen = obj.greedyAdditiveProposals(sigma=10)
 
     fm_factory = obj.fusionMoveBasedFactory(
         verbose=0,
         fusionMove=obj.fusionMoveSettings(mcFactory=backend_factory),
-        proposalGen=obj.watershedProposals(sigma=10, seedFraction=seed_fraction),
+        proposalGen=pgen,
         numberOfIterations = number_of_iterations,
         numberOfParallelProposals = 2*n_threads,
         numberOfThreads = n_threads,
         stopIfNoImprovement = n_stop,
-        fuseN=2,
+        fuseN=1,#2,
     )
 
     if kl_chain and greedy_chain:
-        print "Kl + Greedy Chain"
+        #print "Kl + Greedy Chain"
         kl_factory = nifty_kl_factory(obj, True)
         return obj.chainedSolversFactory([kl_factory, fm_factory])
     elif kl_chain and not greedy_chain:
-        print "Kl Chain"
+        #print "Kl Chain"
         kl_factory = nifty_kl_factory(obj, False)
         return obj.chainedSolversFactory([kl_factory, fm_factory])
     elif greedy_chain and not kl_chain:
-        print "Greedy Chain"
+        #print "Greedy Chain"
         greedy = nifty_greedy_factory(obj)#andres = True
         return obj.chainedSolversFactory([greedy, fm_factory])
     else:
@@ -113,11 +120,21 @@ def nifty_decomposer_factory(
 def nifty_cgc_factory(
         obj,
         greedy_chain = True,
+        kl_chain  = False,
         cut_phase = False
         ):
     factory = obj.cgcFactory(doCutPhase = cut_phase)
-    if greedy_chain:
-        greedy = obj.greedyAdditiveFactory()
+    if kl_chain and greedy_chain:
+        #print "Kl + Greedy Chain"
+        kl_factory = nifty_kl_factory(obj, True)
+        return obj.chainedSolversFactory([kl_factory, factory])
+    elif kl_chain and not greedy_chain:
+        #print "Kl Chain"
+        kl_factory = nifty_kl_factory(obj, False)
+        return obj.chainedSolversFactory([kl_factory, factory])
+    elif greedy_chain and not kl_chain:
+        #print "Greedy Chain"
+        greedy = nifty_greedy_factory(obj)#andres = True
         return obj.chainedSolversFactory([greedy, factory])
     else:
         return factory
