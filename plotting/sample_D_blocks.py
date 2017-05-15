@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import matplotlib
 import nifty
 import vigra
 import sys
@@ -21,7 +22,17 @@ energy_offsets = [
 
 def plot_initial_energies():
     fig, ax = plt.subplots()
-    ax.scatter(t_offsets, energy_offsets)
+
+    for i, t in enumerate(t_offsets):
+        ax.scatter([t], [energy_offsets[i]], label = 'L%i' % i, s = 250)
+
+    ax.get_yaxis().set_major_formatter(
+                matplotlib.ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
+    ax.set_xlabel('Runtime [s]')
+    ax.set_ylabel('Energy')
+    ax.set_title('SampleD - Block-wise performance')
+    ax.legend()
+
     plt.show()
 
 
