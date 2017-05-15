@@ -4,8 +4,9 @@ import nifty
 import vigra
 import sys
 import numpy as np
+from decimal import Decimal
 sys.path.append('..')
-from utils import model_paths_mcluigi, read_from_mcluigi, nifty_mc_objective
+from utils import model_paths_mcluigi, read_from_mcluigi, nifty_mc_objective, parse_out_niftyfm
 
 time_offsets_mc    = np.array([0, 1484.5, 298.3, 349.2, 1035.2])
 time_offsets_merge = np.array([0, 3286.5, 356.6, 255.1, 198.2])
@@ -19,18 +20,87 @@ energy_offsets = [
         -510288693.97572863]
 
 
+def plot_optimality():
+    fig, ax = plt.subplots()
+
+    x = np.arange(2)
+    y = [-4234305.069998,-4229536.135864]
+    #rects1 = ax.bar(x, y)
+    ax.scatter(x,y,s=1)
+
+    ax.set_title('Optimality on SampleD_sub')
+    ax.set_ylabel('Final energy')
+    ax.set_xlabel('Number of levels')
+    ax.set_xticklabels(['0', '1'])
+
+    #def autolabel(rects):
+    #    """
+    #    Attach a text label above each bar displaying its height
+    #    """
+    #    for rect in rects:
+    #        height = round(rect.get_height(), -4)
+    #        ax.text(rect.get_x() + rect.get_width()/2., 1.05*height,
+    #                '%.4E' % Decimal(height),
+    #                ha='center', va='bottom')
+
+    #autolabel(rects1)
+
+    plt.show()
+
+
 
 def plot_initial_energies():
     fig, ax = plt.subplots()
 
+    # plot initial energies
     for i, t in enumerate(t_offsets):
-        ax.scatter([t], [energy_offsets[i]], label = 'L%i' % i, s = 250)
+        ax.scatter([t], [energy_offsets[i]], label = 'L%i' % i, s = 100)
 
     ax.get_yaxis().set_major_formatter(
                 matplotlib.ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
+
     ax.set_xlabel('Runtime [s]')
     ax.set_ylabel('Energy')
-    ax.set_title('SampleD - Block-wise performance')
+    ax.set_title('SampleD - Initial Energies')
+    ax.legend()
+
+    plt.show()
+
+
+def plot_performance():
+    fig, ax = plt.subplots()
+    ax2 = plt.axes([.5,.2,.4,.4])
+
+    # plot inference energies
+    for level in (3,4):
+        t, e = [], []
+        t.append(t_offsets[level])
+        e.append(energy_offsets[level])
+
+        t_, e_ = parse_out_niftyfm('../tests/anytime_data/sampleD/sampleD_L%i.txt' % level)
+        assert len(t_) == len(e_)
+        t_ += t_offsets[level]
+        for i in range(len(t_)):
+            t.append(t_[i])
+            e.append(e_[i])
+
+        t = np.array(t)
+        e = np.array(e)
+        #e *= -1
+
+        ax.plot(t, e, c = 'C%i' % level, label = 'L%i' % level)
+        ax.scatter(t_offsets[level], energy_offsets[level], s = 100, c = 'C%i' % level)
+        ax2.plot(t[1:], e[1:], c = 'C%i' % level)
+
+    #plt.setp(ax2, xticks = [], yticks = [])
+
+    ax.get_yaxis().set_major_formatter(
+                matplotlib.ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
+    #ax.set_yscale('log')
+
+    ax.set_xlabel('Runtime [s]')
+    ax.set_ylabel('Energy')
+    ax.set_title('SampleD - Block-wise Performance')
     ax.legend()
 
     plt.show()
@@ -88,4 +158,6 @@ def get_energy_offsets():
 
 
 if __name__ == '__main__':
-    plot_initial_energies()
+    #plot_optimality()
+    #plot_initial_energies()
+    plot_performance()
