@@ -24,7 +24,7 @@ def project_to_global(node_res, to_global_nodes, global_obj):
     global_res = np.zeros(global_obj.graph.numberOfNodes, dtype = 'uint32')
     for node_id, cluster_id in enumerate(node_res):
         global_res[to_global_nodes[node_id]] = cluster_id
-    return global_obj.evalNodeLabels(global_res), t_inf
+    return global_obj.evalNodeLabels(global_res)
 
 
 def run_sample_d_sub(level, model, time_limit, seed_fraction, chain_kl = True, backend = 'ilp', global_obj = None):
@@ -58,17 +58,17 @@ def run_sample_d_sub(level, model, time_limit, seed_fraction, chain_kl = True, b
 
 
 def run_sample_d(level, model, time_limit, time_offset, seed_fraction, chain_kl = True, global_obj = None):
+
     n_var, uv_ids, costs = read_from_mcluigi(model_paths_mcluigi[model])
     obj = nifty_mc_objective(n_var, uv_ids, costs)
 
-    #
-    #factory = nifty_fusion_move_factory(obj,
-    #        backend_factory = nifty_kl_factory(obj),
-    #        kl_chain = chain_kl,
-    #        seed_fraction = seed_fraction,
-    #        n_threads = 8)
+    factory = nifty_fusion_move_factory(obj,
+            backend_factory = nifty_kl_factory(obj),
+            kl_chain = chain_kl,
+            seed_fraction = seed_fraction,
+            n_threads = 20)
 
-    factory = nifty_mp_factory(obj, n_threads = 20)
+    #factory = nifty_mp_factory(obj, n_threads = 20)
 
     node_res, energy, t_inf = run_nifty_solver(obj, factory, verbose = True, time_limit = time_limit - time_offset )
 
@@ -129,11 +129,7 @@ def test_blocking_sub(tlim, level):
 
 if __name__ == '__main__':
 
-    level = 1
-    tlim  = 2700
-    test_blocking_sub(tlim, level)
-
-    ## 10 hour time limit
-    #time_limit = 10 * 3600
-    ##test_full(time_limit)
-    #test_blocking(time_limit, 4)
+    # 10 hour time limit
+    time_limit = 10 * 3600
+    for level in (3,2):
+        test_blocking(time_limit, level)
