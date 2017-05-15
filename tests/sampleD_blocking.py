@@ -24,7 +24,7 @@ def project_to_global(node_res, to_global_nodes, global_obj):
     global_res = np.zeros(global_obj.graph.numberOfNodes, dtype = 'uint32')
     for node_id, cluster_id in enumerate(node_res):
         global_res[to_global_nodes[node_id]] = cluster_id
-    return global_obj.evalNodeLabels(global_res), t_inf
+    return global_obj.evalNodeLabels(global_res)
 
 
 def run_sample_d_sub(level, model, time_limit, seed_fraction, chain_kl = True, backend = 'ilp', global_obj = None):
@@ -51,7 +51,7 @@ def run_sample_d_sub(level, model, time_limit, seed_fraction, chain_kl = True, b
 
     if global_obj is not None:
         to_global_nodes = read_nodes(model_paths_mcluigi[model])
-        node_res = project_to_global(node_res, to_global_nodes)
+        node_res = project_to_global(node_res, to_global_nodes, global_obj)
         energy = global_obj.evalNodeLabels(node_res)
 
     return energy, t_inf
@@ -129,9 +129,18 @@ def test_blocking_sub(tlim, level):
 
 if __name__ == '__main__':
 
-    level = 1
-    tlim  = 2700
-    test_blocking_sub(tlim, level)
+    with open('./anytime_data/sampleD_sub/nodes_1.pkl') as f:
+        nodes = pickle.load(f)
+
+    n_var, uv_ids, costs = read_from_mcluigi(model_paths_mcluigi[models_sub[0]])
+    obj = nifty_mc_objective(n_var, uv_ids, costs)
+
+    to_global_nodes = read_nodes( model_paths_mcluigi[models_sub[1]] )
+    print project_to_global(nodes, to_global_nodes, obj)
+
+    #level = 1
+    #tlim  = 2700
+    #test_blocking_sub(tlim, level)
 
     ## 10 hour time limit
     #time_limit = 10 * 3600
