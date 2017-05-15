@@ -84,9 +84,11 @@ def parse_args():
                 n_threads = 20,
                 backend_factory = nifty_greedy_factory(obj),
                 seed_fraction = 0.01,
-                number_of_iterations = 50,
-                n_stop = 5,
-                kl_chain = True
+                number_of_iterations = 25,
+                n_stop = 3,
+                kl_chain = True,
+                n_fuse = 1,
+                parallel_per_thread = 1
             )
         ),
     }

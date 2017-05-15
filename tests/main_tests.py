@@ -72,17 +72,21 @@ def sampleD_problems():
         n_var, uv_ids, costs = read_from_mcluigi(model_path)
         obj = nifty_mc_objective(n_var, uv_ids, costs)
 
-        pgen_type = 'greedy'
+        pgen_type = 'ws'
         kl_ws     = True
 
         solver_dict = {
             'greedy' : nifty_greedy_factory(obj),
             'fm-greedy' : nifty_fusion_move_factory(obj,
-                n_threads = 1,
+                n_threads = 20,
                 backend_factory = nifty_greedy_factory(obj),
-                seed_fraction = 0.05,
+                seed_fraction = 0.01,
                 pgen_type = pgen_type,
-                kl_chain = kl_ws
+                kl_chain = kl_ws,
+                n_fuse = 1,
+                parallel_per_thread = 1,
+                number_of_iterations = 40,
+                n_stop = 4
                 ),
             #'fm-ilp' : nifty_fusion_move_factory(obj,
             #    backend_factory = nifty_ilp_factory(obj),
@@ -133,9 +137,11 @@ def sampleD_problems():
                     n_threads = 20,
                     backend_factory = nifty_greedy_factory(obj),
                     seed_fraction = 0.01,
-                    number_of_iterations = 50,
-                    n_stop = 5,
-                    kl_chain = True
+                    number_of_iterations = 25,
+                    n_stop = 3,
+                    kl_chain = True,
+                    n_fuse = 1,
+                    parallel_per_thread = 1
                 )
             ),
         }

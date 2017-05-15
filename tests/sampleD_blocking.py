@@ -8,6 +8,8 @@ sys.path.append('..')
 from utils import nifty_mc_objective, nifty_ilp_factory, nifty_mp_factory, nifty_kl_factory, run_nifty_solver, nifty_fusion_move_factory
 from utils import read_from_mcluigi, read_nodes, model_paths_mcluigi
 
+import cPickle as pickle
+
 models = ['sampleD_full', 'sampleD_L1', 'sampleD_L2', 'sampleD_L3', 'sampleD_L4']
 
 time_offsets_mc    = np.array([0, 1484.5, 298.3, 349.2, 1035.2])
@@ -21,11 +23,13 @@ def run_sample_d(level, model, time_limit, time_offset, seed_fraction, chain_kl 
     obj = nifty_mc_objective(n_var, uv_ids, costs)
 
     #
-    factory = nifty_fusion_move_factory(obj,
-            backend_factory = nifty_kl_factory(obj),
-            kl_chain = chain_kl,
-            seed_fraction = seed_fraction,
-            n_threads = 8)
+    #factory = nifty_fusion_move_factory(obj,
+    #        backend_factory = nifty_kl_factory(obj),
+    #        kl_chain = chain_kl,
+    #        seed_fraction = seed_fraction,
+    #        n_threads = 8)
+
+    factory = nifty_mp_factory(obj, n_threads = 20)
 
     t_inf  = time.time()
     node_res = run_nifty_solver(obj, factory, verbose = True, time_limit = time_limit - time_offset )
@@ -70,6 +74,5 @@ def test_blocking(time_limit, level):
 if __name__ == '__main__':
     # 10 hour time limit
     time_limit = 10 * 3600
-    #time_limit = 2.1 * 3600
-    for level in (4,):
-        test_blocking(time_limit, level)
+    #test_full(time_limit)
+    test_blocking(time_limit, 4)

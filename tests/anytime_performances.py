@@ -56,11 +56,10 @@ def anytime_data_sampleD():
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
 
-    #samples = ('sampleD_sub_L1',)# 'sampleD_sub_full')
-    samples = ('sampleD_sub_full',)
+    samples = ('sampleD_sub_L1', 'sampleD_sub_full')
     for sample in samples:
         print sample
-        for solver in ('fm-kl', 'fm-ilp', 'ilp', 'mp', 'mp-fmgreedy'):
+        for solver in ('mp-fmgreedy',):
             print solver
             out = _run(sample, solver)
             save_cmdline_output(out, save_folder + '/%s_%s.txt'% (sample, solver))

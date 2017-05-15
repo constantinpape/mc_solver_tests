@@ -59,10 +59,9 @@ fm-greedy   : Energy -4229462.545856, Runtime 391.630795
 mp-fmkl     : Energy -4229473.888609, Runtime 3692.063894 (less aggressive fusionmoves)
 mp-fmkl     : Energy -4229477.781130, Runtime 3631.55387  (even less aggressive fusionmoves)
 fm-kl       : Energy -4229481.591353, Runtime 735.061629
-mp-fmgreedy : Energy -4229491.443681, Runtime 3628.140066
 mp-kl       : Energy -4229494.109906, Runtime 3603.059056 (seed_fraction = 0.01)
+mp-fmgreedy : Energy -4229494.972307, Runtime 3606.655073
 ilp         : Energy -4229536.135864, Runtime  391.468257
-
 
 
 sampleD_sub_full

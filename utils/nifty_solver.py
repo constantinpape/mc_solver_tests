@@ -60,7 +60,9 @@ def nifty_fusion_move_factory(
         kl_chain      = False,
         number_of_iterations = 2000,
         n_stop = 20,
-        pgen_type = 'ws'
+        pgen_type = 'ws',
+        parallel_per_thread = 2,
+        n_fuse = 2
         ):
 
     assert pgen_type in ('ws', 'greedy')
@@ -74,10 +76,10 @@ def nifty_fusion_move_factory(
         fusionMove=obj.fusionMoveSettings(mcFactory=backend_factory),
         proposalGen=pgen,
         numberOfIterations = number_of_iterations,
-        numberOfParallelProposals = 2*n_threads,
+        numberOfParallelProposals = parallel_per_thread*n_threads,
         numberOfThreads = n_threads,
         stopIfNoImprovement = n_stop,
-        fuseN=1,#2,
+        fuseN=n_fuse
     )
 
     if kl_chain and greedy_chain:
