@@ -56,7 +56,7 @@ def anytime_data_sampleD():
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
 
-    samples = ('sampleD_sub_L1', 'sampleD_sub_full')
+    samples = ('sampleD_sub_full',)
     for sample in samples:
         print sample
         for solver in ('mp-fmgreedy',):

@@ -51,7 +51,7 @@ def run_sample_d_sub(level, model, time_limit, seed_fraction, chain_kl = True, b
 
     if global_obj is not None:
         to_global_nodes = read_nodes(model_paths_mcluigi[model])
-        node_res = project_to_global(node_res, to_global_nodes)
+        node_res = project_to_global(node_res, to_global_nodes, global_obj)
         energy = global_obj.evalNodeLabels(node_res)
 
     return energy, t_inf
