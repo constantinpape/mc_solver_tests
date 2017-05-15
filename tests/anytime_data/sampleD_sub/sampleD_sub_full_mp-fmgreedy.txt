@@ -5,74 +5,74 @@ register primal cost = 0
 checking primal feasibility for multicut ... compute multicut primal with ChainedSolvers
 solution feasible
 primal solution consistent: 1
-iteration = 0, lower bound = -4.33225e+06, upper bound = 0, time elapsed = 5.26s
-iteration = 1, lower bound = -4.33225e+06, time elapsed = 6.2s
-iteration = 2, lower bound = -4.33225e+06, time elapsed = 6.10s
-iteration = 3, lower bound = -4.33225e+06, time elapsed = 6.19s
-iteration = 4, lower bound = -4.33225e+06, time elapsed = 6.28s
-iteration = 5, lower bound = -4.33225e+06, time elapsed = 6.36s
-iteration = 6, lower bound = -4.33225e+06, time elapsed = 6.45s
-iteration = 7, lower bound = -4.33225e+06, time elapsed = 6.53s
-iteration = 8, lower bound = -4.33225e+06, time elapsed = 6.61s
-iteration = 9, lower bound = -4.33225e+06, time elapsed = 6.69s
-iteration = 10, lower bound = -4.33225e+06, time elapsed = 6.77s
-iteration = 11, lower bound = -4.33225e+06, time elapsed = 6.86s
-iteration = 12, lower bound = -4.33225e+06, time elapsed = 6.94s
+iteration = 0, lower bound = -4.33225e+06, upper bound = 0, time elapsed = 5.47s
+iteration = 1, lower bound = -4.33225e+06, time elapsed = 6.32s
+iteration = 2, lower bound = -4.33225e+06, time elapsed = 6.39s
+iteration = 3, lower bound = -4.33225e+06, time elapsed = 6.46s
+iteration = 4, lower bound = -4.33225e+06, time elapsed = 6.53s
+iteration = 5, lower bound = -4.33225e+06, time elapsed = 6.60s
+iteration = 6, lower bound = -4.33225e+06, time elapsed = 6.67s
+iteration = 7, lower bound = -4.33225e+06, time elapsed = 6.73s
+iteration = 8, lower bound = -4.33225e+06, time elapsed = 6.80s
+iteration = 9, lower bound = -4.33225e+06, time elapsed = 6.87s
+iteration = 10, lower bound = -4.33225e+06, time elapsed = 6.95s
+iteration = 11, lower bound = -4.33225e+06, time elapsed = 7.1s
+iteration = 12, lower bound = -4.33225e+06, time elapsed = 7.9s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 13, lower bound = -4.33225e+06, upper bound = 0, time elapsed = 7.4s
-iteration = 14, lower bound = -4.33225e+06, time elapsed = 7.12s
-iteration = 15, lower bound = -4.33225e+06, time elapsed = 7.20s
-iteration = 16, lower bound = -4.33225e+06, time elapsed = 7.28s
-iteration = 17, lower bound = -4.33225e+06, time elapsed = 7.37s
-iteration = 18, lower bound = -4.33225e+06, time elapsed = 7.45s
-iteration = 19, lower bound = -4.33225e+06, time elapsed = 7.53s
-iteration = 20, lower bound = -4.33225e+06, time elapsed = 7.61s
-iteration = 21, lower bound = -4.33225e+06, time elapsed = 7.69s
-iteration = 22, lower bound = -4.33225e+06, time elapsed = 7.77s
-iteration = 23, lower bound = -4.33225e+06, time elapsed = 7.86s
-iteration = 24, lower bound = -4.33225e+06, time elapsed = 7.94s
-iteration = 25, lower bound = -4.33225e+06, time elapsed = 8.2s
+iteration = 13, lower bound = -4.33225e+06, upper bound = 0, time elapsed = 7.17s
+iteration = 14, lower bound = -4.33225e+06, time elapsed = 7.24s
+iteration = 15, lower bound = -4.33225e+06, time elapsed = 7.32s
+iteration = 16, lower bound = -4.33225e+06, time elapsed = 7.39s
+iteration = 17, lower bound = -4.33225e+06, time elapsed = 7.46s
+iteration = 18, lower bound = -4.33225e+06, time elapsed = 7.54s
+iteration = 19, lower bound = -4.33225e+06, time elapsed = 7.62s
+iteration = 20, lower bound = -4.33225e+06, time elapsed = 7.69s
+iteration = 21, lower bound = -4.33225e+06, time elapsed = 7.76s
+iteration = 22, lower bound = -4.33225e+06, time elapsed = 7.83s
+iteration = 23, lower bound = -4.33225e+06, time elapsed = 7.90s
+iteration = 24, lower bound = -4.33225e+06, time elapsed = 7.97s
+iteration = 25, lower bound = -4.33225e+06, time elapsed = 8.4s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 26, lower bound = -4.33225e+06, upper bound = 0, time elapsed = 8.13s
-iteration = 27, lower bound = -4.33225e+06, time elapsed = 8.20s
-iteration = 28, lower bound = -4.33225e+06, time elapsed = 8.28s
-iteration = 29, lower bound = -4.33225e+06, time elapsed = 8.36s
-iteration = 30, lower bound = -4.33225e+06, time elapsed = 8.44s
-iteration = 31, lower bound = -4.33225e+06, time elapsed = 8.52s
-iteration = 32, lower bound = -4.33225e+06, time elapsed = 8.61s
-iteration = 33, lower bound = -4.33225e+06, time elapsed = 8.69s
-iteration = 34, lower bound = -4.33225e+06, time elapsed = 8.78s
-iteration = 35, lower bound = -4.33225e+06, time elapsed = 8.87s
-iteration = 36, lower bound = -4.33225e+06, time elapsed = 8.96s
-iteration = 37, lower bound = -4.33225e+06, time elapsed = 9.4s
-iteration = 38, lower bound = -4.33225e+06, time elapsed = 9.12s
+iteration = 26, lower bound = -4.33225e+06, upper bound = 0, time elapsed = 8.12s
+iteration = 27, lower bound = -4.33225e+06, time elapsed = 8.19s
+iteration = 28, lower bound = -4.33225e+06, time elapsed = 8.25s
+iteration = 29, lower bound = -4.33225e+06, time elapsed = 8.32s
+iteration = 30, lower bound = -4.33225e+06, time elapsed = 8.38s
+iteration = 31, lower bound = -4.33225e+06, time elapsed = 8.44s
+iteration = 32, lower bound = -4.33225e+06, time elapsed = 8.50s
+iteration = 33, lower bound = -4.33225e+06, time elapsed = 8.57s
+iteration = 34, lower bound = -4.33225e+06, time elapsed = 8.63s
+iteration = 35, lower bound = -4.33225e+06, time elapsed = 8.69s
+iteration = 36, lower bound = -4.33225e+06, time elapsed = 8.76s
+iteration = 37, lower bound = -4.33225e+06, time elapsed = 8.82s
+iteration = 38, lower bound = -4.33225e+06, time elapsed = 8.89s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 39, lower bound = -4.33225e+06, upper bound = 0, time elapsed = 9.22s
-iteration = 40, lower bound = -4.33225e+06, time elapsed = 9.30s
-iteration = 41, lower bound = -4.33225e+06, time elapsed = 9.39s
-iteration = 42, lower bound = -4.33225e+06, time elapsed = 9.46s
-iteration = 43, lower bound = -4.33225e+06, time elapsed = 9.54s
-iteration = 44, lower bound = -4.33225e+06, time elapsed = 9.63s
-iteration = 45, lower bound = -4.33225e+06, time elapsed = 9.71s
-iteration = 46, lower bound = -4.33225e+06, time elapsed = 9.79s
-iteration = 47, lower bound = -4.33225e+06, time elapsed = 9.87s
-iteration = 48, lower bound = -4.33225e+06, time elapsed = 9.95s
+iteration = 39, lower bound = -4.33225e+06, upper bound = 0, time elapsed = 8.97s
+iteration = 40, lower bound = -4.33225e+06, time elapsed = 9.3s
+iteration = 41, lower bound = -4.33225e+06, time elapsed = 9.9s
+iteration = 42, lower bound = -4.33225e+06, time elapsed = 9.15s
+iteration = 43, lower bound = -4.33225e+06, time elapsed = 9.24s
+iteration = 44, lower bound = -4.33225e+06, time elapsed = 9.31s
+iteration = 45, lower bound = -4.33225e+06, time elapsed = 9.38s
+iteration = 46, lower bound = -4.33225e+06, time elapsed = 9.45s
+iteration = 47, lower bound = -4.33225e+06, time elapsed = 9.51s
+iteration = 48, lower bound = -4.33225e+06, time elapsed = 9.57s
 Time to tighten
 Search for violated triplet constraints
 best triplet candidate in triplet search has guaranteed dual improvement 4.85503
 Added 267342 triplet(s) out of 267341 by searching for triplets
-iteration = 49, lower bound = -4.33225e+06, time elapsed = 12.2s
-iteration = 50, lower bound = -4.27143e+06, time elapsed = 20.11s
-iteration = 51, lower bound = -4.27028e+06, time elapsed = 20.21s
+iteration = 49, lower bound = -4.33225e+06, time elapsed = 11.55s
+iteration = 50, lower bound = -4.27143e+06, time elapsed = 19.36s
+iteration = 51, lower bound = -4.27028e+06, time elapsed = 19.45s
 Time to tighten
 multicut rounding is currently running.
 primal solution consistent: 1
@@ -81,1264 +81,1468 @@ register primal cost = 0
 Search for violated triplet constraints
 best triplet candidate in triplet search has guaranteed dual improvement 1.52506
 Added 267342 triplet(s) out of 267341 by searching for triplets
-iteration = 52, lower bound = -4.27001e+06, upper bound = 0, time elapsed = 22.66s
-iteration = 53, lower bound = -4.25555e+06, time elapsed = 32.90s
-iteration = 54, lower bound = -4.25374e+06, time elapsed = 33.2s
-iteration = 55, lower bound = -4.25324e+06, time elapsed = 33.14s
+iteration = 52, lower bound = -4.27001e+06, upper bound = 0, time elapsed = 21.66s
+iteration = 53, lower bound = -4.25555e+06, time elapsed = 31.8s
+iteration = 54, lower bound = -4.25374e+06, time elapsed = 31.20s
+iteration = 55, lower bound = -4.25324e+06, time elapsed = 31.32s
 Time to tighten
 Search for violated triplet constraints
 best triplet candidate in triplet search has guaranteed dual improvement 1.3428
 Added 267342 triplet(s) out of 267341 by searching for triplets
-iteration = 56, lower bound = -4.25301e+06, time elapsed = 35.31s
-iteration = 57, lower bound = -4.24856e+06, time elapsed = 45.57s
-iteration = 58, lower bound = -4.24741e+06, time elapsed = 45.73s
-iteration = 59, lower bound = -4.24694e+06, time elapsed = 45.89s
-iteration = 60, lower bound = -4.24668e+06, time elapsed = 46.4s
+iteration = 56, lower bound = -4.25301e+06, time elapsed = 33.65s
+iteration = 57, lower bound = -4.24856e+06, time elapsed = 44.62s
+iteration = 58, lower bound = -4.24741e+06, time elapsed = 44.76s
+iteration = 59, lower bound = -4.24694e+06, time elapsed = 44.91s
+iteration = 60, lower bound = -4.24668e+06, time elapsed = 45.5s
 Time to tighten
 Search for violated triplet constraints
 best triplet candidate in triplet search has guaranteed dual improvement 0.544355
-Added 164734 triplet(s) out of 267341 by searching for triplets
-iteration = 61, lower bound = -4.24654e+06, time elapsed = 47.62s
-iteration = 62, lower bound = -4.2447e+06, time elapsed = 59.39s
-iteration = 63, lower bound = -4.2441e+06, time elapsed = 59.55s
-iteration = 64, lower bound = -4.24381e+06, time elapsed = 59.73s
+Added 164729 triplet(s) out of 267341 by searching for triplets
+iteration = 61, lower bound = -4.24654e+06, time elapsed = 46.95s
+iteration = 62, lower bound = -4.2447e+06, time elapsed = 58.20s
+iteration = 63, lower bound = -4.2441e+06, time elapsed = 58.38s
+iteration = 64, lower bound = -4.24381e+06, time elapsed = 58.54s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 65, lower bound = -4.24368e+06, upper bound = 0, time elapsed = 60.24s
+iteration = 65, lower bound = -4.24368e+06, upper bound = 0, time elapsed = 59.5s
 Time to tighten
 Search for violated triplet constraints
 best triplet candidate in triplet search has guaranteed dual improvement 0.310365
-Added 49799 triplet(s) out of 267341 by searching for triplets
+Added 49796 triplet(s) out of 267341 by searching for triplets
 Additionally search via shortest paths for violated constraints
 best triplet candidate in cycle search has guaranteed dual improvement 2.41333
 best triplet candidate in cycle search has guaranteed dual improvement 2.41333
-Added 267347 triplet(s) out of 267341 in total
-iteration = 66, lower bound = -4.24359e+06, time elapsed = 109.47s
-iteration = 67, lower bound = -4.24238e+06, time elapsed = 123.37s
-iteration = 68, lower bound = -4.24155e+06, time elapsed = 123.56s
-iteration = 69, lower bound = -4.2411e+06, time elapsed = 123.77s
-iteration = 70, lower bound = -4.24082e+06, time elapsed = 123.96s
-iteration = 71, lower bound = -4.24062e+06, time elapsed = 124.14s
-iteration = 72, lower bound = -4.24047e+06, time elapsed = 124.33s
-iteration = 73, lower bound = -4.24036e+06, time elapsed = 124.52s
+Added 267352 triplet(s) out of 267341 in total
+iteration = 66, lower bound = -4.24359e+06, time elapsed = 108.49s
+iteration = 67, lower bound = -4.24238e+06, time elapsed = 120.98s
+iteration = 68, lower bound = -4.24155e+06, time elapsed = 121.18s
+iteration = 69, lower bound = -4.2411e+06, time elapsed = 121.36s
+iteration = 70, lower bound = -4.24082e+06, time elapsed = 121.56s
+iteration = 71, lower bound = -4.24062e+06, time elapsed = 121.75s
+iteration = 72, lower bound = -4.24047e+06, time elapsed = 121.94s
+iteration = 73, lower bound = -4.24036e+06, time elapsed = 122.16s
 Time to tighten
 Search for violated triplet constraints
 best triplet candidate in triplet search has guaranteed dual improvement 0.129952
-Added 100801 triplet(s) out of 267341 by searching for triplets
+Added 100217 triplet(s) out of 267341 by searching for triplets
 Additionally search via shortest paths for violated constraints
 best triplet candidate in cycle search has guaranteed dual improvement 0.64628
 best triplet candidate in cycle search has guaranteed dual improvement 0.298896
-Added 267378 triplet(s) out of 267341 in total
-iteration = 74, lower bound = -4.2403e+06, time elapsed = 155.21s
-iteration = 75, lower bound = -4.23978e+06, time elapsed = 169.75s
-iteration = 76, lower bound = -4.23949e+06, time elapsed = 169.99s
-iteration = 77, lower bound = -4.23931e+06, time elapsed = 170.22s
+Added 267364 triplet(s) out of 267341 in total
+iteration = 74, lower bound = -4.2403e+06, time elapsed = 150.94s
+iteration = 75, lower bound = -4.23978e+06, time elapsed = 165.39s
+iteration = 76, lower bound = -4.23949e+06, time elapsed = 165.62s
+iteration = 77, lower bound = -4.23931e+06, time elapsed = 165.85s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 78, lower bound = -4.23924e+06, upper bound = 0, time elapsed = 170.93s
-iteration = 79, lower bound = -4.23913e+06, time elapsed = 171.14s
-iteration = 80, lower bound = -4.23904e+06, time elapsed = 171.35s
-iteration = 81, lower bound = -4.23897e+06, time elapsed = 171.58s
-iteration = 82, lower bound = -4.23891e+06, time elapsed = 171.80s
-iteration = 83, lower bound = -4.23885e+06, time elapsed = 172.3s
+iteration = 78, lower bound = -4.23924e+06, upper bound = 0, time elapsed = 166.58s
+iteration = 79, lower bound = -4.23913e+06, time elapsed = 166.81s
+iteration = 80, lower bound = -4.23904e+06, time elapsed = 167.3s
+iteration = 81, lower bound = -4.23897e+06, time elapsed = 167.27s
+iteration = 82, lower bound = -4.23891e+06, time elapsed = 167.50s
+iteration = 83, lower bound = -4.23885e+06, time elapsed = 167.73s
 Time to tighten
 Search for violated triplet constraints
 best triplet candidate in triplet search has guaranteed dual improvement 0.178972
-Added 121884 triplet(s) out of 267341 by searching for triplets
+Added 125028 triplet(s) out of 267341 by searching for triplets
 Additionally search via shortest paths for violated constraints
 best triplet candidate in cycle search has guaranteed dual improvement 0.509955
 best triplet candidate in cycle search has guaranteed dual improvement 0.199648
-Added 267393 triplet(s) out of 267341 in total
-iteration = 84, lower bound = -4.23883e+06, time elapsed = 176.13s
-iteration = 85, lower bound = -4.23859e+06, time elapsed = 192.46s
-iteration = 86, lower bound = -4.23845e+06, time elapsed = 192.74s
-iteration = 87, lower bound = -4.23835e+06, time elapsed = 193.2s
-iteration = 88, lower bound = -4.23828e+06, time elapsed = 193.30s
-iteration = 89, lower bound = -4.23822e+06, time elapsed = 193.57s
-iteration = 90, lower bound = -4.23818e+06, time elapsed = 193.85s
+Added 267389 triplet(s) out of 267341 in total
+iteration = 84, lower bound = -4.23883e+06, time elapsed = 172.8s
+iteration = 85, lower bound = -4.23859e+06, time elapsed = 187.52s
+iteration = 86, lower bound = -4.23845e+06, time elapsed = 187.76s
+iteration = 87, lower bound = -4.23835e+06, time elapsed = 188.2s
+iteration = 88, lower bound = -4.23828e+06, time elapsed = 188.30s
+iteration = 89, lower bound = -4.23822e+06, time elapsed = 188.58s
+iteration = 90, lower bound = -4.23818e+06, time elapsed = 188.87s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 91, lower bound = -4.23815e+06, upper bound = 0, time elapsed = 194.56s
-iteration = 92, lower bound = -4.23811e+06, time elapsed = 194.84s
-iteration = 93, lower bound = -4.23808e+06, time elapsed = 195.13s
-iteration = 94, lower bound = -4.23805e+06, time elapsed = 195.40s
-iteration = 95, lower bound = -4.23803e+06, time elapsed = 195.70s
-iteration = 96, lower bound = -4.238e+06, time elapsed = 195.99s
+iteration = 91, lower bound = -4.23815e+06, upper bound = 0, time elapsed = 189.64s
+iteration = 92, lower bound = -4.23811e+06, time elapsed = 189.92s
+iteration = 93, lower bound = -4.23808e+06, time elapsed = 190.20s
+iteration = 94, lower bound = -4.23805e+06, time elapsed = 190.47s
+iteration = 95, lower bound = -4.23803e+06, time elapsed = 190.76s
+iteration = 96, lower bound = -4.238e+06, time elapsed = 191.4s
 Time to tighten
 Search for violated triplet constraints
 best triplet candidate in triplet search has guaranteed dual improvement 0.0937628
-Added 151011 triplet(s) out of 267341 by searching for triplets
+Added 146106 triplet(s) out of 267341 by searching for triplets
 Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.323887
+best triplet candidate in cycle search has guaranteed dual improvement 0.324381
 best triplet candidate in cycle search has guaranteed dual improvement 0.15811
 best triplet candidate in cycle search has guaranteed dual improvement 0.0972107
-Added 267377 triplet(s) out of 267341 in total
-iteration = 97, lower bound = -4.23799e+06, time elapsed = 326.70s
-iteration = 98, lower bound = -4.23787e+06, time elapsed = 371.30s
-iteration = 99, lower bound = -4.23778e+06, time elapsed = 371.75s
-iteration = 100, lower bound = -4.23772e+06, time elapsed = 372.17s
-iteration = 101, lower bound = -4.23768e+06, time elapsed = 372.57s
-iteration = 102, lower bound = -4.23764e+06, time elapsed = 372.94s
-iteration = 103, lower bound = -4.23761e+06, time elapsed = 373.33s
+Added 267357 triplet(s) out of 267341 in total
+iteration = 97, lower bound = -4.23799e+06, time elapsed = 321.71s
+iteration = 98, lower bound = -4.23787e+06, time elapsed = 365.40s
+iteration = 99, lower bound = -4.23778e+06, time elapsed = 366.16s
+iteration = 100, lower bound = -4.23772e+06, time elapsed = 366.60s
+iteration = 101, lower bound = -4.23768e+06, time elapsed = 367.1s
+iteration = 102, lower bound = -4.23764e+06, time elapsed = 367.39s
+iteration = 103, lower bound = -4.23761e+06, time elapsed = 367.76s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 104, lower bound = -4.2376e+06, upper bound = 0, time elapsed = 374.23s
-iteration = 105, lower bound = -4.23757e+06, time elapsed = 374.60s
-iteration = 106, lower bound = -4.23755e+06, time elapsed = 375.48s
-iteration = 107, lower bound = -4.23753e+06, time elapsed = 376.59s
-iteration = 108, lower bound = -4.23751e+06, time elapsed = 376.96s
-iteration = 109, lower bound = -4.2375e+06, time elapsed = 377.35s
-iteration = 110, lower bound = -4.23748e+06, time elapsed = 377.73s
-iteration = 111, lower bound = -4.23747e+06, time elapsed = 378.11s
-iteration = 112, lower bound = -4.23746e+06, time elapsed = 378.51s
+iteration = 104, lower bound = -4.23759e+06, upper bound = 0, time elapsed = 368.65s
+iteration = 105, lower bound = -4.23757e+06, time elapsed = 369.4s
+iteration = 106, lower bound = -4.23755e+06, time elapsed = 369.40s
+iteration = 107, lower bound = -4.23753e+06, time elapsed = 369.78s
+iteration = 108, lower bound = -4.23751e+06, time elapsed = 370.12s
+iteration = 109, lower bound = -4.23749e+06, time elapsed = 370.47s
+iteration = 110, lower bound = -4.23748e+06, time elapsed = 370.78s
+iteration = 111, lower bound = -4.23747e+06, time elapsed = 371.10s
+iteration = 112, lower bound = -4.23745e+06, time elapsed = 372.14s
 Time to tighten
 Search for violated triplet constraints
 best triplet candidate in triplet search has guaranteed dual improvement 0.0349074
-Added 78235 triplet(s) out of 267341 by searching for triplets
+Added 80422 triplet(s) out of 267341 by searching for triplets
 Additionally search via shortest paths for violated constraints
 best triplet candidate in cycle search has guaranteed dual improvement 0.129405
-best triplet candidate in cycle search has guaranteed dual improvement 0.0678789
-Added 267382 triplet(s) out of 267341 in total
-iteration = 113, lower bound = -4.23745e+06, time elapsed = 469.59s
-iteration = 114, lower bound = -4.23738e+06, time elapsed = 509.52s
-iteration = 115, lower bound = -4.23733e+06, time elapsed = 509.83s
-iteration = 116, lower bound = -4.2373e+06, time elapsed = 510.19s
+best triplet candidate in cycle search has guaranteed dual improvement 0.0372236
+Added 267347 triplet(s) out of 267341 in total
+iteration = 113, lower bound = -4.23745e+06, time elapsed = 477.5s
+iteration = 114, lower bound = -4.23738e+06, time elapsed = 513.19s
+iteration = 115, lower bound = -4.23733e+06, time elapsed = 514.14s
+iteration = 116, lower bound = -4.2373e+06, time elapsed = 514.68s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 117, lower bound = -4.23729e+06, upper bound = 0, time elapsed = 512.70s
-iteration = 118, lower bound = -4.23726e+06, time elapsed = 513.13s
-iteration = 119, lower bound = -4.23724e+06, time elapsed = 513.52s
-iteration = 120, lower bound = -4.23722e+06, time elapsed = 513.93s
-iteration = 121, lower bound = -4.23721e+06, time elapsed = 514.31s
-iteration = 122, lower bound = -4.23719e+06, time elapsed = 514.70s
-iteration = 123, lower bound = -4.23718e+06, time elapsed = 515.11s
-iteration = 124, lower bound = -4.23717e+06, time elapsed = 515.51s
-iteration = 125, lower bound = -4.23716e+06, time elapsed = 515.94s
-iteration = 126, lower bound = -4.23715e+06, time elapsed = 516.35s
-iteration = 127, lower bound = -4.23714e+06, time elapsed = 516.77s
-iteration = 128, lower bound = -4.23713e+06, time elapsed = 517.20s
-iteration = 129, lower bound = -4.23712e+06, time elapsed = 517.80s
+iteration = 117, lower bound = -4.23728e+06, upper bound = 0, time elapsed = 515.62s
+iteration = 118, lower bound = -4.23726e+06, time elapsed = 515.99s
+iteration = 119, lower bound = -4.23724e+06, time elapsed = 516.40s
+iteration = 120, lower bound = -4.23722e+06, time elapsed = 516.85s
+iteration = 121, lower bound = -4.2372e+06, time elapsed = 517.27s
+iteration = 122, lower bound = -4.23719e+06, time elapsed = 517.71s
+iteration = 123, lower bound = -4.23718e+06, time elapsed = 518.12s
+iteration = 124, lower bound = -4.23717e+06, time elapsed = 518.54s
+iteration = 125, lower bound = -4.23715e+06, time elapsed = 518.90s
+iteration = 126, lower bound = -4.23714e+06, time elapsed = 521.29s
+iteration = 127, lower bound = -4.23713e+06, time elapsed = 521.68s
+iteration = 128, lower bound = -4.23713e+06, time elapsed = 522.8s
+iteration = 129, lower bound = -4.23712e+06, time elapsed = 522.44s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 130, lower bound = -4.23711e+06, upper bound = 0, time elapsed = 518.87s
+iteration = 130, lower bound = -4.23711e+06, upper bound = 0, time elapsed = 522.90s
 Time to tighten
 Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.0255229
-Added 71995 triplet(s) out of 267341 by searching for triplets
+best triplet candidate in triplet search has guaranteed dual improvement 0.0306907
+Added 62831 triplet(s) out of 267341 by searching for triplets
 Additionally search via shortest paths for violated constraints
 best triplet candidate in cycle search has guaranteed dual improvement 0.12499
 best triplet candidate in cycle search has guaranteed dual improvement 0.0325329
-Added 267357 triplet(s) out of 267341 in total
-iteration = 131, lower bound = -4.23711e+06, time elapsed = 571.4s
-iteration = 132, lower bound = -4.23707e+06, time elapsed = 618.13s
-iteration = 133, lower bound = -4.23704e+06, time elapsed = 618.60s
-iteration = 134, lower bound = -4.23702e+06, time elapsed = 619.27s
-iteration = 135, lower bound = -4.237e+06, time elapsed = 619.67s
-iteration = 136, lower bound = -4.23699e+06, time elapsed = 620.5s
-iteration = 137, lower bound = -4.23698e+06, time elapsed = 620.55s
-iteration = 138, lower bound = -4.23697e+06, time elapsed = 620.94s
-iteration = 139, lower bound = -4.23696e+06, time elapsed = 621.32s
-iteration = 140, lower bound = -4.23695e+06, time elapsed = 621.66s
-iteration = 141, lower bound = -4.23694e+06, time elapsed = 622.4s
-iteration = 142, lower bound = -4.23693e+06, time elapsed = 622.41s
+Added 267344 triplet(s) out of 267341 in total
+iteration = 131, lower bound = -4.23711e+06, time elapsed = 589.44s
+iteration = 132, lower bound = -4.23707e+06, time elapsed = 637.69s
+iteration = 133, lower bound = -4.23704e+06, time elapsed = 638.10s
+iteration = 134, lower bound = -4.23702e+06, time elapsed = 638.57s
+iteration = 135, lower bound = -4.237e+06, time elapsed = 639.5s
+iteration = 136, lower bound = -4.23699e+06, time elapsed = 639.48s
+iteration = 137, lower bound = -4.23698e+06, time elapsed = 641.73s
+iteration = 138, lower bound = -4.23697e+06, time elapsed = 642.22s
+iteration = 139, lower bound = -4.23696e+06, time elapsed = 642.62s
+iteration = 140, lower bound = -4.23695e+06, time elapsed = 643.0s
+iteration = 141, lower bound = -4.23694e+06, time elapsed = 643.40s
+iteration = 142, lower bound = -4.23693e+06, time elapsed = 643.83s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 143, lower bound = -4.23693e+06, upper bound = 0, time elapsed = 623.42s
-iteration = 144, lower bound = -4.23692e+06, time elapsed = 623.81s
-iteration = 145, lower bound = -4.23691e+06, time elapsed = 624.20s
-iteration = 146, lower bound = -4.2369e+06, time elapsed = 624.66s
-iteration = 147, lower bound = -4.2369e+06, time elapsed = 627.1s
-iteration = 148, lower bound = -4.23689e+06, time elapsed = 627.68s
-iteration = 149, lower bound = -4.23689e+06, time elapsed = 628.7s
-iteration = 150, lower bound = -4.23688e+06, time elapsed = 628.46s
-iteration = 151, lower bound = -4.23688e+06, time elapsed = 628.83s
-iteration = 152, lower bound = -4.23687e+06, time elapsed = 629.19s
-iteration = 153, lower bound = -4.23687e+06, time elapsed = 629.55s
-iteration = 154, lower bound = -4.23687e+06, time elapsed = 629.89s
-iteration = 155, lower bound = -4.23686e+06, time elapsed = 630.27s
+iteration = 143, lower bound = -4.23692e+06, upper bound = 0, time elapsed = 644.86s
+iteration = 144, lower bound = -4.23692e+06, time elapsed = 645.26s
+iteration = 145, lower bound = -4.23691e+06, time elapsed = 645.65s
+iteration = 146, lower bound = -4.2369e+06, time elapsed = 647.21s
+iteration = 147, lower bound = -4.2369e+06, time elapsed = 648.50s
+iteration = 148, lower bound = -4.23689e+06, time elapsed = 648.89s
+iteration = 149, lower bound = -4.23689e+06, time elapsed = 649.30s
+iteration = 150, lower bound = -4.23688e+06, time elapsed = 649.68s
+iteration = 151, lower bound = -4.23688e+06, time elapsed = 650.9s
+iteration = 152, lower bound = -4.23687e+06, time elapsed = 650.51s
+iteration = 153, lower bound = -4.23687e+06, time elapsed = 650.96s
+iteration = 154, lower bound = -4.23686e+06, time elapsed = 651.35s
+iteration = 155, lower bound = -4.23686e+06, time elapsed = 651.74s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 156, lower bound = -4.23686e+06, upper bound = 0, time elapsed = 630.78s
+iteration = 156, lower bound = -4.23686e+06, upper bound = 0, time elapsed = 652.27s
 Time to tighten
 Search for violated triplet constraints
 best triplet candidate in triplet search has guaranteed dual improvement 0.0203319
-Added 111155 triplet(s) out of 267341 by searching for triplets
+Added 104000 triplet(s) out of 267341 by searching for triplets
 Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.0569219
-best triplet candidate in cycle search has guaranteed dual improvement 0.0240801
+best triplet candidate in cycle search has guaranteed dual improvement 0.0687063
+best triplet candidate in cycle search has guaranteed dual improvement 0.0249102
+Added 267352 triplet(s) out of 267341 in total
+iteration = 157, lower bound = -4.23685e+06, time elapsed = 689.13s
+iteration = 158, lower bound = -4.23683e+06, time elapsed = 738.58s
+iteration = 159, lower bound = -4.23682e+06, time elapsed = 739.15s
+iteration = 160, lower bound = -4.23681e+06, time elapsed = 739.72s
+iteration = 161, lower bound = -4.2368e+06, time elapsed = 740.35s
+iteration = 162, lower bound = -4.23679e+06, time elapsed = 740.92s
+iteration = 163, lower bound = -4.23678e+06, time elapsed = 741.45s
+iteration = 164, lower bound = -4.23678e+06, time elapsed = 741.92s
+iteration = 165, lower bound = -4.23677e+06, time elapsed = 742.36s
+iteration = 166, lower bound = -4.23677e+06, time elapsed = 742.77s
+iteration = 167, lower bound = -4.23676e+06, time elapsed = 743.16s
+iteration = 168, lower bound = -4.23676e+06, time elapsed = 743.63s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = 0
+register primal cost = 0
+iteration = 169, lower bound = -4.23675e+06, upper bound = 0, time elapsed = 744.90s
+iteration = 170, lower bound = -4.23675e+06, time elapsed = 745.49s
+iteration = 171, lower bound = -4.23674e+06, time elapsed = 746.3s
+iteration = 172, lower bound = -4.23674e+06, time elapsed = 746.64s
+iteration = 173, lower bound = -4.23674e+06, time elapsed = 747.22s
+iteration = 174, lower bound = -4.23673e+06, time elapsed = 747.78s
+iteration = 175, lower bound = -4.23673e+06, time elapsed = 748.36s
+iteration = 176, lower bound = -4.23672e+06, time elapsed = 748.96s
+iteration = 177, lower bound = -4.23672e+06, time elapsed = 749.57s
+iteration = 178, lower bound = -4.23672e+06, time elapsed = 750.17s
+iteration = 179, lower bound = -4.23672e+06, time elapsed = 750.70s
+iteration = 180, lower bound = -4.23671e+06, time elapsed = 751.31s
+iteration = 181, lower bound = -4.23671e+06, time elapsed = 752.47s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = 0
+register primal cost = 0
+iteration = 182, lower bound = -4.23671e+06, upper bound = 0, time elapsed = 752.95s
+iteration = 183, lower bound = -4.2367e+06, time elapsed = 753.35s
+iteration = 184, lower bound = -4.2367e+06, time elapsed = 753.78s
+iteration = 185, lower bound = -4.2367e+06, time elapsed = 754.28s
+iteration = 186, lower bound = -4.2367e+06, time elapsed = 754.75s
+iteration = 187, lower bound = -4.2367e+06, time elapsed = 755.21s
+iteration = 188, lower bound = -4.23669e+06, time elapsed = 755.66s
+iteration = 189, lower bound = -4.23669e+06, time elapsed = 756.11s
+iteration = 190, lower bound = -4.23669e+06, time elapsed = 756.55s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.0118919
+Added 116774 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.109133
+best triplet candidate in cycle search has guaranteed dual improvement 0.0275149
+Added 267344 triplet(s) out of 267341 in total
+iteration = 191, lower bound = -4.23669e+06, time elapsed = 772.13s
+iteration = 192, lower bound = -4.23668e+06, time elapsed = 827.7s
+iteration = 193, lower bound = -4.23667e+06, time elapsed = 827.77s
+iteration = 194, lower bound = -4.23666e+06, time elapsed = 828.40s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = 0
+register primal cost = 0
+iteration = 195, lower bound = -4.23666e+06, upper bound = 0, time elapsed = 829.87s
+iteration = 196, lower bound = -4.23665e+06, time elapsed = 830.38s
+iteration = 197, lower bound = -4.23665e+06, time elapsed = 830.92s
+iteration = 198, lower bound = -4.23664e+06, time elapsed = 831.41s
+iteration = 199, lower bound = -4.23664e+06, time elapsed = 831.92s
+iteration = 200, lower bound = -4.23664e+06, time elapsed = 832.47s
+iteration = 201, lower bound = -4.23663e+06, time elapsed = 833.4s
+iteration = 202, lower bound = -4.23663e+06, time elapsed = 833.53s
+iteration = 203, lower bound = -4.23663e+06, time elapsed = 834.2s
+iteration = 204, lower bound = -4.23663e+06, time elapsed = 834.47s
+iteration = 205, lower bound = -4.23662e+06, time elapsed = 835.69s
+iteration = 206, lower bound = -4.23662e+06, time elapsed = 837.80s
+iteration = 207, lower bound = -4.23662e+06, time elapsed = 838.34s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = 0
+register primal cost = 0
+iteration = 208, lower bound = -4.23662e+06, upper bound = 0, time elapsed = 838.85s
+iteration = 209, lower bound = -4.23661e+06, time elapsed = 839.32s
+iteration = 210, lower bound = -4.23661e+06, time elapsed = 839.80s
+iteration = 211, lower bound = -4.23661e+06, time elapsed = 840.25s
+iteration = 212, lower bound = -4.23661e+06, time elapsed = 840.71s
+iteration = 213, lower bound = -4.2366e+06, time elapsed = 842.63s
+iteration = 214, lower bound = -4.2366e+06, time elapsed = 843.17s
+iteration = 215, lower bound = -4.2366e+06, time elapsed = 843.67s
+iteration = 216, lower bound = -4.2366e+06, time elapsed = 844.16s
+iteration = 217, lower bound = -4.2366e+06, time elapsed = 844.65s
+iteration = 218, lower bound = -4.23659e+06, time elapsed = 845.11s
+iteration = 219, lower bound = -4.23659e+06, time elapsed = 845.60s
+iteration = 220, lower bound = -4.23659e+06, time elapsed = 846.9s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = 0
+register primal cost = 0
+iteration = 221, lower bound = -4.23659e+06, upper bound = 0, time elapsed = 846.62s
+iteration = 222, lower bound = -4.23659e+06, time elapsed = 847.9s
+iteration = 223, lower bound = -4.23659e+06, time elapsed = 847.64s
+iteration = 224, lower bound = -4.23658e+06, time elapsed = 848.28s
+iteration = 225, lower bound = -4.23658e+06, time elapsed = 848.91s
+iteration = 226, lower bound = -4.23658e+06, time elapsed = 849.53s
+iteration = 227, lower bound = -4.23658e+06, time elapsed = 850.24s
+iteration = 228, lower bound = -4.23658e+06, time elapsed = 850.94s
+iteration = 229, lower bound = -4.23658e+06, time elapsed = 851.57s
+iteration = 230, lower bound = -4.23658e+06, time elapsed = 852.17s
+iteration = 231, lower bound = -4.23658e+06, time elapsed = 852.80s
+iteration = 232, lower bound = -4.23657e+06, time elapsed = 853.46s
+iteration = 233, lower bound = -4.23657e+06, time elapsed = 854.14s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = 0
+register primal cost = 0
+iteration = 234, lower bound = -4.23657e+06, upper bound = 0, time elapsed = 854.83s
+iteration = 235, lower bound = -4.23657e+06, time elapsed = 855.42s
+iteration = 236, lower bound = -4.23657e+06, time elapsed = 856.1s
+iteration = 237, lower bound = -4.23657e+06, time elapsed = 856.58s
+iteration = 238, lower bound = -4.23657e+06, time elapsed = 857.3s
+iteration = 239, lower bound = -4.23657e+06, time elapsed = 857.66s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.00967631
+Added 128081 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.0942911
+best triplet candidate in cycle search has guaranteed dual improvement 0.0213488
+best triplet candidate in cycle search has guaranteed dual improvement 0.00967631
 Added 267355 triplet(s) out of 267341 in total
-iteration = 157, lower bound = -4.23686e+06, time elapsed = 659.8s
-iteration = 158, lower bound = -4.23683e+06, time elapsed = 706.30s
-iteration = 159, lower bound = -4.23682e+06, time elapsed = 706.68s
-iteration = 160, lower bound = -4.23681e+06, time elapsed = 707.5s
-iteration = 161, lower bound = -4.2368e+06, time elapsed = 707.43s
-iteration = 162, lower bound = -4.23679e+06, time elapsed = 707.84s
-iteration = 163, lower bound = -4.23679e+06, time elapsed = 708.26s
-iteration = 164, lower bound = -4.23678e+06, time elapsed = 708.70s
-iteration = 165, lower bound = -4.23677e+06, time elapsed = 709.16s
-iteration = 166, lower bound = -4.23677e+06, time elapsed = 709.58s
-iteration = 167, lower bound = -4.23676e+06, time elapsed = 710.4s
-iteration = 168, lower bound = -4.23676e+06, time elapsed = 710.48s
+iteration = 240, lower bound = -4.23656e+06, time elapsed = 1065.14s
+iteration = 241, lower bound = -4.23656e+06, time elapsed = 1118.19s
+iteration = 242, lower bound = -4.23655e+06, time elapsed = 1118.91s
+iteration = 243, lower bound = -4.23655e+06, time elapsed = 1119.58s
+iteration = 244, lower bound = -4.23654e+06, time elapsed = 1120.27s
+iteration = 245, lower bound = -4.23654e+06, time elapsed = 1120.97s
+iteration = 246, lower bound = -4.23654e+06, time elapsed = 1121.75s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 169, lower bound = -4.23675e+06, upper bound = 0, time elapsed = 711.44s
-iteration = 170, lower bound = -4.23675e+06, time elapsed = 711.87s
-iteration = 171, lower bound = -4.23674e+06, time elapsed = 712.33s
-iteration = 172, lower bound = -4.23674e+06, time elapsed = 712.74s
-iteration = 173, lower bound = -4.23674e+06, time elapsed = 713.15s
-iteration = 174, lower bound = -4.23673e+06, time elapsed = 713.57s
-iteration = 175, lower bound = -4.23673e+06, time elapsed = 714.10s
-iteration = 176, lower bound = -4.23673e+06, time elapsed = 714.59s
-iteration = 177, lower bound = -4.23672e+06, time elapsed = 715.8s
-iteration = 178, lower bound = -4.23672e+06, time elapsed = 715.55s
-iteration = 179, lower bound = -4.23672e+06, time elapsed = 716.1s
-iteration = 180, lower bound = -4.23671e+06, time elapsed = 716.42s
-iteration = 181, lower bound = -4.23671e+06, time elapsed = 716.81s
+iteration = 247, lower bound = -4.23653e+06, upper bound = 0, time elapsed = 1122.90s
+iteration = 248, lower bound = -4.23653e+06, time elapsed = 1123.35s
+iteration = 249, lower bound = -4.23653e+06, time elapsed = 1123.97s
+iteration = 250, lower bound = -4.23653e+06, time elapsed = 1124.82s
+iteration = 251, lower bound = -4.23652e+06, time elapsed = 1125.56s
+iteration = 252, lower bound = -4.23652e+06, time elapsed = 1126.42s
+iteration = 253, lower bound = -4.23652e+06, time elapsed = 1127.15s
+iteration = 254, lower bound = -4.23652e+06, time elapsed = 1127.86s
+iteration = 255, lower bound = -4.23652e+06, time elapsed = 1128.58s
+iteration = 256, lower bound = -4.23652e+06, time elapsed = 1129.28s
+iteration = 257, lower bound = -4.23651e+06, time elapsed = 1130.4s
+iteration = 258, lower bound = -4.23651e+06, time elapsed = 1130.73s
+iteration = 259, lower bound = -4.23651e+06, time elapsed = 1131.45s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 182, lower bound = -4.23671e+06, upper bound = 0, time elapsed = 717.26s
-iteration = 183, lower bound = -4.23671e+06, time elapsed = 717.67s
-iteration = 184, lower bound = -4.2367e+06, time elapsed = 718.14s
-iteration = 185, lower bound = -4.2367e+06, time elapsed = 718.57s
-iteration = 186, lower bound = -4.2367e+06, time elapsed = 718.96s
-iteration = 187, lower bound = -4.2367e+06, time elapsed = 719.38s
-iteration = 188, lower bound = -4.23669e+06, time elapsed = 719.76s
-iteration = 189, lower bound = -4.23669e+06, time elapsed = 720.16s
-iteration = 190, lower bound = -4.23669e+06, time elapsed = 720.60s
-Time to tighten
-Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.0119347
-Added 110658 triplet(s) out of 267341 by searching for triplets
-Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.109143
-best triplet candidate in cycle search has guaranteed dual improvement 0.0267394
-Added 267361 triplet(s) out of 267341 in total
-iteration = 191, lower bound = -4.23669e+06, time elapsed = 738.55s
-iteration = 192, lower bound = -4.23668e+06, time elapsed = 792.22s
-iteration = 193, lower bound = -4.23667e+06, time elapsed = 792.74s
-iteration = 194, lower bound = -4.23666e+06, time elapsed = 793.33s
+iteration = 260, lower bound = -4.23651e+06, upper bound = 0, time elapsed = 1132.1s
+iteration = 261, lower bound = -4.23651e+06, time elapsed = 1133.13s
+iteration = 262, lower bound = -4.23651e+06, time elapsed = 1134.38s
+iteration = 263, lower bound = -4.2365e+06, time elapsed = 1134.87s
+iteration = 264, lower bound = -4.2365e+06, time elapsed = 1135.38s
+iteration = 265, lower bound = -4.2365e+06, time elapsed = 1135.94s
+iteration = 266, lower bound = -4.2365e+06, time elapsed = 1136.47s
+iteration = 267, lower bound = -4.2365e+06, time elapsed = 1136.96s
+iteration = 268, lower bound = -4.2365e+06, time elapsed = 1137.41s
+iteration = 269, lower bound = -4.2365e+06, time elapsed = 1137.84s
+iteration = 270, lower bound = -4.2365e+06, time elapsed = 1138.28s
+iteration = 271, lower bound = -4.2365e+06, time elapsed = 1140.47s
+iteration = 272, lower bound = -4.23649e+06, time elapsed = 1141.9s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 195, lower bound = -4.23666e+06, upper bound = 0, time elapsed = 794.51s
-iteration = 196, lower bound = -4.23665e+06, time elapsed = 794.96s
-iteration = 197, lower bound = -4.23665e+06, time elapsed = 795.40s
-iteration = 198, lower bound = -4.23665e+06, time elapsed = 795.86s
-iteration = 199, lower bound = -4.23664e+06, time elapsed = 796.26s
-iteration = 200, lower bound = -4.23664e+06, time elapsed = 796.68s
-iteration = 201, lower bound = -4.23664e+06, time elapsed = 797.13s
-iteration = 202, lower bound = -4.23663e+06, time elapsed = 797.56s
-iteration = 203, lower bound = -4.23663e+06, time elapsed = 798.6s
-iteration = 204, lower bound = -4.23663e+06, time elapsed = 798.54s
-iteration = 205, lower bound = -4.23662e+06, time elapsed = 798.95s
-iteration = 206, lower bound = -4.23662e+06, time elapsed = 799.39s
-iteration = 207, lower bound = -4.23662e+06, time elapsed = 799.87s
+iteration = 273, lower bound = -4.23649e+06, upper bound = 0, time elapsed = 1141.64s
+iteration = 274, lower bound = -4.23649e+06, time elapsed = 1142.11s
+iteration = 275, lower bound = -4.23649e+06, time elapsed = 1142.55s
+iteration = 276, lower bound = -4.23649e+06, time elapsed = 1143.4s
+iteration = 277, lower bound = -4.23649e+06, time elapsed = 1143.52s
+iteration = 278, lower bound = -4.23649e+06, time elapsed = 1144.0s
+iteration = 279, lower bound = -4.23649e+06, time elapsed = 1146.36s
+iteration = 280, lower bound = -4.23649e+06, time elapsed = 1147.25s
+iteration = 281, lower bound = -4.23649e+06, time elapsed = 1147.70s
+iteration = 282, lower bound = -4.23648e+06, time elapsed = 1148.14s
+iteration = 283, lower bound = -4.23648e+06, time elapsed = 1148.56s
+iteration = 284, lower bound = -4.23648e+06, time elapsed = 1148.98s
+iteration = 285, lower bound = -4.23648e+06, time elapsed = 1149.45s
 multicut rounding is currently running.
 primal solution consistent: 1
 primal cost = 0
 register primal cost = 0
-iteration = 208, lower bound = -4.23662e+06, upper bound = 0, time elapsed = 802.99s
-iteration = 209, lower bound = -4.23661e+06, time elapsed = 803.40s
-iteration = 210, lower bound = -4.23661e+06, time elapsed = 803.81s
-iteration = 211, lower bound = -4.23661e+06, time elapsed = 804.25s
-iteration = 212, lower bound = -4.23661e+06, time elapsed = 804.70s
-iteration = 213, lower bound = -4.23661e+06, time elapsed = 805.13s
-iteration = 214, lower bound = -4.2366e+06, time elapsed = 805.56s
-iteration = 215, lower bound = -4.2366e+06, time elapsed = 806.1s
-iteration = 216, lower bound = -4.2366e+06, time elapsed = 806.78s
-iteration = 217, lower bound = -4.2366e+06, time elapsed = 809.6s
-iteration = 218, lower bound = -4.2366e+06, time elapsed = 809.49s
-iteration = 219, lower bound = -4.23659e+06, time elapsed = 809.92s
-iteration = 220, lower bound = -4.23659e+06, time elapsed = 810.36s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 221, lower bound = -4.23659e+06, upper bound = 0, time elapsed = 810.93s
-iteration = 222, lower bound = -4.23659e+06, time elapsed = 811.34s
-iteration = 223, lower bound = -4.23659e+06, time elapsed = 811.81s
-iteration = 224, lower bound = -4.23659e+06, time elapsed = 812.30s
-iteration = 225, lower bound = -4.23659e+06, time elapsed = 812.77s
-iteration = 226, lower bound = -4.23658e+06, time elapsed = 813.21s
-iteration = 227, lower bound = -4.23658e+06, time elapsed = 813.68s
-iteration = 228, lower bound = -4.23658e+06, time elapsed = 814.13s
-iteration = 229, lower bound = -4.23658e+06, time elapsed = 814.58s
-iteration = 230, lower bound = -4.23658e+06, time elapsed = 815.1s
-iteration = 231, lower bound = -4.23658e+06, time elapsed = 815.51s
-iteration = 232, lower bound = -4.23658e+06, time elapsed = 815.93s
-iteration = 233, lower bound = -4.23657e+06, time elapsed = 816.41s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 234, lower bound = -4.23657e+06, upper bound = 0, time elapsed = 816.94s
-iteration = 235, lower bound = -4.23657e+06, time elapsed = 817.38s
-iteration = 236, lower bound = -4.23657e+06, time elapsed = 817.82s
-iteration = 237, lower bound = -4.23657e+06, time elapsed = 818.27s
-iteration = 238, lower bound = -4.23657e+06, time elapsed = 818.65s
-Time to tighten
-Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.0111779
-Added 103197 triplet(s) out of 267341 by searching for triplets
-Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.0953684
-best triplet candidate in cycle search has guaranteed dual improvement 0.0208952
-best triplet candidate in cycle search has guaranteed dual improvement 0.0111779
-Added 267350 triplet(s) out of 267341 in total
-iteration = 239, lower bound = -4.23657e+06, time elapsed = 1044.73s
-iteration = 240, lower bound = -4.23656e+06, time elapsed = 1095.95s
-iteration = 241, lower bound = -4.23655e+06, time elapsed = 1096.50s
-iteration = 242, lower bound = -4.23655e+06, time elapsed = 1097.8s
-iteration = 243, lower bound = -4.23654e+06, time elapsed = 1097.67s
-iteration = 244, lower bound = -4.23654e+06, time elapsed = 1098.25s
-iteration = 245, lower bound = -4.23654e+06, time elapsed = 1098.79s
-iteration = 246, lower bound = -4.23653e+06, time elapsed = 1099.33s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 247, lower bound = -4.23653e+06, upper bound = 0, time elapsed = 1100.25s
-iteration = 248, lower bound = -4.23653e+06, time elapsed = 1100.76s
-iteration = 249, lower bound = -4.23653e+06, time elapsed = 1101.28s
-iteration = 250, lower bound = -4.23652e+06, time elapsed = 1101.81s
-iteration = 251, lower bound = -4.23652e+06, time elapsed = 1102.33s
-iteration = 252, lower bound = -4.23652e+06, time elapsed = 1102.83s
-iteration = 253, lower bound = -4.23652e+06, time elapsed = 1103.38s
-iteration = 254, lower bound = -4.23652e+06, time elapsed = 1104.15s
-iteration = 255, lower bound = -4.23652e+06, time elapsed = 1105.25s
-iteration = 256, lower bound = -4.23651e+06, time elapsed = 1105.68s
-iteration = 257, lower bound = -4.23651e+06, time elapsed = 1106.13s
-iteration = 258, lower bound = -4.23651e+06, time elapsed = 1106.61s
-iteration = 259, lower bound = -4.23651e+06, time elapsed = 1107.11s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 260, lower bound = -4.23651e+06, upper bound = 0, time elapsed = 1107.81s
-iteration = 261, lower bound = -4.23651e+06, time elapsed = 1108.39s
-iteration = 262, lower bound = -4.2365e+06, time elapsed = 1108.88s
-iteration = 263, lower bound = -4.2365e+06, time elapsed = 1109.37s
-iteration = 264, lower bound = -4.2365e+06, time elapsed = 1112.45s
-iteration = 265, lower bound = -4.2365e+06, time elapsed = 1114.68s
-iteration = 266, lower bound = -4.2365e+06, time elapsed = 1115.16s
-iteration = 267, lower bound = -4.2365e+06, time elapsed = 1115.64s
-iteration = 268, lower bound = -4.2365e+06, time elapsed = 1117.75s
-iteration = 269, lower bound = -4.2365e+06, time elapsed = 1118.33s
-iteration = 270, lower bound = -4.23649e+06, time elapsed = 1118.79s
-iteration = 271, lower bound = -4.23649e+06, time elapsed = 1119.20s
-iteration = 272, lower bound = -4.23649e+06, time elapsed = 1119.59s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 273, lower bound = -4.23649e+06, upper bound = 0, time elapsed = 1120.11s
-iteration = 274, lower bound = -4.23649e+06, time elapsed = 1120.57s
-iteration = 275, lower bound = -4.23649e+06, time elapsed = 1121.1s
-iteration = 276, lower bound = -4.23649e+06, time elapsed = 1121.50s
-iteration = 277, lower bound = -4.23649e+06, time elapsed = 1122.2s
-iteration = 278, lower bound = -4.23649e+06, time elapsed = 1122.53s
-iteration = 279, lower bound = -4.23649e+06, time elapsed = 1123.19s
-iteration = 280, lower bound = -4.23648e+06, time elapsed = 1123.83s
-iteration = 281, lower bound = -4.23648e+06, time elapsed = 1124.35s
-iteration = 282, lower bound = -4.23648e+06, time elapsed = 1124.83s
-iteration = 283, lower bound = -4.23648e+06, time elapsed = 1125.34s
-iteration = 284, lower bound = -4.23648e+06, time elapsed = 1125.82s
-iteration = 285, lower bound = -4.23648e+06, time elapsed = 1126.27s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 286, lower bound = -4.23648e+06, upper bound = 0, time elapsed = 1126.86s
-iteration = 287, lower bound = -4.23648e+06, time elapsed = 1127.33s
+iteration = 286, lower bound = -4.23648e+06, upper bound = 0, time elapsed = 1149.97s
+iteration = 287, lower bound = -4.23648e+06, time elapsed = 1150.43s
+iteration = 288, lower bound = -4.23648e+06, time elapsed = 1150.90s
 Time to tighten
 Search for violated triplet constraints
 best triplet candidate in triplet search has guaranteed dual improvement 0.00566244
-Added 126388 triplet(s) out of 267341 by searching for triplets
+Added 106954 triplet(s) out of 267341 by searching for triplets
 Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.0499438
-best triplet candidate in cycle search has guaranteed dual improvement 0.00990917
-best triplet candidate in cycle search has guaranteed dual improvement 0.00861712
-Added 267365 triplet(s) out of 267341 in total
-iteration = 288, lower bound = -4.23648e+06, time elapsed = 1371.57s
-iteration = 289, lower bound = -4.23647e+06, time elapsed = 1423.22s
-iteration = 290, lower bound = -4.23647e+06, time elapsed = 1423.96s
-iteration = 291, lower bound = -4.23647e+06, time elapsed = 1424.58s
-iteration = 292, lower bound = -4.23646e+06, time elapsed = 1425.20s
-iteration = 293, lower bound = -4.23646e+06, time elapsed = 1425.81s
-iteration = 294, lower bound = -4.23646e+06, time elapsed = 1426.36s
-iteration = 295, lower bound = -4.23646e+06, time elapsed = 1426.90s
-iteration = 296, lower bound = -4.23645e+06, time elapsed = 1427.44s
-iteration = 297, lower bound = -4.23645e+06, time elapsed = 1427.92s
-iteration = 298, lower bound = -4.23645e+06, time elapsed = 1428.47s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 299, lower bound = -4.23645e+06, upper bound = 0, time elapsed = 1429.60s
-iteration = 300, lower bound = -4.23645e+06, time elapsed = 1430.12s
-iteration = 301, lower bound = -4.23645e+06, time elapsed = 1430.62s
-iteration = 302, lower bound = -4.23645e+06, time elapsed = 1431.47s
-iteration = 303, lower bound = -4.23644e+06, time elapsed = 1433.18s
-iteration = 304, lower bound = -4.23644e+06, time elapsed = 1433.72s
-iteration = 305, lower bound = -4.23644e+06, time elapsed = 1434.19s
-iteration = 306, lower bound = -4.23644e+06, time elapsed = 1434.71s
-iteration = 307, lower bound = -4.23644e+06, time elapsed = 1435.22s
-iteration = 308, lower bound = -4.23644e+06, time elapsed = 1435.76s
-iteration = 309, lower bound = -4.23644e+06, time elapsed = 1436.27s
-iteration = 310, lower bound = -4.23644e+06, time elapsed = 1436.71s
-iteration = 311, lower bound = -4.23644e+06, time elapsed = 1437.22s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 312, lower bound = -4.23644e+06, upper bound = 0, time elapsed = 1440.29s
-iteration = 313, lower bound = -4.23643e+06, time elapsed = 1441.36s
-iteration = 314, lower bound = -4.23643e+06, time elapsed = 1441.85s
-iteration = 315, lower bound = -4.23643e+06, time elapsed = 1442.32s
-iteration = 316, lower bound = -4.23643e+06, time elapsed = 1442.81s
-iteration = 317, lower bound = -4.23643e+06, time elapsed = 1443.30s
-iteration = 318, lower bound = -4.23643e+06, time elapsed = 1443.78s
-iteration = 319, lower bound = -4.23643e+06, time elapsed = 1444.32s
-iteration = 320, lower bound = -4.23643e+06, time elapsed = 1445.88s
-iteration = 321, lower bound = -4.23643e+06, time elapsed = 1446.53s
-iteration = 322, lower bound = -4.23643e+06, time elapsed = 1447.10s
-iteration = 323, lower bound = -4.23643e+06, time elapsed = 1447.67s
-iteration = 324, lower bound = -4.23643e+06, time elapsed = 1448.18s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 325, lower bound = -4.23642e+06, upper bound = 0, time elapsed = 1448.75s
-iteration = 326, lower bound = -4.23642e+06, time elapsed = 1449.24s
-iteration = 327, lower bound = -4.23642e+06, time elapsed = 1449.73s
-iteration = 328, lower bound = -4.23642e+06, time elapsed = 1450.21s
-iteration = 329, lower bound = -4.23642e+06, time elapsed = 1450.73s
-iteration = 330, lower bound = -4.23642e+06, time elapsed = 1451.25s
-iteration = 331, lower bound = -4.23642e+06, time elapsed = 1451.73s
-iteration = 332, lower bound = -4.23642e+06, time elapsed = 1452.39s
-iteration = 333, lower bound = -4.23642e+06, time elapsed = 1453.6s
-iteration = 334, lower bound = -4.23642e+06, time elapsed = 1453.69s
-iteration = 335, lower bound = -4.23642e+06, time elapsed = 1454.28s
-iteration = 336, lower bound = -4.23642e+06, time elapsed = 1454.78s
-Time to tighten
-Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.00495385
-Added 84729 triplet(s) out of 267341 by searching for triplets
-Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.052141
-best triplet candidate in cycle search has guaranteed dual improvement 0.0138184
-best triplet candidate in cycle search has guaranteed dual improvement 0.00495385
-Added 267342 triplet(s) out of 267341 in total
-iteration = 337, lower bound = -4.23642e+06, time elapsed = 1593.61s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 338, lower bound = -4.23642e+06, upper bound = 0, time elapsed = 1648.0s
-iteration = 339, lower bound = -4.23641e+06, time elapsed = 1659.79s
-iteration = 340, lower bound = -4.23641e+06, time elapsed = 1660.27s
-iteration = 341, lower bound = -4.23641e+06, time elapsed = 1660.82s
-iteration = 342, lower bound = -4.23641e+06, time elapsed = 1661.39s
-iteration = 343, lower bound = -4.23641e+06, time elapsed = 1661.88s
-iteration = 344, lower bound = -4.2364e+06, time elapsed = 1662.46s
-iteration = 345, lower bound = -4.2364e+06, time elapsed = 1664.55s
-iteration = 346, lower bound = -4.2364e+06, time elapsed = 1665.8s
-iteration = 347, lower bound = -4.2364e+06, time elapsed = 1665.64s
-iteration = 348, lower bound = -4.2364e+06, time elapsed = 1666.17s
-iteration = 349, lower bound = -4.2364e+06, time elapsed = 1666.76s
-iteration = 350, lower bound = -4.2364e+06, time elapsed = 1667.33s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 351, lower bound = -4.2364e+06, upper bound = 0, time elapsed = 1667.99s
-iteration = 352, lower bound = -4.2364e+06, time elapsed = 1668.54s
-iteration = 353, lower bound = -4.23639e+06, time elapsed = 1669.12s
-iteration = 354, lower bound = -4.23639e+06, time elapsed = 1669.70s
-iteration = 355, lower bound = -4.23639e+06, time elapsed = 1670.33s
-iteration = 356, lower bound = -4.23639e+06, time elapsed = 1671.3s
-iteration = 357, lower bound = -4.23639e+06, time elapsed = 1671.65s
-iteration = 358, lower bound = -4.23639e+06, time elapsed = 1672.19s
-iteration = 359, lower bound = -4.23639e+06, time elapsed = 1672.73s
-iteration = 360, lower bound = -4.23639e+06, time elapsed = 1673.31s
-iteration = 361, lower bound = -4.23639e+06, time elapsed = 1673.82s
-iteration = 362, lower bound = -4.23639e+06, time elapsed = 1674.40s
-iteration = 363, lower bound = -4.23639e+06, time elapsed = 1675.0s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 364, lower bound = -4.23639e+06, upper bound = 0, time elapsed = 1675.81s
-iteration = 365, lower bound = -4.23639e+06, time elapsed = 1676.50s
-iteration = 366, lower bound = -4.23638e+06, time elapsed = 1677.14s
-iteration = 367, lower bound = -4.23638e+06, time elapsed = 1677.76s
-iteration = 368, lower bound = -4.23638e+06, time elapsed = 1678.33s
-iteration = 369, lower bound = -4.23638e+06, time elapsed = 1679.1s
-iteration = 370, lower bound = -4.23638e+06, time elapsed = 1679.55s
-iteration = 371, lower bound = -4.23638e+06, time elapsed = 1680.7s
-iteration = 372, lower bound = -4.23638e+06, time elapsed = 1680.62s
-iteration = 373, lower bound = -4.23638e+06, time elapsed = 1681.28s
-iteration = 374, lower bound = -4.23638e+06, time elapsed = 1681.86s
-iteration = 375, lower bound = -4.23638e+06, time elapsed = 1682.71s
-iteration = 376, lower bound = -4.23638e+06, time elapsed = 1684.44s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 377, lower bound = -4.23638e+06, upper bound = 0, time elapsed = 1685.2s
-iteration = 378, lower bound = -4.23638e+06, time elapsed = 1685.48s
-iteration = 379, lower bound = -4.23638e+06, time elapsed = 1685.95s
-iteration = 380, lower bound = -4.23638e+06, time elapsed = 1686.43s
-iteration = 381, lower bound = -4.23638e+06, time elapsed = 1686.92s
-iteration = 382, lower bound = -4.23638e+06, time elapsed = 1687.45s
-iteration = 383, lower bound = -4.23637e+06, time elapsed = 1687.98s
-iteration = 384, lower bound = -4.23637e+06, time elapsed = 1688.52s
-iteration = 385, lower bound = -4.23637e+06, time elapsed = 1692.2s
-Time to tighten
-Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.0144398
-Added 90323 triplet(s) out of 267341 by searching for triplets
-Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.0364323
-best triplet candidate in cycle search has guaranteed dual improvement 0.0148051
-best triplet candidate in cycle search has guaranteed dual improvement 0.0144398
-Added 267357 triplet(s) out of 267341 in total
-iteration = 386, lower bound = -4.23637e+06, time elapsed = 1738.71s
-iteration = 387, lower bound = -4.23637e+06, time elapsed = 1792.81s
-iteration = 388, lower bound = -4.23637e+06, time elapsed = 1793.46s
-iteration = 389, lower bound = -4.23637e+06, time elapsed = 1793.97s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 390, lower bound = -4.23637e+06, upper bound = 0, time elapsed = 1795.55s
-iteration = 391, lower bound = -4.23637e+06, time elapsed = 1798.29s
-iteration = 392, lower bound = -4.23636e+06, time elapsed = 1798.95s
-iteration = 393, lower bound = -4.23636e+06, time elapsed = 1799.46s
-iteration = 394, lower bound = -4.23636e+06, time elapsed = 1800.0s
-iteration = 395, lower bound = -4.23636e+06, time elapsed = 1800.59s
-iteration = 396, lower bound = -4.23636e+06, time elapsed = 1801.20s
-iteration = 397, lower bound = -4.23636e+06, time elapsed = 1801.75s
-iteration = 398, lower bound = -4.23636e+06, time elapsed = 1802.32s
-iteration = 399, lower bound = -4.23636e+06, time elapsed = 1803.33s
-iteration = 400, lower bound = -4.23636e+06, time elapsed = 1805.2s
-iteration = 401, lower bound = -4.23636e+06, time elapsed = 1805.57s
-iteration = 402, lower bound = -4.23636e+06, time elapsed = 1806.14s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 403, lower bound = -4.23636e+06, upper bound = 0, time elapsed = 1806.97s
-iteration = 404, lower bound = -4.23635e+06, time elapsed = 1807.61s
-iteration = 405, lower bound = -4.23635e+06, time elapsed = 1808.22s
-iteration = 406, lower bound = -4.23635e+06, time elapsed = 1808.84s
-iteration = 407, lower bound = -4.23635e+06, time elapsed = 1809.41s
-iteration = 408, lower bound = -4.23635e+06, time elapsed = 1809.98s
-iteration = 409, lower bound = -4.23635e+06, time elapsed = 1810.61s
-iteration = 410, lower bound = -4.23635e+06, time elapsed = 1811.59s
-iteration = 411, lower bound = -4.23635e+06, time elapsed = 1812.50s
-iteration = 412, lower bound = -4.23635e+06, time elapsed = 1813.28s
-iteration = 413, lower bound = -4.23635e+06, time elapsed = 1813.98s
-iteration = 414, lower bound = -4.23635e+06, time elapsed = 1814.79s
-iteration = 415, lower bound = -4.23635e+06, time elapsed = 1815.71s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 416, lower bound = -4.23635e+06, upper bound = 0, time elapsed = 1816.64s
-iteration = 417, lower bound = -4.23635e+06, time elapsed = 1817.43s
-iteration = 418, lower bound = -4.23635e+06, time elapsed = 1818.12s
-iteration = 419, lower bound = -4.23635e+06, time elapsed = 1819.55s
-iteration = 420, lower bound = -4.23635e+06, time elapsed = 1820.21s
-iteration = 421, lower bound = -4.23635e+06, time elapsed = 1820.73s
-iteration = 422, lower bound = -4.23635e+06, time elapsed = 1821.27s
-iteration = 423, lower bound = -4.23635e+06, time elapsed = 1821.81s
-iteration = 424, lower bound = -4.23634e+06, time elapsed = 1822.32s
-iteration = 425, lower bound = -4.23634e+06, time elapsed = 1822.86s
-iteration = 426, lower bound = -4.23634e+06, time elapsed = 1823.37s
-iteration = 427, lower bound = -4.23634e+06, time elapsed = 1823.85s
-iteration = 428, lower bound = -4.23634e+06, time elapsed = 1824.45s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 429, lower bound = -4.23634e+06, upper bound = 0, time elapsed = 1828.91s
-iteration = 430, lower bound = -4.23634e+06, time elapsed = 1829.86s
-iteration = 431, lower bound = -4.23634e+06, time elapsed = 1830.41s
-iteration = 432, lower bound = -4.23634e+06, time elapsed = 1830.98s
-iteration = 433, lower bound = -4.23634e+06, time elapsed = 1831.57s
-iteration = 434, lower bound = -4.23634e+06, time elapsed = 1834.66s
-Time to tighten
-Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.00206095
-Added 113656 triplet(s) out of 267341 by searching for triplets
-Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.0347515
-best triplet candidate in cycle search has guaranteed dual improvement 0.00671867
-best triplet candidate in cycle search has guaranteed dual improvement 0.00361232
-Added 267345 triplet(s) out of 267341 in total
-iteration = 435, lower bound = -4.23634e+06, time elapsed = 1844.39s
-iteration = 436, lower bound = -4.23634e+06, time elapsed = 1903.63s
-iteration = 437, lower bound = -4.23634e+06, time elapsed = 1904.23s
-iteration = 438, lower bound = -4.23634e+06, time elapsed = 1904.85s
-iteration = 439, lower bound = -4.23634e+06, time elapsed = 1905.50s
-iteration = 440, lower bound = -4.23634e+06, time elapsed = 1906.18s
-iteration = 441, lower bound = -4.23634e+06, time elapsed = 1906.84s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 442, lower bound = -4.23633e+06, upper bound = 0, time elapsed = 1909.23s
-iteration = 443, lower bound = -4.23633e+06, time elapsed = 1911.1s
-iteration = 444, lower bound = -4.23633e+06, time elapsed = 1911.64s
-iteration = 445, lower bound = -4.23633e+06, time elapsed = 1912.24s
-iteration = 446, lower bound = -4.23633e+06, time elapsed = 1912.87s
-iteration = 447, lower bound = -4.23633e+06, time elapsed = 1913.64s
-iteration = 448, lower bound = -4.23633e+06, time elapsed = 1914.56s
-iteration = 449, lower bound = -4.23633e+06, time elapsed = 1915.34s
-iteration = 450, lower bound = -4.23633e+06, time elapsed = 1916.2s
-iteration = 451, lower bound = -4.23633e+06, time elapsed = 1916.75s
-iteration = 452, lower bound = -4.23633e+06, time elapsed = 1917.49s
-iteration = 453, lower bound = -4.23633e+06, time elapsed = 1918.32s
-iteration = 454, lower bound = -4.23633e+06, time elapsed = 1919.26s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 455, lower bound = -4.23633e+06, upper bound = 0, time elapsed = 1920.11s
-iteration = 456, lower bound = -4.23633e+06, time elapsed = 1920.75s
-iteration = 457, lower bound = -4.23633e+06, time elapsed = 1921.58s
-iteration = 458, lower bound = -4.23633e+06, time elapsed = 1922.50s
-iteration = 459, lower bound = -4.23633e+06, time elapsed = 1923.62s
-iteration = 460, lower bound = -4.23633e+06, time elapsed = 1924.52s
-iteration = 461, lower bound = -4.23633e+06, time elapsed = 1925.52s
-iteration = 462, lower bound = -4.23632e+06, time elapsed = 1926.66s
-iteration = 463, lower bound = -4.23632e+06, time elapsed = 1927.32s
-iteration = 464, lower bound = -4.23632e+06, time elapsed = 1928.10s
-iteration = 465, lower bound = -4.23632e+06, time elapsed = 1928.86s
-iteration = 466, lower bound = -4.23632e+06, time elapsed = 1929.61s
-iteration = 467, lower bound = -4.23632e+06, time elapsed = 1930.37s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 468, lower bound = -4.23632e+06, upper bound = 0, time elapsed = 1931.1s
-iteration = 469, lower bound = -4.23632e+06, time elapsed = 1931.58s
-iteration = 470, lower bound = -4.23632e+06, time elapsed = 1932.96s
-iteration = 471, lower bound = -4.23632e+06, time elapsed = 1934.54s
-iteration = 472, lower bound = -4.23632e+06, time elapsed = 1935.9s
-iteration = 473, lower bound = -4.23632e+06, time elapsed = 1935.70s
-iteration = 474, lower bound = -4.23632e+06, time elapsed = 1936.42s
-iteration = 475, lower bound = -4.23632e+06, time elapsed = 1937.16s
-iteration = 476, lower bound = -4.23632e+06, time elapsed = 1937.88s
-iteration = 477, lower bound = -4.23632e+06, time elapsed = 1938.64s
-iteration = 478, lower bound = -4.23632e+06, time elapsed = 1939.27s
-iteration = 479, lower bound = -4.23632e+06, time elapsed = 1941.40s
-iteration = 480, lower bound = -4.23632e+06, time elapsed = 1942.6s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 481, lower bound = -4.23632e+06, upper bound = 0, time elapsed = 1942.73s
-iteration = 482, lower bound = -4.23632e+06, time elapsed = 1943.31s
-iteration = 483, lower bound = -4.23632e+06, time elapsed = 1943.89s
-Time to tighten
-Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.000684306
-Added 172079 triplet(s) out of 267341 by searching for triplets
-iteration = 484, lower bound = -4.23632e+06, time elapsed = 1946.15s
-iteration = 485, lower bound = -4.23632e+06, time elapsed = 2020.80s
-iteration = 486, lower bound = -4.23632e+06, time elapsed = 2021.75s
-iteration = 487, lower bound = -4.23632e+06, time elapsed = 2022.64s
-iteration = 488, lower bound = -4.23632e+06, time elapsed = 2023.60s
-iteration = 489, lower bound = -4.23631e+06, time elapsed = 2024.62s
-iteration = 490, lower bound = -4.23631e+06, time elapsed = 2025.69s
-iteration = 491, lower bound = -4.23631e+06, time elapsed = 2026.66s
-iteration = 492, lower bound = -4.23631e+06, time elapsed = 2027.59s
-iteration = 493, lower bound = -4.23631e+06, time elapsed = 2028.47s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 494, lower bound = -4.23631e+06, upper bound = 0, time elapsed = 2030.15s
-iteration = 495, lower bound = -4.23631e+06, time elapsed = 2031.7s
-iteration = 496, lower bound = -4.23631e+06, time elapsed = 2031.89s
-iteration = 497, lower bound = -4.23631e+06, time elapsed = 2032.88s
-iteration = 498, lower bound = -4.23631e+06, time elapsed = 2034.59s
-iteration = 499, lower bound = -4.23631e+06, time elapsed = 2035.25s
-iteration = 500, lower bound = -4.23631e+06, time elapsed = 2035.92s
-iteration = 501, lower bound = -4.23631e+06, time elapsed = 2036.63s
-iteration = 502, lower bound = -4.23631e+06, time elapsed = 2037.31s
-iteration = 503, lower bound = -4.23631e+06, time elapsed = 2037.97s
-iteration = 504, lower bound = -4.23631e+06, time elapsed = 2038.64s
-iteration = 505, lower bound = -4.23631e+06, time elapsed = 2039.81s
-iteration = 506, lower bound = -4.23631e+06, time elapsed = 2042.75s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 507, lower bound = -4.23631e+06, upper bound = 0, time elapsed = 2043.46s
-iteration = 508, lower bound = -4.23631e+06, time elapsed = 2044.12s
-iteration = 509, lower bound = -4.23631e+06, time elapsed = 2044.78s
-iteration = 510, lower bound = -4.23631e+06, time elapsed = 2045.44s
-iteration = 511, lower bound = -4.23631e+06, time elapsed = 2046.3s
-iteration = 512, lower bound = -4.23631e+06, time elapsed = 2048.42s
-iteration = 513, lower bound = -4.23631e+06, time elapsed = 2049.23s
-iteration = 514, lower bound = -4.23631e+06, time elapsed = 2049.90s
-iteration = 515, lower bound = -4.23631e+06, time elapsed = 2050.55s
-iteration = 516, lower bound = -4.23631e+06, time elapsed = 2051.25s
-iteration = 517, lower bound = -4.23631e+06, time elapsed = 2051.98s
-iteration = 518, lower bound = -4.23631e+06, time elapsed = 2052.66s
-iteration = 519, lower bound = -4.2363e+06, time elapsed = 2053.41s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 520, lower bound = -4.2363e+06, upper bound = 0, time elapsed = 2054.38s
-iteration = 521, lower bound = -4.2363e+06, time elapsed = 2055.22s
-iteration = 522, lower bound = -4.2363e+06, time elapsed = 2056.8s
-iteration = 523, lower bound = -4.2363e+06, time elapsed = 2056.95s
-iteration = 524, lower bound = -4.2363e+06, time elapsed = 2057.89s
-iteration = 525, lower bound = -4.2363e+06, time elapsed = 2058.72s
-iteration = 526, lower bound = -4.2363e+06, time elapsed = 2059.49s
-iteration = 527, lower bound = -4.2363e+06, time elapsed = 2060.20s
-iteration = 528, lower bound = -4.2363e+06, time elapsed = 2060.84s
-iteration = 529, lower bound = -4.2363e+06, time elapsed = 2061.50s
-iteration = 530, lower bound = -4.2363e+06, time elapsed = 2062.11s
-iteration = 531, lower bound = -4.2363e+06, time elapsed = 2062.91s
-iteration = 532, lower bound = -4.2363e+06, time elapsed = 2063.66s
-Time to tighten
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.00102979
-Added 70616 triplet(s) out of 267341 by searching for triplets
-Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.0372471
-best triplet candidate in cycle search has guaranteed dual improvement 0.00645402
-best triplet candidate in cycle search has guaranteed dual improvement 0.00330514
-best triplet candidate in cycle search has guaranteed dual improvement 0.00330514
-Added 267396 triplet(s) out of 267341 in total
-iteration = 533, lower bound = -4.2363e+06, upper bound = 0, time elapsed = 2279.71s
-iteration = 534, lower bound = -4.2363e+06, time elapsed = 2352.84s
-iteration = 535, lower bound = -4.2363e+06, time elapsed = 2353.51s
-iteration = 536, lower bound = -4.2363e+06, time elapsed = 2354.16s
-iteration = 537, lower bound = -4.2363e+06, time elapsed = 2354.86s
-iteration = 538, lower bound = -4.2363e+06, time elapsed = 2355.54s
-iteration = 539, lower bound = -4.2363e+06, time elapsed = 2356.35s
-iteration = 540, lower bound = -4.2363e+06, time elapsed = 2357.17s
-iteration = 541, lower bound = -4.2363e+06, time elapsed = 2357.93s
-iteration = 542, lower bound = -4.2363e+06, time elapsed = 2358.72s
-iteration = 543, lower bound = -4.2363e+06, time elapsed = 2359.50s
-iteration = 544, lower bound = -4.2363e+06, time elapsed = 2360.28s
-iteration = 545, lower bound = -4.2363e+06, time elapsed = 2360.90s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 546, lower bound = -4.2363e+06, upper bound = 0, time elapsed = 2362.14s
-iteration = 547, lower bound = -4.23629e+06, time elapsed = 2362.81s
-iteration = 548, lower bound = -4.23629e+06, time elapsed = 2363.55s
-iteration = 549, lower bound = -4.23629e+06, time elapsed = 2364.17s
-iteration = 550, lower bound = -4.23629e+06, time elapsed = 2364.87s
-iteration = 551, lower bound = -4.23629e+06, time elapsed = 2368.19s
-iteration = 552, lower bound = -4.23629e+06, time elapsed = 2369.19s
-iteration = 553, lower bound = -4.23629e+06, time elapsed = 2369.79s
-iteration = 554, lower bound = -4.23629e+06, time elapsed = 2370.43s
-iteration = 555, lower bound = -4.23629e+06, time elapsed = 2371.4s
-iteration = 556, lower bound = -4.23629e+06, time elapsed = 2371.72s
-iteration = 557, lower bound = -4.23629e+06, time elapsed = 2375.88s
-iteration = 558, lower bound = -4.23629e+06, time elapsed = 2376.86s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 559, lower bound = -4.23629e+06, upper bound = 0, time elapsed = 2377.53s
-iteration = 560, lower bound = -4.23629e+06, time elapsed = 2378.12s
-iteration = 561, lower bound = -4.23629e+06, time elapsed = 2378.73s
-iteration = 562, lower bound = -4.23629e+06, time elapsed = 2379.42s
-iteration = 563, lower bound = -4.23629e+06, time elapsed = 2380.8s
-iteration = 564, lower bound = -4.23629e+06, time elapsed = 2380.76s
-iteration = 565, lower bound = -4.23629e+06, time elapsed = 2381.36s
-iteration = 566, lower bound = -4.23629e+06, time elapsed = 2382.14s
-iteration = 567, lower bound = -4.23629e+06, time elapsed = 2382.84s
-iteration = 568, lower bound = -4.23629e+06, time elapsed = 2383.60s
-iteration = 569, lower bound = -4.23629e+06, time elapsed = 2384.24s
-iteration = 570, lower bound = -4.23629e+06, time elapsed = 2384.86s
-iteration = 571, lower bound = -4.23629e+06, time elapsed = 2385.49s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 572, lower bound = -4.23629e+06, upper bound = 0, time elapsed = 2386.18s
-iteration = 573, lower bound = -4.23629e+06, time elapsed = 2386.90s
-iteration = 574, lower bound = -4.23629e+06, time elapsed = 2387.63s
-iteration = 575, lower bound = -4.23629e+06, time elapsed = 2388.50s
-iteration = 576, lower bound = -4.23629e+06, time elapsed = 2389.33s
-iteration = 577, lower bound = -4.23629e+06, time elapsed = 2390.8s
-iteration = 578, lower bound = -4.23629e+06, time elapsed = 2390.76s
-iteration = 579, lower bound = -4.23629e+06, time elapsed = 2391.36s
-iteration = 580, lower bound = -4.23629e+06, time elapsed = 2392.7s
-iteration = 581, lower bound = -4.23629e+06, time elapsed = 2392.69s
-Time to tighten
-Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.00134146
-Added 144775 triplet(s) out of 267341 by searching for triplets
-Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.0516222
-best triplet candidate in cycle search has guaranteed dual improvement 0.00614719
-best triplet candidate in cycle search has guaranteed dual improvement 0.00316389
-best triplet candidate in cycle search has guaranteed dual improvement 0.00146315
-Added 267391 triplet(s) out of 267341 in total
-iteration = 582, lower bound = -4.23629e+06, time elapsed = 2505.28s
-iteration = 583, lower bound = -4.23629e+06, time elapsed = 2570.4s
-iteration = 584, lower bound = -4.23628e+06, time elapsed = 2571.14s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 585, lower bound = -4.23628e+06, upper bound = 0, time elapsed = 2572.81s
-iteration = 586, lower bound = -4.23628e+06, time elapsed = 2573.48s
-iteration = 587, lower bound = -4.23628e+06, time elapsed = 2574.19s
-iteration = 588, lower bound = -4.23628e+06, time elapsed = 2577.17s
-iteration = 589, lower bound = -4.23628e+06, time elapsed = 2577.90s
-iteration = 590, lower bound = -4.23628e+06, time elapsed = 2578.59s
-iteration = 591, lower bound = -4.23628e+06, time elapsed = 2579.32s
-iteration = 592, lower bound = -4.23628e+06, time elapsed = 2580.7s
-iteration = 593, lower bound = -4.23628e+06, time elapsed = 2580.75s
-iteration = 594, lower bound = -4.23628e+06, time elapsed = 2581.56s
-iteration = 595, lower bound = -4.23628e+06, time elapsed = 2582.21s
-iteration = 596, lower bound = -4.23628e+06, time elapsed = 2583.0s
-iteration = 597, lower bound = -4.23628e+06, time elapsed = 2583.87s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 598, lower bound = -4.23628e+06, upper bound = 0, time elapsed = 2584.74s
-iteration = 599, lower bound = -4.23628e+06, time elapsed = 2585.45s
-iteration = 600, lower bound = -4.23628e+06, time elapsed = 2586.18s
-iteration = 601, lower bound = -4.23628e+06, time elapsed = 2586.93s
-iteration = 602, lower bound = -4.23628e+06, time elapsed = 2587.62s
-iteration = 603, lower bound = -4.23628e+06, time elapsed = 2588.39s
-iteration = 604, lower bound = -4.23628e+06, time elapsed = 2589.18s
-iteration = 605, lower bound = -4.23628e+06, time elapsed = 2589.89s
-iteration = 606, lower bound = -4.23628e+06, time elapsed = 2590.57s
-iteration = 607, lower bound = -4.23628e+06, time elapsed = 2591.29s
-iteration = 608, lower bound = -4.23628e+06, time elapsed = 2592.10s
-iteration = 609, lower bound = -4.23628e+06, time elapsed = 2593.1s
-iteration = 610, lower bound = -4.23628e+06, time elapsed = 2593.72s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 611, lower bound = -4.23628e+06, upper bound = 0, time elapsed = 2594.46s
-iteration = 612, lower bound = -4.23628e+06, time elapsed = 2595.7s
-iteration = 613, lower bound = -4.23628e+06, time elapsed = 2595.69s
-iteration = 614, lower bound = -4.23628e+06, time elapsed = 2596.31s
-iteration = 615, lower bound = -4.23628e+06, time elapsed = 2596.95s
-iteration = 616, lower bound = -4.23627e+06, time elapsed = 2598.21s
-iteration = 617, lower bound = -4.23627e+06, time elapsed = 2601.56s
-iteration = 618, lower bound = -4.23627e+06, time elapsed = 2602.21s
-iteration = 619, lower bound = -4.23627e+06, time elapsed = 2602.81s
-iteration = 620, lower bound = -4.23627e+06, time elapsed = 2603.48s
-iteration = 621, lower bound = -4.23627e+06, time elapsed = 2604.16s
-iteration = 622, lower bound = -4.23627e+06, time elapsed = 2606.7s
-iteration = 623, lower bound = -4.23627e+06, time elapsed = 2609.24s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 624, lower bound = -4.23627e+06, upper bound = 0, time elapsed = 2609.98s
-iteration = 625, lower bound = -4.23627e+06, time elapsed = 2610.69s
-iteration = 626, lower bound = -4.23627e+06, time elapsed = 2611.41s
-iteration = 627, lower bound = -4.23627e+06, time elapsed = 2612.9s
-iteration = 628, lower bound = -4.23627e+06, time elapsed = 2612.79s
-iteration = 629, lower bound = -4.23627e+06, time elapsed = 2613.52s
-iteration = 630, lower bound = -4.23627e+06, time elapsed = 2614.23s
-Time to tighten
-Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.00144283
-Added 103352 triplet(s) out of 267341 by searching for triplets
-Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.0449506
-best triplet candidate in cycle search has guaranteed dual improvement 0.00859322
-best triplet candidate in cycle search has guaranteed dual improvement 0.00225234
-best triplet candidate in cycle search has guaranteed dual improvement 0.00169194
-Added 267343 triplet(s) out of 267341 in total
-iteration = 631, lower bound = -4.23627e+06, time elapsed = 2740.75s
-iteration = 632, lower bound = -4.23627e+06, time elapsed = 2828.18s
-iteration = 633, lower bound = -4.23627e+06, time elapsed = 2829.2s
-iteration = 634, lower bound = -4.23627e+06, time elapsed = 2829.74s
-iteration = 635, lower bound = -4.23627e+06, time elapsed = 2830.42s
-iteration = 636, lower bound = -4.23627e+06, time elapsed = 2831.9s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 637, lower bound = -4.23627e+06, upper bound = 0, time elapsed = 2832.45s
-iteration = 638, lower bound = -4.23627e+06, time elapsed = 2833.25s
-iteration = 639, lower bound = -4.23627e+06, time elapsed = 2833.99s
-iteration = 640, lower bound = -4.23627e+06, time elapsed = 2834.71s
-iteration = 641, lower bound = -4.23627e+06, time elapsed = 2835.40s
-iteration = 642, lower bound = -4.23627e+06, time elapsed = 2836.10s
-iteration = 643, lower bound = -4.23627e+06, time elapsed = 2836.79s
-iteration = 644, lower bound = -4.23627e+06, time elapsed = 2837.45s
-iteration = 645, lower bound = -4.23627e+06, time elapsed = 2838.10s
-iteration = 646, lower bound = -4.23627e+06, time elapsed = 2838.96s
-iteration = 647, lower bound = -4.23627e+06, time elapsed = 2839.97s
-iteration = 648, lower bound = -4.23627e+06, time elapsed = 2840.93s
-iteration = 649, lower bound = -4.23627e+06, time elapsed = 2841.71s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 650, lower bound = -4.23627e+06, upper bound = 0, time elapsed = 2842.66s
-iteration = 651, lower bound = -4.23627e+06, time elapsed = 2843.29s
-iteration = 652, lower bound = -4.23627e+06, time elapsed = 2843.91s
-iteration = 653, lower bound = -4.23627e+06, time elapsed = 2844.56s
-iteration = 654, lower bound = -4.23627e+06, time elapsed = 2845.20s
-iteration = 655, lower bound = -4.23627e+06, time elapsed = 2845.90s
-iteration = 656, lower bound = -4.23627e+06, time elapsed = 2848.90s
-iteration = 657, lower bound = -4.23626e+06, time elapsed = 2849.77s
-iteration = 658, lower bound = -4.23626e+06, time elapsed = 2850.44s
-iteration = 659, lower bound = -4.23626e+06, time elapsed = 2851.10s
-iteration = 660, lower bound = -4.23626e+06, time elapsed = 2851.77s
-iteration = 661, lower bound = -4.23626e+06, time elapsed = 2852.47s
-iteration = 662, lower bound = -4.23626e+06, time elapsed = 2853.68s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 663, lower bound = -4.23626e+06, upper bound = 0, time elapsed = 2856.69s
-iteration = 664, lower bound = -4.23626e+06, time elapsed = 2857.47s
-iteration = 665, lower bound = -4.23626e+06, time elapsed = 2858.28s
-iteration = 666, lower bound = -4.23626e+06, time elapsed = 2859.4s
-iteration = 667, lower bound = -4.23626e+06, time elapsed = 2859.79s
-iteration = 668, lower bound = -4.23626e+06, time elapsed = 2860.43s
-iteration = 669, lower bound = -4.23626e+06, time elapsed = 2861.15s
-iteration = 670, lower bound = -4.23626e+06, time elapsed = 2861.94s
-iteration = 671, lower bound = -4.23626e+06, time elapsed = 2862.69s
-iteration = 672, lower bound = -4.23626e+06, time elapsed = 2863.34s
-iteration = 673, lower bound = -4.23626e+06, time elapsed = 2864.3s
-iteration = 674, lower bound = -4.23626e+06, time elapsed = 2864.83s
-iteration = 675, lower bound = -4.23626e+06, time elapsed = 2865.54s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 676, lower bound = -4.23626e+06, upper bound = 0, time elapsed = 2866.43s
-iteration = 677, lower bound = -4.23626e+06, time elapsed = 2867.17s
-iteration = 678, lower bound = -4.23626e+06, time elapsed = 2867.87s
-iteration = 679, lower bound = -4.23626e+06, time elapsed = 2868.55s
-Time to tighten
-Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.00663991
-Added 92302 triplet(s) out of 267341 by searching for triplets
-Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.0436388
-best triplet candidate in cycle search has guaranteed dual improvement 0.00663991
-best triplet candidate in cycle search has guaranteed dual improvement 0.00663991
-best triplet candidate in cycle search has guaranteed dual improvement 0.00663991
-Added 267357 triplet(s) out of 267341 in total
-iteration = 680, lower bound = -4.23626e+06, time elapsed = 2914.8s
-iteration = 681, lower bound = -4.23626e+06, time elapsed = 2998.59s
-iteration = 682, lower bound = -4.23626e+06, time elapsed = 2999.31s
-iteration = 683, lower bound = -4.23626e+06, time elapsed = 3000.7s
-iteration = 684, lower bound = -4.23626e+06, time elapsed = 3000.81s
-iteration = 685, lower bound = -4.23626e+06, time elapsed = 3001.54s
-iteration = 686, lower bound = -4.23626e+06, time elapsed = 3002.28s
-iteration = 687, lower bound = -4.23626e+06, time elapsed = 3003.2s
-iteration = 688, lower bound = -4.23626e+06, time elapsed = 3003.77s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 689, lower bound = -4.23626e+06, upper bound = 0, time elapsed = 3005.41s
-iteration = 690, lower bound = -4.23626e+06, time elapsed = 3006.13s
-iteration = 691, lower bound = -4.23626e+06, time elapsed = 3006.85s
-iteration = 692, lower bound = -4.23626e+06, time elapsed = 3007.57s
-iteration = 693, lower bound = -4.23626e+06, time elapsed = 3008.25s
-iteration = 694, lower bound = -4.23626e+06, time elapsed = 3008.95s
-iteration = 695, lower bound = -4.23626e+06, time elapsed = 3009.72s
-iteration = 696, lower bound = -4.23626e+06, time elapsed = 3010.63s
-iteration = 697, lower bound = -4.23626e+06, time elapsed = 3011.39s
-iteration = 698, lower bound = -4.23626e+06, time elapsed = 3012.14s
-iteration = 699, lower bound = -4.23626e+06, time elapsed = 3012.79s
-iteration = 700, lower bound = -4.23626e+06, time elapsed = 3013.48s
-iteration = 701, lower bound = -4.23626e+06, time elapsed = 3014.19s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 702, lower bound = -4.23626e+06, upper bound = 0, time elapsed = 3015.27s
-iteration = 703, lower bound = -4.23626e+06, time elapsed = 3015.97s
-iteration = 704, lower bound = -4.23626e+06, time elapsed = 3017.74s
-iteration = 705, lower bound = -4.23626e+06, time elapsed = 3021.29s
-iteration = 706, lower bound = -4.23625e+06, time elapsed = 3022.4s
-iteration = 707, lower bound = -4.23625e+06, time elapsed = 3022.75s
-iteration = 708, lower bound = -4.23625e+06, time elapsed = 3023.93s
-iteration = 709, lower bound = -4.23625e+06, time elapsed = 3027.7s
-iteration = 710, lower bound = -4.23625e+06, time elapsed = 3027.81s
-iteration = 711, lower bound = -4.23625e+06, time elapsed = 3028.57s
-iteration = 712, lower bound = -4.23625e+06, time elapsed = 3029.34s
-iteration = 713, lower bound = -4.23625e+06, time elapsed = 3030.13s
-iteration = 714, lower bound = -4.23625e+06, time elapsed = 3030.93s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 715, lower bound = -4.23625e+06, upper bound = 0, time elapsed = 3031.98s
-iteration = 716, lower bound = -4.23625e+06, time elapsed = 3032.89s
-iteration = 717, lower bound = -4.23625e+06, time elapsed = 3033.73s
-iteration = 718, lower bound = -4.23625e+06, time elapsed = 3034.60s
-iteration = 719, lower bound = -4.23625e+06, time elapsed = 3035.45s
-iteration = 720, lower bound = -4.23625e+06, time elapsed = 3036.40s
-iteration = 721, lower bound = -4.23625e+06, time elapsed = 3037.30s
-iteration = 722, lower bound = -4.23625e+06, time elapsed = 3038.18s
-iteration = 723, lower bound = -4.23625e+06, time elapsed = 3039.4s
-iteration = 724, lower bound = -4.23625e+06, time elapsed = 3039.89s
-iteration = 725, lower bound = -4.23625e+06, time elapsed = 3040.77s
-iteration = 726, lower bound = -4.23625e+06, time elapsed = 3041.68s
-iteration = 727, lower bound = -4.23625e+06, time elapsed = 3042.45s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 728, lower bound = -4.23625e+06, upper bound = 0, time elapsed = 3043.30s
-Time to tighten
-Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.000642132
-Added 104704 triplet(s) out of 267341 by searching for triplets
-Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.0410997
-best triplet candidate in cycle search has guaranteed dual improvement 0.00516545
-best triplet candidate in cycle search has guaranteed dual improvement 0.0011804
-best triplet candidate in cycle search has guaranteed dual improvement 0.000642132
-Added 267354 triplet(s) out of 267341 in total
-iteration = 729, lower bound = -4.23625e+06, time elapsed = 3081.84s
-iteration = 730, lower bound = -4.23625e+06, time elapsed = 3161.71s
-iteration = 731, lower bound = -4.23625e+06, time elapsed = 3162.54s
-iteration = 732, lower bound = -4.23625e+06, time elapsed = 3163.32s
-iteration = 733, lower bound = -4.23625e+06, time elapsed = 3164.19s
-iteration = 734, lower bound = -4.23625e+06, time elapsed = 3165.52s
-iteration = 735, lower bound = -4.23625e+06, time elapsed = 3168.70s
-iteration = 736, lower bound = -4.23625e+06, time elapsed = 3169.47s
-iteration = 737, lower bound = -4.23625e+06, time elapsed = 3170.18s
-iteration = 738, lower bound = -4.23625e+06, time elapsed = 3170.96s
-iteration = 739, lower bound = -4.23625e+06, time elapsed = 3171.78s
-iteration = 740, lower bound = -4.23625e+06, time elapsed = 3172.58s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 741, lower bound = -4.23625e+06, upper bound = 0, time elapsed = 3177.25s
-iteration = 742, lower bound = -4.23625e+06, time elapsed = 3177.99s
-iteration = 743, lower bound = -4.23625e+06, time elapsed = 3178.73s
-iteration = 744, lower bound = -4.23625e+06, time elapsed = 3179.45s
-iteration = 745, lower bound = -4.23625e+06, time elapsed = 3180.14s
-iteration = 746, lower bound = -4.23625e+06, time elapsed = 3180.98s
-iteration = 747, lower bound = -4.23625e+06, time elapsed = 3182.3s
-iteration = 748, lower bound = -4.23625e+06, time elapsed = 3183.8s
-iteration = 749, lower bound = -4.23625e+06, time elapsed = 3183.95s
-iteration = 750, lower bound = -4.23625e+06, time elapsed = 3184.81s
-iteration = 751, lower bound = -4.23625e+06, time elapsed = 3185.58s
-iteration = 752, lower bound = -4.23625e+06, time elapsed = 3186.29s
-iteration = 753, lower bound = -4.23625e+06, time elapsed = 3187.11s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 754, lower bound = -4.23625e+06, upper bound = 0, time elapsed = 3188.16s
-iteration = 755, lower bound = -4.23625e+06, time elapsed = 3189.2s
-iteration = 756, lower bound = -4.23625e+06, time elapsed = 3189.91s
-iteration = 757, lower bound = -4.23625e+06, time elapsed = 3190.65s
-iteration = 758, lower bound = -4.23625e+06, time elapsed = 3191.35s
-iteration = 759, lower bound = -4.23625e+06, time elapsed = 3192.6s
-iteration = 760, lower bound = -4.23625e+06, time elapsed = 3192.77s
-iteration = 761, lower bound = -4.23625e+06, time elapsed = 3193.47s
-iteration = 762, lower bound = -4.23625e+06, time elapsed = 3194.29s
-iteration = 763, lower bound = -4.23625e+06, time elapsed = 3199.62s
-iteration = 764, lower bound = -4.23625e+06, time elapsed = 3200.42s
-iteration = 765, lower bound = -4.23624e+06, time elapsed = 3201.83s
-iteration = 766, lower bound = -4.23624e+06, time elapsed = 3204.90s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 767, lower bound = -4.23624e+06, upper bound = 0, time elapsed = 3205.71s
-iteration = 768, lower bound = -4.23624e+06, time elapsed = 3206.48s
-iteration = 769, lower bound = -4.23624e+06, time elapsed = 3207.30s
-iteration = 770, lower bound = -4.23624e+06, time elapsed = 3208.16s
-iteration = 771, lower bound = -4.23624e+06, time elapsed = 3208.96s
-iteration = 772, lower bound = -4.23624e+06, time elapsed = 3209.71s
-iteration = 773, lower bound = -4.23624e+06, time elapsed = 3210.50s
-iteration = 774, lower bound = -4.23624e+06, time elapsed = 3211.27s
-iteration = 775, lower bound = -4.23624e+06, time elapsed = 3212.3s
-iteration = 776, lower bound = -4.23624e+06, time elapsed = 3212.79s
-iteration = 777, lower bound = -4.23624e+06, time elapsed = 3213.52s
-Time to tighten
-Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.000500764
-Added 111589 triplet(s) out of 267341 by searching for triplets
-Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.0435589
-best triplet candidate in cycle search has guaranteed dual improvement 0.00748757
-best triplet candidate in cycle search has guaranteed dual improvement 0.00145194
-best triplet candidate in cycle search has guaranteed dual improvement 0.00145194
-Added 267342 triplet(s) out of 267341 in total
-iteration = 778, lower bound = -4.23624e+06, time elapsed = 3235.86s
-iteration = 779, lower bound = -4.23624e+06, time elapsed = 3332.3s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 780, lower bound = -4.23624e+06, upper bound = 0, time elapsed = 3333.76s
-iteration = 781, lower bound = -4.23624e+06, time elapsed = 3334.53s
-iteration = 782, lower bound = -4.23624e+06, time elapsed = 3335.48s
-iteration = 783, lower bound = -4.23624e+06, time elapsed = 3336.52s
-iteration = 784, lower bound = -4.23624e+06, time elapsed = 3337.40s
-iteration = 785, lower bound = -4.23624e+06, time elapsed = 3338.44s
-iteration = 786, lower bound = -4.23624e+06, time elapsed = 3339.64s
-iteration = 787, lower bound = -4.23624e+06, time elapsed = 3340.85s
-iteration = 788, lower bound = -4.23624e+06, time elapsed = 3342.12s
-iteration = 789, lower bound = -4.23624e+06, time elapsed = 3344.11s
-iteration = 790, lower bound = -4.23624e+06, time elapsed = 3344.91s
-iteration = 791, lower bound = -4.23624e+06, time elapsed = 3345.74s
-iteration = 792, lower bound = -4.23624e+06, time elapsed = 3346.67s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 793, lower bound = -4.23624e+06, upper bound = 0, time elapsed = 3347.55s
-iteration = 794, lower bound = -4.23624e+06, time elapsed = 3348.33s
-iteration = 795, lower bound = -4.23624e+06, time elapsed = 3352.63s
-iteration = 796, lower bound = -4.23624e+06, time elapsed = 3353.97s
-iteration = 797, lower bound = -4.23624e+06, time elapsed = 3354.74s
-iteration = 798, lower bound = -4.23624e+06, time elapsed = 3355.58s
-iteration = 799, lower bound = -4.23624e+06, time elapsed = 3358.49s
-iteration = 800, lower bound = -4.23624e+06, time elapsed = 3359.30s
-iteration = 801, lower bound = -4.23624e+06, time elapsed = 3360.12s
-iteration = 802, lower bound = -4.23624e+06, time elapsed = 3360.95s
-iteration = 803, lower bound = -4.23624e+06, time elapsed = 3361.97s
-iteration = 804, lower bound = -4.23624e+06, time elapsed = 3363.5s
-iteration = 805, lower bound = -4.23624e+06, time elapsed = 3364.3s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 806, lower bound = -4.23624e+06, upper bound = 0, time elapsed = 3365.5s
-iteration = 807, lower bound = -4.23624e+06, time elapsed = 3365.94s
-iteration = 808, lower bound = -4.23624e+06, time elapsed = 3367.6s
-iteration = 809, lower bound = -4.23624e+06, time elapsed = 3368.27s
-iteration = 810, lower bound = -4.23624e+06, time elapsed = 3369.17s
-iteration = 811, lower bound = -4.23624e+06, time elapsed = 3370.18s
-iteration = 812, lower bound = -4.23624e+06, time elapsed = 3371.32s
-iteration = 813, lower bound = -4.23624e+06, time elapsed = 3372.51s
-iteration = 814, lower bound = -4.23624e+06, time elapsed = 3373.59s
-iteration = 815, lower bound = -4.23624e+06, time elapsed = 3375.78s
-iteration = 816, lower bound = -4.23624e+06, time elapsed = 3376.64s
-iteration = 817, lower bound = -4.23624e+06, time elapsed = 3377.59s
-iteration = 818, lower bound = -4.23624e+06, time elapsed = 3378.60s
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = 0
-register primal cost = 0
-iteration = 819, lower bound = -4.23624e+06, upper bound = 0, time elapsed = 3379.50s
-iteration = 820, lower bound = -4.23624e+06, time elapsed = 3380.31s
-iteration = 821, lower bound = -4.23624e+06, time elapsed = 3381.82s
-iteration = 822, lower bound = -4.23624e+06, time elapsed = 3385.40s
-iteration = 823, lower bound = -4.23624e+06, time elapsed = 3386.18s
-iteration = 824, lower bound = -4.23624e+06, time elapsed = 3386.98s
-iteration = 825, lower bound = -4.23624e+06, time elapsed = 3387.78s
-iteration = 826, lower bound = -4.23624e+06, time elapsed = 3389.20s
-Time to tighten
-Search for violated triplet constraints
-best triplet candidate in triplet search has guaranteed dual improvement 0.00162244
-Added 103781 triplet(s) out of 267341 by searching for triplets
-Additionally search via shortest paths for violated constraints
-best triplet candidate in cycle search has guaranteed dual improvement 0.0435026
-best triplet candidate in cycle search has guaranteed dual improvement 0.00957662
-best triplet candidate in cycle search has guaranteed dual improvement 0.00304278
-best triplet candidate in cycle search has guaranteed dual improvement 0.00304278
-best triplet candidate in cycle search has guaranteed dual improvement 0.00304278
-Added 267342 triplet(s) out of 267341 in total
-iteration = 827, lower bound = -4.23624e+06, time elapsed = 3529.46s
-iteration = 828, lower bound = -4.23624e+06, time elapsed = 3572.86s
-iteration = 829, lower bound = -4.23624e+06, time elapsed = 3573.65s
-iteration = 830, lower bound = -4.23624e+06, time elapsed = 3574.48s
-iteration = 831, lower bound = -4.23624e+06, time elapsed = 3575.39s
+best triplet candidate in cycle search has guaranteed dual improvement 0.0452247
+best triplet candidate in cycle search has guaranteed dual improvement 0.016593
+best triplet candidate in cycle search has guaranteed dual improvement 0.00566244
+Added 267359 triplet(s) out of 267341 in total
+iteration = 289, lower bound = -4.23648e+06, time elapsed = 1334.72s
+iteration = 290, lower bound = -4.23647e+06, time elapsed = 1355.28s
+iteration = 291, lower bound = -4.23647e+06, time elapsed = 1355.76s
+iteration = 292, lower bound = -4.23647e+06, time elapsed = 1356.24s
+iteration = 293, lower bound = -4.23646e+06, time elapsed = 1356.69s
+iteration = 294, lower bound = -4.23646e+06, time elapsed = 1357.16s
+iteration = 295, lower bound = -4.23646e+06, time elapsed = 1357.64s
+iteration = 296, lower bound = -4.23646e+06, time elapsed = 1358.11s
+iteration = 297, lower bound = -4.23646e+06, time elapsed = 1358.57s
+iteration = 298, lower bound = -4.23645e+06, time elapsed = 1359.3s
 collect multicut rounding result
 built union find structure, propagate information now
 restart primal rounding
 primal solution consistent: 1
 compute multicut primal with ChainedSolvers
-primal cost = -4.23384e+06
-register primal cost = -4.23384e+06
+primal cost = -4.23363e+06
+register primal cost = -4.23363e+06
 checking primal feasibility for multicut ... solution feasible
 primal solution consistent: 1
-iteration = 832, lower bound = -4.23624e+06, upper bound = -4.23384e+06, time elapsed = 3582.35s
-iteration = 833, lower bound = -4.23623e+06, time elapsed = 3583.22s
-iteration = 834, lower bound = -4.23623e+06, time elapsed = 3584.5s
-iteration = 835, lower bound = -4.23623e+06, time elapsed = 3584.85s
-iteration = 836, lower bound = -4.23623e+06, time elapsed = 3585.66s
-iteration = 837, lower bound = -4.23623e+06, time elapsed = 3586.42s
-iteration = 838, lower bound = -4.23623e+06, time elapsed = 3587.24s
-iteration = 839, lower bound = -4.23623e+06, time elapsed = 3588.11s
-iteration = 840, lower bound = -4.23623e+06, time elapsed = 3588.91s
-iteration = 841, lower bound = -4.23623e+06, time elapsed = 3589.80s
-iteration = 842, lower bound = -4.23623e+06, time elapsed = 3590.60s
-iteration = 843, lower bound = -4.23623e+06, time elapsed = 3591.43s
-iteration = 844, lower bound = -4.23623e+06, time elapsed = 3592.30s
+iteration = 299, lower bound = -4.23645e+06, upper bound = -4.23363e+06, time elapsed = 1362.45s
+iteration = 300, lower bound = -4.23645e+06, time elapsed = 1362.90s
+iteration = 301, lower bound = -4.23645e+06, time elapsed = 1363.34s
+iteration = 302, lower bound = -4.23645e+06, time elapsed = 1363.80s
+iteration = 303, lower bound = -4.23645e+06, time elapsed = 1364.30s
+iteration = 304, lower bound = -4.23645e+06, time elapsed = 1364.84s
+iteration = 305, lower bound = -4.23644e+06, time elapsed = 1365.32s
+iteration = 306, lower bound = -4.23644e+06, time elapsed = 1365.77s
+iteration = 307, lower bound = -4.23644e+06, time elapsed = 1366.22s
+iteration = 308, lower bound = -4.23644e+06, time elapsed = 1366.71s
+iteration = 309, lower bound = -4.23644e+06, time elapsed = 1367.19s
+iteration = 310, lower bound = -4.23644e+06, time elapsed = 1367.64s
+iteration = 311, lower bound = -4.23644e+06, time elapsed = 1368.9s
 multicut rounding is currently running.
 primal solution consistent: 1
-primal cost = -4.23384e+06
-register primal cost = -4.23384e+06
-iteration = 845, lower bound = -4.23623e+06, upper bound = -4.23384e+06, time elapsed = 3593.36s
-iteration = 846, lower bound = -4.23623e+06, time elapsed = 3594.21s
-iteration = 847, lower bound = -4.23623e+06, time elapsed = 3594.99s
-iteration = 848, lower bound = -4.23623e+06, time elapsed = 3595.80s
-iteration = 849, lower bound = -4.23623e+06, time elapsed = 3596.58s
-iteration = 850, lower bound = -4.23623e+06, time elapsed = 3597.41s
-iteration = 851, lower bound = -4.23623e+06, time elapsed = 3598.24s
-iteration = 852, lower bound = -4.23623e+06, time elapsed = 3599.9s
-iteration = 853, lower bound = -4.23623e+06, time elapsed = 3600.1s
-Timeout reached after 3600018 seconds
-multicut rounding is currently running.
-primal solution consistent: 1
-primal cost = -4.23384e+06
-register primal cost = -4.23384e+06
+primal cost = -4.23363e+06
+register primal cost = -4.23363e+06
 checking primal feasibility for multicut ... solution feasible
 primal solution consistent: 1
-iteration = 854, lower bound = -4.23623e+06, upper bound = -4.23384e+06, time elapsed = 3601.33s
+iteration = 312, lower bound = -4.23644e+06, upper bound = -4.23363e+06, time elapsed = 1368.88s
+iteration = 313, lower bound = -4.23644e+06, time elapsed = 1369.35s
+iteration = 314, lower bound = -4.23644e+06, time elapsed = 1369.83s
+iteration = 315, lower bound = -4.23643e+06, time elapsed = 1370.34s
+iteration = 316, lower bound = -4.23643e+06, time elapsed = 1370.81s
+iteration = 317, lower bound = -4.23643e+06, time elapsed = 1371.28s
+iteration = 318, lower bound = -4.23643e+06, time elapsed = 1371.76s
+iteration = 319, lower bound = -4.23643e+06, time elapsed = 1372.22s
+iteration = 320, lower bound = -4.23643e+06, time elapsed = 1372.70s
+iteration = 321, lower bound = -4.23643e+06, time elapsed = 1373.18s
+iteration = 322, lower bound = -4.23643e+06, time elapsed = 1373.70s
+iteration = 323, lower bound = -4.23643e+06, time elapsed = 1374.17s
+iteration = 324, lower bound = -4.23643e+06, time elapsed = 1374.61s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.23363e+06
+register primal cost = -4.23363e+06
+iteration = 325, lower bound = -4.23643e+06, upper bound = -4.23363e+06, time elapsed = 1375.12s
+iteration = 326, lower bound = -4.23643e+06, time elapsed = 1375.60s
+iteration = 327, lower bound = -4.23642e+06, time elapsed = 1376.10s
+iteration = 328, lower bound = -4.23642e+06, time elapsed = 1376.58s
+iteration = 329, lower bound = -4.23642e+06, time elapsed = 1377.8s
+iteration = 330, lower bound = -4.23642e+06, time elapsed = 1377.57s
+iteration = 331, lower bound = -4.23642e+06, time elapsed = 1378.4s
+iteration = 332, lower bound = -4.23642e+06, time elapsed = 1378.50s
+iteration = 333, lower bound = -4.23642e+06, time elapsed = 1378.95s
+iteration = 334, lower bound = -4.23642e+06, time elapsed = 1379.41s
+iteration = 335, lower bound = -4.23642e+06, time elapsed = 1379.89s
+iteration = 336, lower bound = -4.23642e+06, time elapsed = 1380.36s
+iteration = 337, lower bound = -4.23642e+06, time elapsed = 1380.85s
+Time to tighten
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.23363e+06
+register primal cost = -4.23363e+06
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.00521926
+Added 109862 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.0522294
+best triplet candidate in cycle search has guaranteed dual improvement 0.01328
+best triplet candidate in cycle search has guaranteed dual improvement 0.00561546
+Added 267438 triplet(s) out of 267341 in total
+iteration = 338, lower bound = -4.23642e+06, upper bound = -4.23363e+06, time elapsed = 1487.88s
+iteration = 339, lower bound = -4.23642e+06, time elapsed = 1511.26s
+iteration = 340, lower bound = -4.23641e+06, time elapsed = 1511.77s
+iteration = 341, lower bound = -4.23641e+06, time elapsed = 1512.28s
+iteration = 342, lower bound = -4.23641e+06, time elapsed = 1512.79s
+iteration = 343, lower bound = -4.23641e+06, time elapsed = 1513.27s
+iteration = 344, lower bound = -4.23641e+06, time elapsed = 1513.79s
+iteration = 345, lower bound = -4.2364e+06, time elapsed = 1514.30s
+iteration = 346, lower bound = -4.2364e+06, time elapsed = 1514.77s
+iteration = 347, lower bound = -4.2364e+06, time elapsed = 1515.24s
+iteration = 348, lower bound = -4.2364e+06, time elapsed = 1515.73s
+iteration = 349, lower bound = -4.2364e+06, time elapsed = 1516.22s
+iteration = 350, lower bound = -4.2364e+06, time elapsed = 1516.73s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.21906e+06
+register primal cost = -4.21906e+06
+iteration = 351, lower bound = -4.2364e+06, upper bound = -4.23363e+06, time elapsed = 1517.76s
+iteration = 352, lower bound = -4.2364e+06, time elapsed = 1518.27s
+iteration = 353, lower bound = -4.2364e+06, time elapsed = 1518.78s
+iteration = 354, lower bound = -4.23639e+06, time elapsed = 1519.25s
+iteration = 355, lower bound = -4.23639e+06, time elapsed = 1519.73s
+iteration = 356, lower bound = -4.23639e+06, time elapsed = 1520.21s
+iteration = 357, lower bound = -4.23639e+06, time elapsed = 1520.72s
+iteration = 358, lower bound = -4.23639e+06, time elapsed = 1521.21s
+iteration = 359, lower bound = -4.23639e+06, time elapsed = 1521.70s
+iteration = 360, lower bound = -4.23639e+06, time elapsed = 1522.17s
+iteration = 361, lower bound = -4.23639e+06, time elapsed = 1522.64s
+iteration = 362, lower bound = -4.23639e+06, time elapsed = 1523.14s
+iteration = 363, lower bound = -4.23639e+06, time elapsed = 1523.66s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.21906e+06
+register primal cost = -4.21906e+06
+iteration = 364, lower bound = -4.23639e+06, upper bound = -4.23363e+06, time elapsed = 1524.19s
+iteration = 365, lower bound = -4.23639e+06, time elapsed = 1524.68s
+iteration = 366, lower bound = -4.23639e+06, time elapsed = 1525.18s
+iteration = 367, lower bound = -4.23638e+06, time elapsed = 1525.67s
+iteration = 368, lower bound = -4.23638e+06, time elapsed = 1526.20s
+iteration = 369, lower bound = -4.23638e+06, time elapsed = 1526.70s
+iteration = 370, lower bound = -4.23638e+06, time elapsed = 1527.21s
+iteration = 371, lower bound = -4.23638e+06, time elapsed = 1527.70s
+iteration = 372, lower bound = -4.23638e+06, time elapsed = 1528.18s
+iteration = 373, lower bound = -4.23638e+06, time elapsed = 1528.64s
+iteration = 374, lower bound = -4.23638e+06, time elapsed = 1529.13s
+iteration = 375, lower bound = -4.23638e+06, time elapsed = 1529.62s
+iteration = 376, lower bound = -4.23638e+06, time elapsed = 1530.14s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.21905e+06
+register primal cost = -4.21905e+06
+iteration = 377, lower bound = -4.23638e+06, upper bound = -4.23363e+06, time elapsed = 1530.75s
+iteration = 378, lower bound = -4.23638e+06, time elapsed = 1531.22s
+iteration = 379, lower bound = -4.23638e+06, time elapsed = 1531.72s
+iteration = 380, lower bound = -4.23638e+06, time elapsed = 1532.20s
+iteration = 381, lower bound = -4.23638e+06, time elapsed = 1532.71s
+iteration = 382, lower bound = -4.23638e+06, time elapsed = 1533.21s
+iteration = 383, lower bound = -4.23638e+06, time elapsed = 1533.69s
+iteration = 384, lower bound = -4.23638e+06, time elapsed = 1534.17s
+iteration = 385, lower bound = -4.23638e+06, time elapsed = 1534.63s
+iteration = 386, lower bound = -4.23637e+06, time elapsed = 1535.12s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.00534273
+Added 103486 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.0453665
+best triplet candidate in cycle search has guaranteed dual improvement 0.00854321
+best triplet candidate in cycle search has guaranteed dual improvement 0.00534273
+Added 267353 triplet(s) out of 267341 in total
+iteration = 387, lower bound = -4.23637e+06, time elapsed = 1557.83s
+iteration = 388, lower bound = -4.23637e+06, time elapsed = 1581.90s
+iteration = 389, lower bound = -4.23637e+06, time elapsed = 1582.46s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.20371e+06
+register primal cost = -4.20371e+06
+iteration = 390, lower bound = -4.23637e+06, upper bound = -4.23363e+06, time elapsed = 1583.52s
+iteration = 391, lower bound = -4.23637e+06, time elapsed = 1584.13s
+iteration = 392, lower bound = -4.23637e+06, time elapsed = 1585.90s
+iteration = 393, lower bound = -4.23637e+06, time elapsed = 1587.30s
+iteration = 394, lower bound = -4.23637e+06, time elapsed = 1587.81s
+iteration = 395, lower bound = -4.23636e+06, time elapsed = 1588.30s
+iteration = 396, lower bound = -4.23636e+06, time elapsed = 1588.80s
+iteration = 397, lower bound = -4.23636e+06, time elapsed = 1591.15s
+iteration = 398, lower bound = -4.23636e+06, time elapsed = 1591.88s
+iteration = 399, lower bound = -4.23636e+06, time elapsed = 1592.52s
+iteration = 400, lower bound = -4.23636e+06, time elapsed = 1593.48s
+iteration = 401, lower bound = -4.23636e+06, time elapsed = 1594.47s
+iteration = 402, lower bound = -4.23636e+06, time elapsed = 1595.34s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.20366e+06
+register primal cost = -4.20366e+06
+iteration = 403, lower bound = -4.23636e+06, upper bound = -4.23363e+06, time elapsed = 1596.31s
+iteration = 404, lower bound = -4.23636e+06, time elapsed = 1597.15s
+iteration = 405, lower bound = -4.23636e+06, time elapsed = 1598.4s
+iteration = 406, lower bound = -4.23636e+06, time elapsed = 1598.95s
+iteration = 407, lower bound = -4.23636e+06, time elapsed = 1599.95s
+iteration = 408, lower bound = -4.23636e+06, time elapsed = 1600.86s
+iteration = 409, lower bound = -4.23635e+06, time elapsed = 1601.69s
+iteration = 410, lower bound = -4.23635e+06, time elapsed = 1603.4s
+iteration = 411, lower bound = -4.23635e+06, time elapsed = 1604.63s
+iteration = 412, lower bound = -4.23635e+06, time elapsed = 1605.13s
+iteration = 413, lower bound = -4.23635e+06, time elapsed = 1605.68s
+iteration = 414, lower bound = -4.23635e+06, time elapsed = 1606.21s
+iteration = 415, lower bound = -4.23635e+06, time elapsed = 1606.73s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.20366e+06
+register primal cost = -4.20366e+06
+iteration = 416, lower bound = -4.23635e+06, upper bound = -4.23363e+06, time elapsed = 1607.41s
+iteration = 417, lower bound = -4.23635e+06, time elapsed = 1608.5s
+iteration = 418, lower bound = -4.23635e+06, time elapsed = 1608.72s
+iteration = 419, lower bound = -4.23635e+06, time elapsed = 1609.72s
+iteration = 420, lower bound = -4.23635e+06, time elapsed = 1612.0s
+iteration = 421, lower bound = -4.23635e+06, time elapsed = 1612.57s
+iteration = 422, lower bound = -4.23635e+06, time elapsed = 1613.17s
+iteration = 423, lower bound = -4.23635e+06, time elapsed = 1613.70s
+iteration = 424, lower bound = -4.23635e+06, time elapsed = 1614.26s
+iteration = 425, lower bound = -4.23635e+06, time elapsed = 1614.81s
+iteration = 426, lower bound = -4.23635e+06, time elapsed = 1615.35s
+iteration = 427, lower bound = -4.23635e+06, time elapsed = 1615.88s
+iteration = 428, lower bound = -4.23635e+06, time elapsed = 1618.67s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.20366e+06
+register primal cost = -4.20366e+06
+iteration = 429, lower bound = -4.23635e+06, upper bound = -4.23363e+06, time elapsed = 1619.43s
+iteration = 430, lower bound = -4.23635e+06, time elapsed = 1619.96s
+iteration = 431, lower bound = -4.23634e+06, time elapsed = 1620.48s
+iteration = 432, lower bound = -4.23634e+06, time elapsed = 1620.96s
+iteration = 433, lower bound = -4.23634e+06, time elapsed = 1621.52s
+iteration = 434, lower bound = -4.23634e+06, time elapsed = 1622.5s
+iteration = 435, lower bound = -4.23634e+06, time elapsed = 1622.58s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.00882578
+Added 140839 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.0435634
+best triplet candidate in cycle search has guaranteed dual improvement 0.00882578
+best triplet candidate in cycle search has guaranteed dual improvement 0.00882578
+Added 267396 triplet(s) out of 267341 in total
+iteration = 436, lower bound = -4.23634e+06, time elapsed = 1649.9s
+iteration = 437, lower bound = -4.23634e+06, time elapsed = 1716.66s
+iteration = 438, lower bound = -4.23634e+06, time elapsed = 1717.33s
+iteration = 439, lower bound = -4.23634e+06, time elapsed = 1717.95s
+iteration = 440, lower bound = -4.23634e+06, time elapsed = 1718.54s
+iteration = 441, lower bound = -4.23634e+06, time elapsed = 1719.12s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.19528e+06
+register primal cost = -4.19528e+06
+iteration = 442, lower bound = -4.23634e+06, upper bound = -4.23363e+06, time elapsed = 1720.55s
+iteration = 443, lower bound = -4.23634e+06, time elapsed = 1721.22s
+iteration = 444, lower bound = -4.23634e+06, time elapsed = 1721.80s
+iteration = 445, lower bound = -4.23634e+06, time elapsed = 1723.34s
+iteration = 446, lower bound = -4.23634e+06, time elapsed = 1725.37s
+iteration = 447, lower bound = -4.23633e+06, time elapsed = 1725.98s
+iteration = 448, lower bound = -4.23633e+06, time elapsed = 1726.62s
+iteration = 449, lower bound = -4.23633e+06, time elapsed = 1727.19s
+iteration = 450, lower bound = -4.23633e+06, time elapsed = 1727.70s
+iteration = 451, lower bound = -4.23633e+06, time elapsed = 1728.26s
+iteration = 452, lower bound = -4.23633e+06, time elapsed = 1728.83s
+iteration = 453, lower bound = -4.23633e+06, time elapsed = 1729.38s
+iteration = 454, lower bound = -4.23633e+06, time elapsed = 1732.17s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.19527e+06
+register primal cost = -4.19527e+06
+iteration = 455, lower bound = -4.23633e+06, upper bound = -4.23363e+06, time elapsed = 1733.38s
+iteration = 456, lower bound = -4.23633e+06, time elapsed = 1733.90s
+iteration = 457, lower bound = -4.23633e+06, time elapsed = 1734.47s
+iteration = 458, lower bound = -4.23633e+06, time elapsed = 1735.1s
+iteration = 459, lower bound = -4.23633e+06, time elapsed = 1735.54s
+iteration = 460, lower bound = -4.23633e+06, time elapsed = 1736.9s
+iteration = 461, lower bound = -4.23633e+06, time elapsed = 1736.68s
+iteration = 462, lower bound = -4.23633e+06, time elapsed = 1737.26s
+iteration = 463, lower bound = -4.23633e+06, time elapsed = 1737.84s
+iteration = 464, lower bound = -4.23633e+06, time elapsed = 1741.12s
+iteration = 465, lower bound = -4.23633e+06, time elapsed = 1741.68s
+iteration = 466, lower bound = -4.23633e+06, time elapsed = 1742.26s
+iteration = 467, lower bound = -4.23633e+06, time elapsed = 1742.90s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.19526e+06
+register primal cost = -4.19526e+06
+iteration = 468, lower bound = -4.23633e+06, upper bound = -4.23363e+06, time elapsed = 1743.55s
+iteration = 469, lower bound = -4.23633e+06, time elapsed = 1744.7s
+iteration = 470, lower bound = -4.23632e+06, time elapsed = 1744.64s
+iteration = 471, lower bound = -4.23632e+06, time elapsed = 1745.20s
+iteration = 472, lower bound = -4.23632e+06, time elapsed = 1745.77s
+iteration = 473, lower bound = -4.23632e+06, time elapsed = 1746.33s
+iteration = 474, lower bound = -4.23632e+06, time elapsed = 1746.92s
+iteration = 475, lower bound = -4.23632e+06, time elapsed = 1749.76s
+iteration = 476, lower bound = -4.23632e+06, time elapsed = 1750.37s
+iteration = 477, lower bound = -4.23632e+06, time elapsed = 1750.93s
+iteration = 478, lower bound = -4.23632e+06, time elapsed = 1751.77s
+iteration = 479, lower bound = -4.23632e+06, time elapsed = 1752.74s
+iteration = 480, lower bound = -4.23632e+06, time elapsed = 1753.68s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.19526e+06
+register primal cost = -4.19526e+06
+iteration = 481, lower bound = -4.23632e+06, upper bound = -4.23363e+06, time elapsed = 1754.79s
+iteration = 482, lower bound = -4.23632e+06, time elapsed = 1755.74s
+iteration = 483, lower bound = -4.23632e+06, time elapsed = 1756.81s
+iteration = 484, lower bound = -4.23632e+06, time elapsed = 1757.92s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.000835007
+Added 96438 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.0438137
+best triplet candidate in cycle search has guaranteed dual improvement 0.00860037
+best triplet candidate in cycle search has guaranteed dual improvement 0.00347737
+Added 267342 triplet(s) out of 267341 in total
+iteration = 485, lower bound = -4.23632e+06, time elapsed = 1769.3s
+iteration = 486, lower bound = -4.23632e+06, time elapsed = 1837.89s
+iteration = 487, lower bound = -4.23632e+06, time elapsed = 1838.49s
+iteration = 488, lower bound = -4.23632e+06, time elapsed = 1839.9s
+iteration = 489, lower bound = -4.23632e+06, time elapsed = 1841.67s
+iteration = 490, lower bound = -4.23632e+06, time elapsed = 1842.38s
+iteration = 491, lower bound = -4.23632e+06, time elapsed = 1842.99s
+iteration = 492, lower bound = -4.23632e+06, time elapsed = 1843.62s
+iteration = 493, lower bound = -4.23632e+06, time elapsed = 1844.24s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.18652e+06
+register primal cost = -4.18652e+06
+iteration = 494, lower bound = -4.23632e+06, upper bound = -4.23363e+06, time elapsed = 1845.70s
+iteration = 495, lower bound = -4.23631e+06, time elapsed = 1846.29s
+iteration = 496, lower bound = -4.23631e+06, time elapsed = 1847.57s
+iteration = 497, lower bound = -4.23631e+06, time elapsed = 1850.9s
+iteration = 498, lower bound = -4.23631e+06, time elapsed = 1850.67s
+iteration = 499, lower bound = -4.23631e+06, time elapsed = 1851.24s
+iteration = 500, lower bound = -4.23631e+06, time elapsed = 1851.84s
+iteration = 501, lower bound = -4.23631e+06, time elapsed = 1852.45s
+iteration = 502, lower bound = -4.23631e+06, time elapsed = 1853.0s
+iteration = 503, lower bound = -4.23631e+06, time elapsed = 1853.56s
+iteration = 504, lower bound = -4.23631e+06, time elapsed = 1854.47s
+iteration = 505, lower bound = -4.23631e+06, time elapsed = 1857.35s
+iteration = 506, lower bound = -4.23631e+06, time elapsed = 1857.91s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.18652e+06
+register primal cost = -4.18652e+06
+iteration = 507, lower bound = -4.23631e+06, upper bound = -4.23363e+06, time elapsed = 1858.63s
+iteration = 508, lower bound = -4.23631e+06, time elapsed = 1859.22s
+iteration = 509, lower bound = -4.23631e+06, time elapsed = 1859.82s
+iteration = 510, lower bound = -4.23631e+06, time elapsed = 1860.39s
+iteration = 511, lower bound = -4.23631e+06, time elapsed = 1860.97s
+iteration = 512, lower bound = -4.23631e+06, time elapsed = 1861.61s
+iteration = 513, lower bound = -4.23631e+06, time elapsed = 1862.25s
+iteration = 514, lower bound = -4.23631e+06, time elapsed = 1864.98s
+iteration = 515, lower bound = -4.23631e+06, time elapsed = 1865.68s
+iteration = 516, lower bound = -4.23631e+06, time elapsed = 1866.36s
+iteration = 517, lower bound = -4.23631e+06, time elapsed = 1866.95s
+iteration = 518, lower bound = -4.23631e+06, time elapsed = 1867.51s
+iteration = 519, lower bound = -4.23631e+06, time elapsed = 1868.8s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.18652e+06
+register primal cost = -4.18652e+06
+iteration = 520, lower bound = -4.23631e+06, upper bound = -4.23363e+06, time elapsed = 1868.74s
+iteration = 521, lower bound = -4.23631e+06, time elapsed = 1869.31s
+iteration = 522, lower bound = -4.23631e+06, time elapsed = 1869.91s
+iteration = 523, lower bound = -4.23631e+06, time elapsed = 1870.59s
+iteration = 524, lower bound = -4.2363e+06, time elapsed = 1871.29s
+iteration = 525, lower bound = -4.2363e+06, time elapsed = 1872.38s
+iteration = 526, lower bound = -4.2363e+06, time elapsed = 1873.36s
+iteration = 527, lower bound = -4.2363e+06, time elapsed = 1874.39s
+iteration = 528, lower bound = -4.2363e+06, time elapsed = 1875.51s
+iteration = 529, lower bound = -4.2363e+06, time elapsed = 1876.61s
+iteration = 530, lower bound = -4.2363e+06, time elapsed = 1877.80s
+iteration = 531, lower bound = -4.2363e+06, time elapsed = 1878.80s
+iteration = 532, lower bound = -4.2363e+06, time elapsed = 1879.77s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.18652e+06
+register primal cost = -4.18652e+06
+iteration = 533, lower bound = -4.2363e+06, upper bound = -4.23363e+06, time elapsed = 1880.82s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.000698002
+Added 194009 triplet(s) out of 267341 by searching for triplets
+iteration = 534, lower bound = -4.2363e+06, time elapsed = 1883.93s
+iteration = 535, lower bound = -4.2363e+06, time elapsed = 1955.69s
+iteration = 536, lower bound = -4.2363e+06, time elapsed = 1956.41s
+iteration = 537, lower bound = -4.2363e+06, time elapsed = 1957.13s
+iteration = 538, lower bound = -4.2363e+06, time elapsed = 1957.77s
+iteration = 539, lower bound = -4.2363e+06, time elapsed = 1958.35s
+iteration = 540, lower bound = -4.2363e+06, time elapsed = 1958.98s
+iteration = 541, lower bound = -4.2363e+06, time elapsed = 1959.77s
+iteration = 542, lower bound = -4.2363e+06, time elapsed = 1960.57s
+iteration = 543, lower bound = -4.2363e+06, time elapsed = 1962.12s
+iteration = 544, lower bound = -4.2363e+06, time elapsed = 1964.79s
+iteration = 545, lower bound = -4.2363e+06, time elapsed = 1965.43s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.18624e+06
+register primal cost = -4.18624e+06
+iteration = 546, lower bound = -4.2363e+06, upper bound = -4.23363e+06, time elapsed = 1966.92s
+iteration = 547, lower bound = -4.2363e+06, time elapsed = 1967.53s
+iteration = 548, lower bound = -4.2363e+06, time elapsed = 1968.36s
+iteration = 549, lower bound = -4.2363e+06, time elapsed = 1971.90s
+iteration = 550, lower bound = -4.2363e+06, time elapsed = 1972.51s
+iteration = 551, lower bound = -4.2363e+06, time elapsed = 1973.14s
+iteration = 552, lower bound = -4.2363e+06, time elapsed = 1973.78s
+iteration = 553, lower bound = -4.2363e+06, time elapsed = 1974.40s
+iteration = 554, lower bound = -4.2363e+06, time elapsed = 1975.8s
+iteration = 555, lower bound = -4.23629e+06, time elapsed = 1975.71s
+iteration = 556, lower bound = -4.23629e+06, time elapsed = 1979.5s
+iteration = 557, lower bound = -4.23629e+06, time elapsed = 1980.28s
+iteration = 558, lower bound = -4.23629e+06, time elapsed = 1980.89s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.18624e+06
+register primal cost = -4.18624e+06
+iteration = 559, lower bound = -4.23629e+06, upper bound = -4.23363e+06, time elapsed = 1981.61s
+iteration = 560, lower bound = -4.23629e+06, time elapsed = 1982.21s
+iteration = 561, lower bound = -4.23629e+06, time elapsed = 1982.84s
+iteration = 562, lower bound = -4.23629e+06, time elapsed = 1983.50s
+iteration = 563, lower bound = -4.23629e+06, time elapsed = 1984.20s
+iteration = 564, lower bound = -4.23629e+06, time elapsed = 1984.80s
+iteration = 565, lower bound = -4.23629e+06, time elapsed = 1987.42s
+iteration = 566, lower bound = -4.23629e+06, time elapsed = 1988.8s
+iteration = 567, lower bound = -4.23629e+06, time elapsed = 1988.75s
+iteration = 568, lower bound = -4.23629e+06, time elapsed = 1989.45s
+iteration = 569, lower bound = -4.23629e+06, time elapsed = 1990.34s
+iteration = 570, lower bound = -4.23629e+06, time elapsed = 1991.18s
+iteration = 571, lower bound = -4.23629e+06, time elapsed = 1992.17s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.18624e+06
+register primal cost = -4.18624e+06
+iteration = 572, lower bound = -4.23629e+06, upper bound = -4.23363e+06, time elapsed = 1993.67s
+iteration = 573, lower bound = -4.23629e+06, time elapsed = 1994.75s
+iteration = 574, lower bound = -4.23629e+06, time elapsed = 1996.3s
+iteration = 575, lower bound = -4.23629e+06, time elapsed = 1997.10s
+iteration = 576, lower bound = -4.23629e+06, time elapsed = 1998.2s
+iteration = 577, lower bound = -4.23629e+06, time elapsed = 1998.99s
+iteration = 578, lower bound = -4.23629e+06, time elapsed = 1999.90s
+iteration = 579, lower bound = -4.23629e+06, time elapsed = 2000.67s
+iteration = 580, lower bound = -4.23629e+06, time elapsed = 2001.39s
+iteration = 581, lower bound = -4.23629e+06, time elapsed = 2002.10s
+iteration = 582, lower bound = -4.23629e+06, time elapsed = 2002.96s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.000741135
+Added 77490 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.0363614
+best triplet candidate in cycle search has guaranteed dual improvement 0.00967307
+best triplet candidate in cycle search has guaranteed dual improvement 0.00280208
+best triplet candidate in cycle search has guaranteed dual improvement 0.00280208
+Added 267350 triplet(s) out of 267341 in total
+iteration = 583, lower bound = -4.23629e+06, time elapsed = 2149.42s
+iteration = 584, lower bound = -4.23629e+06, time elapsed = 2178.33s
+collect multicut rounding result
+built union find structure, propagate information now
+restart primal rounding
+primal solution consistent: 1
+compute multicut primal with ChainedSolvers
+primal cost = -4.2336e+06
+register primal cost = -4.2336e+06
+iteration = 585, lower bound = -4.23629e+06, upper bound = -4.23363e+06, time elapsed = 2182.61s
+iteration = 586, lower bound = -4.23629e+06, time elapsed = 2183.26s
+iteration = 587, lower bound = -4.23629e+06, time elapsed = 2183.86s
+iteration = 588, lower bound = -4.23629e+06, time elapsed = 2184.45s
+iteration = 589, lower bound = -4.23629e+06, time elapsed = 2185.8s
+iteration = 590, lower bound = -4.23628e+06, time elapsed = 2185.70s
+iteration = 591, lower bound = -4.23628e+06, time elapsed = 2186.32s
+iteration = 592, lower bound = -4.23628e+06, time elapsed = 2186.96s
+iteration = 593, lower bound = -4.23628e+06, time elapsed = 2187.58s
+iteration = 594, lower bound = -4.23628e+06, time elapsed = 2188.36s
+iteration = 595, lower bound = -4.23628e+06, time elapsed = 2189.0s
+iteration = 596, lower bound = -4.23628e+06, time elapsed = 2189.69s
+iteration = 597, lower bound = -4.23628e+06, time elapsed = 2190.36s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.2336e+06
+register primal cost = -4.2336e+06
+iteration = 598, lower bound = -4.23628e+06, upper bound = -4.23363e+06, time elapsed = 2191.15s
+iteration = 599, lower bound = -4.23628e+06, time elapsed = 2191.80s
+iteration = 600, lower bound = -4.23628e+06, time elapsed = 2192.46s
+iteration = 601, lower bound = -4.23628e+06, time elapsed = 2193.6s
+iteration = 602, lower bound = -4.23628e+06, time elapsed = 2193.68s
+iteration = 603, lower bound = -4.23628e+06, time elapsed = 2194.34s
+iteration = 604, lower bound = -4.23628e+06, time elapsed = 2194.95s
+iteration = 605, lower bound = -4.23628e+06, time elapsed = 2195.59s
+iteration = 606, lower bound = -4.23628e+06, time elapsed = 2196.23s
+iteration = 607, lower bound = -4.23628e+06, time elapsed = 2196.89s
+iteration = 608, lower bound = -4.23628e+06, time elapsed = 2197.53s
+iteration = 609, lower bound = -4.23628e+06, time elapsed = 2198.19s
+iteration = 610, lower bound = -4.23628e+06, time elapsed = 2198.84s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.2336e+06
+register primal cost = -4.2336e+06
+iteration = 611, lower bound = -4.23628e+06, upper bound = -4.23363e+06, time elapsed = 2199.56s
+iteration = 612, lower bound = -4.23628e+06, time elapsed = 2200.20s
+iteration = 613, lower bound = -4.23628e+06, time elapsed = 2200.84s
+iteration = 614, lower bound = -4.23628e+06, time elapsed = 2201.51s
+iteration = 615, lower bound = -4.23628e+06, time elapsed = 2202.14s
+iteration = 616, lower bound = -4.23628e+06, time elapsed = 2202.76s
+iteration = 617, lower bound = -4.23628e+06, time elapsed = 2203.45s
+iteration = 618, lower bound = -4.23628e+06, time elapsed = 2204.11s
+iteration = 619, lower bound = -4.23628e+06, time elapsed = 2204.75s
+iteration = 620, lower bound = -4.23628e+06, time elapsed = 2205.41s
+iteration = 621, lower bound = -4.23628e+06, time elapsed = 2206.3s
+iteration = 622, lower bound = -4.23628e+06, time elapsed = 2206.64s
+iteration = 623, lower bound = -4.23628e+06, time elapsed = 2207.26s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.2336e+06
+register primal cost = -4.2336e+06
+iteration = 624, lower bound = -4.23628e+06, upper bound = -4.23363e+06, time elapsed = 2208.2s
+iteration = 625, lower bound = -4.23628e+06, time elapsed = 2208.65s
+iteration = 626, lower bound = -4.23628e+06, time elapsed = 2209.29s
+iteration = 627, lower bound = -4.23627e+06, time elapsed = 2209.94s
+iteration = 628, lower bound = -4.23627e+06, time elapsed = 2210.60s
+iteration = 629, lower bound = -4.23627e+06, time elapsed = 2211.24s
+iteration = 630, lower bound = -4.23627e+06, time elapsed = 2211.93s
+iteration = 631, lower bound = -4.23627e+06, time elapsed = 2212.57s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.0013454
+Added 126539 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.0471066
+best triplet candidate in cycle search has guaranteed dual improvement 0.00573319
+best triplet candidate in cycle search has guaranteed dual improvement 0.00329757
+best triplet candidate in cycle search has guaranteed dual improvement 0.00258397
+Added 267343 triplet(s) out of 267341 in total
+iteration = 632, lower bound = -4.23627e+06, time elapsed = 2290.12s
+iteration = 633, lower bound = -4.23627e+06, time elapsed = 2322.5s
+iteration = 634, lower bound = -4.23627e+06, time elapsed = 2322.71s
+iteration = 635, lower bound = -4.23627e+06, time elapsed = 2323.36s
+iteration = 636, lower bound = -4.23627e+06, time elapsed = 2324.0s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.22177e+06
+register primal cost = -4.22177e+06
+iteration = 637, lower bound = -4.23627e+06, upper bound = -4.23363e+06, time elapsed = 2325.28s
+iteration = 638, lower bound = -4.23627e+06, time elapsed = 2325.98s
+iteration = 639, lower bound = -4.23627e+06, time elapsed = 2326.63s
+iteration = 640, lower bound = -4.23627e+06, time elapsed = 2327.33s
+iteration = 641, lower bound = -4.23627e+06, time elapsed = 2328.0s
+iteration = 642, lower bound = -4.23627e+06, time elapsed = 2328.67s
+iteration = 643, lower bound = -4.23627e+06, time elapsed = 2329.33s
+iteration = 644, lower bound = -4.23627e+06, time elapsed = 2329.96s
+iteration = 645, lower bound = -4.23627e+06, time elapsed = 2330.65s
+iteration = 646, lower bound = -4.23627e+06, time elapsed = 2331.32s
+iteration = 647, lower bound = -4.23627e+06, time elapsed = 2331.98s
+iteration = 648, lower bound = -4.23627e+06, time elapsed = 2332.65s
+iteration = 649, lower bound = -4.23627e+06, time elapsed = 2333.32s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.22175e+06
+register primal cost = -4.22175e+06
+iteration = 650, lower bound = -4.23627e+06, upper bound = -4.23363e+06, time elapsed = 2334.11s
+iteration = 651, lower bound = -4.23627e+06, time elapsed = 2334.79s
+iteration = 652, lower bound = -4.23627e+06, time elapsed = 2335.48s
+iteration = 653, lower bound = -4.23627e+06, time elapsed = 2336.17s
+iteration = 654, lower bound = -4.23627e+06, time elapsed = 2336.84s
+iteration = 655, lower bound = -4.23627e+06, time elapsed = 2337.51s
+iteration = 656, lower bound = -4.23627e+06, time elapsed = 2338.18s
+iteration = 657, lower bound = -4.23627e+06, time elapsed = 2338.86s
+iteration = 658, lower bound = -4.23627e+06, time elapsed = 2339.50s
+iteration = 659, lower bound = -4.23627e+06, time elapsed = 2340.17s
+iteration = 660, lower bound = -4.23627e+06, time elapsed = 2340.84s
+iteration = 661, lower bound = -4.23627e+06, time elapsed = 2341.51s
+iteration = 662, lower bound = -4.23627e+06, time elapsed = 2342.19s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.22174e+06
+register primal cost = -4.22174e+06
+iteration = 663, lower bound = -4.23626e+06, upper bound = -4.23363e+06, time elapsed = 2342.95s
+iteration = 664, lower bound = -4.23626e+06, time elapsed = 2343.58s
+iteration = 665, lower bound = -4.23626e+06, time elapsed = 2344.28s
+iteration = 666, lower bound = -4.23626e+06, time elapsed = 2344.95s
+iteration = 667, lower bound = -4.23626e+06, time elapsed = 2345.62s
+iteration = 668, lower bound = -4.23626e+06, time elapsed = 2346.29s
+iteration = 669, lower bound = -4.23626e+06, time elapsed = 2346.97s
+iteration = 670, lower bound = -4.23626e+06, time elapsed = 2347.67s
+iteration = 671, lower bound = -4.23626e+06, time elapsed = 2348.33s
+iteration = 672, lower bound = -4.23626e+06, time elapsed = 2349.1s
+iteration = 673, lower bound = -4.23626e+06, time elapsed = 2349.66s
+iteration = 674, lower bound = -4.23626e+06, time elapsed = 2350.34s
+iteration = 675, lower bound = -4.23626e+06, time elapsed = 2350.99s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.22174e+06
+register primal cost = -4.22174e+06
+iteration = 676, lower bound = -4.23626e+06, upper bound = -4.23363e+06, time elapsed = 2351.74s
+iteration = 677, lower bound = -4.23626e+06, time elapsed = 2352.42s
+iteration = 678, lower bound = -4.23626e+06, time elapsed = 2353.5s
+iteration = 679, lower bound = -4.23626e+06, time elapsed = 2353.68s
+iteration = 680, lower bound = -4.23626e+06, time elapsed = 2354.36s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.00686885
+Added 110825 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.0452654
+best triplet candidate in cycle search has guaranteed dual improvement 0.00686885
+best triplet candidate in cycle search has guaranteed dual improvement 0.00686885
+best triplet candidate in cycle search has guaranteed dual improvement 0.00686885
+Added 267342 triplet(s) out of 267341 in total
+iteration = 681, lower bound = -4.23626e+06, time elapsed = 2398.57s
+iteration = 682, lower bound = -4.23626e+06, time elapsed = 2429.73s
+iteration = 683, lower bound = -4.23626e+06, time elapsed = 2430.42s
+iteration = 684, lower bound = -4.23626e+06, time elapsed = 2431.12s
+iteration = 685, lower bound = -4.23626e+06, time elapsed = 2431.78s
+iteration = 686, lower bound = -4.23626e+06, time elapsed = 2432.48s
+iteration = 687, lower bound = -4.23626e+06, time elapsed = 2433.19s
+iteration = 688, lower bound = -4.23626e+06, time elapsed = 2433.83s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.2107e+06
+register primal cost = -4.2107e+06
+iteration = 689, lower bound = -4.23626e+06, upper bound = -4.23363e+06, time elapsed = 2435.23s
+iteration = 690, lower bound = -4.23626e+06, time elapsed = 2435.93s
+iteration = 691, lower bound = -4.23626e+06, time elapsed = 2436.66s
+iteration = 692, lower bound = -4.23626e+06, time elapsed = 2437.32s
+iteration = 693, lower bound = -4.23626e+06, time elapsed = 2438.4s
+iteration = 694, lower bound = -4.23626e+06, time elapsed = 2438.74s
+iteration = 695, lower bound = -4.23626e+06, time elapsed = 2439.44s
+iteration = 696, lower bound = -4.23626e+06, time elapsed = 2440.10s
+iteration = 697, lower bound = -4.23626e+06, time elapsed = 2440.83s
+iteration = 698, lower bound = -4.23626e+06, time elapsed = 2441.54s
+iteration = 699, lower bound = -4.23626e+06, time elapsed = 2442.28s
+iteration = 700, lower bound = -4.23626e+06, time elapsed = 2442.97s
+iteration = 701, lower bound = -4.23626e+06, time elapsed = 2443.62s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.21069e+06
+register primal cost = -4.21069e+06
+iteration = 702, lower bound = -4.23626e+06, upper bound = -4.23363e+06, time elapsed = 2444.43s
+iteration = 703, lower bound = -4.23626e+06, time elapsed = 2445.11s
+iteration = 704, lower bound = -4.23626e+06, time elapsed = 2445.82s
+iteration = 705, lower bound = -4.23626e+06, time elapsed = 2446.54s
+iteration = 706, lower bound = -4.23626e+06, time elapsed = 2447.23s
+iteration = 707, lower bound = -4.23626e+06, time elapsed = 2447.97s
+iteration = 708, lower bound = -4.23625e+06, time elapsed = 2448.70s
+iteration = 709, lower bound = -4.23625e+06, time elapsed = 2449.42s
+iteration = 710, lower bound = -4.23625e+06, time elapsed = 2450.13s
+iteration = 711, lower bound = -4.23625e+06, time elapsed = 2450.82s
+iteration = 712, lower bound = -4.23625e+06, time elapsed = 2451.50s
+iteration = 713, lower bound = -4.23625e+06, time elapsed = 2452.22s
+iteration = 714, lower bound = -4.23625e+06, time elapsed = 2452.91s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.21069e+06
+register primal cost = -4.21069e+06
+iteration = 715, lower bound = -4.23625e+06, upper bound = -4.23363e+06, time elapsed = 2453.73s
+iteration = 716, lower bound = -4.23625e+06, time elapsed = 2454.47s
+iteration = 717, lower bound = -4.23625e+06, time elapsed = 2455.17s
+iteration = 718, lower bound = -4.23625e+06, time elapsed = 2455.83s
+iteration = 719, lower bound = -4.23625e+06, time elapsed = 2456.51s
+iteration = 720, lower bound = -4.23625e+06, time elapsed = 2457.19s
+iteration = 721, lower bound = -4.23625e+06, time elapsed = 2457.89s
+iteration = 722, lower bound = -4.23625e+06, time elapsed = 2458.55s
+iteration = 723, lower bound = -4.23625e+06, time elapsed = 2459.26s
+iteration = 724, lower bound = -4.23625e+06, time elapsed = 2459.95s
+iteration = 725, lower bound = -4.23625e+06, time elapsed = 2460.67s
+iteration = 726, lower bound = -4.23625e+06, time elapsed = 2461.39s
+iteration = 727, lower bound = -4.23625e+06, time elapsed = 2462.8s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.21069e+06
+register primal cost = -4.21069e+06
+iteration = 728, lower bound = -4.23625e+06, upper bound = -4.23363e+06, time elapsed = 2462.90s
+iteration = 729, lower bound = -4.23625e+06, time elapsed = 2463.57s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.000361404
+Added 92719 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.0352458
+best triplet candidate in cycle search has guaranteed dual improvement 0.00647271
+best triplet candidate in cycle search has guaranteed dual improvement 0.000977186
+best triplet candidate in cycle search has guaranteed dual improvement 0.000462188
+Added 267368 triplet(s) out of 267341 in total
+iteration = 730, lower bound = -4.23625e+06, time elapsed = 2481.43s
+iteration = 731, lower bound = -4.23625e+06, time elapsed = 2567.72s
+iteration = 732, lower bound = -4.23625e+06, time elapsed = 2568.94s
+iteration = 733, lower bound = -4.23625e+06, time elapsed = 2571.69s
+iteration = 734, lower bound = -4.23625e+06, time elapsed = 2572.59s
+iteration = 735, lower bound = -4.23625e+06, time elapsed = 2573.42s
+iteration = 736, lower bound = -4.23625e+06, time elapsed = 2574.31s
+iteration = 737, lower bound = -4.23625e+06, time elapsed = 2575.13s
+iteration = 738, lower bound = -4.23625e+06, time elapsed = 2575.84s
+iteration = 739, lower bound = -4.23625e+06, time elapsed = 2577.19s
+iteration = 740, lower bound = -4.23625e+06, time elapsed = 2580.62s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.19708e+06
+register primal cost = -4.19708e+06
+iteration = 741, lower bound = -4.23625e+06, upper bound = -4.23363e+06, time elapsed = 2582.25s
+iteration = 742, lower bound = -4.23625e+06, time elapsed = 2582.96s
+iteration = 743, lower bound = -4.23625e+06, time elapsed = 2583.72s
+iteration = 744, lower bound = -4.23625e+06, time elapsed = 2584.44s
+iteration = 745, lower bound = -4.23625e+06, time elapsed = 2587.73s
+iteration = 746, lower bound = -4.23625e+06, time elapsed = 2589.11s
+iteration = 747, lower bound = -4.23625e+06, time elapsed = 2589.82s
+iteration = 748, lower bound = -4.23625e+06, time elapsed = 2590.54s
+iteration = 749, lower bound = -4.23625e+06, time elapsed = 2591.23s
+iteration = 750, lower bound = -4.23625e+06, time elapsed = 2591.95s
+iteration = 751, lower bound = -4.23625e+06, time elapsed = 2592.63s
+iteration = 752, lower bound = -4.23625e+06, time elapsed = 2593.41s
+iteration = 753, lower bound = -4.23625e+06, time elapsed = 2597.16s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.19708e+06
+register primal cost = -4.19708e+06
+iteration = 754, lower bound = -4.23625e+06, upper bound = -4.23363e+06, time elapsed = 2598.18s
+iteration = 755, lower bound = -4.23625e+06, time elapsed = 2598.92s
+iteration = 756, lower bound = -4.23625e+06, time elapsed = 2599.73s
+iteration = 757, lower bound = -4.23625e+06, time elapsed = 2600.49s
+iteration = 758, lower bound = -4.23625e+06, time elapsed = 2601.22s
+iteration = 759, lower bound = -4.23625e+06, time elapsed = 2601.94s
+iteration = 760, lower bound = -4.23625e+06, time elapsed = 2602.63s
+iteration = 761, lower bound = -4.23625e+06, time elapsed = 2603.31s
+iteration = 762, lower bound = -4.23625e+06, time elapsed = 2606.60s
+iteration = 763, lower bound = -4.23625e+06, time elapsed = 2607.43s
+iteration = 764, lower bound = -4.23625e+06, time elapsed = 2608.14s
+iteration = 765, lower bound = -4.23625e+06, time elapsed = 2608.84s
+iteration = 766, lower bound = -4.23624e+06, time elapsed = 2609.64s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.19708e+06
+register primal cost = -4.19708e+06
+iteration = 767, lower bound = -4.23624e+06, upper bound = -4.23363e+06, time elapsed = 2610.69s
+iteration = 768, lower bound = -4.23624e+06, time elapsed = 2611.95s
+iteration = 769, lower bound = -4.23624e+06, time elapsed = 2613.16s
+iteration = 770, lower bound = -4.23624e+06, time elapsed = 2614.68s
+iteration = 771, lower bound = -4.23624e+06, time elapsed = 2616.7s
+iteration = 772, lower bound = -4.23624e+06, time elapsed = 2617.22s
+iteration = 773, lower bound = -4.23624e+06, time elapsed = 2618.51s
+iteration = 774, lower bound = -4.23624e+06, time elapsed = 2619.72s
+iteration = 775, lower bound = -4.23624e+06, time elapsed = 2620.87s
+iteration = 776, lower bound = -4.23624e+06, time elapsed = 2621.89s
+iteration = 777, lower bound = -4.23624e+06, time elapsed = 2622.81s
+iteration = 778, lower bound = -4.23624e+06, time elapsed = 2623.70s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.000361846
+Added 104188 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.0584138
+best triplet candidate in cycle search has guaranteed dual improvement 0.00647271
+best triplet candidate in cycle search has guaranteed dual improvement 0.00116157
+best triplet candidate in cycle search has guaranteed dual improvement 0.000361846
+Added 267342 triplet(s) out of 267341 in total
+iteration = 779, lower bound = -4.23624e+06, time elapsed = 2653.89s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.18736e+06
+register primal cost = -4.18736e+06
+iteration = 780, lower bound = -4.23624e+06, upper bound = -4.23363e+06, time elapsed = 2734.13s
+iteration = 781, lower bound = -4.23624e+06, time elapsed = 2748.62s
+iteration = 782, lower bound = -4.23624e+06, time elapsed = 2749.94s
+iteration = 783, lower bound = -4.23624e+06, time elapsed = 2751.21s
+iteration = 784, lower bound = -4.23624e+06, time elapsed = 2752.59s
+iteration = 785, lower bound = -4.23624e+06, time elapsed = 2754.3s
+iteration = 786, lower bound = -4.23624e+06, time elapsed = 2755.0s
+iteration = 787, lower bound = -4.23624e+06, time elapsed = 2755.87s
+iteration = 788, lower bound = -4.23624e+06, time elapsed = 2758.58s
+iteration = 789, lower bound = -4.23624e+06, time elapsed = 2760.5s
+iteration = 790, lower bound = -4.23624e+06, time elapsed = 2760.83s
+iteration = 791, lower bound = -4.23624e+06, time elapsed = 2761.63s
+iteration = 792, lower bound = -4.23624e+06, time elapsed = 2762.48s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.18717e+06
+register primal cost = -4.18717e+06
+iteration = 793, lower bound = -4.23624e+06, upper bound = -4.23363e+06, time elapsed = 2763.36s
+iteration = 794, lower bound = -4.23624e+06, time elapsed = 2764.67s
+iteration = 795, lower bound = -4.23624e+06, time elapsed = 2768.30s
+iteration = 796, lower bound = -4.23624e+06, time elapsed = 2769.2s
+iteration = 797, lower bound = -4.23624e+06, time elapsed = 2769.74s
+iteration = 798, lower bound = -4.23624e+06, time elapsed = 2770.48s
+iteration = 799, lower bound = -4.23624e+06, time elapsed = 2771.25s
+iteration = 800, lower bound = -4.23624e+06, time elapsed = 2772.55s
+iteration = 801, lower bound = -4.23624e+06, time elapsed = 2775.96s
+iteration = 802, lower bound = -4.23624e+06, time elapsed = 2776.73s
+iteration = 803, lower bound = -4.23624e+06, time elapsed = 2777.48s
+iteration = 804, lower bound = -4.23624e+06, time elapsed = 2778.21s
+iteration = 805, lower bound = -4.23624e+06, time elapsed = 2778.97s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.18717e+06
+register primal cost = -4.18717e+06
+iteration = 806, lower bound = -4.23624e+06, upper bound = -4.23363e+06, time elapsed = 2779.90s
+iteration = 807, lower bound = -4.23624e+06, time elapsed = 2780.73s
+iteration = 808, lower bound = -4.23624e+06, time elapsed = 2782.65s
+iteration = 809, lower bound = -4.23624e+06, time elapsed = 2785.73s
+iteration = 810, lower bound = -4.23624e+06, time elapsed = 2786.51s
+iteration = 811, lower bound = -4.23624e+06, time elapsed = 2787.32s
+iteration = 812, lower bound = -4.23624e+06, time elapsed = 2788.6s
+iteration = 813, lower bound = -4.23624e+06, time elapsed = 2788.79s
+iteration = 814, lower bound = -4.23624e+06, time elapsed = 2789.51s
+iteration = 815, lower bound = -4.23624e+06, time elapsed = 2790.33s
+iteration = 816, lower bound = -4.23624e+06, time elapsed = 2791.11s
+iteration = 817, lower bound = -4.23624e+06, time elapsed = 2794.72s
+iteration = 818, lower bound = -4.23624e+06, time elapsed = 2795.60s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.18717e+06
+register primal cost = -4.18717e+06
+iteration = 819, lower bound = -4.23624e+06, upper bound = -4.23363e+06, time elapsed = 2796.81s
+iteration = 820, lower bound = -4.23624e+06, time elapsed = 2798.12s
+iteration = 821, lower bound = -4.23624e+06, time elapsed = 2799.51s
+iteration = 822, lower bound = -4.23624e+06, time elapsed = 2800.75s
+iteration = 823, lower bound = -4.23624e+06, time elapsed = 2802.30s
+iteration = 824, lower bound = -4.23624e+06, time elapsed = 2803.68s
+iteration = 825, lower bound = -4.23624e+06, time elapsed = 2805.6s
+iteration = 826, lower bound = -4.23624e+06, time elapsed = 2806.29s
+iteration = 827, lower bound = -4.23624e+06, time elapsed = 2807.37s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.000176119
+Added 127413 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.0410403
+best triplet candidate in cycle search has guaranteed dual improvement 0.00566522
+best triplet candidate in cycle search has guaranteed dual improvement 0.00154198
+best triplet candidate in cycle search has guaranteed dual improvement 0.000367439
+Added 267342 triplet(s) out of 267341 in total
+iteration = 828, lower bound = -4.23624e+06, time elapsed = 2822.78s
+iteration = 829, lower bound = -4.23624e+06, time elapsed = 2933.7s
+iteration = 830, lower bound = -4.23624e+06, time elapsed = 2934.28s
+iteration = 831, lower bound = -4.23624e+06, time elapsed = 2935.56s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.18091e+06
+register primal cost = -4.18091e+06
+iteration = 832, lower bound = -4.23624e+06, upper bound = -4.23363e+06, time elapsed = 2938.5s
+iteration = 833, lower bound = -4.23624e+06, time elapsed = 2939.50s
+iteration = 834, lower bound = -4.23624e+06, time elapsed = 2941.0s
+iteration = 835, lower bound = -4.23624e+06, time elapsed = 2942.36s
+iteration = 836, lower bound = -4.23624e+06, time elapsed = 2943.80s
+iteration = 837, lower bound = -4.23624e+06, time elapsed = 2946.47s
+iteration = 838, lower bound = -4.23623e+06, time elapsed = 2947.30s
+iteration = 839, lower bound = -4.23623e+06, time elapsed = 2948.19s
+iteration = 840, lower bound = -4.23623e+06, time elapsed = 2949.10s
+iteration = 841, lower bound = -4.23623e+06, time elapsed = 2950.4s
+iteration = 842, lower bound = -4.23623e+06, time elapsed = 2951.0s
+iteration = 843, lower bound = -4.23623e+06, time elapsed = 2952.45s
+iteration = 844, lower bound = -4.23623e+06, time elapsed = 2955.68s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.1809e+06
+register primal cost = -4.1809e+06
+iteration = 845, lower bound = -4.23623e+06, upper bound = -4.23363e+06, time elapsed = 2956.59s
+iteration = 846, lower bound = -4.23623e+06, time elapsed = 2957.40s
+iteration = 847, lower bound = -4.23623e+06, time elapsed = 2958.17s
+iteration = 848, lower bound = -4.23623e+06, time elapsed = 2959.5s
+iteration = 849, lower bound = -4.23623e+06, time elapsed = 2962.54s
+iteration = 850, lower bound = -4.23623e+06, time elapsed = 2963.46s
+iteration = 851, lower bound = -4.23623e+06, time elapsed = 2964.24s
+iteration = 852, lower bound = -4.23623e+06, time elapsed = 2965.6s
+iteration = 853, lower bound = -4.23623e+06, time elapsed = 2965.81s
+iteration = 854, lower bound = -4.23623e+06, time elapsed = 2966.58s
+iteration = 855, lower bound = -4.23623e+06, time elapsed = 2967.41s
+iteration = 856, lower bound = -4.23623e+06, time elapsed = 2971.62s
+iteration = 857, lower bound = -4.23623e+06, time elapsed = 2973.17s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.1809e+06
+register primal cost = -4.1809e+06
+iteration = 858, lower bound = -4.23623e+06, upper bound = -4.23363e+06, time elapsed = 2974.13s
+iteration = 859, lower bound = -4.23623e+06, time elapsed = 2975.0s
+iteration = 860, lower bound = -4.23623e+06, time elapsed = 2975.84s
+iteration = 861, lower bound = -4.23623e+06, time elapsed = 2976.70s
+iteration = 862, lower bound = -4.23623e+06, time elapsed = 2977.91s
+iteration = 863, lower bound = -4.23623e+06, time elapsed = 2980.92s
+iteration = 864, lower bound = -4.23623e+06, time elapsed = 2981.79s
+iteration = 865, lower bound = -4.23623e+06, time elapsed = 2982.66s
+iteration = 866, lower bound = -4.23623e+06, time elapsed = 2983.52s
+iteration = 867, lower bound = -4.23623e+06, time elapsed = 2984.39s
+iteration = 868, lower bound = -4.23623e+06, time elapsed = 2985.25s
+iteration = 869, lower bound = -4.23623e+06, time elapsed = 2986.31s
+iteration = 870, lower bound = -4.23623e+06, time elapsed = 2987.47s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.1809e+06
+register primal cost = -4.1809e+06
+iteration = 871, lower bound = -4.23623e+06, upper bound = -4.23363e+06, time elapsed = 2989.0s
+iteration = 872, lower bound = -4.23623e+06, time elapsed = 2990.38s
+iteration = 873, lower bound = -4.23623e+06, time elapsed = 2991.74s
+iteration = 874, lower bound = -4.23623e+06, time elapsed = 2993.8s
+iteration = 875, lower bound = -4.23623e+06, time elapsed = 2994.47s
+iteration = 876, lower bound = -4.23623e+06, time elapsed = 2995.75s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.00201801
+Added 103667 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.0476284
+best triplet candidate in cycle search has guaranteed dual improvement 0.0222302
+best triplet candidate in cycle search has guaranteed dual improvement 0.00201801
+best triplet candidate in cycle search has guaranteed dual improvement 0.00201801
+best triplet candidate in cycle search has guaranteed dual improvement 0.00201801
+Added 267342 triplet(s) out of 267341 in total
+iteration = 877, lower bound = -4.23623e+06, time elapsed = 3273.62s
+iteration = 878, lower bound = -4.23623e+06, time elapsed = 3353.25s
+iteration = 879, lower bound = -4.23623e+06, time elapsed = 3354.7s
+iteration = 880, lower bound = -4.23623e+06, time elapsed = 3354.89s
+iteration = 881, lower bound = -4.23623e+06, time elapsed = 3355.76s
+iteration = 882, lower bound = -4.23623e+06, time elapsed = 3356.62s
+iteration = 883, lower bound = -4.23623e+06, time elapsed = 3357.49s
+collect multicut rounding result
+built union find structure, propagate information now
+restart primal rounding
+primal solution consistent: 1
+compute multicut primal with ChainedSolvers
+primal cost = -4.23393e+06
+register primal cost = -4.23393e+06
+checking primal feasibility for multicut ... solution feasible
+primal solution consistent: 1
+iteration = 884, lower bound = -4.23623e+06, upper bound = -4.23393e+06, time elapsed = 3363.34s
+iteration = 885, lower bound = -4.23623e+06, time elapsed = 3364.20s
+iteration = 886, lower bound = -4.23623e+06, time elapsed = 3365.2s
+iteration = 887, lower bound = -4.23623e+06, time elapsed = 3365.85s
+iteration = 888, lower bound = -4.23623e+06, time elapsed = 3366.71s
+iteration = 889, lower bound = -4.23623e+06, time elapsed = 3367.61s
+iteration = 890, lower bound = -4.23623e+06, time elapsed = 3368.52s
+iteration = 891, lower bound = -4.23623e+06, time elapsed = 3369.35s
+iteration = 892, lower bound = -4.23623e+06, time elapsed = 3370.17s
+iteration = 893, lower bound = -4.23623e+06, time elapsed = 3371.7s
+iteration = 894, lower bound = -4.23623e+06, time elapsed = 3372.0s
+iteration = 895, lower bound = -4.23623e+06, time elapsed = 3372.91s
+iteration = 896, lower bound = -4.23623e+06, time elapsed = 3373.75s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.23393e+06
+register primal cost = -4.23393e+06
+checking primal feasibility for multicut ... solution feasible
+primal solution consistent: 1
+iteration = 897, lower bound = -4.23623e+06, upper bound = -4.23393e+06, time elapsed = 3374.99s
+iteration = 898, lower bound = -4.23623e+06, time elapsed = 3375.85s
+iteration = 899, lower bound = -4.23623e+06, time elapsed = 3376.72s
+iteration = 900, lower bound = -4.23623e+06, time elapsed = 3377.60s
+iteration = 901, lower bound = -4.23623e+06, time elapsed = 3378.45s
+iteration = 902, lower bound = -4.23623e+06, time elapsed = 3379.32s
+iteration = 903, lower bound = -4.23623e+06, time elapsed = 3380.13s
+iteration = 904, lower bound = -4.23623e+06, time elapsed = 3380.94s
+iteration = 905, lower bound = -4.23623e+06, time elapsed = 3381.82s
+iteration = 906, lower bound = -4.23623e+06, time elapsed = 3382.62s
+iteration = 907, lower bound = -4.23623e+06, time elapsed = 3383.47s
+iteration = 908, lower bound = -4.23623e+06, time elapsed = 3384.33s
+iteration = 909, lower bound = -4.23623e+06, time elapsed = 3385.21s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.23393e+06
+register primal cost = -4.23393e+06
+iteration = 910, lower bound = -4.23623e+06, upper bound = -4.23393e+06, time elapsed = 3386.18s
+iteration = 911, lower bound = -4.23623e+06, time elapsed = 3386.97s
+iteration = 912, lower bound = -4.23623e+06, time elapsed = 3387.82s
+iteration = 913, lower bound = -4.23623e+06, time elapsed = 3388.68s
+iteration = 914, lower bound = -4.23623e+06, time elapsed = 3389.55s
+iteration = 915, lower bound = -4.23623e+06, time elapsed = 3390.38s
+iteration = 916, lower bound = -4.23623e+06, time elapsed = 3391.21s
+iteration = 917, lower bound = -4.23623e+06, time elapsed = 3392.1s
+iteration = 918, lower bound = -4.23623e+06, time elapsed = 3392.87s
+iteration = 919, lower bound = -4.23623e+06, time elapsed = 3393.68s
+iteration = 920, lower bound = -4.23623e+06, time elapsed = 3394.53s
+iteration = 921, lower bound = -4.23623e+06, time elapsed = 3395.31s
+iteration = 922, lower bound = -4.23623e+06, time elapsed = 3396.15s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.23393e+06
+register primal cost = -4.23393e+06
+iteration = 923, lower bound = -4.23623e+06, upper bound = -4.23393e+06, time elapsed = 3397.14s
+iteration = 924, lower bound = -4.23623e+06, time elapsed = 3397.99s
+iteration = 925, lower bound = -4.23623e+06, time elapsed = 3398.85s
+Time to tighten
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.000339244
+Added 86224 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.0404463
+best triplet candidate in cycle search has guaranteed dual improvement 0.00647271
+best triplet candidate in cycle search has guaranteed dual improvement 0.000846967
+best triplet candidate in cycle search has guaranteed dual improvement 0.00056558
+best triplet candidate in cycle search has guaranteed dual improvement 0.00056558
+Added 267343 triplet(s) out of 267341 in total
+iteration = 926, lower bound = -4.23623e+06, time elapsed = 3516.21s
+iteration = 927, lower bound = -4.23622e+06, time elapsed = 3555.29s
+iteration = 928, lower bound = -4.23622e+06, time elapsed = 3556.14s
+iteration = 929, lower bound = -4.23622e+06, time elapsed = 3556.97s
+iteration = 930, lower bound = -4.23622e+06, time elapsed = 3557.85s
+iteration = 931, lower bound = -4.23622e+06, time elapsed = 3558.70s
+iteration = 932, lower bound = -4.23622e+06, time elapsed = 3559.56s
+iteration = 933, lower bound = -4.23622e+06, time elapsed = 3560.40s
+iteration = 934, lower bound = -4.23622e+06, time elapsed = 3561.24s
+iteration = 935, lower bound = -4.23622e+06, time elapsed = 3562.11s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.22386e+06
+register primal cost = -4.22386e+06
+iteration = 936, lower bound = -4.23622e+06, upper bound = -4.23393e+06, time elapsed = 3563.78s
+iteration = 937, lower bound = -4.23622e+06, time elapsed = 3564.62s
+iteration = 938, lower bound = -4.23622e+06, time elapsed = 3565.48s
+iteration = 939, lower bound = -4.23622e+06, time elapsed = 3566.31s
+iteration = 940, lower bound = -4.23622e+06, time elapsed = 3567.22s
+iteration = 941, lower bound = -4.23622e+06, time elapsed = 3568.11s
+iteration = 942, lower bound = -4.23622e+06, time elapsed = 3568.97s
+iteration = 943, lower bound = -4.23622e+06, time elapsed = 3569.82s
+iteration = 944, lower bound = -4.23622e+06, time elapsed = 3570.68s
+iteration = 945, lower bound = -4.23622e+06, time elapsed = 3571.52s
+iteration = 946, lower bound = -4.23622e+06, time elapsed = 3572.40s
+iteration = 947, lower bound = -4.23622e+06, time elapsed = 3573.30s
+iteration = 948, lower bound = -4.23622e+06, time elapsed = 3574.15s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.22385e+06
+register primal cost = -4.22385e+06
+iteration = 949, lower bound = -4.23622e+06, upper bound = -4.23393e+06, time elapsed = 3575.13s
+iteration = 950, lower bound = -4.23622e+06, time elapsed = 3576.3s
+iteration = 951, lower bound = -4.23622e+06, time elapsed = 3576.91s
+iteration = 952, lower bound = -4.23622e+06, time elapsed = 3577.78s
+iteration = 953, lower bound = -4.23622e+06, time elapsed = 3578.68s
+iteration = 954, lower bound = -4.23622e+06, time elapsed = 3579.50s
+iteration = 955, lower bound = -4.23622e+06, time elapsed = 3580.38s
+iteration = 956, lower bound = -4.23622e+06, time elapsed = 3581.26s
+iteration = 957, lower bound = -4.23622e+06, time elapsed = 3582.12s
+iteration = 958, lower bound = -4.23622e+06, time elapsed = 3583.2s
+iteration = 959, lower bound = -4.23622e+06, time elapsed = 3583.86s
+iteration = 960, lower bound = -4.23622e+06, time elapsed = 3584.74s
+iteration = 961, lower bound = -4.23622e+06, time elapsed = 3585.61s
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.22385e+06
+register primal cost = -4.22385e+06
+iteration = 962, lower bound = -4.23622e+06, upper bound = -4.23393e+06, time elapsed = 3586.60s
+iteration = 963, lower bound = -4.23622e+06, time elapsed = 3587.44s
+iteration = 964, lower bound = -4.23622e+06, time elapsed = 3588.32s
+iteration = 965, lower bound = -4.23622e+06, time elapsed = 3589.20s
+iteration = 966, lower bound = -4.23622e+06, time elapsed = 3590.10s
+iteration = 967, lower bound = -4.23622e+06, time elapsed = 3590.98s
+iteration = 968, lower bound = -4.23622e+06, time elapsed = 3591.86s
+iteration = 969, lower bound = -4.23622e+06, time elapsed = 3592.73s
+iteration = 970, lower bound = -4.23622e+06, time elapsed = 3593.60s
+iteration = 971, lower bound = -4.23622e+06, time elapsed = 3594.44s
+iteration = 972, lower bound = -4.23622e+06, time elapsed = 3595.28s
+iteration = 973, lower bound = -4.23622e+06, time elapsed = 3596.16s
+iteration = 974, lower bound = -4.23622e+06, time elapsed = 3596.95s
+Time to tighten
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.22385e+06
+register primal cost = -4.22385e+06
+Search for violated triplet constraints
+best triplet candidate in triplet search has guaranteed dual improvement 0.000122061
+Added 113967 triplet(s) out of 267341 by searching for triplets
+Additionally search via shortest paths for violated constraints
+best triplet candidate in cycle search has guaranteed dual improvement 0.037061
+best triplet candidate in cycle search has guaranteed dual improvement 0.00509962
+best triplet candidate in cycle search has guaranteed dual improvement 0.00437662
+best triplet candidate in cycle search has guaranteed dual improvement 0.00437662
+best triplet candidate in cycle search has guaranteed dual improvement 0.000315899
+Added 267355 triplet(s) out of 267341 in total
+iteration = 975, lower bound = -4.23622e+06, upper bound = -4.23393e+06, time elapsed = 3670.17s
+Timeout reached after 3670176 seconds
+multicut rounding is currently running.
+primal solution consistent: 1
+primal cost = -4.21336e+06
+register primal cost = -4.21336e+06
+iteration = 976, lower bound = -4.23622e+06, upper bound = -4.23393e+06, time elapsed = 3760.20s
 One iteration remaining
 wait for primal computation to end
+built union find structure, propagate information now
 primal solution consistent: 1
-primal cost = -4.23399e+06
-register primal cost = -4.23399e+06
+primal cost = -4.23416e+06
+register primal cost = -4.23416e+06
 checking primal feasibility for multicut ... solution feasible
 primal solution consistent: 1
-final lower bound = -4.23623e+06, upper bound = -4.23399e+06
-Optimization took 4579695 milliseconds and 855 iterations.
+final lower bound = -4.23622e+06, upper bound = -4.23416e+06
+Optimization took 3966633 milliseconds and 977 iterations.
