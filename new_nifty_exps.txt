@@ -49,8 +49,11 @@ Old FM results:   SampleA     SampleB     SampleC
 
 SampleD_sub_L1
 greedy      : Energy -4229229.168140, Runtime 1.419264
+cgc         : Energy -4229233.520983, Runtime 52.448036
 kl          : Energy -4229294.738340, Runtime 5.554304
-mp-fmkl     : Energy -4229448.033213, Runtime 3635.978028 (<- this is probably still worth, because we can tighten much less....)
+kl + cgc    : Energy -4229298.362028, Runtime 55.544467
+mp-fmkl     : Energy -4229448.033213, Runtime 3635.978028 (<- this is probably still worse, because we can tighten much less....)
+fm-cgc      : Energy -4229449.129737, Runtime 3656.646796
 fm-ilp      : Energy -4229449.324829, Runtime 1099.728284 (seed_fraction = 0.001)
 fm-greedy   : Energy -4229462.545856, Runtime 391.630795
 mp-fmkl     : Energy -4229473.888609, Runtime 3692.063894 (less aggressive fusionmoves)
@@ -63,11 +66,12 @@ ilp         : Energy -4229536.135864, Runtime  391.468257
 
 
 sampleD_sub_full
-ilp:     Energy  -722693.936121, Runtime 7094.533311
-kl:      Energy -4233494.998089, Runtime 195.235894
-fm-ilp:  Energy -4233990.726806, Runtime 3626.083104
-mp-fmkl: Energy -4234162.747507, Runtime 9675.986009
-mp-fmkl: Energy -4234259.286614, Runtime 4758.93174 ('less aggressive' fusionmove)
-mp-fmkl: Energy -4233885.968240, Runtime 3671.09200 (even less aggressive fusionmoves)
-mp:      Energy -4234169.651208, Runtime 4078.778356
-fm-kl:   Energy -4234305.069998, Runtime 3667.068048
+ilp         : Energy  -722693.936121, Runtime 7094.533311
+kl          : Energy -4233494.998089, Runtime 195.235894
+fm-ilp      : Energy -4233990.726806, Runtime 3626.083104
+mp-fmkl     : Energy -4234162.747507, Runtime 9675.986009
+mp-fmkl     : Energy -4234259.286614, Runtime 4758.93174 ('less aggressive' fusionmove)
+mp-fmkl     : Energy -4233885.968240, Runtime 3671.09200 (even less aggressive fusionmoves)
+mp-fmgreedy : Energy -4234054.431183, Runtime 4402.805445
+mp-kl       : Energy -4234169.651208, Runtime 4078.778356
+fm-kl       : Energy -4234305.069998, Runtime 3667.068048

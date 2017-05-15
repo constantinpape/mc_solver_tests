@@ -87,7 +87,8 @@ def sampleD_problems():
                 seed_fraction = 0.01),
             'fm-cgc' : nifty_fusion_move_factory(obj,
                 backend_factory = nifty_cgc_factory(obj),
-                seed_fraction = 0.01),
+                seed_fraction = 0.01,
+                kl_chain = True),
             'ilp' : nifty_ilp_factory(obj),
             'cgc' : nifty_cgc_factory(obj),
             'kl'  : nifty_kl_factory(obj),
@@ -135,10 +136,9 @@ def sampleD_problems():
         return res_dict
 
     timeout = 3600.
-    #samples = ('sampleD_sub_L1',) #'sampleD_sub_full')
-    samples = ('sampleD_sub_full',)
+    samples = ('sampleD_sub_L1',) #'sampleD_sub_full')
     #solver_choice = ('kl','fm-ilp','fm-kl','ilp','mp','mp-fmkl')
-    solver_choice = ('mp-fmgreedy',)
+    solver_choice = ('cgc', 'fm-cgc')
 
     res_dict = {}
     for sample in samples:

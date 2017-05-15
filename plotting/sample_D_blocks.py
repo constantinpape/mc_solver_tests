@@ -9,8 +9,6 @@ from utils import model_paths_mcluigi, read_from_mcluigi, nifty_mc_objective
 time_offsets_mc    = np.array([0, 1484.5, 298.3, 349.2, 1035.2])
 time_offsets_merge = np.array([0, 3286.5, 356.6, 255.1, 198.2])
 t_offsets          = np.cumsum(time_offsets_mc + time_offsets_merge)#[::-1]
-print t_offsets
-quit()
 
 energy_offsets = [
         -301629076.633,
@@ -18,6 +16,13 @@ energy_offsets = [
         -490128654.61634934,
         -502916749.99766165,
         -510288693.97572863]
+
+
+
+def plot_initial_energies():
+    fig, ax = plt.subplots()
+    ax.scatter(t_offsets, energy_offsets)
+    plt.show()
 
 
 
@@ -30,11 +35,13 @@ def read_nodes(model_path):
     return graph, toGlobalNodes
 
 
+
 def to_global_energy(global_obj, graph, toGlobalNodes):
     nodeResult = np.zeros(global_obj.graph.numberOfNodes, dtype = 'uint32')
     for nodeId in xrange(graph.numberOfNodes):
         nodeResult[toGlobalNodes[nodeId]] = nodeId
     return global_obj.evalNodeLabels(nodeResult)
+
 
 
 def get_initial_energy():
@@ -70,4 +77,4 @@ def get_energy_offsets():
 
 
 if __name__ == '__main__':
-    print get_initial_energy()
+    plot_initial_energies()

@@ -28,34 +28,27 @@ def get_problem_size_reduction():
 
 def plot_problem_size_reduction():
     n_nodes, n_edges = get_problem_size_reduction()
-    model_ticks = ['Full', 'L1', 'L2', 'L3', 'L4']
+    model_ticks = ['0', '1', '2', '3', '4']
     #model_ticks = { 0 : 'Full', 1 : 'L1', 2 : 'L2', 3 : 'L3', 4 : 'L4'}
     x = np.arange(len(n_nodes))
-    width = 0.4
+    width = 0.35
 
-    f, ax = plt.subplots(2)
+    f, ax = plt.subplots()
 
     # plot node reduction
-    rects1 = ax[0].bar(x, n_nodes, width, color = 'r')
-    ax[0].set_xticks(x)
-    ax[0].set_xticklabels(model_ticks)
-    ax[0].legend( (rects1,), ('Number of Nodes',) )
-    ax[0].set_title('Node Reduction')
-    ax[0].set_yscale('log')
-    ax[0].set_ylabel('Number of Nodes')
-    ax[0].set_xlabel('Hierarchy Level')
+    rects1 = ax.bar(x, n_nodes, width)
+    rects2 = ax.bar(x + width, n_edges, width)
 
-    # plot edge reduction
-    rects2 = ax[1].bar(x, n_edges, width, color = 'g')
-    ax[1].set_xticks(x)
-    ax[1].set_xticklabels(model_ticks)
-    ax[1].legend( (rects2,), ('Number of Edges',) )
-    ax[1].set_title('Edge Reduction')
-    ax[1].set_yscale('log')
-    ax[1].set_ylabel('Number of Edges')
-    ax[1].set_xlabel('Hierarchy Level')
+    ax.set_xticks(x)
+    ax.set_xticklabels(model_ticks)
+    ax.set_title('Problem Size Reduction')
+    ax.set_yscale('log')
+    ax.set_ylabel('Count (log-scale)')
+    ax.set_xlabel('Number of levels')
 
-    def autolabel(ax, rects):
+    ax.legend( (rects1, rects2), ('Number of Nodes', 'Number of Edges') )
+
+    def autolabel(rects):
         """
         Attach a text label above each bar displaying its height
         """
@@ -65,8 +58,8 @@ def plot_problem_size_reduction():
                     '%.4E' % Decimal(height),
                     ha='center', va='bottom')
 
-    autolabel(ax[0], rects1)
-    autolabel(ax[1], rects2)
+    autolabel(rects1)
+    autolabel(rects2)
 
     plt.show()
 
