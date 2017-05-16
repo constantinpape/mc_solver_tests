@@ -51,7 +51,7 @@ def run_sample_d_sub(level, model, time_limit, seed_fraction, chain_kl = True, b
 
     if global_obj is not None:
         to_global_nodes = read_nodes(model_paths_mcluigi[model])
-        node_res = project_to_global(node_res, to_global_nodes, global_obj)
+        node_res = project_to_global(node_res, to_global_nodes)
         energy = global_obj.evalNodeLabels(node_res)
 
     return energy, t_inf
@@ -72,12 +72,12 @@ def run_sample_d(level, model, time_limit, time_offset, seed_fraction, chain_kl 
 
     node_res, energy, t_inf = run_nifty_solver(obj, factory, verbose = True, time_limit = time_limit - time_offset )
 
-    with open('./anytime_data/sampleD/nodes_%i.pkl' % level, 'w') as f:
-        pickle.dump(node_res, f)
+    #with open('./anytime_data/sampleD/nodes_%i.pkl' % level, 'w') as f:
+    #    pickle.dump(node_res, f)
 
     if global_obj is not None:
         to_global_nodes = read_nodes(model_paths_mcluigi[model])
-        node_res = project_to_global(node_res, to_global_nodes)
+        node_res = project_to_global(node_res, to_global_nodes, global_obj)
         energy = global_obj.evalNodeLabels(node_res)
 
     return energy, t_inf
@@ -95,10 +95,10 @@ def test_blocking(time_limit, level):
     model = models[level]
     t_off = t_offsets[level]
 
-    n_var, uv_ids, costs = read_from_mcluigi(model_paths_mcluigi[model])
-    global_obj = nifty_mc_objective(n_var, uv_ids, costs)
+    #n_var, uv_ids, costs = read_from_mcluigi(model_paths_mcluigi[models[0]])
+    #global_obj = nifty_mc_objective(n_var, uv_ids, costs)
 
-    e_l, t_l = run_sample_d(level, model, time_limit, t_off, 1e-5, chain_kl = True, global_obj = global_obj)
+    e_l, t_l = run_sample_d(level, model, time_limit, t_off, 1e-5, chain_kl = True, global_obj = None)
 
     print "Results for level %i:" % level
     print "Energy:", e_l
@@ -131,5 +131,5 @@ if __name__ == '__main__':
 
     # 10 hour time limit
     time_limit = 10 * 3600
-    for level in (3,2):
+    for level in (2,):
         test_blocking(time_limit, level)

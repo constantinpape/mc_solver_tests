@@ -1,3 +1,7 @@
 Energy: -5.154150334492e+08 Runtime: 5277 IterationWithoutImprovement 0.000000000000e+00 
 Energy: -5.154150871845e+08 Runtime: 9166 IterationWithoutImprovement 0.000000000000e+00 
 Energy: -5.154151135374e+08 Runtime: 13535 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -5.154151518833e+08 Runtime: 17908 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -5.154151749439e+08 Runtime: 22404 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -5.154152237678e+08 Runtime: 27304 IterationWithoutImprovement 0.000000000000e+00 
+Energy: -5.154152431628e+08 Runtime: 32266 IterationWithoutImprovement 0.000000000000e+00
