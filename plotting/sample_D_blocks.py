@@ -68,11 +68,17 @@ def plot_initial_energies():
 
 
 def plot_performance():
+    from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes, inset_axes
+    from mpl_toolkits.axes_grid1.inset_locator import mark_inset
+
     fig, ax = plt.subplots()
-    ax2 = plt.axes([.5,.2,.4,.4])
+    #ax2 = plt.axes([.45,.2,.40,.40])
+    axins = inset_axes(ax, 1, 2, loc=7)#, axes_kwargs = dict(autoscaley_on = True))
+
+    x_min, x_max, y_min, y_max = [], [], [], []
 
     # plot inference energies
-    for level in (3,4):
+    for level in (2,3,4):
         t, e = [], []
         t.append(t_offsets[level])
         e.append(energy_offsets[level])
@@ -86,22 +92,33 @@ def plot_performance():
 
         t = np.array(t)
         e = np.array(e)
-        #e *= -1
+
+        x_min.append(t[1:3].min())
+        x_max.append(t[1:3].max())
+        y_min.append(e[1:3].min())
+        y_max.append(e[1:3].max())
 
         ax.plot(t, e, c = 'C%i' % level, label = 'L%i' % level)
         ax.scatter(t_offsets[level], energy_offsets[level], s = 100, c = 'C%i' % level)
-        ax2.plot(t[1:], e[1:], c = 'C%i' % level)
-
-    #plt.setp(ax2, xticks = [], yticks = [])
+        #ax2.plot(t[1:], e[1:], c = 'C%i' % level)
+        axins.plot(t, e, c = 'C%i' % level)
 
     ax.get_yaxis().set_major_formatter(
                 matplotlib.ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
-    #ax.set_yscale('log')
 
     ax.set_xlabel('Runtime [s]')
     ax.set_ylabel('Energy')
     ax.set_title('SampleD - Block-wise Performance')
     ax.legend()
+
+    x_min = np.min(x_min)
+    x_max = np.max(x_max)
+    y_min = np.min(y_min)
+    y_max = np.max(y_max)
+
+    axins.set_xlim(x_min, x_max)
+    axins.set_ylim(y_min, y_max)
+    mark_inset(ax, axins, loc1=2, loc2=4, fc="none", ec="0.5")
 
     plt.show()
 
