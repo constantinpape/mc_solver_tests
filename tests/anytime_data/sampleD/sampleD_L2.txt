@@ -1,0 +1,2 @@
+Energy: -5.154542377560e+08 Runtime: 7411 IterationWithoutImprovement 0.000000000000e+00 
+
