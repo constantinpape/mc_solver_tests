@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import matplotlib
 import numpy as np
 
 import cPickle as pickle
@@ -27,19 +28,21 @@ def plot_energies_sample(times, energies, labels, title, bounds = None):
         ax.plot(t, en, label = labels[i])
     ax.set_xlabel('runtimes [s]')
     ax.set_ylabel('energy')
-    ax.set_title('title')
+    ax.set_title(title)
     if bounds is not None:
         ax.set_ylim(bounds)
     ax.legend()
+    ax.get_yaxis().set_major_formatter(
+                matplotlib.ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
     plt.show()
 
 
 
 def sampleD_plots(with_dual = False):
 
-    sample = 'sampleD_sub_L1'
+    sample = 'sampleD_sub_full'
     #solvers = ['ilp', 'fm-ilp', 'fm-kl', 'mp', 'mp-fmgreedy']
-    solvers = ['ilp', 'fm-ilp', 'fm-kl']
+    solvers = ['fm-ilp', 'fm-kl', 'mp', 'mp-fmgreedy']
 
     #if with_dual:
     #    times.append( vigra.readHDF5(   './anytime_data/%s_mcmp_py.h5'% sample, 'rt_dual') )
@@ -64,7 +67,7 @@ def sampleD_plots(with_dual = False):
 
     bounds = np.array(bounds)
     bounds = [bounds[:,0].min(), round(bounds[:,1].max(),-2)]
-    print bounds
+    bounds = None
 
     plot_energies_sample(
             times,

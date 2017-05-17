@@ -19,3 +19,16 @@ model_paths_mcluigi = {
     'sampleD_L1'       : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD/ReducedProblem_50_512_512_modifed.h5',
     'sampleD_full'     : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD/MulticutProblem_modifed.h5'
 }
+
+mode_paths_lifted = {
+    'isbi' : {'local_uvs'   : '../models/lifted_models/isbi/uv_ids_local.h5',
+              'lifted_uvs'  : '../models/lifted_models/isbi/uv_ids_lifted.h5',
+              'local_costs' : '../models/lifted_models/isbi/costs_local.h5',
+              'lifted_costs': '../models/lifted_models/isbi/costs_lifted.h5'
+              },
+    'snemi' :{'local_uvs'   : '../models/lifted_models/snemi/uv_ids_local.h5',
+              'lifted_uvs'  : '../models/lifted_models/snemi/uv_ids_lifted.h5',
+              'local_costs' : '../models/lifted_models/snemi/costs_local.h5',
+              'lifted_costs': '../models/lifted_models/snemi/costs_lifted.h5'
+              }
+}

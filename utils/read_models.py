@@ -35,3 +35,25 @@ def read_from_mcppl(uv_path, costs_path):
     costs  = vigra.readHDF5(costs_path, 'data')
     assert len(costs) == len(uv_ids)
     return uv_ids.max() + 1, uv_ids, costs
+
+
+def read_lifted(model_path_dict):
+    uvs_local = vigra.readHDF5(model_path_dict['local_uvs'], 'data')
+    uvs_lifted = vigra.readHDF5(model_path_dict['lifted_uvs'], 'data')
+    n_nodes   = uvs_local.max() + 1
+    assert uvs_lifted.max() + 1 == n_nodes
+
+    # build the graph with local edges
+    graph = nifty.graph.UndirectedGraph(n_nodes)
+    graph.insertEdges(uvs_local)
+
+    # build the lifted objective, insert local and lifted costs
+    lifted_obj = nifty.graph.lifted_multicut.liftedMulticutObjective(graph)
+    costs_local  = vigra.readHDF5(model_path_dict['local_costs'])
+    assert len(costs_local) == len(uvs_local)
+    costs_lifted = vigra.readHDF5(model_path_dict['lifted_costs'])
+    assert len(costs_lifted) == len(uvs_lifted)
+    lifted_obj.setCosts(uvs_local, costs_local)
+    lifted_obj.setCosts(uvs_lifted, costs_lifted)
+
+    return lifted_obj
