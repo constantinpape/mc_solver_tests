@@ -49,9 +49,9 @@ def read_lifted(model_path_dict):
 
     # build the lifted objective, insert local and lifted costs
     lifted_obj = nifty.graph.lifted_multicut.liftedMulticutObjective(graph)
-    costs_local  = vigra.readHDF5(model_path_dict['local_costs'])
+    costs_local  = vigra.readHDF5(model_path_dict['local_costs'], 'data')
     assert len(costs_local) == len(uvs_local)
-    costs_lifted = vigra.readHDF5(model_path_dict['lifted_costs'])
+    costs_lifted = vigra.readHDF5(model_path_dict['lifted_costs'], 'data')
     assert len(costs_lifted) == len(uvs_lifted)
     lifted_obj.setCosts(uvs_local, costs_local)
     lifted_obj.setCosts(uvs_lifted, costs_lifted)

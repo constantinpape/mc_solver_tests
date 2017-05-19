@@ -20,7 +20,7 @@ model_paths_mcluigi = {
     'sampleD_full'     : '/home/constantin/Work/home_hdd/cache/cache_luigi/sampleD/MulticutProblem_modifed.h5'
 }
 
-mode_paths_lifted = {
+model_paths_lifted = {
     'isbi' : {'local_uvs'   : '../models/lifted_models/isbi/uv_ids_local.h5',
               'lifted_uvs'  : '../models/lifted_models/isbi/uv_ids_lifted.h5',
               'local_costs' : '../models/lifted_models/isbi/costs_local.h5',
