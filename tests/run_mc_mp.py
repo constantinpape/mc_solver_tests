@@ -11,8 +11,9 @@ def run_mc_mp(sample):
 
     # run mc mp
     print "Run mc mp"
-    _, e_mcmp, t_mcmp = run_mc_mp_pybindings(n_var, uv_ids, costs)
+    # _, e_mcmp, t_mcmp = run_mc_mp_pybindings(n_var, uv_ids, costs)
     # TODO run commandline mcmp for sanity check
+    _, e_mcmp, t_mcmp = run_mc_mp_cmdline(n_var, uv_ids, costs)
 
     return e_mcmp, t_mcmp
 
@@ -127,4 +128,4 @@ def compare_all_mcmp():
 
 
 if __name__ == '__main__':
-    compare_all_mcmp()
+    print run_mc_mp('sampleA')

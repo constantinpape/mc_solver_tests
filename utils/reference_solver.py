@@ -1,14 +1,23 @@
 import opengm
+import time
+import os
 from nifty_solver import nifty_mc_objective
+import nifty
+import subprocess
+import numpy as np
+
 
 ################################################
-#### OpenGM Solver
+# OpenGM Solver
 ################################################
 
-def run_fusion_moves_opengm(n_var, uv_ids, costs,
-        n_threads = 20,
-        seed_fraction = 0.001,
-        verbose = False):
+
+def run_fusion_moves_opengm(
+    n_var, uv_ids, costs,
+    n_threads=20,
+    seed_fraction=0.001,
+    verbose=False
+):
 
     # set up the opengm model
     states = np.ones(n_var) * n_var
@@ -17,15 +26,15 @@ def run_fusion_moves_opengm(n_var, uv_ids, costs,
     # potts model
     potts_shape = [n_var, n_var]
 
-    potts = opengm.pottsFunctions(potts_shape,
-                                  np.zeros_like( costs ),
-                                  costs )
+    potts = opengm.pottsFunctions(
+        potts_shape, np.zeros_like(costs), costs
+    )
 
     # potts model to opengm function
     fids_b = gm.addFunctions(potts)
     gm.addFactors(fids_b, uv_ids)
 
-    pparam = opengm.InfParam(seedFraction = seed_fraction)
+    pparam = opengm.InfParam(seedFraction =seed_fraction)
     parameter = opengm.InfParam(generator='randomizedWatershed',
                                 proposalParam=pparam,
                                 numStopIt = 5000,
@@ -103,28 +112,32 @@ def write_to_opengm(n_var, uv_ids, costs, out_file):
     opengm.saveGm(gm_global, out_file)
 
 
-def run_mc_mp_cmdline(n_var, uv_ids, costs,
-        max_iter = 1000,
-        timeout  = 0,
-        n_threads = 1,
-        tighten   = True,
-        standardReparametrization = 'anisotropic',
-        tightenReparametrization  = 'damped_uniform',
-        roundingReparametrization = 'damped_uniform',
-        tightenIteration          = 2,
-        tightenInterval           = 49,
-        tightenSlope              = 0.1,
-        tightenConstraintsPercentage = 0.05,
-        primalComputationInterval = 13
-        ):
+def run_mc_mp_cmdline(
+    n_var, uv_ids, costs,
+    max_iter = 1000,
+    timeout  = 0,
+    n_threads = 1,
+    tighten   = True,
+    standardReparametrization = 'anisotropic',
+    tightenReparametrization  = 'damped_uniform',
+    roundingReparametrization = 'damped_uniform',
+    tightenIteration          = 2,
+    tightenInterval           = 49,
+    tightenSlope              = 0.1,
+    tightenConstraintsPercentage = 0.05,
+    primalComputationInterval = 13
+):
     write_to_opengm(n_var, uv_ids, costs, './tmp.gm')
 
     # TODO with or without odd_wheel ?
     home_dir = os.path.expanduser("~")
-    binary_odd_wheel = os.path.join(home_dir, 'Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel')
-    binary           = os.path.join(home_dir, 'Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle')
+    binary_odd_wheel = os.path.join(
+        home_dir,
+        'Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle_odd_wheel'
+    )
+    # binary           = os.path.join(home_dir, 'Work/software/bld/LP_MP/src/solvers/multicut/multicut_opengm_srmp_cycle')
 
-    options =  [
+    options = [
         binary_odd_wheel,
         '-i', './tmp.gm',
         '--standardReparametrization', standardReparametrization,

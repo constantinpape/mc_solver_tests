@@ -1,26 +1,27 @@
-import os
-import cPickle as pickle
-from functools import partial
+# import os
+# import cPickle as pickle
+# from functools import partial
 import sys
 sys.path.append('..')
 from utils import *
 
+
 # compare the main algorithms in nifty on the small samples
 def small_problems():
 
-    def run_sample(sample, solver_choice, timeout = None, verbose = False):
+    def run_sample(sample, solver_choice, timeout=None, verbose=False):
         uv_path, costs_path = model_paths_new[sample]
         n_var, uv_ids, costs = read_from_mcppl(uv_path, costs_path)
         obj = nifty_mc_objective(n_var, uv_ids, costs)
 
         solver_dict = {
-            'fm-ilp' : nifty_fusion_move_factory(obj,
+            'fm-ilp': nifty_fusion_move_factory(obj,
                 backend_factory = nifty_ilp_factory(obj),
                 seed_fraction = 0.01),
-            'fm-kl' : nifty_fusion_move_factory(obj,
+            'fm-kl': nifty_fusion_move_factory(obj,
                 backend_factory = nifty_kl_factory(obj),
                 seed_fraction = 0.01),
-            'fm-cgc' : nifty_fusion_move_factory(obj,
+            'fm-cgc': nifty_fusion_move_factory(obj,
                 backend_factory = nifty_cgc_factory(obj),
                 seed_fraction = 0.01),
             'ilp' : nifty_ilp_factory(obj),
@@ -171,7 +172,7 @@ def sampleD_problems():
 
 
 if __name__ == '__main__':
-    #small_problems()
-    sampleD_problems()
-    #for sample in ('sampleA', 'sampleB', 'sampleC'):
-    #    compare_opengm_nifty(sample)
+    small_problems()
+    # sampleD_problems()
+    # for sample in ('sampleA', 'sampleB', 'sampleC'):
+    #     compare_opengm_nifty(sample)

@@ -8,3 +8,4 @@ from model_paths import *
 from mcmp_parameters import *
 from parse_cmd_output import parse_out_mcmp, parse_out_niftyfm, parse_out_niftyilp
 from nifty_lmc import run_nifty_lmc, kl_lmc_factory, greedy_lmc_factory, fusion_move_lmc_factory, mp_lmc_factory
+from reference_solver import run_mc_mp_pybindings, run_mc_mp_cmdline

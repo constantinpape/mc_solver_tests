@@ -50,7 +50,7 @@ def test_lifted(model, solver_choice):
 
 def test_isbi():
     model = 'isbi'
-    solver_choice = ['greedy','kl','fm-kl']#,'mp']
+    solver_choice = ['greedy','kl','fm-kl']#, 'mp']
     res_dict = test_lifted(model, solver_choice)
 
     print "Results Summary for LMC on ISBI"
