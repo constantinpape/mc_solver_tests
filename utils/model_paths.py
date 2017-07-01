@@ -32,3 +32,13 @@ model_paths_lifted = {
               'lifted_costs': '../models/lifted_models/snemi/costs_lifted.h5'
               }
 }
+
+# models for the bmc paper experiments
+model_paths_bmc = {
+    'sample_A_small': '../models/mc_probs_A/McProblem_A_small.h5',
+    'sample_A_padded': '../models/mc_probs_A/McProblem_A_padded.h5',
+    'sample_B_small': '../models/mc_probs_B/McProblem_B_small.h5',
+    'sample_B_padded': '../models/mc_probs_B/McProblem_B_padded.h5',
+    'sample_C_small': '../models/mc_probs_C/McProblem_C_small.h5',
+    'sample_C_padded': '../models/mc_probs_C/McProblem_C_padded.h5'
+}

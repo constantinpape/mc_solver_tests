@@ -25,7 +25,7 @@ def run_nifty_solver(
         with_visitor = True
         visit_nth = 1 if verbose else int(1000000000)
         # print "visiting every %i with tlim %i" % (visit_nth, time_limit)
-        visitor = obj.multicutVerboseVisitor(visit_nth, time_limit)
+        visitor = obj.multicutVisitor(visit_nth, time_limit)
 
     t_inf = time.time()
     if with_visitor:
@@ -35,6 +35,27 @@ def run_nifty_solver(
     t_inf = time.time() - t_inf
     mc_energy = obj.evalNodeLabels(ret)
     return ret, mc_energy, t_inf
+
+
+def run_nifty_solver_with_logger(
+        obj,
+        factory,
+        verbose=0,
+        time_limit=float('inf')
+):
+
+    solver = factory.create(obj)
+    visitor = obj.loggingVisitor(
+        visitNth=1,
+        verbose=verbose,
+        timeLimitSolver=time_limit
+    )
+
+    ret = solver.optimize(visitor)
+    energies = visitor.energies()
+    runtimes = visitor.runtimes()
+
+    return runtimes, energies
 
 
 def nifty_greedy_factory(

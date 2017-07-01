@@ -1,4 +1,4 @@
-from nifty_solver import nifty_mc_objective, run_nifty_solver
+from nifty_solver import nifty_mc_objective, run_nifty_solver, run_nifty_solver_with_logger
 from nifty_solver import nifty_fusion_move_factory, nifty_ilp_factory, nifty_kl_factory, nifty_cgc_factory, nifty_mp_factory, nifty_greedy_factory
 # deactivated for now
 #from reference_solver import
