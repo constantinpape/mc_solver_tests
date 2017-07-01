@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib
+import matplotlib.ticker as mtick
 import numpy as np
 
 import cPickle as pickle
@@ -31,9 +32,13 @@ def plot_energies_sample(times, energies, labels, title, bounds = None):
     ax.set_title(title)
     if bounds is not None:
         ax.set_ylim(bounds)
+
+    ax.yaxis.set_major_formatter(mtick.FormatStrFormatter('%i'))
     ax.legend()
     ax.get_yaxis().set_major_formatter(
                 matplotlib.ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
+
+    plt.title(title)
     plt.show()
 
 
@@ -56,6 +61,9 @@ def sampleD_plots(with_dual = False):
     for solver in solvers:
         out_path = '../tests/anytime_data/sampleD_sub/%s_%s.txt' % (sample, solver)
         t, e = parser[solver](out_path)
+        #if solver == 'ilp':
+        #    t = t[11:]
+        #    e = e[11:]
         assert len(t) == len(e)
         times.append(t)
         energies.append(e)
@@ -69,12 +77,14 @@ def sampleD_plots(with_dual = False):
     bounds = [bounds[:,0].min(), round(bounds[:,1].max(),-2)]
     bounds = None
 
+    #title = '%s - ILP: -722692 after 2 iterations (6600 s)' % sample
+    title = '%s' % sample
     plot_energies_sample(
             times,
             energies,
             labels,
-            sample,
-            bounds
+            title,
+            bounds,
             )
 
 

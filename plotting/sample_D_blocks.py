@@ -73,7 +73,7 @@ def plot_performance():
 
     fig, ax = plt.subplots()
     #ax2 = plt.axes([.45,.2,.40,.40])
-    axins = inset_axes(ax, 1, 2, loc=7)#, axes_kwargs = dict(autoscaley_on = True))
+    axins = inset_axes(ax, 9, 3, loc=7)#, axes_kwargs = dict(autoscaley_on = True))
 
     x_min, x_max, y_min, y_max = [], [], [], []
 
@@ -93,10 +93,10 @@ def plot_performance():
         t = np.array(t)
         e = np.array(e)
 
-        x_min.append(t[1:3].min())
-        x_max.append(t[1:3].max())
-        y_min.append(e[1:3].min())
-        y_max.append(e[1:3].max())
+        x_min.append(t[1:].min())
+        x_max.append(t[1:].max())
+        y_min.append(e[1:].min())
+        y_max.append(e[1:].max())
 
         ax.plot(t, e, c = 'C%i' % level, label = 'L%i' % level)
         ax.scatter(t_offsets[level], energy_offsets[level], s = 100, c = 'C%i' % level)

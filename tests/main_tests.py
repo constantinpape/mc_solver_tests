@@ -24,6 +24,10 @@ def small_problems():
             'fm-cgc': nifty_fusion_move_factory(obj,
                 backend_factory = nifty_cgc_factory(obj),
                 seed_fraction = 0.01),
+            'fm-mp' : nifty_fusion_move_factory(obj,
+                backend_factory = nifty_mp_factory(obj),
+                seed_fraction = 0.01,
+                n_threads=20),
             'ilp' : nifty_ilp_factory(obj),
             'cgc' : nifty_cgc_factory(obj), # FIXME does not converge!
             'kl'  : nifty_kl_factory(obj),
@@ -50,7 +54,8 @@ def small_problems():
 
     samples = ('sampleA','sampleB','sampleC')
     #samples = ('sampleA',)
-    solver_choice = ('fm-ilp', 'fm-kl', 'fm-greedy')
+    #solver_choice = ('fm-ilp', 'fm-kl', 'fm-greedy')
+    solver_choice = ('fm-mp',)
 
     res_dict = {}
     for sample in samples:

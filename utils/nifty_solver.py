@@ -68,7 +68,6 @@ def nifty_fusion_move_factory(
         pgen = obj.greedyAdditiveProposals(sigma=10)
 
     fm_factory = obj.fusionMoveBasedFactory(
-        verbose=0,
         fusionMove=obj.fusionMoveSettings(mcFactory=backend_factory),
         proposalGen=pgen,
         numberOfIterations=number_of_iterations,
@@ -113,7 +112,6 @@ def nifty_decomposer_factory(
     pass
 
 
-# TODO params
 def nifty_cgc_factory(
         obj,
         greedy_chain=True,

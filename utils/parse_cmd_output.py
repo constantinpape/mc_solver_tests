@@ -12,7 +12,7 @@ def parse_out_niftyfm(out_path, with_iter = False):
     run_times = []
     iter_without_improvement = []
 
-    for line in out[1:]:
+    for line in out:
         if not line.startswith('Energy:'):
             if line.startswith('end inference'):
                 break
