@@ -158,9 +158,11 @@ def nifty_cgc_factory(
 
 def nifty_kl_factory(
         obj,
-        greedy_chain=True
+        greedy_chain=True,
+        use_andres=False
 ):
-    return obj.multicutAndresKernighanLinFactory(greedyWarmstart=greedy_chain)
+    return obj.multicutAndresKernighanLinFactory(greedyWarmstart=greedy_chain) if use_andres else \
+        obj.kernighanLinFactory(warmStartGreedy=greedy_chain)
 
 
 # TODO more mp settings

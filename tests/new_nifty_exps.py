@@ -5,11 +5,11 @@ import sys
 sys.path.append('..')
 
 #
-from utils import run_nifty_solver_with_logger, nifty_mc_objective
+from utils import run_nifty_solver_with_logger, nifty_mc_objective, run_nifty_solver
 
 # TODO import all existing and add more !
 # import all releveant nifty solver factories
-from utils import nifty_fusion_move_factory, nifty_kl_factory
+from utils import nifty_fusion_move_factory, nifty_kl_factory, nifty_ilp_factory
 
 from utils import read_from_mcluigi
 from utils import model_paths_bmc
@@ -22,12 +22,20 @@ def run_exp(sample, padded):
     model_path = model_paths_bmc[sample_str]
     mc_obj = nifty_mc_objective(*read_from_mcluigi(model_path))
 
-    # TODO
+    # TODO nifty fm-cc solver
     solvers = {
-        'kl': nifty_kl_factory(mc_obj),
-        # 'fm_kl': None,
-        # 'fm_ilp': None,
-        # 'ilp': None
+        'kl': nifty_kl_factory(mc_obj, use_andres=False),
+        'fm_kl': nifty_fusion_move_factory(
+            mc_obj,
+            nifty_kl_factory(mc_obj, use_andres=False),
+            n_threads=8
+        ),
+        'fm_ilp': nifty_fusion_move_factory(
+            mc_obj,
+            nifty_ilp_factory(mc_obj),
+            n_threads=8
+        ),
+        'ilp': nifty_ilp_factory(mc_obj)
     }
 
     # time limit of 1 hour
@@ -56,7 +64,20 @@ def run_exp(sample, padded):
         pickle.dump(solver_results, f)
 
 
+def compare_kl_impls(sample, padded):
+    sample_str = 'sample_%s_%s' % (sample, 'padded' if padded else 'small')
+    model_path = model_paths_bmc[sample_str]
+    mc_obj = nifty_mc_objective(*read_from_mcluigi(model_path))
+
+    _, e_nifty, t_nifty = run_nifty_solver(mc_obj, nifty_kl_factory(mc_obj, use_andres=False))
+    _, e_andres, t_andres = run_nifty_solver(mc_obj, nifty_kl_factory(mc_obj, use_andres=True))
+
+    print "Inference with nifty kl in %f s with energy %f." % (e_nifty, t_nifty)
+    print "Inference with andres kl in %f s with energy %f." % (e_andres, t_andres)
+
+
 if __name__ == '__main__':
     sample = 'A'
     padded = False
     run_exp(sample, padded)
+    # compare_kl_impls(sample, padded)
